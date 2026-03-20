@@ -1,0 +1,10 @@
+{
+  "name": "web",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "echo \"Initialize Next.js app here\"",
+    "build": "echo \"Build step placeholder\"",
+    "lint": "echo \"Lint step placeholder\""
+  }
+}

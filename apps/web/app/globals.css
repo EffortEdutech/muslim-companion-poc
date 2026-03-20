@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── CSS Custom Properties ─────────────────────────────────────── */
+:root {
+  --bg-primary: #0d1117;
+  --bg-surface: #161d2e;
+  --bg-card: #1e2840;
+  --bg-hover: #243050;
+
+  --gold: #c8a84b;
+  --gold-light: #e4c96a;
+  --gold-glow: rgba(200, 168, 75, 0.15);
+  --gold-border: rgba(200, 168, 75, 0.20);
+  --gold-border-strong: rgba(200, 168, 75, 0.40);
+
+  --ink: #e8dcc0;
+  --ink-secondary: #a09070;
+  --ink-muted: #6b5f45;
+  --ink-arabic: #f0e6c8;
+
+  --nav-height: 64px;
+
+  /* Reader font sizes — overridden by ReaderControls via JS */
+  --reader-ar-size: 1.6rem;
+  --reader-en-size: 1rem;
+}
+
+/* ── Base Styles ────────────────────────────────────────────────── */
+html {
+  background-color: var(--bg-primary);
+  color: var(--ink);
+  font-family: var(--font-lora), Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background-color: var(--bg-primary);
+  min-height: 100vh;
+  background-image:
+    radial-gradient(ellipse at 20% 0%, rgba(200, 168, 75, 0.04) 0%, transparent 50%),
+    radial-gradient(ellipse at 80% 100%, rgba(200, 168, 75, 0.03) 0%, transparent 50%);
+}
+
+/* ── Arabic Text ────────────────────────────────────────────────── */
+[lang="ar"],
+.arabic-text {
+  font-family: var(--font-amiri), 'Amiri', 'Traditional Arabic', serif;
+  direction: rtl;
+  text-align: right;
+  color: var(--ink-arabic);
+  line-height: 2.4;
+  letter-spacing: 0.01em;
+}
+
+/* ── Scrollbar ──────────────────────────────────────────────────── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar-thumb { background: var(--gold-border); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+
+/* ── Focus Styles ───────────────────────────────────────────────── */
+*:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* ── Component Layer ────────────────────────────────────────────── */
+@layer components {
+
+  .hadith-card {
+    @apply rounded-xl border p-6 transition-all duration-200;
+    background-color: var(--bg-card);
+    border-color: var(--gold-border);
+  }
+  .hadith-card:hover {
+    border-color: var(--gold-border-strong);
+    background-color: var(--bg-hover);
+  }
+
+  .gold-divider {
+    @apply w-full my-4;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--gold-border-strong), transparent);
+  }
+
+  .nav-link {
+    @apply text-sm font-medium transition-colors duration-150 px-3 py-1.5 rounded-lg;
+    color: var(--ink-secondary);
+    font-family: var(--font-lora), serif;
+  }
+  .nav-link:hover { color: var(--gold-light); background-color: var(--gold-glow); }
+  .nav-link.active { color: var(--gold); }
+
+  .collection-card {
+    @apply rounded-xl border p-5 transition-all duration-200 cursor-pointer block;
+    background-color: var(--bg-card);
+    border-color: var(--gold-border);
+  }
+  .collection-card:hover {
+    border-color: var(--gold-border-strong);
+    background-color: var(--bg-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 8px 24px rgba(200, 168, 75, 0.08);
+  }
+
+  .search-input {
+    @apply w-full rounded-xl border px-5 py-4 text-base transition-all duration-200;
+    background-color: var(--bg-card);
+    border-color: var(--gold-border);
+    color: var(--ink);
+    font-family: var(--font-lora), serif;
+  }
+  .search-input::placeholder { color: var(--ink-muted); }
+  .search-input:focus {
+    border-color: var(--gold);
+    box-shadow: 0 0 0 3px var(--gold-glow);
+    outline: none;
+  }
+
+  .badge-group {
+    @apply text-xs font-medium uppercase tracking-widest px-2.5 py-1 rounded-full;
+    background-color: var(--gold-glow);
+    color: var(--gold);
+    border: 1px solid var(--gold-border);
+  }
+
+  .page-heading {
+    font-family: var(--font-cormorant), Georgia, serif;
+    color: var(--ink);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+  }
+}
+
+/* ── Utilities ──────────────────────────────────────────────────── */
+@layer utilities {
+  .text-gold { color: var(--gold); }
+  .text-gold-light { color: var(--gold-light); }
+  .text-ink { color: var(--ink); }
+  .text-ink-secondary { color: var(--ink-secondary); }
+  .text-ink-muted { color: var(--ink-muted); }
+  .bg-surface { background-color: var(--bg-surface); }
+  .bg-card { background-color: var(--bg-card); }
+  .border-subtle { border-color: var(--gold-border); }
+  .border-gold { border-color: var(--gold-border-strong); }
+}

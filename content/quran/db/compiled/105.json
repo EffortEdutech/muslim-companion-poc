@@ -1,0 +1,78 @@
+{
+  "surah": 105,
+  "metadata": {
+    "nameArabic": "الفيل",
+    "nameEnglish": "Al-Fil",
+    "nameTranslit": "Al-Feel",
+    "meaning": "The Elephant",
+    "revelation": "Meccan",
+    "revelationOrder": 19,
+    "period": "Early Meccan",
+    "ayahCount": 5,
+    "wordCount": 23,
+    "letterCount": 96,
+    "juz": 30,
+    "pageStart": 601,
+    "themes": [
+      "elephant",
+      "abraha",
+      "kaaba_protection",
+      "birds",
+      "stones"
+    ],
+    "otherNames": [],
+    "significance": "Tells of Abraha's failed attack on Kaaba with elephants, year of Prophet's birth"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ أَلَمْ تَرَ كَيْفَ فَعَلَ رَبُّكَ بِأَصْحَـٰبِ ٱلْفِيلِ",
+      "transliteration": "Alam tara kayfa faAAala rabbuka biashabi alfeeli",
+      "translations": {
+        "en_sahih": "Have you not considered, [O Muhammad], how your Lord dealt with the companions of the elephant?",
+        "en_yusufali": "Seest thou not how thy Lord dealt with the Companions of the Elephant?",
+        "ms_basmeih": "Tidakkah engkau mengetahui bagaimana Tuhanmu telah melakukan kepada angkatan tentera (yang dipimpin oleh pembawa) Gajah, (yang hendak meruntuhkan Kaabah)?"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "أَلَمْ يَجْعَلْ كَيْدَهُمْ فِى تَضْلِيلٍ",
+      "transliteration": "Alam yajAAal kaydahum fee tadleelin",
+      "translations": {
+        "en_sahih": "Did He not make their plan into misguidance?",
+        "en_yusufali": "Did He not make their treacherous plan go astray?",
+        "ms_basmeih": "Bukankah Tuhanmu telah menjadikan rancangan jahat mereka dalam keadaan yang rugi dan memusnahkan mereka?"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "وَأَرْسَلَ عَلَيْهِمْ طَيْرًا أَبَابِيلَ",
+      "transliteration": "Waarsala AAalayhim tayran ababeela",
+      "translations": {
+        "en_sahih": "And He sent against them birds in flocks,",
+        "en_yusufali": "And He sent against them Flights of Birds,",
+        "ms_basmeih": "Dan Ia telah menghantarkan kepada mereka (rombongan) burung berpasuk-pasukan, -"
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "تَرْمِيهِم بِحِجَارَةٍ مِّن سِجِّيلٍ",
+      "transliteration": "Tarmeehim bihijaratin min sijjeelin",
+      "translations": {
+        "en_sahih": "Striking them with stones of hard clay,",
+        "en_yusufali": "Striking them with stones of baked clay.",
+        "ms_basmeih": "Yang melontar mereka dengan batu-batu dari sejenis tanah yang dibakar keras, -"
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "فَجَعَلَهُمْ كَعَصْفٍ مَّأْكُولٍۭ",
+      "transliteration": "FajaAAalahum kaAAasfin makoolin",
+      "translations": {
+        "en_sahih": "And He made them like eaten straw.",
+        "en_yusufali": "Then did He make them like an empty field of stalks and straw, (of which the corn) has been eaten up.",
+        "ms_basmeih": "Lalu Ia menjadikan mereka hancur berkecai seperti daun-daun kayu yang dimakan ulat."
+      }
+    }
+  ]
+}

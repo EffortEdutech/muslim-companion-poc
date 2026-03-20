@@ -1,0 +1,148 @@
+{
+  "surah": 65,
+  "metadata": {
+    "nameArabic": "الطلاق",
+    "nameEnglish": "At-Talaq",
+    "nameTranslit": "At-Talaaq",
+    "meaning": "The Divorce",
+    "revelation": "Medinan",
+    "revelationOrder": 99,
+    "period": "Late Medinan",
+    "ayahCount": 12,
+    "wordCount": 291,
+    "letterCount": 1174,
+    "juz": 28,
+    "pageStart": 558,
+    "themes": [
+      "divorce",
+      "family_law",
+      "waiting_period",
+      "justice",
+      "fear_of_allah"
+    ],
+    "otherNames": [],
+    "significance": "Provides detailed guidance on divorce procedures and family law"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ يَـٰٓأَيُّهَا ٱلنَّبِىُّ إِذَا طَلَّقْتُمُ ٱلنِّسَآءَ فَطَلِّقُوهُنَّ لِعِدَّتِهِنَّ وَأَحْصُوا۟ ٱلْعِدَّةَ ۖ وَٱتَّقُوا۟ ٱللَّهَ رَبَّكُمْ ۖ لَا تُخْرِجُوهُنَّ مِنۢ بُيُوتِهِنَّ وَلَا يَخْرُجْنَ إِلَّآ أَن يَأْتِينَ بِفَـٰحِشَةٍ مُّبَيِّنَةٍ ۚ وَتِلْكَ حُدُودُ ٱللَّهِ ۚ وَمَن يَتَعَدَّ حُدُودَ ٱللَّهِ فَقَدْ ظَلَمَ نَفْسَهُۥ ۚ لَا تَدْرِى لَعَلَّ ٱللَّهَ يُحْدِثُ بَعْدَ ذَٰلِكَ أَمْرًا",
+      "transliteration": "Ya ayyuha alnnabiyyu itha tallaqtumu alnnisaa fatalliqoohunna liAAiddatihinna waahsoo alAAiddata waittaqoo Allaha rabbakum la tukhrijoohunna min buyootihinna wala yakhrujna illa an yateena bifahishatin mubayyinatin watilka hudoodu Allahi waman yataAAadda hudooda Allahi faqad thalama nafsahu la tadree laAAalla Allaha yuhdithu baAAda thalika amran",
+      "translations": {
+        "en_sahih": "O Prophet, when you [Muslims] divorce women, divorce them for [the commencement of] their waiting period and keep count of the waiting period, and fear Allah, your Lord. Do not turn them out of their [husbands'] houses, nor should they [themselves] leave [during that period] unless they are committing a clear immorality. And those are the limits [set by] Allah. And whoever transgresses the limits of Allah has certainly wronged himself. You know not; perhaps Allah will bring about after that a [different] matter.",
+        "en_yusufali": "O Prophet! When ye do divorce women, divorce them at their prescribed periods, and count (accurately), their prescribed periods: And fear Allah your Lord: and turn them not out of their houses, nor shall they (themselves) leave, except in case they are guilty of some open lewdness, those are limits set by Allah: and any who transgresses the limits of Allah, does verily wrong his (own) soul: thou knowest not if perchance Allah will bring about thereafter some new situation.",
+        "ms_basmeih": "Wahai Nabi! Apabila kamu - (engkau dan umatmu) - hendak menceraikan isteri-isteri (kamu), maka ceraikanlah mereka pada masa mereka dapat memulakan idahnya, dan hitunglah masa idah itu (dengan betul), serta bertaqwalah kepada Allah, Tuhan kamu. Janganlah kamu mengeluarkan mereka dari rumah-rumah kediamannya (sehingga selesai idahnya), dan janganlah pula (dibenarkan) mereka keluar (dari situ), kecuali (jika) mereka melakukan perbuatan keji yang nyata. Dan itulah aturan-aturan hukum Allah (maka janganlah kamu melanggarnya); dan sesiapa yang melanggar aturan-aturan hukum Allah maka sesungguhnya ia telah berlaku zalim kepada dirinya. (Patuhilah hukum-hukum itu, kerana) engkau tidak mengetahui boleh jadi Allah akan mengadakan, sesudah itu, sesuatu perkara (yang lain)."
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "فَإِذَا بَلَغْنَ أَجَلَهُنَّ فَأَمْسِكُوهُنَّ بِمَعْرُوفٍ أَوْ فَارِقُوهُنَّ بِمَعْرُوفٍ وَأَشْهِدُوا۟ ذَوَىْ عَدْلٍ مِّنكُمْ وَأَقِيمُوا۟ ٱلشَّهَـٰدَةَ لِلَّهِ ۚ ذَٰلِكُمْ يُوعَظُ بِهِۦ مَن كَانَ يُؤْمِنُ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ ۚ وَمَن يَتَّقِ ٱللَّهَ يَجْعَل لَّهُۥ مَخْرَجًا",
+      "transliteration": "Faitha balaghna ajalahunna faamsikoohunna bimaAAroofin aw fariqoohunna bimaAAroofin waashhidoo thaway AAadlin minkum waaqeemoo alshshahadata lillahi thalikum yooAAathu bihi man kana yuminu biAllahi waalyawmi alakhiri waman yattaqi Allaha yajAAal lahu makhrajan",
+      "translations": {
+        "en_sahih": "And when they have [nearly] fulfilled their term, either retain them according to acceptable terms or part with them according to acceptable terms. And bring to witness two just men from among you and establish the testimony for [the acceptance of] Allah. That is instructed to whoever should believe in Allah and the Last day. And whoever fears Allah - He will make for him a way out",
+        "en_yusufali": "Thus when they fulfil their term appointed, either take them back on equitable terms or part with them on equitable terms; and take for witness two persons from among you, endued with justice, and establish the evidence (as) before Allah. Such is the admonition given to him who believes in Allah and the Last Day. And for those who fear Allah, He (ever) prepares a way out,",
+        "ms_basmeih": "Kemudian, apabila mereka (hampir) habis tempoh idahnya, maka bolehlah kamu pegang mereka (rujuk) dengan cara yang baik, atau lepaskan mereka dengan cara yang baik; dan adakanlah dua orang saksi yang adil di antara kamu (semasa kamu merujukkan atau melepaskannya); dan hendaklah kamu (yang menjadi saksi) menyempurnakan persaksian itu kerana Allah semata-mata. Dengan hukum-hukum yang tersebut diberi peringatan dan pengajaran kepada sesiapa yang beriman kepada Allah dan hari akhirat; dan sesiapa yang bertaqwa kepada Allah (dengan mengerjakan suruhanNya dan meninggalkan laranganNya), nescaya Allah akan mengadakan baginya jalan keluar (dari segala perkara yang menyusahkannya),"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "وَيَرْزُقْهُ مِنْ حَيْثُ لَا يَحْتَسِبُ ۚ وَمَن يَتَوَكَّلْ عَلَى ٱللَّهِ فَهُوَ حَسْبُهُۥٓ ۚ إِنَّ ٱللَّهَ بَـٰلِغُ أَمْرِهِۦ ۚ قَدْ جَعَلَ ٱللَّهُ لِكُلِّ شَىْءٍ قَدْرًا",
+      "transliteration": "Wayarzuqhu min haythu la yahtasibu waman yatawakkal AAala Allahi fahuwa hasbuhu inna Allaha balighu amrihi qad jaAAala Allahu likulli shayin qadran",
+      "translations": {
+        "en_sahih": "And will provide for him from where he does not expect. And whoever relies upon Allah - then He is sufficient for him. Indeed, Allah will accomplish His purpose. Allah has already set for everything a [decreed] extent.",
+        "en_yusufali": "And He provides for him from (sources) he never could imagine. And if any one puts his trust in Allah, sufficient is (Allah) for him. For Allah will surely accomplish his purpose: verily, for all things has Allah appointed a due proportion.",
+        "ms_basmeih": "Serta memberinya rezeki dari jalan yang tidak terlintas di hatinya. Dan (Ingatlah), sesiapa berserah diri bulat-bulat kepada Allah, maka Allah cukuplah baginya (untuk menolong dan menyelamatkannya). Sesungguhnya Allah tetap melakukan segala perkara yang dikehendakiNya. Allah telahpun menentukan kadar dan masa bagi berlakunya tiap-tiap sesuatu."
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "وَٱلَّـٰٓـِٔى يَئِسْنَ مِنَ ٱلْمَحِيضِ مِن نِّسَآئِكُمْ إِنِ ٱرْتَبْتُمْ فَعِدَّتُهُنَّ ثَلَـٰثَةُ أَشْهُرٍ وَٱلَّـٰٓـِٔى لَمْ يَحِضْنَ ۚ وَأُو۟لَـٰتُ ٱلْأَحْمَالِ أَجَلُهُنَّ أَن يَضَعْنَ حَمْلَهُنَّ ۚ وَمَن يَتَّقِ ٱللَّهَ يَجْعَل لَّهُۥ مِنْ أَمْرِهِۦ يُسْرًا",
+      "transliteration": "Waallaee yaisna mina almaheedi min nisaikum ini irtabtum faAAiddatuhunna thalathatu ashhurin waallaee lam yahidna waolatu alahmali ajaluhunna an yadaAAna hamlahunna waman yattaqi Allaha yajAAal lahu min amrihi yusran",
+      "translations": {
+        "en_sahih": "And those who no longer expect menstruation among your women - if you doubt, then their period is three months, and [also for] those who have not menstruated. And for those who are pregnant, their term is until they give birth. And whoever fears Allah - He will make for him of his matter ease.",
+        "en_yusufali": "Such of your women as have passed the age of monthly courses, for them the prescribed period, if ye have any doubts, is three months, and for those who have no courses (it is the same): for those who carry (life within their wombs), their period is until they deliver their burdens: and for those who fear Allah, He will make their path easy.",
+        "ms_basmeih": "Dan perempuan-perempuan dari kalangan kamu yang putus asa dari kedatangan haid, jika kamu menaruh syak (terhadap tempoh idah mereka) maka idahnya ialah tiga bulan; dan (demikian) juga idah perempuan-perempuan yang tidak berhaid. Dan perempuan-perempuan mengandung, tempoh idahnya ialah hingga mereka melahirkan anak yang dikandungnya. Dan (ingatlah), sesiapa yang bertaqwa kepada Allah, nescaya Allah memudahkan baginya segala urusannya."
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "ذَٰلِكَ أَمْرُ ٱللَّهِ أَنزَلَهُۥٓ إِلَيْكُمْ ۚ وَمَن يَتَّقِ ٱللَّهَ يُكَفِّرْ عَنْهُ سَيِّـَٔاتِهِۦ وَيُعْظِمْ لَهُۥٓ أَجْرًا",
+      "transliteration": "Thalika amru Allahi anzalahu ilaykum waman yattaqi Allaha yukaffir AAanhu sayyiatihi wayuAAthim lahu ajran",
+      "translations": {
+        "en_sahih": "That is the command of Allah, which He has sent down to you; and whoever fears Allah - He will remove for him his misdeeds and make great for him his reward.",
+        "en_yusufali": "That is the Command of Allah, which He has sent down to you: and if any one fears Allah, He will remove his ills, from him, and will enlarge his reward.",
+        "ms_basmeih": "Peraturan-peraturan yang demikian adalah hukum-hukum Allah yang diturunkan dan diterangkanNya kepada kamu; dan (ingatlah), sesiapa yang bertaqwa kepada Allah, nescaya Allah menghapuskan kesalahan-kesalahannya, dan akan membesarkan pahala balasannya."
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "أَسْكِنُوهُنَّ مِنْ حَيْثُ سَكَنتُم مِّن وُجْدِكُمْ وَلَا تُضَآرُّوهُنَّ لِتُضَيِّقُوا۟ عَلَيْهِنَّ ۚ وَإِن كُنَّ أُو۟لَـٰتِ حَمْلٍ فَأَنفِقُوا۟ عَلَيْهِنَّ حَتَّىٰ يَضَعْنَ حَمْلَهُنَّ ۚ فَإِنْ أَرْضَعْنَ لَكُمْ فَـَٔاتُوهُنَّ أُجُورَهُنَّ ۖ وَأْتَمِرُوا۟ بَيْنَكُم بِمَعْرُوفٍ ۖ وَإِن تَعَاسَرْتُمْ فَسَتُرْضِعُ لَهُۥٓ أُخْرَىٰ",
+      "transliteration": "Askinoohunna min haythu sakantum min wujdikum wala tudarroohunna litudayyiqoo AAalayhinna wain kunna olati hamlin faanfiqoo AAalayhinna hatta yadaAAna hamlahunna fain ardaAAna lakum faatoohunna ojoorahunna watamiroo baynakum bimaAAroofin wain taAAasartum fasaturdiAAu lahu okhra",
+      "translations": {
+        "en_sahih": "Lodge them [in a section] of where you dwell out of your means and do not harm them in order to oppress them. And if they should be pregnant, then spend on them until they give birth. And if they breastfeed for you, then give them their payment and confer among yourselves in the acceptable way; but if you are in discord, then there may breastfeed for the father another woman.",
+        "en_yusufali": "Let the women live (in 'iddat) in the same style as ye live, according to your means: Annoy them not, so as to restrict them. And if they carry (life in their wombs), then spend (your substance) on them until they deliver their burden: and if they suckle your (offspring), give them their recompense: and take mutual counsel together, according to what is just and reasonable. And if ye find yourselves in difficulties, let another woman suckle (the child) on the (father's) behalf.",
+        "ms_basmeih": "Tempatkanlah isteri-isteri (yang menjalani idahnya) itu di tempat kediaman kamu sesuai dengan kemampuan kamu; dan janganlah kamu adakan sesuatu yang menyakiti mereka (di tempat tinggal itu) dengan tujuan hendak menyusahkan kedudukan mereka (supaya mereka keluar meninggalkan tempat itu). Dan jika mereka berkeadaan sedang mengandung, maka berikanlah kepada mereka nafkahnya sehingga mereka melahirkan anak yang dikandungnya; kemudian jika mereka menyusukan anak untuk kamu, maka berikanlah kepada mereka upahnya; dan berundinglah di antara kamu (dalam hal menyusunya) dengan cara yang baik. Dan (sebaliknya) jika kamu (dari kedua pihak) mengalami kesulitan, maka bolehlah perempuan lain menyusukannya."
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "لِيُنفِقْ ذُو سَعَةٍ مِّن سَعَتِهِۦ ۖ وَمَن قُدِرَ عَلَيْهِ رِزْقُهُۥ فَلْيُنفِقْ مِمَّآ ءَاتَىٰهُ ٱللَّهُ ۚ لَا يُكَلِّفُ ٱللَّهُ نَفْسًا إِلَّا مَآ ءَاتَىٰهَا ۚ سَيَجْعَلُ ٱللَّهُ بَعْدَ عُسْرٍ يُسْرًا",
+      "transliteration": "Liyunfiq thoo saAAatin min saAAatihi waman qudira AAalayhi rizquhu falyunfiq mimma atahu Allahu la yukallifu Allahu nafsan illa ma ataha sayajAAalu Allahu baAAda AAusrin yusran",
+      "translations": {
+        "en_sahih": "Let a man of wealth spend from his wealth, and he whose provision is restricted - let him spend from what Allah has given him. Allah does not charge a soul except [according to] what He has given it. Allah will bring about, after hardship, ease.",
+        "en_yusufali": "Let the man of means spend according to his means: and the man whose resources are restricted, let him spend according to what Allah has given him. Allah puts no burden on any person beyond what He has given him. After a difficulty, Allah will soon grant relief.",
+        "ms_basmeih": "Hendaklah orang yang mampu memberi nafkah menurut kemampuannya; dan sesiapa yang di sempitkan rezekinya, maka hendaklah ia memberi nafkah dari apa yang diberikan Allah kepadanya (sekadar yang mampu); Allah tidak memberati seseorang melainkan (sekadar kemampuan) yang diberikan Allah kepadanya. (Orang-orang yang dalam kesempitan hendaklah ingat bahawa) Allah akan memberikan kesenangan sesudah berlakunya kesusahan."
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "وَكَأَيِّن مِّن قَرْيَةٍ عَتَتْ عَنْ أَمْرِ رَبِّهَا وَرُسُلِهِۦ فَحَاسَبْنَـٰهَا حِسَابًا شَدِيدًا وَعَذَّبْنَـٰهَا عَذَابًا نُّكْرًا",
+      "transliteration": "Wakaayyin min qaryatin AAatat AAan amri rabbiha warusulihi fahasabnaha hisaban shadeedan waAAaththabnaha AAathaban nukran",
+      "translations": {
+        "en_sahih": "And how many a city was insolent toward the command of its Lord and His messengers, so We took it to severe account and punished it with a terrible punishment.",
+        "en_yusufali": "How many populations that insolently opposed the Command of their Lord and of His messengers, did We not then call to account,- to severe account?- and We imposed on them an exemplary Punishment.",
+        "ms_basmeih": "Dan bukan sedikit negeri-negeri yang penduduknya menderhaka terhadap perintah Tuhan mereka dan Rasul-rasulNya, maka Kami hitung amal mereka satu persatu dengan hitungan yang keras rapi, serta Kami seksakan mereka dengan azab yang tidak pernah dikenal dahsyatnya."
+      }
+    },
+    {
+      "ayah": 9,
+      "arabic": "فَذَاقَتْ وَبَالَ أَمْرِهَا وَكَانَ عَـٰقِبَةُ أَمْرِهَا خُسْرًا",
+      "transliteration": "Fathaqat wabala amriha wakana AAaqibatu amriha khusran",
+      "translations": {
+        "en_sahih": "And it tasted the bad consequence of its affair, and the outcome of its affair was loss.",
+        "en_yusufali": "Then did they taste the evil result of their conduct, and the End of their conduct was Perdition.",
+        "ms_basmeih": "Lalu mereka merasai kesan yang buruk dari perbuatan derhakanya, dan menjadilah akibat perbuatan mereka satu kerugian yang besar."
+      }
+    },
+    {
+      "ayah": 10,
+      "arabic": "أَعَدَّ ٱللَّهُ لَهُمْ عَذَابًا شَدِيدًا ۖ فَٱتَّقُوا۟ ٱللَّهَ يَـٰٓأُو۟لِى ٱلْأَلْبَـٰبِ ٱلَّذِينَ ءَامَنُوا۟ ۚ قَدْ أَنزَلَ ٱللَّهُ إِلَيْكُمْ ذِكْرًا",
+      "transliteration": "aAAadda Allahu lahum AAathaban shadeedan faittaqoo Allaha ya olee alalbabi allatheena amanoo qad anzala Allahu ilaykum thikran",
+      "translations": {
+        "en_sahih": "Allah has prepared for them a severe punishment; so fear Allah, O you of understanding who have believed. Allah has sent down to you the Qur'an.",
+        "en_yusufali": "Allah has prepared for them a severe Punishment (in the Hereafter). Therefore fear Allah, O ye men of understanding - who have believed!- for Allah hath indeed sent down to you a Message,-",
+        "ms_basmeih": "Allah menyediakan bagi mereka azab seksa yang seberat-beratnya. Maka bertaqwalah kepada Allah kepada wahai orang yang berakal sempurna dari kalangan orang yang beriman. Sesungguhnya Allah telah menurunkan kepada kamu peringatan -"
+      }
+    },
+    {
+      "ayah": 11,
+      "arabic": "رَّسُولًا يَتْلُوا۟ عَلَيْكُمْ ءَايَـٰتِ ٱللَّهِ مُبَيِّنَـٰتٍ لِّيُخْرِجَ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ مِنَ ٱلظُّلُمَـٰتِ إِلَى ٱلنُّورِ ۚ وَمَن يُؤْمِنۢ بِٱللَّهِ وَيَعْمَلْ صَـٰلِحًا يُدْخِلْهُ جَنَّـٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ خَـٰلِدِينَ فِيهَآ أَبَدًا ۖ قَدْ أَحْسَنَ ٱللَّهُ لَهُۥ رِزْقًا",
+      "transliteration": "Rasoolan yatloo AAalaykum ayati Allahi mubayyinatin liyukhrija allatheena amanoo waAAamiloo alssalihati mina alththulumati ila alnnoori waman yumin biAllahi wayaAAmal salihan yudkhilhu jannatin tajree min tahtiha alanharu khalideena feeha abadan qad ahsana Allahu lahu rizqan",
+      "translations": {
+        "en_sahih": "[He sent] a Messenger [Muhammad] reciting to you the distinct verses of Allah that He may bring out those who believe and do righteous deeds from darknesses into the light. And whoever believes in Allah and does righteousness - He will admit him into gardens beneath which rivers flow to abide therein forever. Allah will have perfected for him a provision.",
+        "en_yusufali": "An Messenger, who rehearses to you the Signs of Allah containing clear explanations, that he may lead forth those who believe and do righteous deeds from the depths of Darkness into Light. And those who believe in Allah and work righteousness, He will admit to Gardens beneath which Rivers flow, to dwell therein for ever: Allah has indeed granted for them a most excellent Provision.",
+        "ms_basmeih": "(Dengan mengutuskan) seorang Rasul (Nabi Muhammad s.a.w) yang membacakan kepada kamu ayat-ayat Allah yang menerangkan kebenaran, supaya Allah mengeluarkan orang-orang (yang sedia diketahuiNya akan) beriman dan beramal soleh - dari gelap-gelita (kesesatan) kepada cahaya (hidayah petunjuk). Dan (ingatlah), sesiapa yang beriman kepada Allah dan beramal soleh, akan dimasukkan oleh Allah ke dalam Syurga yang mengalir di bawahnya beberapa sungai; kekalah mereka di dalamnya selama-lamanya. Sesungguhnya Allah (dengan yang demikian) telah mengurniakan kepadanya sebaik-baik pemberian."
+      }
+    },
+    {
+      "ayah": 12,
+      "arabic": "ٱللَّهُ ٱلَّذِى خَلَقَ سَبْعَ سَمَـٰوَٰتٍ وَمِنَ ٱلْأَرْضِ مِثْلَهُنَّ يَتَنَزَّلُ ٱلْأَمْرُ بَيْنَهُنَّ لِتَعْلَمُوٓا۟ أَنَّ ٱللَّهَ عَلَىٰ كُلِّ شَىْءٍ قَدِيرٌ وَأَنَّ ٱللَّهَ قَدْ أَحَاطَ بِكُلِّ شَىْءٍ عِلْمًۢا",
+      "transliteration": "Allahu allathee khalaqa sabAAa samawatin wamina alardi mithlahunna yatanazzalu alamru baynahunna litaAAlamoo anna Allaha AAala kulli shayin qadeerun waanna Allaha qad ahata bikulli shayin AAilman",
+      "translations": {
+        "en_sahih": "It is Allah who has created seven heavens and of the earth, the like of them. [His] command descends among them so you may know that Allah is over all things competent and that Allah has encompassed all things in knowledge.",
+        "en_yusufali": "Allah is He Who created seven Firmaments and of the earth a similar number. Through the midst of them (all) descends His Command: that ye may know that Allah has power over all things, and that Allah comprehends, all things in (His) Knowledge.",
+        "ms_basmeih": "Allah yang menciptakan tujuh petala langit dan (Ia menciptakan) bumi seperti itu; perintah Allah berlaku terus menerus di antara alam langit dan bumi. (Berlakunya yang demikian) supaya kamu mengetahui bahawa sesungguhnya Allah Maha Kuasa atas tiap-tiap sesuatu, dan bahawa sesungguhnya Allah tetap meliputi ilmuNya akan tiap-tiap sesuatu."
+      }
+    }
+  ]
+}

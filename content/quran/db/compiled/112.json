@@ -1,0 +1,71 @@
+{
+  "surah": 112,
+  "metadata": {
+    "nameArabic": "الإخلاص",
+    "nameEnglish": "Al-Ikhlas",
+    "nameTranslit": "Al-Ikhlaas",
+    "meaning": "The Sincerity",
+    "revelation": "Meccan",
+    "revelationOrder": 22,
+    "period": "Early Meccan",
+    "ayahCount": 4,
+    "wordCount": 15,
+    "letterCount": 47,
+    "juz": 30,
+    "pageStart": 604,
+    "themes": [
+      "monotheism",
+      "divine_unity",
+      "eternal",
+      "begetting",
+      "comparison"
+    ],
+    "otherNames": [
+      "At-Tawhid (The Unity)",
+      "As-Samad"
+    ],
+    "significance": "Pure monotheism, equals one-third of Quran in reward when recited"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ هُوَ ٱللَّهُ أَحَدٌ",
+      "transliteration": "Qul huwa Allahu ahadun",
+      "translations": {
+        "en_sahih": "Say, \"He is Allah, [who is] One,",
+        "en_yusufali": "Say: He is Allah, the One and Only;",
+        "ms_basmeih": "Katakanlah (wahai Muhammad): \"(Tuhanku) ialah Allah Yang Maha Esa;"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "ٱللَّهُ ٱلصَّمَدُ",
+      "transliteration": "Allahu alssamadu",
+      "translations": {
+        "en_sahih": "Allah, the Eternal Refuge.",
+        "en_yusufali": "Allah, the Eternal, Absolute;",
+        "ms_basmeih": "\"Allah Yang menjadi tumpuan sekalian makhluk untuk memohon sebarang hajat;"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "لَمْ يَلِدْ وَلَمْ يُولَدْ",
+      "transliteration": "Lam yalid walam yooladu",
+      "translations": {
+        "en_sahih": "He neither begets nor is born,",
+        "en_yusufali": "He begetteth not, nor is He begotten;",
+        "ms_basmeih": "\"Ia tiada beranak, dan Ia pula tidak diperanakkan;"
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "وَلَمْ يَكُن لَّهُۥ كُفُوًا أَحَدٌۢ",
+      "transliteration": "Walam yakun lahu kufuwan ahadun",
+      "translations": {
+        "en_sahih": "Nor is there to Him any equivalent.\"",
+        "en_yusufali": "And there is none like unto Him.",
+        "ms_basmeih": "\"Dan tidak ada sesiapapun yang serupa denganNya\"."
+      }
+    }
+  ]
+}

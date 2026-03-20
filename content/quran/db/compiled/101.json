@@ -1,0 +1,140 @@
+{
+  "surah": 101,
+  "metadata": {
+    "nameArabic": "القارعة",
+    "nameEnglish": "Al-Qari'ah",
+    "nameTranslit": "Al-Qaari'ah",
+    "meaning": "The Striking Calamity",
+    "revelation": "Meccan",
+    "revelationOrder": 30,
+    "period": "Early Meccan",
+    "ayahCount": 11,
+    "wordCount": 36,
+    "letterCount": 153,
+    "juz": 30,
+    "pageStart": 600,
+    "themes": [
+      "striking_calamity",
+      "scattered_moths",
+      "carded_wool",
+      "scale_weighing",
+      "hell_fire"
+    ],
+    "otherNames": [
+      "The Disaster"
+    ],
+    "significance": "Describes the Day of Judgment as a striking calamity with vivid imagery"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ ٱلْقَارِعَةُ",
+      "transliteration": "AlqariAAatu",
+      "translations": {
+        "en_sahih": "The Striking Calamity -",
+        "en_yusufali": "The (Day) of Noise and Clamour:",
+        "ms_basmeih": "Hari yang menggemparkan,"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "مَا ٱلْقَارِعَةُ",
+      "transliteration": "Ma alqariAAatu",
+      "translations": {
+        "en_sahih": "What is the Striking Calamity?",
+        "en_yusufali": "What is the (Day) of Noise and Clamour?",
+        "ms_basmeih": "Apa dia hari yang menggemparkan itu?"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "وَمَآ أَدْرَىٰكَ مَا ٱلْقَارِعَةُ",
+      "transliteration": "Wama adraka ma alqariAAatu",
+      "translations": {
+        "en_sahih": "And what can make you know what is the Striking Calamity?",
+        "en_yusufali": "And what will explain to thee what the (Day) of Noise and Clamour is?",
+        "ms_basmeih": "Dan apa jalannya engkau dapat mengetahui kedahsyatan hari yang menggemparkan itu? -"
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "يَوْمَ يَكُونُ ٱلنَّاسُ كَٱلْفَرَاشِ ٱلْمَبْثُوثِ",
+      "transliteration": "Yawma yakoonu alnnasu kaalfarashi almabthoothi",
+      "translations": {
+        "en_sahih": "It is the Day when people will be like moths, dispersed,",
+        "en_yusufali": "(It is) a Day whereon men will be like moths scattered about,",
+        "ms_basmeih": "(Hari itu ialah: hari kiamat), hari manusia menjadi seperti kelkatu yang terbang berkeliaran,"
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "وَتَكُونُ ٱلْجِبَالُ كَٱلْعِهْنِ ٱلْمَنفُوشِ",
+      "transliteration": "Watakoonu aljibalu kaalAAihni almanfooshi",
+      "translations": {
+        "en_sahih": "And the mountains will be like wool, fluffed up.",
+        "en_yusufali": "And the mountains will be like carded wool.",
+        "ms_basmeih": "Dan gunung-ganang menjadi seperti bulu yang dibusar berterbangan."
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "فَأَمَّا مَن ثَقُلَتْ مَوَٰزِينُهُۥ",
+      "transliteration": "Faamma man thaqulat mawazeenuhu",
+      "translations": {
+        "en_sahih": "Then as for one whose scales are heavy [with good deeds],",
+        "en_yusufali": "Then, he whose balance (of good deeds) will be (found) heavy,",
+        "ms_basmeih": "Setelah berlaku demikian, maka (manusia akan diberikan tempatnya menurut amal masing-masing); adapun orang yang berat timbangan amal baiknya, -"
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "فَهُوَ فِى عِيشَةٍ رَّاضِيَةٍ",
+      "transliteration": "Fahuwa fee AAeeshatin radiyatin",
+      "translations": {
+        "en_sahih": "He will be in a pleasant life.",
+        "en_yusufali": "Will be in a life of good pleasure and satisfaction.",
+        "ms_basmeih": "Maka ia berada dalam kehidupan yang senang lenang."
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "وَأَمَّا مَنْ خَفَّتْ مَوَٰزِينُهُۥ",
+      "transliteration": "Waamma man khaffat mawazeenuhu",
+      "translations": {
+        "en_sahih": "But as for one whose scales are light,",
+        "en_yusufali": "But he whose balance (of good deeds) will be (found) light,-",
+        "ms_basmeih": "Sebaliknya orang yang ringan timbangan amal baiknya, -"
+      }
+    },
+    {
+      "ayah": 9,
+      "arabic": "فَأُمُّهُۥ هَاوِيَةٌ",
+      "transliteration": "Faommuhu hawiyatun",
+      "translations": {
+        "en_sahih": "His refuge will be an abyss.",
+        "en_yusufali": "Will have his home in a (bottomless) Pit.",
+        "ms_basmeih": "Maka tempat kembalinya ialah \"Haawiyah\""
+      }
+    },
+    {
+      "ayah": 10,
+      "arabic": "وَمَآ أَدْرَىٰكَ مَا هِيَهْ",
+      "transliteration": "Wama adraka ma hiyah",
+      "translations": {
+        "en_sahih": "And what can make you know what that is?",
+        "en_yusufali": "And what will explain to thee what this is?",
+        "ms_basmeih": "Dan apa jalannya engkau dapat mengetahui, apa dia \"Haawiyah\" itu?"
+      }
+    },
+    {
+      "ayah": 11,
+      "arabic": "نَارٌ حَامِيَةٌۢ",
+      "transliteration": "Narun hamiyatun",
+      "translations": {
+        "en_sahih": "It is a Fire, intensely hot.",
+        "en_yusufali": "(It is) a Fire Blazing fiercely!",
+        "ms_basmeih": "(Haawiyah itu ialah): api yang panas membakar."
+      }
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "surah": 93,
+  "metadata": {
+    "nameArabic": "الضحى",
+    "nameEnglish": "Ad-Duha",
+    "nameTranslit": "Ad-Duhaa",
+    "meaning": "The Morning Hours",
+    "revelation": "Meccan",
+    "revelationOrder": 11,
+    "period": "Early Meccan",
+    "ayahCount": 11,
+    "wordCount": 40,
+    "letterCount": 168,
+    "juz": 30,
+    "pageStart": 596,
+    "themes": [
+      "morning_hours",
+      "divine_favor",
+      "orphan",
+      "needy",
+      "gratitude"
+    ],
+    "otherNames": [
+      "The Forenoon"
+    ],
+    "significance": "Comforts the Prophet, reminds of Allah's continuous favor and care"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ وَٱلضُّحَىٰ",
+      "transliteration": "Waaldduha",
+      "translations": {
+        "en_sahih": "By the morning brightness",
+        "en_yusufali": "By the Glorious Morning Light,",
+        "ms_basmeih": "Demi waktu dhuha,"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "وَٱلَّيْلِ إِذَا سَجَىٰ",
+      "transliteration": "Waallayli itha saja",
+      "translations": {
+        "en_sahih": "And [by] the night when it covers with darkness,",
+        "en_yusufali": "And by the Night when it is still,-",
+        "ms_basmeih": "Dan malam apabila ia sunyi-sepi -"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "مَا وَدَّعَكَ رَبُّكَ وَمَا قَلَىٰ",
+      "transliteration": "Ma waddaAAaka rabbuka wama qala",
+      "translations": {
+        "en_sahih": "Your Lord has not taken leave of you, [O Muhammad], nor has He detested [you].",
+        "en_yusufali": "Thy Guardian-Lord hath not forsaken thee, nor is He displeased.",
+        "ms_basmeih": "(Bahawa) Tuhanmu (wahai Muhammad) tidak meninggalkanmu, dan Ia tidak benci (kepadamu, sebagaimana yang dituduh oleh kaum musyrik)."
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "وَلَلْـَٔاخِرَةُ خَيْرٌ لَّكَ مِنَ ٱلْأُولَىٰ",
+      "transliteration": "Walalakhiratu khayrun laka mina aloola",
+      "translations": {
+        "en_sahih": "And the Hereafter is better for you than the first [life].",
+        "en_yusufali": "And verily the Hereafter will be better for thee than the present.",
+        "ms_basmeih": "Dan sesungguhnya kesudahan keaadaanmu adalah lebih baik bagimu daripada permulaannya."
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "وَلَسَوْفَ يُعْطِيكَ رَبُّكَ فَتَرْضَىٰٓ",
+      "transliteration": "Walasawfa yuAAteeka rabbuka fatarda",
+      "translations": {
+        "en_sahih": "And your Lord is going to give you, and you will be satisfied.",
+        "en_yusufali": "And soon will thy Guardian-Lord give thee (that wherewith) thou shalt be well-pleased.",
+        "ms_basmeih": "Dan sesungguhnya Tuhanmu akan memberikanmu (kejayaan dan kebahagiaan di dunia dan di akhirat) sehingga engkau reda - berpuas hati."
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "أَلَمْ يَجِدْكَ يَتِيمًا فَـَٔاوَىٰ",
+      "transliteration": "Alam yajidka yateeman faawa",
+      "translations": {
+        "en_sahih": "Did He not find you an orphan and give [you] refuge?",
+        "en_yusufali": "Did He not find thee an orphan and give thee shelter (and care)?",
+        "ms_basmeih": "Bukankah dia mendapati engkau yatim piatu, lalu la memberikan perlindungan?"
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "وَوَجَدَكَ ضَآلًّا فَهَدَىٰ",
+      "transliteration": "Wawajadaka dallan fahada",
+      "translations": {
+        "en_sahih": "And He found you lost and guided [you],",
+        "en_yusufali": "And He found thee wandering, and He gave thee guidance.",
+        "ms_basmeih": "Dan didapatiNya engkau mencari-cari (jalan yang benar), lalu Ia memberikan hidayah petunjuk (dengan wahyu - Al-Quran)?"
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "وَوَجَدَكَ عَآئِلًا فَأَغْنَىٰ",
+      "transliteration": "Wawajadaka AAailan faaghna",
+      "translations": {
+        "en_sahih": "And He found you poor and made [you] self-sufficient.",
+        "en_yusufali": "And He found thee in need, and made thee independent.",
+        "ms_basmeih": "Dan didapatiNya engkau miskin, lalu Ia memberikan kekayaan?"
+      }
+    },
+    {
+      "ayah": 9,
+      "arabic": "فَأَمَّا ٱلْيَتِيمَ فَلَا تَقْهَرْ",
+      "transliteration": "Faamma alyateema fala taqhar",
+      "translations": {
+        "en_sahih": "So as for the orphan, do not oppress [him].",
+        "en_yusufali": "Therefore, treat not the orphan with harshness,",
+        "ms_basmeih": "Oleh itu, adapun anak yatim maka janganlah engkau berlaku kasar terhadapnya,"
+      }
+    },
+    {
+      "ayah": 10,
+      "arabic": "وَأَمَّا ٱلسَّآئِلَ فَلَا تَنْهَرْ",
+      "transliteration": "Waamma alssaila fala tanhar",
+      "translations": {
+        "en_sahih": "And as for the petitioner, do not repel [him].",
+        "en_yusufali": "Nor repulse the petitioner (unheard);",
+        "ms_basmeih": "Adapun orang yang meminta (bantuan pimpinan) maka janganlah engkau tengking herdik;"
+      }
+    },
+    {
+      "ayah": 11,
+      "arabic": "وَأَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ",
+      "transliteration": "Waamma biniAAmati rabbika fahaddith",
+      "translations": {
+        "en_sahih": "But as for the favor of your Lord, report [it].",
+        "en_yusufali": "But the bounty of the Lord - rehearse and proclaim!",
+        "ms_basmeih": "Adapun nikmat Tuhanmu, maka hendaklah engkau sebut-sebutkan (dan zahirkan) sebagai bersyukur kepadaNya."
+      }
+    }
+  ]
+}

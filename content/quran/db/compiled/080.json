@@ -1,0 +1,451 @@
+{
+  "surah": 80,
+  "metadata": {
+    "nameArabic": "عبس",
+    "nameEnglish": "Abasa",
+    "nameTranslit": "'Abasa",
+    "meaning": "He Frowned",
+    "revelation": "Meccan",
+    "revelationOrder": 24,
+    "period": "Early Meccan",
+    "ayahCount": 42,
+    "wordCount": 133,
+    "letterCount": 508,
+    "juz": 30,
+    "pageStart": 585,
+    "themes": [
+      "equality",
+      "blind_man",
+      "guidance",
+      "human_creation",
+      "accountability"
+    ],
+    "otherNames": [
+      "As-Safhah",
+      "Al-A'ma"
+    ],
+    "significance": "Teaches about treating all people equally regardless of social status"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ عَبَسَ وَتَوَلَّىٰٓ",
+      "transliteration": "AAabasa watawalla",
+      "translations": {
+        "en_sahih": "The Prophet frowned and turned away",
+        "en_yusufali": "(The Prophet) frowned and turned away,",
+        "ms_basmeih": "Ia memasamkan muka dan berpaling,"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "أَن جَآءَهُ ٱلْأَعْمَىٰ",
+      "transliteration": "An jaahu alaAAma",
+      "translations": {
+        "en_sahih": "Because there came to him the blind man, [interrupting].",
+        "en_yusufali": "Because there came to him the blind man (interrupting).",
+        "ms_basmeih": "Kerana ia didatangi orang buta."
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "وَمَا يُدْرِيكَ لَعَلَّهُۥ يَزَّكَّىٰٓ",
+      "transliteration": "Wama yudreeka laAAallahu yazzakka",
+      "translations": {
+        "en_sahih": "But what would make you perceive, [O Muhammad], that perhaps he might be purified",
+        "en_yusufali": "But what could tell thee but that perchance he might grow (in spiritual understanding)?-",
+        "ms_basmeih": "Dan apa jalannya engkau dapat mengetahui (tujuannya, wahai Muhammad) ? Barangkali ia mahu membersihkan hatinya (dengan pelajaran ugama yang didapatinya daripadamu)! -"
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "أَوْ يَذَّكَّرُ فَتَنفَعَهُ ٱلذِّكْرَىٰٓ",
+      "transliteration": "Aw yaththakkaru fatanfaAAahu alththikra",
+      "translations": {
+        "en_sahih": "Or be reminded and the remembrance would benefit him?",
+        "en_yusufali": "Or that he might receive admonition, and the teaching might profit him?",
+        "ms_basmeih": "Ataupun ia mahu mendapat peringatan, supaya peringatan itu memberi manfaat kepadanya."
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "أَمَّا مَنِ ٱسْتَغْنَىٰ",
+      "transliteration": "Amma mani istaghna",
+      "translations": {
+        "en_sahih": "As for he who thinks himself without need,",
+        "en_yusufali": "As to one who regards Himself as self-sufficient,",
+        "ms_basmeih": "Adapun orang yang merasa keadaannya telah cukup, tidak berhajat lagi (kepada ajaran Al-Quran),"
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "فَأَنتَ لَهُۥ تَصَدَّىٰ",
+      "transliteration": "Faanta lahu tasadda",
+      "translations": {
+        "en_sahih": "To him you give attention.",
+        "en_yusufali": "To him dost thou attend;",
+        "ms_basmeih": "Maka engkau bersungguh-sungguh melayaninya."
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "وَمَا عَلَيْكَ أَلَّا يَزَّكَّىٰ",
+      "transliteration": "Wama AAalayka alla yazzakka",
+      "translations": {
+        "en_sahih": "And not upon you [is any blame] if he will not be purified.",
+        "en_yusufali": "Though it is no blame to thee if he grow not (in spiritual understanding).",
+        "ms_basmeih": "Padahal engkau tidak bersalah kalau ia tidak mahu membersihkan dirinya (dari keingkarannya)."
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "وَأَمَّا مَن جَآءَكَ يَسْعَىٰ",
+      "transliteration": "Waamma man jaaka yasAAa",
+      "translations": {
+        "en_sahih": "But as for he who came to you striving [for knowledge]",
+        "en_yusufali": "But as to him who came to thee striving earnestly,",
+        "ms_basmeih": "Adapun orang yang segera datang kepadamu,"
+      }
+    },
+    {
+      "ayah": 9,
+      "arabic": "وَهُوَ يَخْشَىٰ",
+      "transliteration": "Wahuwa yakhsha",
+      "translations": {
+        "en_sahih": "While he fears [Allah],",
+        "en_yusufali": "And with fear (in his heart),",
+        "ms_basmeih": "Dengan perasaan takutnya (melanggar perintah-perintah Allah), -"
+      }
+    },
+    {
+      "ayah": 10,
+      "arabic": "فَأَنتَ عَنْهُ تَلَهَّىٰ",
+      "transliteration": "Faanta AAanhu talahha",
+      "translations": {
+        "en_sahih": "From him you are distracted.",
+        "en_yusufali": "Of him wast thou unmindful.",
+        "ms_basmeih": "Maka engkau berlengah-lengah melayaninya."
+      }
+    },
+    {
+      "ayah": 11,
+      "arabic": "كَلَّآ إِنَّهَا تَذْكِرَةٌ",
+      "transliteration": "Kalla innaha tathkiratun",
+      "translations": {
+        "en_sahih": "No! Indeed, these verses are a reminder;",
+        "en_yusufali": "By no means (should it be so)! For it is indeed a Message of instruction:",
+        "ms_basmeih": "Janganlah melakukan lagi yang sedemikian itu! Sebenarnya ayat-ayat Al-Quran adalah pengajaran dan peringatan (yang mencukupi)."
+      }
+    },
+    {
+      "ayah": 12,
+      "arabic": "فَمَن شَآءَ ذَكَرَهُۥ",
+      "transliteration": "Faman shaa thakarahu",
+      "translations": {
+        "en_sahih": "So whoever wills may remember it.",
+        "en_yusufali": "Therefore let whoso will, keep it in remembrance.",
+        "ms_basmeih": "Maka sesiapa yang mahukan kebaikan dirinya, dapatlah ia mengambil peringatan daripadanya."
+      }
+    },
+    {
+      "ayah": 13,
+      "arabic": "فِى صُحُفٍ مُّكَرَّمَةٍ",
+      "transliteration": "Fee suhufin mukarramatin",
+      "translations": {
+        "en_sahih": "[It is recorded] in honored sheets,",
+        "en_yusufali": "(It is) in Books held (greatly) in honour,",
+        "ms_basmeih": "(Ayat-ayat Suci itu tersimpan) dalam naskhah-naskhah yang dimuliakan, -"
+      }
+    },
+    {
+      "ayah": 14,
+      "arabic": "مَّرْفُوعَةٍ مُّطَهَّرَةٍۭ",
+      "transliteration": "MarfooAAatin mutahharatin",
+      "translations": {
+        "en_sahih": "Exalted and purified,",
+        "en_yusufali": "Exalted (in dignity), kept pure and holy,",
+        "ms_basmeih": "Yang tinggi darjatnya, lagi suci (dari segala gangguan), -"
+      }
+    },
+    {
+      "ayah": 15,
+      "arabic": "بِأَيْدِى سَفَرَةٍ",
+      "transliteration": "Biaydee safaratin",
+      "translations": {
+        "en_sahih": "[Carried] by the hands of messenger-angels,",
+        "en_yusufali": "(Written) by the hands of scribes-",
+        "ms_basmeih": "(Terpelihara) di tangan malaikat-malaikat yang menyalinnya dari Lauh Mahfuz;"
+      }
+    },
+    {
+      "ayah": 16,
+      "arabic": "كِرَامٍۭ بَرَرَةٍ",
+      "transliteration": "Kiramin bararatin",
+      "translations": {
+        "en_sahih": "Noble and dutiful.",
+        "en_yusufali": "Honourable and Pious and Just.",
+        "ms_basmeih": "(Malaikat-malaikat) yang mulia, lagi yang berbakti."
+      }
+    },
+    {
+      "ayah": 17,
+      "arabic": "قُتِلَ ٱلْإِنسَـٰنُ مَآ أَكْفَرَهُۥ",
+      "transliteration": "Qutila alinsanu ma akfarahu",
+      "translations": {
+        "en_sahih": "Cursed is man; how disbelieving is he.",
+        "en_yusufali": "Woe to man! What hath made him reject Allah;",
+        "ms_basmeih": "Binasalah hendaknya manusia (yang ingkar) itu, betapa besar kekufurannya?"
+      }
+    },
+    {
+      "ayah": 18,
+      "arabic": "مِنْ أَىِّ شَىْءٍ خَلَقَهُۥ",
+      "transliteration": "Min ayyi shayin khalaqahu",
+      "translations": {
+        "en_sahih": "From what substance did He create him?",
+        "en_yusufali": "From what stuff hath He created him?",
+        "ms_basmeih": "(Tidakkah ia memikirkan) dari apakah ia diciptakan oleh Allah? -"
+      }
+    },
+    {
+      "ayah": 19,
+      "arabic": "مِن نُّطْفَةٍ خَلَقَهُۥ فَقَدَّرَهُۥ",
+      "transliteration": "Min nutfatin khalaqahu faqaddarahu",
+      "translations": {
+        "en_sahih": "From a sperm-drop He created him and destined for him;",
+        "en_yusufali": "From a sperm-drop: He hath created him, and then mouldeth him in due proportions;",
+        "ms_basmeih": "Dari air mani diciptakanNya, serta dilengkapkan keadaannya dengan persediaan untuk bertanggungjawab;"
+      }
+    },
+    {
+      "ayah": 20,
+      "arabic": "ثُمَّ ٱلسَّبِيلَ يَسَّرَهُۥ",
+      "transliteration": "Thumma alssabeela yassarahu",
+      "translations": {
+        "en_sahih": "Then He eased the way for him;",
+        "en_yusufali": "Then doth He make His path smooth for him;",
+        "ms_basmeih": "Kemudian jalan (baik dan jahat), dimudahkan Tuhan kepadanya (untuk menimbang dan mengambil mana satu yang ia pilih);"
+      }
+    },
+    {
+      "ayah": 21,
+      "arabic": "ثُمَّ أَمَاتَهُۥ فَأَقْبَرَهُۥ",
+      "transliteration": "Thumma amatahu faaqbarahu",
+      "translations": {
+        "en_sahih": "Then He causes his death and provides a grave for him.",
+        "en_yusufali": "Then He causeth him to die, and putteth him in his grave;",
+        "ms_basmeih": "Kemudian dimatikannya, lalu diperintahkan supaya ia dikuburkan;"
+      }
+    },
+    {
+      "ayah": 22,
+      "arabic": "ثُمَّ إِذَا شَآءَ أَنشَرَهُۥ",
+      "transliteration": "Thumma itha shaa ansharahu",
+      "translations": {
+        "en_sahih": "Then when He wills, He will resurrect him.",
+        "en_yusufali": "Then, when it is His Will, He will raise him up (again).",
+        "ms_basmeih": "Kemudian apabila Allah kehendaki dibangkitkannya (hidup semula)."
+      }
+    },
+    {
+      "ayah": 23,
+      "arabic": "كَلَّا لَمَّا يَقْضِ مَآ أَمَرَهُۥ",
+      "transliteration": "Kalla lamma yaqdi ma amarahu",
+      "translations": {
+        "en_sahih": "No! Man has not yet accomplished what He commanded him.",
+        "en_yusufali": "By no means hath he fulfilled what Allah hath commanded him.",
+        "ms_basmeih": "Janganlah hendaknya ia kufur ingkar lagi! Sebenarnya ia belum menunaikan apa yang diperintahkan kepadanya."
+      }
+    },
+    {
+      "ayah": 24,
+      "arabic": "فَلْيَنظُرِ ٱلْإِنسَـٰنُ إِلَىٰ طَعَامِهِۦٓ",
+      "transliteration": "Falyanthuri alinsanu ila taAAamihi",
+      "translations": {
+        "en_sahih": "Then let mankind look at his food -",
+        "en_yusufali": "Then let man look at his food, (and how We provide it):",
+        "ms_basmeih": "(Kalaulah ia tidak memikirkan asal dan kesudahan dirinya), maka hendaklah manusia melihat kepada makanannya (bagaimana kami mentadbirkannya):"
+      }
+    },
+    {
+      "ayah": 25,
+      "arabic": "أَنَّا صَبَبْنَا ٱلْمَآءَ صَبًّا",
+      "transliteration": "Anna sababna almaa sabban",
+      "translations": {
+        "en_sahih": "How We poured down water in torrents,",
+        "en_yusufali": "For that We pour forth water in abundance,",
+        "ms_basmeih": "Sesungguhnya kami telah mencurahkan hujan dengan curahan yang menakjubkan."
+      }
+    },
+    {
+      "ayah": 26,
+      "arabic": "ثُمَّ شَقَقْنَا ٱلْأَرْضَ شَقًّا",
+      "transliteration": "Thumma shaqaqna alarda shaqqan",
+      "translations": {
+        "en_sahih": "Then We broke open the earth, splitting [it with sprouts],",
+        "en_yusufali": "And We split the earth in fragments,",
+        "ms_basmeih": "Kemudian kami belah-belahkan bumi dengan belahan yang sesuai dengan tumbuh-tumbuhan, -"
+      }
+    },
+    {
+      "ayah": 27,
+      "arabic": "فَأَنۢبَتْنَا فِيهَا حَبًّا",
+      "transliteration": "Faanbatna feeha habban",
+      "translations": {
+        "en_sahih": "And caused to grow within it grain",
+        "en_yusufali": "And produce therein corn,",
+        "ms_basmeih": "Lalu Kami tumbuhkan pada bumi biji-bijian,"
+      }
+    },
+    {
+      "ayah": 28,
+      "arabic": "وَعِنَبًا وَقَضْبًا",
+      "transliteration": "WaAAinaban waqadban",
+      "translations": {
+        "en_sahih": "And grapes and herbage",
+        "en_yusufali": "And Grapes and nutritious plants,",
+        "ms_basmeih": "Dan buah anggur serta sayur-sayuran,"
+      }
+    },
+    {
+      "ayah": 29,
+      "arabic": "وَزَيْتُونًا وَنَخْلًا",
+      "transliteration": "Wazaytoonan wanakhlan",
+      "translations": {
+        "en_sahih": "And olive and palm trees",
+        "en_yusufali": "And Olives and Dates,",
+        "ms_basmeih": "Dan Zaitun serta pohon-pohon kurma,"
+      }
+    },
+    {
+      "ayah": 30,
+      "arabic": "وَحَدَآئِقَ غُلْبًا",
+      "transliteration": "Wahadaiqa ghulban",
+      "translations": {
+        "en_sahih": "And gardens of dense shrubbery",
+        "en_yusufali": "And enclosed Gardens, dense with lofty trees,",
+        "ms_basmeih": "Dan taman-taman yang menghijau subur,"
+      }
+    },
+    {
+      "ayah": 31,
+      "arabic": "وَفَـٰكِهَةً وَأَبًّا",
+      "transliteration": "Wafakihatan waabban",
+      "translations": {
+        "en_sahih": "And fruit and grass -",
+        "en_yusufali": "And fruits and fodder,-",
+        "ms_basmeih": "Dan berbagai buah-buahan serta bermacam-macam rumput, -"
+      }
+    },
+    {
+      "ayah": 32,
+      "arabic": "مَّتَـٰعًا لَّكُمْ وَلِأَنْعَـٰمِكُمْ",
+      "transliteration": "MataAAan lakum walianAAamikum",
+      "translations": {
+        "en_sahih": "[As] enjoyment for you and your grazing livestock.",
+        "en_yusufali": "For use and convenience to you and your cattle.",
+        "ms_basmeih": "Untuk kegunaan kamu dan binatang-binatang ternak kamu."
+      }
+    },
+    {
+      "ayah": 33,
+      "arabic": "فَإِذَا جَآءَتِ ٱلصَّآخَّةُ",
+      "transliteration": "Faitha jaati alssakhkhatu",
+      "translations": {
+        "en_sahih": "But when there comes the Deafening Blast",
+        "en_yusufali": "At length, when there comes the Deafening Noise,-",
+        "ms_basmeih": "Kemudian (ingatlah keadaan yang berlaku) apabila datang suara jeritan yang dahsyat, -"
+      }
+    },
+    {
+      "ayah": 34,
+      "arabic": "يَوْمَ يَفِرُّ ٱلْمَرْءُ مِنْ أَخِيهِ",
+      "transliteration": "Yawma yafirru almaro min akheehi",
+      "translations": {
+        "en_sahih": "On the Day a man will flee from his brother",
+        "en_yusufali": "That Day shall a man flee from his own brother,",
+        "ms_basmeih": "Pada hari seseorang itu lari dari saudaranya,"
+      }
+    },
+    {
+      "ayah": 35,
+      "arabic": "وَأُمِّهِۦ وَأَبِيهِ",
+      "transliteration": "Waommihi waabeehi",
+      "translations": {
+        "en_sahih": "And his mother and his father",
+        "en_yusufali": "And from his mother and his father,",
+        "ms_basmeih": "Dan ibunya serta bapanya,"
+      }
+    },
+    {
+      "ayah": 36,
+      "arabic": "وَصَـٰحِبَتِهِۦ وَبَنِيهِ",
+      "transliteration": "Wasahibatihi wabaneehi",
+      "translations": {
+        "en_sahih": "And his wife and his children,",
+        "en_yusufali": "And from his wife and his children.",
+        "ms_basmeih": "Dan isterinya serta anak-anaknya; -"
+      }
+    },
+    {
+      "ayah": 37,
+      "arabic": "لِكُلِّ ٱمْرِئٍ مِّنْهُمْ يَوْمَئِذٍ شَأْنٌ يُغْنِيهِ",
+      "transliteration": "Likulli imriin minhum yawmaithin shanun yughneehi",
+      "translations": {
+        "en_sahih": "For every man, that Day, will be a matter adequate for him.",
+        "en_yusufali": "Each one of them, that Day, will have enough concern (of his own) to make him indifferent to the others.",
+        "ms_basmeih": "Kerana tiap-tiap seorang dari mereka pada hari itu, ada perkara-perkara yang cukup untuk menjadikannya sibuk dengan hal dirinya sahaja."
+      }
+    },
+    {
+      "ayah": 38,
+      "arabic": "وُجُوهٌ يَوْمَئِذٍ مُّسْفِرَةٌ",
+      "transliteration": "Wujoohun yawmaithin musfiratun",
+      "translations": {
+        "en_sahih": "[Some] faces, that Day, will be bright -",
+        "en_yusufali": "Some faces that Day will be beaming,",
+        "ms_basmeih": "Muka (orang-orang yang beriman) pada hari itu berseri-seri,"
+      }
+    },
+    {
+      "ayah": 39,
+      "arabic": "ضَاحِكَةٌ مُّسْتَبْشِرَةٌ",
+      "transliteration": "Dahikatun mustabshiratun",
+      "translations": {
+        "en_sahih": "Laughing, rejoicing at good news.",
+        "en_yusufali": "Laughing, rejoicing.",
+        "ms_basmeih": "Tertawa, lagi bersuka ria;"
+      }
+    },
+    {
+      "ayah": 40,
+      "arabic": "وَوُجُوهٌ يَوْمَئِذٍ عَلَيْهَا غَبَرَةٌ",
+      "transliteration": "Wawujoohun yawmaithin AAalayha ghabaratun",
+      "translations": {
+        "en_sahih": "And [other] faces, that Day, will have upon them dust.",
+        "en_yusufali": "And other faces that Day will be dust-stained,",
+        "ms_basmeih": "Dan muka (orang-orang yang ingkar) pada hari itu penuh berdebu,"
+      }
+    },
+    {
+      "ayah": 41,
+      "arabic": "تَرْهَقُهَا قَتَرَةٌ",
+      "transliteration": "Tarhaquha qataratun",
+      "translations": {
+        "en_sahih": "Blackness will cover them.",
+        "en_yusufali": "Blackness will cover them:",
+        "ms_basmeih": "Diliputi oleh warna hitam legam dan gelap-gelita. -"
+      }
+    },
+    {
+      "ayah": 42,
+      "arabic": "أُو۟لَـٰٓئِكَ هُمُ ٱلْكَفَرَةُ ٱلْفَجَرَةُ",
+      "transliteration": "Olaika humu alkafaratu alfajaratu",
+      "translations": {
+        "en_sahih": "Those are the disbelievers, the wicked ones.",
+        "en_yusufali": "Such will be the Rejecters of Allah, the doers of iniquity.",
+        "ms_basmeih": "Mereka itu ialah orang-orang yang kafir, yang derhaka."
+      }
+    }
+  ]
+}

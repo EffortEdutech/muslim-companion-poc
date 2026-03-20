@@ -1,0 +1,61 @@
+{
+  "surah": 103,
+  "metadata": {
+    "nameArabic": "العصر",
+    "nameEnglish": "Al-Asr",
+    "nameTranslit": "Al-'Asr",
+    "meaning": "The Declining Day",
+    "revelation": "Meccan",
+    "revelationOrder": 13,
+    "period": "Early Meccan",
+    "ayahCount": 3,
+    "wordCount": 14,
+    "letterCount": 70,
+    "juz": 30,
+    "pageStart": 601,
+    "themes": [
+      "time",
+      "human_loss",
+      "faith",
+      "righteous_deeds",
+      "truth",
+      "patience"
+    ],
+    "otherNames": [
+      "Time"
+    ],
+    "significance": "Considered essence of the Quran, emphasizes faith, righteous deeds, truth, and patience"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ وَٱلْعَصْرِ",
+      "transliteration": "WaalAAasri",
+      "translations": {
+        "en_sahih": "By time,",
+        "en_yusufali": "By (the Token of) Time (through the ages),",
+        "ms_basmeih": "Demi Masa!"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "إِنَّ ٱلْإِنسَـٰنَ لَفِى خُسْرٍ",
+      "transliteration": "Inna alinsana lafee khusrin",
+      "translations": {
+        "en_sahih": "Indeed, mankind is in loss,",
+        "en_yusufali": "Verily Man is in loss,",
+        "ms_basmeih": "Sesungguhnya manusia itu dalam kerugian -"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ وَتَوَاصَوْا۟ بِٱلْحَقِّ وَتَوَاصَوْا۟ بِٱلصَّبْرِ",
+      "transliteration": "Illa allatheena amanoo waAAamiloo alssalihati watawasaw bialhaqqi watawasaw bialssabri",
+      "translations": {
+        "en_sahih": "Except for those who have believed and done righteous deeds and advised each other to truth and advised each other to patience.",
+        "en_yusufali": "Except such as have Faith, and do righteous deeds, and (join together) in the mutual teaching of Truth, and of Patience and Constancy.",
+        "ms_basmeih": "Kecuali orang-orang yang beriman dan beramal soleh, dan mereka pula berpesan-pesan dengan kebenaran serta berpesan-pesan dengan sabar."
+      }
+    }
+  ]
+}

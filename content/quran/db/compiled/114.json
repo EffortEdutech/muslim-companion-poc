@@ -1,0 +1,88 @@
+{
+  "surah": 114,
+  "metadata": {
+    "nameArabic": "الناس",
+    "nameEnglish": "An-Nas",
+    "nameTranslit": "An-Naas",
+    "meaning": "Mankind",
+    "revelation": "Meccan",
+    "revelationOrder": 21,
+    "period": "Early Meccan",
+    "ayahCount": 6,
+    "wordCount": 20,
+    "letterCount": 80,
+    "juz": 30,
+    "pageStart": 604,
+    "themes": [
+      "seeking_refuge",
+      "lord_of_mankind",
+      "whispers",
+      "satan",
+      "protection"
+    ],
+    "otherNames": [],
+    "significance": "Final surah of Quran, second protective surah, seeks refuge from Satan's whispers"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلنَّاسِ",
+      "transliteration": "Qul aAAoothu birabbi alnnasi",
+      "translations": {
+        "en_sahih": "Say, \"I seek refuge in the Lord of mankind,",
+        "en_yusufali": "Say: I seek refuge with the Lord and Cherisher of Mankind,",
+        "ms_basmeih": "Katakanlah (wahai Muhammad): \"Aku berlindung kepada (Allah) Pemulihara sekalian manusia."
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "مَلِكِ ٱلنَّاسِ",
+      "transliteration": "Maliki alnnasi",
+      "translations": {
+        "en_sahih": "The Sovereign of mankind.",
+        "en_yusufali": "The King (or Ruler) of Mankind,",
+        "ms_basmeih": "\"Yang Menguasai sekalian manusia,"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "إِلَـٰهِ ٱلنَّاسِ",
+      "transliteration": "Ilahi alnnasi",
+      "translations": {
+        "en_sahih": "The God of mankind,",
+        "en_yusufali": "The god (or judge) of Mankind,-",
+        "ms_basmeih": "\"Tuhan yang berhak disembah oleh sekalian manusia,"
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "مِن شَرِّ ٱلْوَسْوَاسِ ٱلْخَنَّاسِ",
+      "transliteration": "Min sharri alwaswasi alkhannasi",
+      "translations": {
+        "en_sahih": "From the evil of the retreating whisperer -",
+        "en_yusufali": "From the mischief of the Whisperer (of Evil), who withdraws (after his whisper),-",
+        "ms_basmeih": "\"Dari kejahatan pembisik penghasut yang timbul tenggelam, -"
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ",
+      "transliteration": "Allathee yuwaswisu fee sudoori alnnasi",
+      "translations": {
+        "en_sahih": "Who whispers [evil] into the breasts of mankind -",
+        "en_yusufali": "(The same) who whispers into the hearts of Mankind,-",
+        "ms_basmeih": "\"Yang melemparkan bisikan dan hasutannya ke dalam hati manusia, -"
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "مِنَ ٱلْجِنَّةِ وَٱلنَّاسِ",
+      "transliteration": "Mina aljinnati wa alnnasm",
+      "translations": {
+        "en_sahih": "From among the jinn and mankind.\"",
+        "en_yusufali": "Among Jinns and among men.",
+        "ms_basmeih": "\"(Iaitu pembisik dan penghasut) dari kalangan jin dan manusia\"."
+      }
+    }
+  ]
+}

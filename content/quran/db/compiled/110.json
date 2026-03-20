@@ -1,0 +1,61 @@
+{
+  "surah": 110,
+  "metadata": {
+    "nameArabic": "النصر",
+    "nameEnglish": "An-Nasr",
+    "nameTranslit": "An-Nasr",
+    "meaning": "The Divine Support",
+    "revelation": "Medinan",
+    "revelationOrder": 114,
+    "period": "Late Medinan",
+    "ayahCount": 3,
+    "wordCount": 19,
+    "letterCount": 77,
+    "juz": 30,
+    "pageStart": 603,
+    "themes": [
+      "divine_help",
+      "conquest",
+      "people_entering_islam",
+      "praise",
+      "forgiveness"
+    ],
+    "otherNames": [
+      "The Help",
+      "The Victory"
+    ],
+    "significance": "Last complete surah revealed, about conquest of Mecca and people entering Islam"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ إِذَا جَآءَ نَصْرُ ٱللَّهِ وَٱلْفَتْحُ",
+      "transliteration": "Itha jaa nasru Allahi waalfathu",
+      "translations": {
+        "en_sahih": "When the victory of Allah has come and the conquest,",
+        "en_yusufali": "When comes the Help of Allah, and Victory,",
+        "ms_basmeih": "Apabila datang pertolongan Allah dan kemenangan (semasa engkau wahai Muhammad berjaya menguasai negeri Makkah), -"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "وَرَأَيْتَ ٱلنَّاسَ يَدْخُلُونَ فِى دِينِ ٱللَّهِ أَفْوَاجًا",
+      "transliteration": "Waraayta alnnasa yadkhuloona fee deeni Allahi afwajan",
+      "translations": {
+        "en_sahih": "And you see the people entering into the religion of Allah in multitudes,",
+        "en_yusufali": "And thou dost see the people enter Allah's Religion in crowds,",
+        "ms_basmeih": "Dan engkau melihat manusia masuk dalam ugama Allah beramai-ramai, -"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "فَسَبِّحْ بِحَمْدِ رَبِّكَ وَٱسْتَغْفِرْهُ ۚ إِنَّهُۥ كَانَ تَوَّابًۢا",
+      "transliteration": "Fasabbih bihamdi rabbika waistaghfirhu innahu kana tawwaban",
+      "translations": {
+        "en_sahih": "Then exalt [Him] with praise of your Lord and ask forgiveness of Him. Indeed, He is ever Accepting of repentance.",
+        "en_yusufali": "Celebrate the praises of thy Lord, and pray for His Forgiveness: For He is Oft-Returning (in Grace and Mercy).",
+        "ms_basmeih": "Maka ucapkanlah tasbih dengan memuji Tuhanmu dan mintalah ampun kepadaNya, sesungguhnya Dia amat menerima taubat."
+      }
+    }
+  ]
+}

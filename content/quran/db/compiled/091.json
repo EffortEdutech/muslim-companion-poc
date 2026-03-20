@@ -1,0 +1,178 @@
+{
+  "surah": 91,
+  "metadata": {
+    "nameArabic": "الشمس",
+    "nameEnglish": "Ash-Shams",
+    "nameTranslit": "Ash-Shams",
+    "meaning": "The Sun",
+    "revelation": "Meccan",
+    "revelationOrder": 26,
+    "period": "Early Meccan",
+    "ayahCount": 15,
+    "wordCount": 54,
+    "letterCount": 219,
+    "juz": 30,
+    "pageStart": 595,
+    "themes": [
+      "sun",
+      "soul_purification",
+      "thamud",
+      "salih",
+      "corruption"
+    ],
+    "otherNames": [],
+    "significance": "Opens with oaths by cosmic phenomena, emphasizes soul purification and corruption"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ وَٱلشَّمْسِ وَضُحَىٰهَا",
+      "transliteration": "Waalshshamsi waduhaha",
+      "translations": {
+        "en_sahih": "By the sun and its brightness",
+        "en_yusufali": "By the Sun and his (glorious) splendour;",
+        "ms_basmeih": "Demi matahari dan cahayanya yang terang-benderang;"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "وَٱلْقَمَرِ إِذَا تَلَىٰهَا",
+      "transliteration": "Waalqamari itha talaha",
+      "translations": {
+        "en_sahih": "And [by] the moon when it follows it",
+        "en_yusufali": "By the Moon as she follows him;",
+        "ms_basmeih": "Dan bulan apabila ia mengiringinya;"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "وَٱلنَّهَارِ إِذَا جَلَّىٰهَا",
+      "transliteration": "Waalnnahari itha jallaha",
+      "translations": {
+        "en_sahih": "And [by] the day when it displays it",
+        "en_yusufali": "By the Day as it shows up (the Sun's) glory;",
+        "ms_basmeih": "Dan siang apabila ia memperlihatkannya dengan jelas nyata;"
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "وَٱلَّيْلِ إِذَا يَغْشَىٰهَا",
+      "transliteration": "Waallayli itha yaghshaha",
+      "translations": {
+        "en_sahih": "And [by] the night when it covers it",
+        "en_yusufali": "By the Night as it conceals it;",
+        "ms_basmeih": "Dan malam apabila ia menyelubunginya (dengan gelap- gelita),"
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "وَٱلسَّمَآءِ وَمَا بَنَىٰهَا",
+      "transliteration": "Waalssamai wama banaha",
+      "translations": {
+        "en_sahih": "And [by] the sky and He who constructed it",
+        "en_yusufali": "By the Firmament and its (wonderful) structure;",
+        "ms_basmeih": "Demi langit dan Yang membinanya (dalam bentuk yang kuat kukuh - yang melambangkan kekuasaanNya);"
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "وَٱلْأَرْضِ وَمَا طَحَىٰهَا",
+      "transliteration": "Waalardi wama tahaha",
+      "translations": {
+        "en_sahih": "And [by] the earth and He who spread it",
+        "en_yusufali": "By the Earth and its (wide) expanse:",
+        "ms_basmeih": "Serta bumi dan Yang menghamparkannya (untuk kemudahan makhluk-makhlukNya);"
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "وَنَفْسٍ وَمَا سَوَّىٰهَا",
+      "transliteration": "Wanafsin wama sawwaha",
+      "translations": {
+        "en_sahih": "And [by] the soul and He who proportioned it",
+        "en_yusufali": "By the Soul, and the proportion and order given to it;",
+        "ms_basmeih": "Demi diri manusia dan Yang menyempurnakan kejadiannya (dengan kelengkapan yang sesuai dengan keadaannya);"
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "فَأَلْهَمَهَا فُجُورَهَا وَتَقْوَىٰهَا",
+      "transliteration": "Faalhamaha fujooraha wataqwaha",
+      "translations": {
+        "en_sahih": "And inspired it [with discernment of] its wickedness and its righteousness,",
+        "en_yusufali": "And its enlightenment as to its wrong and its right;-",
+        "ms_basmeih": "Serta mengilhamkannya (untuk mengenal) jalan yang membawanya kepada kejahatan, dan yang membawanya kepada bertaqwa; -"
+      }
+    },
+    {
+      "ayah": 9,
+      "arabic": "قَدْ أَفْلَحَ مَن زَكَّىٰهَا",
+      "transliteration": "Qad aflaha man zakkaha",
+      "translations": {
+        "en_sahih": "He has succeeded who purifies it,",
+        "en_yusufali": "Truly he succeeds that purifies it,",
+        "ms_basmeih": "Sesungguhnya berjayalah orang yang menjadikan dirinya - yang sedia bersih - bertambah-tambah bersih (dengan iman dan amal kebajikan),"
+      }
+    },
+    {
+      "ayah": 10,
+      "arabic": "وَقَدْ خَابَ مَن دَسَّىٰهَا",
+      "transliteration": "Waqad khaba man dassaha",
+      "translations": {
+        "en_sahih": "And he has failed who instills it [with corruption].",
+        "en_yusufali": "And he fails that corrupts it!",
+        "ms_basmeih": "Dan sesungguhnya hampalah orang yang menjadikan dirinya - yang sedia bersih - itu susut dan terbenam kebersihannya (dengan sebab kekotoran maksiat)."
+      }
+    },
+    {
+      "ayah": 11,
+      "arabic": "كَذَّبَتْ ثَمُودُ بِطَغْوَىٰهَآ",
+      "transliteration": "Kaththabat thamoodu bitaghwaha",
+      "translations": {
+        "en_sahih": "Thamud denied [their prophet] by reason of their transgression,",
+        "en_yusufali": "The Thamud (people) rejected (their prophet) through their inordinate wrong-doing,",
+        "ms_basmeih": "(Ingatlah), kaum Thamud telah mendustakan (Rasulnya) dengan sebab perbuatan derhaka mereka yang melampaui batas;"
+      }
+    },
+    {
+      "ayah": 12,
+      "arabic": "إِذِ ٱنۢبَعَثَ أَشْقَىٰهَا",
+      "transliteration": "Ithi inbaAAatha ashqaha",
+      "translations": {
+        "en_sahih": "When the most wretched of them was sent forth.",
+        "en_yusufali": "Behold, the most wicked man among them was deputed (for impiety).",
+        "ms_basmeih": "Ketika orang yang paling jahat di antara mereka menerima perintah dari mereka (supaya membunuh unta yang menjadi mukjizat),"
+      }
+    },
+    {
+      "ayah": 13,
+      "arabic": "فَقَالَ لَهُمْ رَسُولُ ٱللَّهِ نَاقَةَ ٱللَّهِ وَسُقْيَـٰهَا",
+      "transliteration": "Faqala lahum rasoolu Allahi naqata Allahi wasuqyaha",
+      "translations": {
+        "en_sahih": "And the messenger of Allah [Salih] said to them, \"[Do not harm] the she-camel of Allah or [prevent her from] her drink.\"",
+        "en_yusufali": "But the Messenger of Allah said to them: \"It is a She-camel of Allah! And (bar her not from) having her drink!\"",
+        "ms_basmeih": "Maka berkatalah Rasul Allah (Nabi Soleh) kepada mereka: \" (Janganlah kamu ganggu) unta betina dari Allah itu, dan (janganlah kamu menyekatnya daripada mendapat) air minumnya (supaya kamu tidak ditimpa azab)!\""
+      }
+    },
+    {
+      "ayah": 14,
+      "arabic": "فَكَذَّبُوهُ فَعَقَرُوهَا فَدَمْدَمَ عَلَيْهِمْ رَبُّهُم بِذَنۢبِهِمْ فَسَوَّىٰهَا",
+      "transliteration": "Fakaththaboohu faAAaqarooha fadamdama AAalayhim rabbuhum bithanbihim fasawwaha",
+      "translations": {
+        "en_sahih": "But they denied him and hamstrung her. So their Lord brought down upon them destruction for their sin and made it equal [upon all of them].",
+        "en_yusufali": "Then they rejected him (as a false prophet), and they hamstrung her. So their Lord, on account of their crime, obliterated their traces and made them equal (in destruction, high and low)!",
+        "ms_basmeih": "(Setelah Nabi Soleh memberi amaran) lalu mereka mendustakannya serta menyembelih unta itu. Dengan sebab dosa mereka, maka Tuhan menimpakan mereka dengan azab yang membinasakan serta Ia meratakan azab itu meliputi mereka (sehingga punah-ranah semuanya)."
+      }
+    },
+    {
+      "ayah": 15,
+      "arabic": "وَلَا يَخَافُ عُقْبَـٰهَا",
+      "transliteration": "Wala yakhafu AAuqbaha",
+      "translations": {
+        "en_sahih": "And He does not fear the consequence thereof.",
+        "en_yusufali": "And for Him is no fear of its consequences.",
+        "ms_basmeih": "Dan Allah tidak hiraukan kesudahan (mereka) yang demikian, (kerana itu adalah balasan yang adil)."
+      }
+    }
+  ]
+}

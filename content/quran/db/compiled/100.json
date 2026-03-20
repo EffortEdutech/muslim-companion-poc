@@ -1,0 +1,140 @@
+{
+  "surah": 100,
+  "metadata": {
+    "nameArabic": "العاديات",
+    "nameEnglish": "Al-Adiyat",
+    "nameTranslit": "Al-'Aadiyaat",
+    "meaning": "The Chargers",
+    "revelation": "Meccan",
+    "revelationOrder": 14,
+    "period": "Early Meccan",
+    "ayahCount": 11,
+    "wordCount": 40,
+    "letterCount": 167,
+    "juz": 30,
+    "pageStart": 599,
+    "themes": [
+      "charging_horses",
+      "sparks",
+      "ingratitude",
+      "love_of_wealth",
+      "resurrection"
+    ],
+    "otherNames": [
+      "The Coursers"
+    ],
+    "significance": "Opens with oath by charging war horses, criticizes human ingratitude and materialism"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ وَٱلْعَـٰدِيَـٰتِ ضَبْحًا",
+      "transliteration": "WaalAAadiyati dabhan",
+      "translations": {
+        "en_sahih": "By the racers, panting,",
+        "en_yusufali": "By the (Steeds) that run, with panting (breath),",
+        "ms_basmeih": "Demi Kuda Perang yang tangkas berlari dengan kedengaran kencang nafasnya,"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "فَٱلْمُورِيَـٰتِ قَدْحًا",
+      "transliteration": "Faalmooriyati qadhan",
+      "translations": {
+        "en_sahih": "And the producers of sparks [when] striking",
+        "en_yusufali": "And strike sparks of fire,",
+        "ms_basmeih": "Serta mencetuskan api dari telapak kakinya,"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "فَٱلْمُغِيرَٰتِ صُبْحًا",
+      "transliteration": "Faalmugheerati subhan",
+      "translations": {
+        "en_sahih": "And the chargers at dawn,",
+        "en_yusufali": "And push home the charge in the morning,",
+        "ms_basmeih": "Dan meluru menyerbu musuh pada waktu subuh,"
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "فَأَثَرْنَ بِهِۦ نَقْعًا",
+      "transliteration": "Faatharna bihi naqAAan",
+      "translations": {
+        "en_sahih": "Stirring up thereby [clouds of] dust,",
+        "en_yusufali": "And raise the dust in clouds the while,",
+        "ms_basmeih": "Sehingga menghamburkan debu pada waktu itu,"
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "فَوَسَطْنَ بِهِۦ جَمْعًا",
+      "transliteration": "Fawasatna bihi jamAAan",
+      "translations": {
+        "en_sahih": "Arriving thereby in the center collectively,",
+        "en_yusufali": "And penetrate forthwith into the midst (of the foe) en masse;-",
+        "ms_basmeih": "Lalu menggempur ketika itu di tengah-tengah kumpulan musuh;"
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "إِنَّ ٱلْإِنسَـٰنَ لِرَبِّهِۦ لَكَنُودٌ",
+      "transliteration": "Inna alinsana lirabbihi lakanoodun",
+      "translations": {
+        "en_sahih": "Indeed mankind, to his Lord, is ungrateful.",
+        "en_yusufali": "Truly man is, to his Lord, ungrateful;",
+        "ms_basmeih": "Sesungguhnya manusia sangat tidak bersyukur akan nikmat Tuhannya."
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "وَإِنَّهُۥ عَلَىٰ ذَٰلِكَ لَشَهِيدٌ",
+      "transliteration": "Wainnahu AAala thalika lashaheedun",
+      "translations": {
+        "en_sahih": "And indeed, he is to that a witness.",
+        "en_yusufali": "And to that (fact) he bears witness (by his deeds);",
+        "ms_basmeih": "Dan sesungguhnya ia (dengan bawaannya) menerangkan dengan jelas keadaan yang demikian;"
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "وَإِنَّهُۥ لِحُبِّ ٱلْخَيْرِ لَشَدِيدٌ",
+      "transliteration": "Wainnahu lihubbi alkhayri lashadeedun",
+      "translations": {
+        "en_sahih": "And indeed he is, in love of wealth, intense.",
+        "en_yusufali": "And violent is he in his love of wealth.",
+        "ms_basmeih": "Dan sesungguhnya ia melampau sangat sayangkan harta (secara tamak haloba)."
+      }
+    },
+    {
+      "ayah": 9,
+      "arabic": "۞ أَفَلَا يَعْلَمُ إِذَا بُعْثِرَ مَا فِى ٱلْقُبُورِ",
+      "transliteration": "Afala yaAAlamu itha buAAthira ma fee alquboori",
+      "translations": {
+        "en_sahih": "But does he not know that when the contents of the graves are scattered",
+        "en_yusufali": "Does he not know,- when that which is in the graves is scattered abroad",
+        "ms_basmeih": "(Patutkah ia bersikap demikian?) Tidakkah ia mengetahui (bagaimana keadaan) ketika dibongkarkan segala yang ada dalam kubur?"
+      }
+    },
+    {
+      "ayah": 10,
+      "arabic": "وَحُصِّلَ مَا فِى ٱلصُّدُورِ",
+      "transliteration": "Wahussila ma fee alssudoori",
+      "translations": {
+        "en_sahih": "And that within the breasts is obtained,",
+        "en_yusufali": "And that which is (locked up) in (human) breasts is made manifest-",
+        "ms_basmeih": "Dan dikumpul serta didedahkan segala yang terpendam dalam dada?"
+      }
+    },
+    {
+      "ayah": 11,
+      "arabic": "إِنَّ رَبَّهُم بِهِمْ يَوْمَئِذٍ لَّخَبِيرٌۢ",
+      "transliteration": "Inna rabbahum bihim yawmaithin lakhabeerun",
+      "translations": {
+        "en_sahih": "Indeed, their Lord with them, that Day, is [fully] Acquainted.",
+        "en_yusufali": "That their Lord had been Well-acquainted with them, (even to) that Day?",
+        "ms_basmeih": "Sesungguhnya Tuhan mereka Maha Mengetahui dengan mendalam tentang (balasan yang diberikanNya kepada) mereka - pada hari itu."
+      }
+    }
+  ]
+}

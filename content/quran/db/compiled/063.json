@@ -1,0 +1,138 @@
+{
+  "surah": 63,
+  "metadata": {
+    "nameArabic": "المنافقون",
+    "nameEnglish": "Al-Munafiqun",
+    "nameTranslit": "Al-Munaafiqoon",
+    "meaning": "The Hypocrites",
+    "revelation": "Medinan",
+    "revelationOrder": 104,
+    "period": "Late Medinan",
+    "ayahCount": 11,
+    "wordCount": 182,
+    "letterCount": 739,
+    "juz": 28,
+    "pageStart": 554,
+    "themes": [
+      "hypocrisy",
+      "betrayal",
+      "false_oaths",
+      "community",
+      "warning"
+    ],
+    "otherNames": [],
+    "significance": "Exposes the nature and dangers of hypocrisy in the Muslim community"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ إِذَا جَآءَكَ ٱلْمُنَـٰفِقُونَ قَالُوا۟ نَشْهَدُ إِنَّكَ لَرَسُولُ ٱللَّهِ ۗ وَٱللَّهُ يَعْلَمُ إِنَّكَ لَرَسُولُهُۥ وَٱللَّهُ يَشْهَدُ إِنَّ ٱلْمُنَـٰفِقِينَ لَكَـٰذِبُونَ",
+      "transliteration": "Itha jaaka almunafiqoona qaloo nashhadu innaka larasoolu Allahi waAllahu yaAAlamu innaka larasooluhu waAllahu yashhadu inna almunafiqeena lakathiboona",
+      "translations": {
+        "en_sahih": "When the hypocrites come to you, [O Muhammad], they say, \"We testify that you are the Messenger of Allah.\" And Allah knows that you are His Messenger, and Allah testifies that the hypocrites are liars.",
+        "en_yusufali": "When the Hypocrites come to thee, they say, \"We bear witness that thou art indeed the Messenger of Allah.\" Yea, Allah knoweth that thou art indeed His Messenger, and Allah beareth witness that the Hypocrites are indeed liars.",
+        "ms_basmeih": "Apabila orang-orang munafik datang kepadamu (wahai Muhammad), mereka berkata: \"Kami mengakui bahawa sesungguhnya engkau - sebenar-benarnya Rasul Allah\". Dan Allah sememangnya mengetahui bahawa engkau ialah RasulNya, serta Allah menyaksikan bahawa sesungguhnya pengakuan mereka adalah dusta."
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "ٱتَّخَذُوٓا۟ أَيْمَـٰنَهُمْ جُنَّةً فَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ ۚ إِنَّهُمْ سَآءَ مَا كَانُوا۟ يَعْمَلُونَ",
+      "transliteration": "Ittakhathoo aymanahum junnatan fasaddoo AAan sabeeli Allahi innahum saa ma kanoo yaAAmaloona",
+      "translations": {
+        "en_sahih": "They have taken their oaths as a cover, so they averted [people] from the way of Allah. Indeed, it was evil that they were doing.",
+        "en_yusufali": "They have made their oaths a screen (for their misdeeds): thus they obstruct (men) from the Path of Allah: truly evil are their deeds.",
+        "ms_basmeih": "Mereka menjadikan sumpahnya (atau akuannya) sebagai perisai (untuk menyelamatkan dirinya dan harta bendanya daripada dibunuh atau dirampas), lalu mereka menghalang (dirinya dan orang lain) dari menurut jalan Allah. Sesungguhnya amatlah buruk apa yang mereka telah kerjakan."
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "ذَٰلِكَ بِأَنَّهُمْ ءَامَنُوا۟ ثُمَّ كَفَرُوا۟ فَطُبِعَ عَلَىٰ قُلُوبِهِمْ فَهُمْ لَا يَفْقَهُونَ",
+      "transliteration": "Thalika biannahum amanoo thumma kafaroo fatubiAAa AAala quloobihim fahum la yafqahoona",
+      "translations": {
+        "en_sahih": "That is because they believed, and then they disbelieved; so their hearts were sealed over, and they do not understand.",
+        "en_yusufali": "That is because they believed, then they rejected Faith: So a seal was set on their hearts: therefore they understand not.",
+        "ms_basmeih": "(Perbuatan buruk) yang demikian kerana mereka mengaku beriman (di hadapan orang-orang Islam) kemudian mereka tetap kafir sesama sendiri, maka dengan sebab itu dimeteraikan atas hati mereka; lalu mereka tidak dapat memahami (yang mana benar dan yang mana salah)."
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "۞ وَإِذَا رَأَيْتَهُمْ تُعْجِبُكَ أَجْسَامُهُمْ ۖ وَإِن يَقُولُوا۟ تَسْمَعْ لِقَوْلِهِمْ ۖ كَأَنَّهُمْ خُشُبٌ مُّسَنَّدَةٌ ۖ يَحْسَبُونَ كُلَّ صَيْحَةٍ عَلَيْهِمْ ۚ هُمُ ٱلْعَدُوُّ فَٱحْذَرْهُمْ ۚ قَـٰتَلَهُمُ ٱللَّهُ ۖ أَنَّىٰ يُؤْفَكُونَ",
+      "transliteration": "Waitha raaytahum tuAAjibuka ajsamuhum wain yaqooloo tasmaAA liqawlihim kaannahum khushubun musannadatun yahsaboona kulla sayhatin AAalayhim humu alAAaduwwu faihtharhum qatalahumu Allahu anna yufakoona",
+      "translations": {
+        "en_sahih": "And when you see them, their forms please you, and if they speak, you listen to their speech. [They are] as if they were pieces of wood propped up - they think that every shout is against them. They are the enemy, so beware of them. May Allah destroy them; how are they deluded?",
+        "en_yusufali": "When thou lookest at them, their exteriors please thee; and when they speak, thou listenest to their words. They are as (worthless as hollow) pieces of timber propped up, (unable to stand on their own). They think that every cry is against them. They are the enemies; so beware of them. The curse of Allah be on them! How are they deluded (away from the Truth)!",
+        "ms_basmeih": "Dan apabila engkau melihat mereka, engkau tertarik hati kepada tubuh badan mereka (dan kelalukannya); dan apabila mereka berkata-kata, engkaujuga (tertarik hati) mendengar tutur katanya (kerana manis dan fasih. Dalam pada itu) mereka adalah seperti batang-batang kayu yang tersandar (tidak terpakai kerana tidak ada padanya kekuatan yang dikehendaki). Mereka (kerana merasai bersalah, sentiasa dalam keadaan cemas sehingga) menyangka tiap-tiap jeritan (atau riuh rendah yang mereka dengar) adalah untuk membahayakan mereka. Mereka itulah musuh yang sebenar-benarnya maka berjaga-jagalah engkau terhadap mereka. Semoga Allah membinasa dan menyingkirkan mereka dari rahmatNya. (Pelik sungguh!) Bagaimana mereka dipalingkan (oleh hawa nafsunya - dari kebenaran)?"
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "وَإِذَا قِيلَ لَهُمْ تَعَالَوْا۟ يَسْتَغْفِرْ لَكُمْ رَسُولُ ٱللَّهِ لَوَّوْا۟ رُءُوسَهُمْ وَرَأَيْتَهُمْ يَصُدُّونَ وَهُم مُّسْتَكْبِرُونَ",
+      "transliteration": "Waitha qeela lahum taAAalaw yastaghfir lakum rasoolu Allahi lawwaw ruoosahum waraaytahum yasuddoona wahum mustakbiroona",
+      "translations": {
+        "en_sahih": "And when it is said to them, \"Come, the Messenger of Allah will ask forgiveness for you,\" they turn their heads aside and you see them evading while they are arrogant.",
+        "en_yusufali": "And when it is said to them, \"Come, the Messenger of Allah will pray for your forgiveness\", they turn aside their heads, and thou wouldst see them turning away their faces in arrogance.",
+        "ms_basmeih": "Dan apabila dikatakan kepada mereka: \" Marilah (bertaubat) supaya Rasulullah meminta ampun (kepada Allah) untuk kamu\", mereka (enggan sambil) menggeleng-gelengkan kepalanya; dan engkau melihat mereka berpaling (dari bertaubat) serta mereka berlaku sombong angkuh."
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "سَوَآءٌ عَلَيْهِمْ أَسْتَغْفَرْتَ لَهُمْ أَمْ لَمْ تَسْتَغْفِرْ لَهُمْ لَن يَغْفِرَ ٱللَّهُ لَهُمْ ۚ إِنَّ ٱللَّهَ لَا يَهْدِى ٱلْقَوْمَ ٱلْفَـٰسِقِينَ",
+      "transliteration": "Sawaon AAalayhim astaghfarta lahum am lam tastaghfir lahum lan yaghfira Allahu lahum inna Allaha la yahdee alqawma alfasiqeena",
+      "translations": {
+        "en_sahih": "It is all the same for them whether you ask forgiveness for them or do not ask forgiveness for them; never will Allah forgive them. Indeed, Allah does not guide the defiantly disobedient people.",
+        "en_yusufali": "It is equal to them whether thou pray for their forgiveness or not. Allah will not forgive them. Truly Allah guides not rebellious transgressors.",
+        "ms_basmeih": "(Tidak ada faedahnya) kepada mereka, sama ada engkau meminta ampun untuk mereka atau engkau tidak meminta ampun, Allah tidak sekali-kali akan mengampunkan mereka. Sesungguhnya Allah tidak memberi hidayah petunjuk kepada kaum yang fasik."
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "هُمُ ٱلَّذِينَ يَقُولُونَ لَا تُنفِقُوا۟ عَلَىٰ مَنْ عِندَ رَسُولِ ٱللَّهِ حَتَّىٰ يَنفَضُّوا۟ ۗ وَلِلَّهِ خَزَآئِنُ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ وَلَـٰكِنَّ ٱلْمُنَـٰفِقِينَ لَا يَفْقَهُونَ",
+      "transliteration": "Humu allatheena yaqooloona la tunfiqoo AAala man AAinda rasooli Allahi hatta yanfaddoo walillahi khazainu alssamawati waalardi walakinna almunafiqeena la yafqahoona",
+      "translations": {
+        "en_sahih": "They are the ones who say, \"Do not spend on those who are with the Messenger of Allah until they disband.\" And to Allah belongs the depositories of the heavens and the earth, but the hypocrites do not understand.",
+        "en_yusufali": "They are the ones who say, \"Spend nothing on those who are with Allah's Messenger, to the end that they may disperse (and quit Medina).\" But to Allah belong the treasures of the heavens and the earth; but the Hypocrites understand not.",
+        "ms_basmeih": "Merekalah yang mengatakan (kepada orang-orang Islam di Madinah yang menolong Rasulullah dan orang-orang Muhajirin): \"Janganlah kamu membelanjakan harta kamu kepada orang-orang yang ada bersama-sama Rasulullah supaya mereka bersurai (meninggalkannya)\". Padahal bagi Allah jualah perbendaharaan langit dan bumi, (tiada sesiapapun yang dapat memberi atau menyekat sebarang pemberian melainkan dengan kehendakNya); akan tetapi orang-orang yang munafik itu tidak memahami (hakikat yang sebenarnya)."
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "يَقُولُونَ لَئِن رَّجَعْنَآ إِلَى ٱلْمَدِينَةِ لَيُخْرِجَنَّ ٱلْأَعَزُّ مِنْهَا ٱلْأَذَلَّ ۚ وَلِلَّهِ ٱلْعِزَّةُ وَلِرَسُولِهِۦ وَلِلْمُؤْمِنِينَ وَلَـٰكِنَّ ٱلْمُنَـٰفِقِينَ لَا يَعْلَمُونَ",
+      "transliteration": "Yaqooloona lain rajaAAna ila almadeenati layukhrijanna alaAAazzu minha alathalla walillahi alAAizzatu walirasoolihi walilmumineena walakinna almunafiqeena la yaAAlamoona",
+      "translations": {
+        "en_sahih": "They say, \"If we return to al-Madinah, the more honored [for power] will surely expel therefrom the more humble.\" And to Allah belongs [all] honor, and to His Messenger, and to the believers, but the hypocrites do not know.",
+        "en_yusufali": "They say, \"If we return to Medina, surely the more honourable (element) will expel therefrom the meaner.\" But honour belongs to Allah and His Messenger, and to the Believers; but the Hypocrites know not.",
+        "ms_basmeih": "Mereka berkata lagi: \" Demi sesungguhnya! Jika kita kembali ke Madinah (dari medan perang), sudah tentu orang-orang yang mulia lagi kuat (pihak kita) akan mengusir keluar dari Madinah orang-orang yang hina lagi lemah (pihak Islam)\". Padahal bagi Allah jualah kemuliaan dan kekuatan itu dan bagi RasulNya serta bagi orang-orang yang beriman; akan tetapi golongan yang munafik itu tidak mengetahui (hakikat yang sebenarnya)."
+      }
+    },
+    {
+      "ayah": 9,
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوا۟ لَا تُلْهِكُمْ أَمْوَٰلُكُمْ وَلَآ أَوْلَـٰدُكُمْ عَن ذِكْرِ ٱللَّهِ ۚ وَمَن يَفْعَلْ ذَٰلِكَ فَأُو۟لَـٰٓئِكَ هُمُ ٱلْخَـٰسِرُونَ",
+      "transliteration": "Ya ayyuha allatheena amanoo la tulhikum amwalukum wala awladukum AAan thikri Allahi waman yafAAal thalika faolaika humu alkhasiroona",
+      "translations": {
+        "en_sahih": "O you who have believed, let not your wealth and your children divert you from remembrance of Allah. And whoever does that - then those are the losers.",
+        "en_yusufali": "O ye who believe! Let not your riches or your children divert you from the remembrance of Allah. If any act thus, the loss is their own.",
+        "ms_basmeih": "Wahai orang-orang yang beriman! Janganlah kamu dilalaikan oleh (urusan) harta benda kamu dan anak-pinak kamu daripada mengingati Allah (dengan menjalankan perintahNya). Dan (ingatlah), sesiapa yang melakukan demikian, maka mereka itulah orang-orang yang rugi."
+      }
+    },
+    {
+      "ayah": 10,
+      "arabic": "وَأَنفِقُوا۟ مِن مَّا رَزَقْنَـٰكُم مِّن قَبْلِ أَن يَأْتِىَ أَحَدَكُمُ ٱلْمَوْتُ فَيَقُولَ رَبِّ لَوْلَآ أَخَّرْتَنِىٓ إِلَىٰٓ أَجَلٍ قَرِيبٍ فَأَصَّدَّقَ وَأَكُن مِّنَ ٱلصَّـٰلِحِينَ",
+      "transliteration": "Waanfiqoo min ma razaqnakum min qabli an yatiya ahadakumu almawtu fayaqoola rabbi lawla akhkhartanee ila ajalin qareebin faassaddaqa waakun mina alssaliheena",
+      "translations": {
+        "en_sahih": "And spend [in the way of Allah] from what We have provided you before death approaches one of you and he says, \"My Lord, if only You would delay me for a brief term so I would give charity and be among the righteous.\"",
+        "en_yusufali": "and spend something (in charity) out of the substance which We have bestowed on you, before Death should come to any of you and he should say, \"O my Lord! why didst Thou not give me respite for a little while? I should then have given (largely) in charity, and I should have been one of the doers of good\".",
+        "ms_basmeih": "Dan belanjakanlah (dermakanlah) sebahagian dari rezeki yang Kami berikan kepada kamu sebelum seseorang dari kamu sampai ajal maut kepadanya, (kalau tidak) maka ia (pada saat itu) akan merayu dengan katanya: \" Wahai Tuhanku! Alangkah baiknya kalau Engkau lambatkan kedatangan ajal matiku - ke suatu masa yang sedikit sahaja lagi, supaya aku dapat bersedekah dan dapat pula aku menjadi dari orang-orang yang soleh \"."
+      }
+    },
+    {
+      "ayah": 11,
+      "arabic": "وَلَن يُؤَخِّرَ ٱللَّهُ نَفْسًا إِذَا جَآءَ أَجَلُهَا ۚ وَٱللَّهُ خَبِيرٌۢ بِمَا تَعْمَلُونَ",
+      "transliteration": "Walan yuakhkhira Allahu nafsan itha jaa ajaluha waAllahu khabeerun bima taAAmaloona",
+      "translations": {
+        "en_sahih": "But never will Allah delay a soul when its time has come. And Allah is Acquainted with what you do.",
+        "en_yusufali": "But to no soul will Allah grant respite when the time appointed (for it) has come; and Allah is well acquainted with (all) that ye do.",
+        "ms_basmeih": "Dan (ingatlah), Allah tidak sekali-kali akan melambatkan kematian seseorang (atau sesuatu yang bernyawa) apabila sampai ajalnya; dan Allah Amat Mendalam PengetahuanNya mengenai segala yang kamu kerjakan."
+      }
+    }
+  ]
+}

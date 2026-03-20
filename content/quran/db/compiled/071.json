@@ -1,0 +1,308 @@
+{
+  "surah": 71,
+  "metadata": {
+    "nameArabic": "نوح",
+    "nameEnglish": "Nuh",
+    "nameTranslit": "Nooh",
+    "meaning": "Noah",
+    "revelation": "Meccan",
+    "revelationOrder": 71,
+    "period": "Late Meccan",
+    "ayahCount": 28,
+    "wordCount": 227,
+    "letterCount": 927,
+    "juz": 29,
+    "pageStart": 570,
+    "themes": [
+      "prophet_noah",
+      "flood",
+      "persistence",
+      "da'wah",
+      "punishment"
+    ],
+    "otherNames": [],
+    "significance": "Narrates Noah's persistent call to his people and their destruction"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ إِنَّآ أَرْسَلْنَا نُوحًا إِلَىٰ قَوْمِهِۦٓ أَنْ أَنذِرْ قَوْمَكَ مِن قَبْلِ أَن يَأْتِيَهُمْ عَذَابٌ أَلِيمٌ",
+      "transliteration": "Inna arsalna noohan ila qawmihi an anthir qawmaka min qabli an yatiyahum AAathabun aleemun",
+      "translations": {
+        "en_sahih": "Indeed, We sent Noah to his people, [saying], \"Warn your people before there comes to them a painful punishment.\"",
+        "en_yusufali": "We sent Noah to his People (with the Command): \"Do thou warn thy People before there comes to them a grievous Penalty.\"",
+        "ms_basmeih": "Sesungguhnya Kami telah mengutus Nabi Nuh kepada kaumnya, (dengan berfirman kepadanya): \"Berikanlah peringatan dan amaran kepada kaummu sebelum mereka didatangi azab yang tidak terperi sakitnya\"."
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "قَالَ يَـٰقَوْمِ إِنِّى لَكُمْ نَذِيرٌ مُّبِينٌ",
+      "transliteration": "Qala ya qawmi innee lakum natheerun mubeenun",
+      "translations": {
+        "en_sahih": "He said, \"O my people, indeed I am to you a clear warner,",
+        "en_yusufali": "He said: \"O my People! I am to you a Warner, clear and open:",
+        "ms_basmeih": "dia pun (menyeru mereka dengan) berkata: \"Wahai kaumku! Sesungguhnya aku ini diutus kepada kamu, sebagai pemberi ingatan dan amaran yang nyata;"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "أَنِ ٱعْبُدُوا۟ ٱللَّهَ وَٱتَّقُوهُ وَأَطِيعُونِ",
+      "transliteration": "Ani oAAbudoo Allaha waittaqoohu waateeAAooni",
+      "translations": {
+        "en_sahih": "[Saying], 'Worship Allah, fear Him and obey me.",
+        "en_yusufali": "\"That ye should worship Allah, fear Him and obey me:",
+        "ms_basmeih": "\"Iaitu sembahlah kamu akan Allah dan bertaqwalah kepadaNya, serta taatlah kamu kepadaku;"
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "يَغْفِرْ لَكُم مِّن ذُنُوبِكُمْ وَيُؤَخِّرْكُمْ إِلَىٰٓ أَجَلٍ مُّسَمًّى ۚ إِنَّ أَجَلَ ٱللَّهِ إِذَا جَآءَ لَا يُؤَخَّرُ ۖ لَوْ كُنتُمْ تَعْلَمُونَ",
+      "transliteration": "Yaghfir lakum min thunoobikum wayuakhkhirkum ila ajalin musamman inna ajala Allahi itha jaa la yuakhkharu law kuntum taAAlamoona",
+      "translations": {
+        "en_sahih": "Allah will forgive you of your sins and delay you for a specified term. Indeed, the time [set by] Allah, when it comes, will not be delayed, if you only knew.' \"",
+        "en_yusufali": "\"So He may forgive you your sins and give you respite for a stated Term: for when the Term given by Allah is accomplished, it cannot be put forward: if ye only knew.\"",
+        "ms_basmeih": "\"Supaya Allah mengampunkan bagi kamu sebahagian dari dosa-dosa kamu, dan memberi kamu hidup (dengan tidak terkena azab) hingga ke suatu masa yang tertentu; (maka segeralah beribadat dan bertaqwa) kerana sesungguhnya ajal (yang telah ditetapkan) Allah, apabila sampai masanya, tidak dapat ditangguhkan; kalaulah kamu mengetahui (hakikat ini tentulah kamu segera beriman)\"."
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "قَالَ رَبِّ إِنِّى دَعَوْتُ قَوْمِى لَيْلًا وَنَهَارًا",
+      "transliteration": "Qala rabbi innee daAAawtu qawmee laylan wanaharan",
+      "translations": {
+        "en_sahih": "He said, \"My Lord, indeed I invited my people [to truth] night and day.",
+        "en_yusufali": "He said: \"O my Lord! I have called to my People night and day:",
+        "ms_basmeih": "(Setelah puas menyeru mereka), Nabi Nuh berdoa dengan berkata: \"Wahai Tuhanku, sesungguhnya aku telah menyeru kaumku siang dan malam (supaya mereka beriman);"
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "فَلَمْ يَزِدْهُمْ دُعَآءِىٓ إِلَّا فِرَارًا",
+      "transliteration": "Falam yazidhum duAAaee illa firaran",
+      "translations": {
+        "en_sahih": "But my invitation increased them not except in flight.",
+        "en_yusufali": "\"But my call only increases (their) flight (from the Right).",
+        "ms_basmeih": "\"Maka seruanku itu tidak memberikan mereka (sesuatu faedah pun) selain daripada menambahi mereka melarikan diri (dari kebenaran)."
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "وَإِنِّى كُلَّمَا دَعَوْتُهُمْ لِتَغْفِرَ لَهُمْ جَعَلُوٓا۟ أَصَـٰبِعَهُمْ فِىٓ ءَاذَانِهِمْ وَٱسْتَغْشَوْا۟ ثِيَابَهُمْ وَأَصَرُّوا۟ وَٱسْتَكْبَرُوا۟ ٱسْتِكْبَارًا",
+      "transliteration": "Wainnee kullama daAAawtuhum litaghfira lahum jaAAaloo asabiAAahum fee athanihim waistaghshaw thiyabahum waasarroo waistakbaroo istikbaran",
+      "translations": {
+        "en_sahih": "And indeed, every time I invited them that You may forgive them, they put their fingers in their ears, covered themselves with their garments, persisted, and were arrogant with [great] arrogance.",
+        "en_yusufali": "\"And every time I have called to them, that Thou mightest forgive them, they have (only) thrust their fingers into their ears, covered themselves up with their garments, grown obstinate, and given themselves up to arrogance.",
+        "ms_basmeih": "\"Dan sesungguhnya aku, tiap-tiap kali menyeru mereka (beriman) supaya Engkau mengampunkan dosa-dosa mereka, - mereka menyumbatkan telinganya dengan jari masing-masing, dan berselubung dengan pakaiannya, serta berdegil dengan keingkarannya, dan berlaku sombong takbur dengan melampau."
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "ثُمَّ إِنِّى دَعَوْتُهُمْ جِهَارًا",
+      "transliteration": "Thumma innee daAAawtuhum jiharan",
+      "translations": {
+        "en_sahih": "Then I invited them publicly.",
+        "en_yusufali": "\"So I have called to them aloud;",
+        "ms_basmeih": "\"Kemudian aku telah menyeru mereka dengan terang-terang;"
+      }
+    },
+    {
+      "ayah": 9,
+      "arabic": "ثُمَّ إِنِّىٓ أَعْلَنتُ لَهُمْ وَأَسْرَرْتُ لَهُمْ إِسْرَارًا",
+      "transliteration": "Thumma innee aAAlantu lahum waasrartu lahum israran",
+      "translations": {
+        "en_sahih": "Then I announced to them and [also] confided to them secretly",
+        "en_yusufali": "\"Further I have spoken to them in public and secretly in private,",
+        "ms_basmeih": "\"Selain dari itu, aku (berulang-ulang) menyeru mereka secara beramai-ramai dengan berterus-terang, dan menyeru mereka lagi secara berseorangan dengan perlahan-lahan."
+      }
+    },
+    {
+      "ayah": 10,
+      "arabic": "فَقُلْتُ ٱسْتَغْفِرُوا۟ رَبَّكُمْ إِنَّهُۥ كَانَ غَفَّارًا",
+      "transliteration": "Faqultu istaghfiroo rabbakum innahu kana ghaffaran",
+      "translations": {
+        "en_sahih": "And said, 'Ask forgiveness of your Lord. Indeed, He is ever a Perpetual Forgiver.",
+        "en_yusufali": "\"Saying, 'Ask forgiveness from your Lord; for He is Oft-Forgiving;",
+        "ms_basmeih": "\"Sehingga aku berkata (kepada mereka): `Pohonkanlah ampun kepada Tuhan kamu, sesungguhnya adalah Ia Maha Pengampun."
+      }
+    },
+    {
+      "ayah": 11,
+      "arabic": "يُرْسِلِ ٱلسَّمَآءَ عَلَيْكُم مِّدْرَارًا",
+      "transliteration": "Yursili alssamaa AAalaykum midraran",
+      "translations": {
+        "en_sahih": "He will send [rain from] the sky upon you in [continuing] showers",
+        "en_yusufali": "\"'He will send rain to you in abundance;",
+        "ms_basmeih": "\"(Sekiranya kamu berbuat demikian), Ia akan menghantarkan hujan lebat mencurah-curah, kepada kamu;"
+      }
+    },
+    {
+      "ayah": 12,
+      "arabic": "وَيُمْدِدْكُم بِأَمْوَٰلٍ وَبَنِينَ وَيَجْعَل لَّكُمْ جَنَّـٰتٍ وَيَجْعَل لَّكُمْ أَنْهَـٰرًا",
+      "transliteration": "Wayumdidkum biamwalin wabaneena wayajAAal lakum jannatin wayajAAal lakum anharan",
+      "translations": {
+        "en_sahih": "And give you increase in wealth and children and provide for you gardens and provide for you rivers.",
+        "en_yusufali": "\"'Give you increase in wealth and sons; and bestow on you gardens and bestow on you rivers (of flowing water).",
+        "ms_basmeih": "\"Dan Ia akan memberi kepada kamu dengan banyaknya harta kekayaan serta anak-pinak; dan Ia akan mengadakan bagi kamu kebun-kebun tanaman, serta mengadakan bagi kamu sungai-sungai (yang mengalir di dalamnya)."
+      }
+    },
+    {
+      "ayah": 13,
+      "arabic": "مَّا لَكُمْ لَا تَرْجُونَ لِلَّهِ وَقَارًا",
+      "transliteration": "Ma lakum la tarjoona lillahi waqaran",
+      "translations": {
+        "en_sahih": "What is [the matter] with you that you do not attribute to Allah [due] grandeur",
+        "en_yusufali": "\"'What is the matter with you, that ye place not your hope for kindness and long-suffering in Allah,-",
+        "ms_basmeih": "\"Mengapa kamu berkeadaan tidak menghargai kebesaran Allah (dan kekuasaanNya), -"
+      }
+    },
+    {
+      "ayah": 14,
+      "arabic": "وَقَدْ خَلَقَكُمْ أَطْوَارًا",
+      "transliteration": "Waqad khalaqakum atwaran",
+      "translations": {
+        "en_sahih": "While He has created you in stages?",
+        "en_yusufali": "\"'Seeing that it is He that has created you in diverse stages?",
+        "ms_basmeih": "\"Padahal sesungguhnya Ia telah menciptakan kamu dengan kejadian yang berperingkat-peringkat?"
+      }
+    },
+    {
+      "ayah": 15,
+      "arabic": "أَلَمْ تَرَوْا۟ كَيْفَ خَلَقَ ٱللَّهُ سَبْعَ سَمَـٰوَٰتٍ طِبَاقًا",
+      "transliteration": "Alam taraw kayfa khalaqa Allahu sabAAa samawatin tibaqan",
+      "translations": {
+        "en_sahih": "Do you not consider how Allah has created seven heavens in layers",
+        "en_yusufali": "\"'See ye not how Allah has created the seven heavens one above another,",
+        "ms_basmeih": "\"Tidakkah kamu mengetahui dan memikirkan bagaimana Allah telah menciptakan tujuh petala langit bertingkat-tingkat,"
+      }
+    },
+    {
+      "ayah": 16,
+      "arabic": "وَجَعَلَ ٱلْقَمَرَ فِيهِنَّ نُورًا وَجَعَلَ ٱلشَّمْسَ سِرَاجًا",
+      "transliteration": "WajaAAala alqamara feehinna nooran wajaAAala alshshamsa sirajan",
+      "translations": {
+        "en_sahih": "And made the moon therein a [reflected] light and made the sun a burning lamp?",
+        "en_yusufali": "\"'And made the moon a light in their midst, and made the sun as a (Glorious) Lamp?",
+        "ms_basmeih": "\"Dan Ia menjadikan padanya bulan sebagai cahaya serta menjadikan matahari sebagai lampu (yang terang-benderang),"
+      }
+    },
+    {
+      "ayah": 17,
+      "arabic": "وَٱللَّهُ أَنۢبَتَكُم مِّنَ ٱلْأَرْضِ نَبَاتًا",
+      "transliteration": "WaAllahu anbatakum mina alardi nabatan",
+      "translations": {
+        "en_sahih": "And Allah has caused you to grow from the earth a [progressive] growth.",
+        "en_yusufali": "\"'And Allah has produced you from the earth growing (gradually),",
+        "ms_basmeih": "\"Dan Allah telah menumbuhkan kamu (hidup dari benda-benda yang berasal) dari bumi, dengan pertumbuhan yang sungguh-sungguh sempurna,"
+      }
+    },
+    {
+      "ayah": 18,
+      "arabic": "ثُمَّ يُعِيدُكُمْ فِيهَا وَيُخْرِجُكُمْ إِخْرَاجًا",
+      "transliteration": "Thumma yuAAeedukum feeha wayukhrijukum ikhrajan",
+      "translations": {
+        "en_sahih": "Then He will return you into it and extract you [another] extraction.",
+        "en_yusufali": "\"'And in the End He will return you into the (earth), and raise you forth (again at the Resurrection)?",
+        "ms_basmeih": "\"Kemudian Ia mengembalikan kamu ke dalam bumi (sesudah mati), dan mengeluarkan kamu daripadanya (sesudah dihidupkan semula untuk dihitung amal kamu dan diberi balasan), dengan pengeluaran yang sesungguh-sungguhnya?"
+      }
+    },
+    {
+      "ayah": 19,
+      "arabic": "وَٱللَّهُ جَعَلَ لَكُمُ ٱلْأَرْضَ بِسَاطًا",
+      "transliteration": "WaAllahu jaAAala lakumu alarda bisatan",
+      "translations": {
+        "en_sahih": "And Allah has made for you the earth an expanse",
+        "en_yusufali": "\"'And Allah has made the earth for you as a carpet (spread out),",
+        "ms_basmeih": "\"Dan Allah telah menjadikan bumi bagi kamu sebagai hamparan,"
+      }
+    },
+    {
+      "ayah": 20,
+      "arabic": "لِّتَسْلُكُوا۟ مِنْهَا سُبُلًا فِجَاجًا",
+      "transliteration": "Litaslukoo minha subulan fijajan",
+      "translations": {
+        "en_sahih": "That you may follow therein roads of passage.' \"",
+        "en_yusufali": "\"'That ye may go about therein, in spacious roads.'\"",
+        "ms_basmeih": "\"Supaya kamu melalui jalan-jalan yang luas padanya\"."
+      }
+    },
+    {
+      "ayah": 21,
+      "arabic": "قَالَ نُوحٌ رَّبِّ إِنَّهُمْ عَصَوْنِى وَٱتَّبَعُوا۟ مَن لَّمْ يَزِدْهُ مَالُهُۥ وَوَلَدُهُۥٓ إِلَّا خَسَارًا",
+      "transliteration": "Qala noohun rabbi innahum AAasawnee waittabaAAoo man lam yazidhu maluhu wawaladuhu illa khasaran",
+      "translations": {
+        "en_sahih": "Noah said, \"My Lord, indeed they have disobeyed me and followed him whose wealth and children will not increase him except in loss.",
+        "en_yusufali": "Noah said: \"O my Lord! They have disobeyed me, but they follow (men) whose wealth and children give them no increase but only Loss.",
+        "ms_basmeih": "Nabi Nuh (merayu lagi dengan) berkata: \"Wahai Tuhanku! Sesungguhnya, mereka telah menderhaka kepadaku, dan mereka telah menurut orang yang harta bendanya dan anak-pinaknya tidak menambahinya melainkan kerugian (di akhirat kelak)."
+      }
+    },
+    {
+      "ayah": 22,
+      "arabic": "وَمَكَرُوا۟ مَكْرًا كُبَّارًا",
+      "transliteration": "Wamakaroo makran kubbaran",
+      "translations": {
+        "en_sahih": "And they conspired an immense conspiracy.",
+        "en_yusufali": "\"And they have devised a tremendous Plot.",
+        "ms_basmeih": "\"Dan mereka telah menjalankan tipu daya dengan merancangkan rancangan yang amat besar jahatnya (untuk menentang seruanku)."
+      }
+    },
+    {
+      "ayah": 23,
+      "arabic": "وَقَالُوا۟ لَا تَذَرُنَّ ءَالِهَتَكُمْ وَلَا تَذَرُنَّ وَدًّا وَلَا سُوَاعًا وَلَا يَغُوثَ وَيَعُوقَ وَنَسْرًا",
+      "transliteration": "Waqaloo la tatharunna alihatakum wala tatharunna waddan wala suwaAAan wala yaghootha wayaAAooqa wanasran",
+      "translations": {
+        "en_sahih": "And said, 'Never leave your gods and never leave Wadd or Suwa' or Yaghuth and Ya'uq and Nasr.",
+        "en_yusufali": "\"And they have said (to each other), 'Abandon not your gods: Abandon neither Wadd nor Suwa', neither Yaguth nor Ya'uq, nor Nasr';-",
+        "ms_basmeih": "\"Dan (ketua-ketua) mereka (menghasut dengan) berkata: `Jangan kamu meninggalkan (penyembahan) tuhan-tuhan kamu, terutama (penyembahan) Wadd, dan Suwaa', dan Yaghuth, dan Ya'uuq, serta Nasr."
+      }
+    },
+    {
+      "ayah": 24,
+      "arabic": "وَقَدْ أَضَلُّوا۟ كَثِيرًا ۖ وَلَا تَزِدِ ٱلظَّـٰلِمِينَ إِلَّا ضَلَـٰلًا",
+      "transliteration": "Waqad adalloo katheeran wala tazidi alththalimeena illa dalalan",
+      "translations": {
+        "en_sahih": "And already they have misled many. And, [my Lord], do not increase the wrongdoers except in error.\"",
+        "en_yusufali": "\"They have already misled many; and grant Thou no increase to the wrong-doers but in straying (from their mark).\"",
+        "ms_basmeih": "\"Dan sesungguhnya ketua-ketua itu telah menyesatkan kebanyakan (dari umat manusia); dan (dengan yang demikian) janganlah Engkau (wahai Tuhanku) menambahi orang-orang yang zalim itu melainkan kesesatan jua\"."
+      }
+    },
+    {
+      "ayah": 25,
+      "arabic": "مِّمَّا خَطِيٓـَٔـٰتِهِمْ أُغْرِقُوا۟ فَأُدْخِلُوا۟ نَارًا فَلَمْ يَجِدُوا۟ لَهُم مِّن دُونِ ٱللَّهِ أَنصَارًا",
+      "transliteration": "Mimma khateeatihim oghriqoo faodkhiloo naran falam yajidoo lahum min dooni Allahi ansaran",
+      "translations": {
+        "en_sahih": "Because of their sins they were drowned and put into the Fire, and they found not for themselves besides Allah [any] helpers.",
+        "en_yusufali": "Because of their sins they were drowned (in the flood), and were made to enter the Fire (of Punishment): and they found- in lieu of Allah- none to help them.",
+        "ms_basmeih": "Disebabkan dosa-dosa dan kesalahan mereka, mereka ditenggelamkan (dengan banjir dan taufan), kemudian (pada hari akhirat) dimasukkan ke dalam neraka; maka mereka tidak akan beroleh sebarang penolong yang lain dari Allah (yang dapat memberikan pertolongan)."
+      }
+    },
+    {
+      "ayah": 26,
+      "arabic": "وَقَالَ نُوحٌ رَّبِّ لَا تَذَرْ عَلَى ٱلْأَرْضِ مِنَ ٱلْكَـٰفِرِينَ دَيَّارًا",
+      "transliteration": "Waqala noohun rabbi la tathar AAala alardi mina alkafireena dayyaran",
+      "translations": {
+        "en_sahih": "And Noah said, \"My Lord, do not leave upon the earth from among the disbelievers an inhabitant.",
+        "en_yusufali": "And Noah, said: \"O my Lord! Leave not of the Unbelievers, a single one on earth!",
+        "ms_basmeih": "Dan Nabi Nuh (merayu lagi dengan) berkata: \"Wahai Tuhanku! Janganlah Engkau biarkan seorangpun dari orang-orang kafir itu hidup di atas muka bumi!"
+      }
+    },
+    {
+      "ayah": 27,
+      "arabic": "إِنَّكَ إِن تَذَرْهُمْ يُضِلُّوا۟ عِبَادَكَ وَلَا يَلِدُوٓا۟ إِلَّا فَاجِرًا كَفَّارًا",
+      "transliteration": "Innaka in tatharhum yudilloo AAibadaka wala yalidoo illa fajiran kaffaran",
+      "translations": {
+        "en_sahih": "Indeed, if You leave them, they will mislead Your servants and not beget except [every] wicked one and [confirmed] disbeliever.",
+        "en_yusufali": "\"For, if Thou dost leave (any of) them, they will but mislead Thy devotees, and they will breed none but wicked ungrateful ones.",
+        "ms_basmeih": "\"Kerana sesungguhnya jika Engkau biarkan mereka (hidup), nescaya mereka akan menyesatkan hamba-hambaMu, dan mereka tidak akan melahirkan anak melainkan yang berbuat dosa lagi kufur ingkar."
+      }
+    },
+    {
+      "ayah": 28,
+      "arabic": "رَّبِّ ٱغْفِرْ لِى وَلِوَٰلِدَىَّ وَلِمَن دَخَلَ بَيْتِىَ مُؤْمِنًا وَلِلْمُؤْمِنِينَ وَٱلْمُؤْمِنَـٰتِ وَلَا تَزِدِ ٱلظَّـٰلِمِينَ إِلَّا تَبَارًۢا",
+      "transliteration": "Rabbi ighfir lee waliwalidayya waliman dakhala baytiya muminan walilmumineena waalmuminati wala tazidi alththalimeena illa tabaran",
+      "translations": {
+        "en_sahih": "My Lord, forgive me and my parents and whoever enters my house a believer and the believing men and believing women. And do not increase the wrongdoers except in destruction.\"",
+        "en_yusufali": "\"O my Lord! Forgive me, my parents, all who enter my house in Faith, and (all) believing men and believing women: and to the wrong-doers grant Thou no increase but in perdition!\"",
+        "ms_basmeih": "\"Wahai Tuhanku! Ampunkanlah bagiku, dan bagi kedua ibu bapaku, serta bagi sesiapa yang masuk ke rumahku dengan keadaan beriman; dan (ampunkanlah) bagi sekalian orang-orang yang beriman, lelaki dan perempuan (dalam segala zaman); dan janganlah Engkau tambahi orang-orang yang zalim melainkan kebinasaan!\""
+      }
+    }
+  ]
+}

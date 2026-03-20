@@ -1,0 +1,104 @@
+{
+  "surah": 1,
+  "metadata": {
+    "nameArabic": "الفاتحة",
+    "nameEnglish": "Al-Fatihah",
+    "nameTranslit": "Al-Faatihah",
+    "meaning": "The Opening",
+    "revelation": "Meccan",
+    "revelationOrder": 5,
+    "period": "Early Meccan",
+    "ayahCount": 7,
+    "wordCount": 25,
+    "letterCount": 113,
+    "juz": 1,
+    "pageStart": 1,
+    "themes": [
+      "praise",
+      "guidance",
+      "prayer",
+      "monotheism",
+      "divine_mercy"
+    ],
+    "otherNames": [
+      "Umm al-Quran (Mother of the Quran)",
+      "As-Sab' al-Mathani (Seven Repeated)",
+      "Al-Hamd (The Praise)",
+      "As-Salah (The Prayer)",
+      "Ash-Shifa (The Cure)"
+    ],
+    "significance": "Foundation of Islamic prayer, recited in every rak'ah of the five daily prayers"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+      "transliteration": "Bismi Allahi alrrahmani alrraheemi",
+      "translations": {
+        "en_sahih": "In the name of Allah, the Entirely Merciful, the Especially Merciful.",
+        "en_yusufali": "In the name of Allah, Most Gracious, Most Merciful.",
+        "ms_basmeih": "Dengan nama Allah, Yang Maha Pemurah, lagi Maha Mengasihani."
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "ٱلْحَمْدُ لِلَّهِ رَبِّ ٱلْعَـٰلَمِينَ",
+      "transliteration": "Alhamdu lillahi rabbi alAAalameena",
+      "translations": {
+        "en_sahih": "[All] praise is [due] to Allah, Lord of the worlds -",
+        "en_yusufali": "Praise be to Allah, the Cherisher and Sustainer of the worlds;",
+        "ms_basmeih": "Segala puji tertentu bagi Allah, Tuhan yang memelihara dan mentadbirkan sekalian alam."
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ",
+      "transliteration": "Alrrahmani alrraheemi",
+      "translations": {
+        "en_sahih": "The Entirely Merciful, the Especially Merciful,",
+        "en_yusufali": "Most Gracious, Most Merciful;",
+        "ms_basmeih": "Yang Maha Pemurah, lagi Maha Mengasihani."
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "مَـٰلِكِ يَوْمِ ٱلدِّينِ",
+      "transliteration": "Maliki yawmi alddeeni",
+      "translations": {
+        "en_sahih": "Sovereign of the Day of Recompense.",
+        "en_yusufali": "Master of the Day of Judgment.",
+        "ms_basmeih": "Yang Menguasai pemerintahan hari Pembalasan (hari Akhirat)."
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ",
+      "transliteration": "Iyyaka naAAbudu waiyyaka nastaAAeenu",
+      "translations": {
+        "en_sahih": "It is You we worship and You we ask for help.",
+        "en_yusufali": "Thee do we worship, and Thine aid we seek.",
+        "ms_basmeih": "Engkaulah sahaja (Ya Allah) Yang Kami sembah, dan kepada Engkaulah sahaja kami memohon pertolongan."
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "ٱهْدِنَا ٱلصِّرَٰطَ ٱلْمُسْتَقِيمَ",
+      "transliteration": "Ihdina alssirata almustaqeema",
+      "translations": {
+        "en_sahih": "Guide us to the straight path -",
+        "en_yusufali": "Show us the straight way,",
+        "ms_basmeih": "Tunjukilah kami jalan yang lurus."
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ ٱلْمَغْضُوبِ عَلَيْهِمْ وَلَا ٱلضَّآلِّينَ",
+      "transliteration": "Sirata allatheena anAAamta AAalayhim ghayri almaghdoobi AAalayhim wala alddalleena",
+      "translations": {
+        "en_sahih": "The path of those upon whom You have bestowed favor, not of those who have evoked [Your] anger or of those who are astray.",
+        "en_yusufali": "The way of those on whom Thou hast bestowed Thy Grace, those whose (portion) is not wrath, and who go not astray.",
+        "ms_basmeih": "Iaitu jalan orang-orang yang Engkau telah kurniakan nikmat kepada mereka, bukan (jalan) orang-orang yang Engkau telah murkai, dan bukan pula (jalan) orang-orang yang sesat."
+      }
+    }
+  ]
+}

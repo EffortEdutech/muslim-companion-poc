@@ -1,0 +1,110 @@
+{
+  "surah": 94,
+  "metadata": {
+    "nameArabic": "الشرح",
+    "nameEnglish": "Ash-Sharh",
+    "nameTranslit": "Ash-Sharh",
+    "meaning": "The Relief",
+    "revelation": "Meccan",
+    "revelationOrder": 12,
+    "period": "Early Meccan",
+    "ayahCount": 8,
+    "wordCount": 27,
+    "letterCount": 122,
+    "juz": 30,
+    "pageStart": 596,
+    "themes": [
+      "chest_expansion",
+      "burden_removal",
+      "ease_with_hardship",
+      "worship"
+    ],
+    "otherNames": [
+      "Al-Inshirah (The Opening)",
+      "Alam Nashrah"
+    ],
+    "significance": "Describes Allah's favors to the Prophet including expanding his chest and removing his burden"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ أَلَمْ نَشْرَحْ لَكَ صَدْرَكَ",
+      "transliteration": "Alam nashrah laka sadraka",
+      "translations": {
+        "en_sahih": "Did We not expand for you, [O Muhammad], your breast?",
+        "en_yusufali": "Have We not expanded thee thy breast?-",
+        "ms_basmeih": "Bukankah Kami telah melapangkan bagimu: dadamu (wahai Muhammad serta mengisinya dengan iman dan hidayah petunjuk) ?"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "وَوَضَعْنَا عَنكَ وِزْرَكَ",
+      "transliteration": "WawadaAAna AAanka wizraka",
+      "translations": {
+        "en_sahih": "And We removed from you your burden",
+        "en_yusufali": "And removed from thee thy burden",
+        "ms_basmeih": "Dan Kami telah meringankan daripadamu: bebanmu (menyiarkan Islam) -"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "ٱلَّذِىٓ أَنقَضَ ظَهْرَكَ",
+      "transliteration": "Allathee anqada thahraka",
+      "translations": {
+        "en_sahih": "Which had weighed upon your back",
+        "en_yusufali": "The which did gall thy back?-",
+        "ms_basmeih": "Yang memberati tanggunganmu, (dengan memberikan berbagai kemudahan dalam melaksanakannya)?"
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "وَرَفَعْنَا لَكَ ذِكْرَكَ",
+      "transliteration": "WarafaAAna laka thikraka",
+      "translations": {
+        "en_sahih": "And raised high for you your repute.",
+        "en_yusufali": "And raised high the esteem (in which) thou (art held)?",
+        "ms_basmeih": "Dan Kami telah meninggikan bagimu: sebutan namamu (dengan mengurniakan pangkat Nabi dan berbagai kemuliaan)?"
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "فَإِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+      "transliteration": "Fainna maAAa alAAusri yusran",
+      "translations": {
+        "en_sahih": "For indeed, with hardship [will be] ease.",
+        "en_yusufali": "So, verily, with every difficulty, there is relief:",
+        "ms_basmeih": "Oleh itu, maka (tetapkanlah kepercayaanmu) bahawa sesungguhnya tiap-tiap kesukaran disertai kemudahan,"
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "إِنَّ مَعَ ٱلْعُسْرِ يُسْرًا",
+      "transliteration": "Inna maAAa alAAusri yusran",
+      "translations": {
+        "en_sahih": "Indeed, with hardship [will be] ease.",
+        "en_yusufali": "Verily, with every difficulty there is relief.",
+        "ms_basmeih": "(Sekali lagi ditegaskan): bahawa sesungguhnya tiap-tiap kesukaran disertai kemudahan."
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "فَإِذَا فَرَغْتَ فَٱنصَبْ",
+      "transliteration": "Faitha faraghta fainsab",
+      "translations": {
+        "en_sahih": "So when you have finished [your duties], then stand up [for worship].",
+        "en_yusufali": "Therefore, when thou art free (from thine immediate task), still labour hard,",
+        "ms_basmeih": "Kemudian apabila engkau telah selesai (daripada sesuatu amal soleh), maka bersungguh-sungguhlah engkau berusaha (mengerjakan amal soleh yang lain),"
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "وَإِلَىٰ رَبِّكَ فَٱرْغَب",
+      "transliteration": "Waila rabbika fairghab",
+      "translations": {
+        "en_sahih": "And to your Lord direct [your] longing.",
+        "en_yusufali": "And to thy Lord turn (all) thy attention.",
+        "ms_basmeih": "Dan kepada Tuhanmu sahaja hendaklah engkau memohon (apa yang engkau gemar dan ingini)."
+      }
+    }
+  ]
+}

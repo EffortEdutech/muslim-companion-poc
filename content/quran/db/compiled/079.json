@@ -1,0 +1,490 @@
+{
+  "surah": 79,
+  "metadata": {
+    "nameArabic": "النازعات",
+    "nameEnglish": "An-Nazi'at",
+    "nameTranslit": "An-Naazi'aat",
+    "meaning": "Those Who Drag Forth",
+    "revelation": "Meccan",
+    "revelationOrder": 81,
+    "period": "Late Meccan",
+    "ayahCount": 46,
+    "wordCount": 179,
+    "letterCount": 705,
+    "juz": 30,
+    "pageStart": 583,
+    "themes": [
+      "angels",
+      "death",
+      "moses",
+      "pharaoh",
+      "resurrection"
+    ],
+    "otherNames": [
+      "As-Sahirah"
+    ],
+    "significance": "Describes angels of death and the story of Moses and Pharaoh"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ وَٱلنَّـٰزِعَـٰتِ غَرْقًا",
+      "transliteration": "WaalnnaziAAati gharqan",
+      "translations": {
+        "en_sahih": "By those [angels] who extract with violence",
+        "en_yusufali": "By the (angels) who tear out (the souls of the wicked) with violence;",
+        "ms_basmeih": "Demi (makhluk-makhluk) yang mencabut (apa yang ditugaskan mencabutnya) dengan cara yang sekasar-kasarnya;"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "وَٱلنَّـٰشِطَـٰتِ نَشْطًا",
+      "transliteration": "Waalnnashitati nashtan",
+      "translations": {
+        "en_sahih": "And [by] those who remove with ease",
+        "en_yusufali": "By those who gently draw out (the souls of the blessed);",
+        "ms_basmeih": "Dan yang menarik (apa yang ditugaskan menariknya) dengan cara yang selembut-lembutnya;"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "وَٱلسَّـٰبِحَـٰتِ سَبْحًا",
+      "transliteration": "Waalssabihati sabhan",
+      "translations": {
+        "en_sahih": "And [by] those who glide [as if] swimming",
+        "en_yusufali": "And by those who glide along (on errands of mercy),",
+        "ms_basmeih": "Dan demi (makhluk-makhluk) yang cergas bergerak (menerima perintah) dengan gerak yang secergas-cergasnya;"
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "فَٱلسَّـٰبِقَـٰتِ سَبْقًا",
+      "transliteration": "Faalssabiqati sabqan",
+      "translations": {
+        "en_sahih": "And those who race each other in a race",
+        "en_yusufali": "Then press forward as in a race,",
+        "ms_basmeih": "Lalu masing-masing berlumba-lumba dahulu-mendahului (menjalankan tugasnya) dengan cara yang sesungguh-sungguhnya;"
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "فَٱلْمُدَبِّرَٰتِ أَمْرًا",
+      "transliteration": "Faalmudabbirati amran",
+      "translations": {
+        "en_sahih": "And those who arrange [each] matter,",
+        "en_yusufali": "Then arrange to do (the Commands of their Lord),",
+        "ms_basmeih": "Serta menyempurnakan tadbir urusan alam yang diperintahkan kepadanya; (sumpah demi sumpah, sesungguhnya kamu akan dibangkitkan hidup semula pada hari kiamat)! -"
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "يَوْمَ تَرْجُفُ ٱلرَّاجِفَةُ",
+      "transliteration": "Yawma tarjufu alrrajifatu",
+      "translations": {
+        "en_sahih": "On the Day the blast [of the Horn] will convulse [creation],",
+        "en_yusufali": "One Day everything that can be in commotion will be in violent commotion,",
+        "ms_basmeih": "Pada masa berlakunya \"tiupan sangkakala yang pertama\" yang menggoncangkan alam, (sehingga mati segala yang bernyawa dan punah-ranah sekalian makhluk selain dari yang dikecualikan),"
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "تَتْبَعُهَا ٱلرَّادِفَةُ",
+      "transliteration": "TatbaAAuha alrradifatu",
+      "translations": {
+        "en_sahih": "There will follow it the subsequent [one].",
+        "en_yusufali": "Followed by oft-repeated (commotions):",
+        "ms_basmeih": "Tiupan yang pertama itu diikuti oleh tiupan yang kedua, (yang menyebabkan orang-orang yang mati semuanya hidup semula serta keluar dari kubur masing-masing);"
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "قُلُوبٌ يَوْمَئِذٍ وَاجِفَةٌ",
+      "transliteration": "Quloobun yawmaithin wajifatun",
+      "translations": {
+        "en_sahih": "Hearts, that Day, will tremble,",
+        "en_yusufali": "Hearts that Day will be in agitation;",
+        "ms_basmeih": "Hati (manusia) pada hari itu berdebar-debar takut,"
+      }
+    },
+    {
+      "ayah": 9,
+      "arabic": "أَبْصَـٰرُهَا خَـٰشِعَةٌ",
+      "transliteration": "Absaruha khashiAAatun",
+      "translations": {
+        "en_sahih": "Their eyes humbled.",
+        "en_yusufali": "Cast down will be (their owners') eyes.",
+        "ms_basmeih": "Pemandangannya tunduk gerun."
+      }
+    },
+    {
+      "ayah": 10,
+      "arabic": "يَقُولُونَ أَءِنَّا لَمَرْدُودُونَ فِى ٱلْحَافِرَةِ",
+      "transliteration": "Yaqooloona ainna lamardoodoona fee alhafirati",
+      "translations": {
+        "en_sahih": "They are [presently] saying, \"Will we indeed be returned to [our] former state [of life]?",
+        "en_yusufali": "They say (now): \"What! shall we indeed be returned to (our) former state?",
+        "ms_basmeih": "Mereka (yang ingkar) berkata: \"Sungguhkah kita akan dikembalikan hidup seperti keadaan di dunia dahulu?"
+      }
+    },
+    {
+      "ayah": 11,
+      "arabic": "أَءِذَا كُنَّا عِظَـٰمًا نَّخِرَةً",
+      "transliteration": "Aitha kunna AAithaman nakhiratan",
+      "translations": {
+        "en_sahih": "Even if we should be decayed bones?",
+        "en_yusufali": "\"What! - when we shall have become rotten bones?\"",
+        "ms_basmeih": "\"Bolehkah (dihidupkan semula) sesudah kita menjadi tulang yang reput?\""
+      }
+    },
+    {
+      "ayah": 12,
+      "arabic": "قَالُوا۟ تِلْكَ إِذًا كَرَّةٌ خَاسِرَةٌ",
+      "transliteration": "Qaloo tilka ithan karratun khasiratun",
+      "translations": {
+        "en_sahih": "They say, \"That, then, would be a losing return.\"",
+        "en_yusufali": "They say: \"It would, in that case, be a return with loss!\"",
+        "ms_basmeih": "Mereka berkata lagi (secara mengejek: \"Kalaulah berlaku) yang demikian, sudah tentu kembalinya kita (hidup semula) itu satu perkara yang merugikan!\""
+      }
+    },
+    {
+      "ayah": 13,
+      "arabic": "فَإِنَّمَا هِىَ زَجْرَةٌ وَٰحِدَةٌ",
+      "transliteration": "Fainnama hiya zajratun wahidatun",
+      "translations": {
+        "en_sahih": "Indeed, it will be but one shout,",
+        "en_yusufali": "But verily, it will be but a single (Compelling) Cry,",
+        "ms_basmeih": "(Menghidupkan semula tidaklah sukar), kerana berlakunya perkara itu hanyalah dengan satu jeritan (yang terbit dari tiupan sangkakala yang kedua), -"
+      }
+    },
+    {
+      "ayah": 14,
+      "arabic": "فَإِذَا هُم بِٱلسَّاهِرَةِ",
+      "transliteration": "Faitha hum bialssahirati",
+      "translations": {
+        "en_sahih": "And suddenly they will be [alert] upon the earth's surface.",
+        "en_yusufali": "When, behold, they will be in the (full) awakening (to Judgment).",
+        "ms_basmeih": "Yang menyebabkan mereka dengan serta-merta berada di muka bumi yang putih rata."
+      }
+    },
+    {
+      "ayah": 15,
+      "arabic": "هَلْ أَتَىٰكَ حَدِيثُ مُوسَىٰٓ",
+      "transliteration": "Hal ataka hadeethu moosa",
+      "translations": {
+        "en_sahih": "Has there reached you the story of Moses? -",
+        "en_yusufali": "Has the story of Moses reached thee?",
+        "ms_basmeih": "Sudahkah sampai kepadamu (wahai Muhammad) perihal Nabi Musa?"
+      }
+    },
+    {
+      "ayah": 16,
+      "arabic": "إِذْ نَادَىٰهُ رَبُّهُۥ بِٱلْوَادِ ٱلْمُقَدَّسِ طُوًى",
+      "transliteration": "Ith nadahu rabbuhu bialwadi almuqaddasi tuwan",
+      "translations": {
+        "en_sahih": "When his Lord called to him in the sacred valley of Tuwa,",
+        "en_yusufali": "Behold, thy Lord did call to him in the sacred valley of Tuwa:-",
+        "ms_basmeih": "Ketika ia diseru oleh Tuhannya di \"Wadi Tuwa\" yang suci; -"
+      }
+    },
+    {
+      "ayah": 17,
+      "arabic": "ٱذْهَبْ إِلَىٰ فِرْعَوْنَ إِنَّهُۥ طَغَىٰ",
+      "transliteration": "Ithhab ila firAAawna innahu tagha",
+      "translations": {
+        "en_sahih": "\"Go to Pharaoh. Indeed, he has transgressed.",
+        "en_yusufali": "\"Go thou to Pharaoh for he has indeed transgressed all bounds:",
+        "ms_basmeih": "(Lalu diperintahkan kepadanya): \"Pergilah kepada Firaun, sesungguhnya ia telah melampaui batas (dalam kekufuran dan kezalimannya);"
+      }
+    },
+    {
+      "ayah": 18,
+      "arabic": "فَقُلْ هَل لَّكَ إِلَىٰٓ أَن تَزَكَّىٰ",
+      "transliteration": "Faqul hal laka ila an tazakka",
+      "translations": {
+        "en_sahih": "And say to him, 'Would you [be willing to] purify yourself",
+        "en_yusufali": "\"And say to him, 'Wouldst thou that thou shouldst be purified (from sin)?-",
+        "ms_basmeih": "\"Serta katakanlah kepadanya: `Adakah engkau suka hendak mensucikan dirimu (dari kekufuran)?"
+      }
+    },
+    {
+      "ayah": 19,
+      "arabic": "وَأَهْدِيَكَ إِلَىٰ رَبِّكَ فَتَخْشَىٰ",
+      "transliteration": "Waahdiyaka ila rabbika fatakhsha",
+      "translations": {
+        "en_sahih": "And let me guide you to your Lord so you would fear [Him]?'\"",
+        "en_yusufali": "\"'And that I guide thee to thy Lord, so thou shouldst fear Him?'\"",
+        "ms_basmeih": "`Dan mahukah, aku tunjuk kepadamu jalan mengenal Tuhanmu, supaya engkau merasa takut (melanggar perintahNya)? ' \""
+      }
+    },
+    {
+      "ayah": 20,
+      "arabic": "فَأَرَىٰهُ ٱلْـَٔايَةَ ٱلْكُبْرَىٰ",
+      "transliteration": "Faarahu alayata alkubra",
+      "translations": {
+        "en_sahih": "And he showed him the greatest sign,",
+        "en_yusufali": "Then did (Moses) show him the Great Sign.",
+        "ms_basmeih": "(Setelah Nabi Musa menyempurnakan perintah Tuhannya, dan Firaun pun meminta bukti kebenarannya); maka Nabi Musa memperlihatkan kepada Firaun: mukjizat yang besar."
+      }
+    },
+    {
+      "ayah": 21,
+      "arabic": "فَكَذَّبَ وَعَصَىٰ",
+      "transliteration": "Fakaththaba waAAasa",
+      "translations": {
+        "en_sahih": "But Pharaoh denied and disobeyed.",
+        "en_yusufali": "But (Pharaoh) rejected it and disobeyed (guidance);",
+        "ms_basmeih": "Lalu Firaun mendustakan (Nabi Musa) dan menderhaka (kepada Allah);"
+      }
+    },
+    {
+      "ayah": 22,
+      "arabic": "ثُمَّ أَدْبَرَ يَسْعَىٰ",
+      "transliteration": "Thumma adbara yasAAa",
+      "translations": {
+        "en_sahih": "Then he turned his back, striving.",
+        "en_yusufali": "Further, he turned his back, striving hard (against Allah).",
+        "ms_basmeih": "Kemudian ia berpaling ingkar sambil menjalankan usahanya (menentang Nabi Musa)."
+      }
+    },
+    {
+      "ayah": 23,
+      "arabic": "فَحَشَرَ فَنَادَىٰ",
+      "transliteration": "Fahashara fanada",
+      "translations": {
+        "en_sahih": "And he gathered [his people] and called out",
+        "en_yusufali": "Then he collected (his men) and made a proclamation,",
+        "ms_basmeih": "Lalu ia menghimpunkan orang-orangnya dan menyeru, -"
+      }
+    },
+    {
+      "ayah": 24,
+      "arabic": "فَقَالَ أَنَا۠ رَبُّكُمُ ٱلْأَعْلَىٰ",
+      "transliteration": "Faqala ana rabbukumu alaAAla",
+      "translations": {
+        "en_sahih": "And said, \"I am your most exalted lord.\"",
+        "en_yusufali": "Saying, \"I am your Lord, Most High\".",
+        "ms_basmeih": "Dengan berkata: \"Akulah tuhan kamu, yang tertinggi\"."
+      }
+    },
+    {
+      "ayah": 25,
+      "arabic": "فَأَخَذَهُ ٱللَّهُ نَكَالَ ٱلْـَٔاخِرَةِ وَٱلْأُولَىٰٓ",
+      "transliteration": "Faakhathahu Allahu nakala alakhirati waaloola",
+      "translations": {
+        "en_sahih": "So Allah seized him in exemplary punishment for the last and the first [transgression].",
+        "en_yusufali": "But Allah did punish him, (and made an) example of him, - in the Hereafter, as in this life.",
+        "ms_basmeih": "Maka Allah menyeksa Firaun di akhirat dan di dunia ini, dengan azab yang menakutkan sesiapa yang mengetahuinya."
+      }
+    },
+    {
+      "ayah": 26,
+      "arabic": "إِنَّ فِى ذَٰلِكَ لَعِبْرَةً لِّمَن يَخْشَىٰٓ",
+      "transliteration": "Inna fee thalika laAAibratan liman yakhsha",
+      "translations": {
+        "en_sahih": "Indeed in that is a warning for whoever would fear [Allah].",
+        "en_yusufali": "Verily in this is an instructive warning for whosoever feareth (Allah).",
+        "ms_basmeih": "Sesungguhnya yang demikian itu mengandungi pelajaran yang mendatangkan iktibar bagi orang-orang yang takut (melanggar perintah Tuhannya)."
+      }
+    },
+    {
+      "ayah": 27,
+      "arabic": "ءَأَنتُمْ أَشَدُّ خَلْقًا أَمِ ٱلسَّمَآءُ ۚ بَنَىٰهَا",
+      "transliteration": "Aantum ashaddu khalqan ami alssamao banaha",
+      "translations": {
+        "en_sahih": "Are you a more difficult creation or is the heaven? Allah constructed it.",
+        "en_yusufali": "What! Are ye the more difficult to create or the heaven (above)? (Allah) hath constructed it:",
+        "ms_basmeih": "(Wahai golongan yang ingkarkan kebangkitan hidup semula!) Kamukah yang sukar diciptakan atau langit? Tuhan telah membinanya (dengan Kukuh)!"
+      }
+    },
+    {
+      "ayah": 28,
+      "arabic": "رَفَعَ سَمْكَهَا فَسَوَّىٰهَا",
+      "transliteration": "RafaAAa samkaha fasawwaha",
+      "translations": {
+        "en_sahih": "He raised its ceiling and proportioned it.",
+        "en_yusufali": "On high hath He raised its canopy, and He hath given it order and perfection.",
+        "ms_basmeih": "Ia telah meninggikan bangunan langit itu lalu menyempurnaKannya,"
+      }
+    },
+    {
+      "ayah": 29,
+      "arabic": "وَأَغْطَشَ لَيْلَهَا وَأَخْرَجَ ضُحَىٰهَا",
+      "transliteration": "Waaghtasha laylaha waakhraja duhaha",
+      "translations": {
+        "en_sahih": "And He darkened its night and extracted its brightness.",
+        "en_yusufali": "Its night doth He endow with darkness, and its splendour doth He bring out (with light).",
+        "ms_basmeih": "Dan Ia menjadikan malamnya gelap-gelita, serta menjadikan siangnya terang-benderang."
+      }
+    },
+    {
+      "ayah": 30,
+      "arabic": "وَٱلْأَرْضَ بَعْدَ ذَٰلِكَ دَحَىٰهَآ",
+      "transliteration": "Waalarda baAAda thalika dahaha",
+      "translations": {
+        "en_sahih": "And after that He spread the earth.",
+        "en_yusufali": "And the earth, moreover, hath He extended (to a wide expanse);",
+        "ms_basmeih": "Dan bumi sesudah itu dihamparkannya (untuk kemudahan penduduknya), -"
+      }
+    },
+    {
+      "ayah": 31,
+      "arabic": "أَخْرَجَ مِنْهَا مَآءَهَا وَمَرْعَىٰهَا",
+      "transliteration": "Akhraja minha maaha wamarAAaha",
+      "translations": {
+        "en_sahih": "He extracted from it its water and its pasture,",
+        "en_yusufali": "He draweth out therefrom its moisture and its pasture;",
+        "ms_basmeih": "Ia mengeluarkan dari bumi itu: airnya dan tumbuh-tumbuhannya;"
+      }
+    },
+    {
+      "ayah": 32,
+      "arabic": "وَٱلْجِبَالَ أَرْسَىٰهَا",
+      "transliteration": "Waaljibala arsaha",
+      "translations": {
+        "en_sahih": "And the mountains He set firmly",
+        "en_yusufali": "And the mountains hath He firmly fixed;-",
+        "ms_basmeih": "Dan gunung-ganang pula dikukuhkan letaknya (di bumi, sebagai pancang pasak yang menetapnya);"
+      }
+    },
+    {
+      "ayah": 33,
+      "arabic": "مَتَـٰعًا لَّكُمْ وَلِأَنْعَـٰمِكُمْ",
+      "transliteration": "MataAAan lakum walianAAamikum",
+      "translations": {
+        "en_sahih": "As provision for you and your grazing livestock.",
+        "en_yusufali": "For use and convenience to you and your cattle.",
+        "ms_basmeih": "(Semuanya itu) untuk kegunaan kamu dan binatang-binatang ternak kamu."
+      }
+    },
+    {
+      "ayah": 34,
+      "arabic": "فَإِذَا جَآءَتِ ٱلطَّآمَّةُ ٱلْكُبْرَىٰ",
+      "transliteration": "Faitha jaati alttammatu alkubra",
+      "translations": {
+        "en_sahih": "But when there comes the greatest Overwhelming Calamity -",
+        "en_yusufali": "Therefore, when there comes the great, overwhelming (Event),-",
+        "ms_basmeih": "Maka apabila datang hari yang bencananya amat besar, -"
+      }
+    },
+    {
+      "ayah": 35,
+      "arabic": "يَوْمَ يَتَذَكَّرُ ٱلْإِنسَـٰنُ مَا سَعَىٰ",
+      "transliteration": "Yawma yatathakkaru alinsanu ma saAAa",
+      "translations": {
+        "en_sahih": "The Day when man will remember that for which he strove,",
+        "en_yusufali": "The Day when man shall remember (all) that he strove for,",
+        "ms_basmeih": "Iaitu hari manusia akan mengingati apa yang telah diusahakannya, -"
+      }
+    },
+    {
+      "ayah": 36,
+      "arabic": "وَبُرِّزَتِ ٱلْجَحِيمُ لِمَن يَرَىٰ",
+      "transliteration": "Waburrizati aljaheemu liman yara",
+      "translations": {
+        "en_sahih": "And Hellfire will be exposed for [all] those who see -",
+        "en_yusufali": "And Hell-Fire shall be placed in full view for (all) to see,-",
+        "ms_basmeih": "Dan neraka diperlihatkan kepada sesiapa sahaja yang dapat melihatnya, -"
+      }
+    },
+    {
+      "ayah": 37,
+      "arabic": "فَأَمَّا مَن طَغَىٰ",
+      "transliteration": "Faamma man tagha",
+      "translations": {
+        "en_sahih": "So as for he who transgressed",
+        "en_yusufali": "Then, for such as had transgressed all bounds,",
+        "ms_basmeih": "Maka (dapatlah masing-masing mengetahui kesudahannya); adapun orang yang melampau (perbuatan derhakanya), -"
+      }
+    },
+    {
+      "ayah": 38,
+      "arabic": "وَءَاثَرَ ٱلْحَيَوٰةَ ٱلدُّنْيَا",
+      "transliteration": "Waathara alhayata alddunya",
+      "translations": {
+        "en_sahih": "And preferred the life of the world,",
+        "en_yusufali": "And had preferred the life of this world,",
+        "ms_basmeih": "Serta ia mengutamakan kehidupan dunia semata-mata, -"
+      }
+    },
+    {
+      "ayah": 39,
+      "arabic": "فَإِنَّ ٱلْجَحِيمَ هِىَ ٱلْمَأْوَىٰ",
+      "transliteration": "Fainna aljaheema hiya almawa",
+      "translations": {
+        "en_sahih": "Then indeed, Hellfire will be [his] refuge.",
+        "en_yusufali": "The Abode will be Hell-Fire;",
+        "ms_basmeih": "Maka sesungguhnya neraka Jahanamlah tempat kediamannya."
+      }
+    },
+    {
+      "ayah": 40,
+      "arabic": "وَأَمَّا مَنْ خَافَ مَقَامَ رَبِّهِۦ وَنَهَى ٱلنَّفْسَ عَنِ ٱلْهَوَىٰ",
+      "transliteration": "Waama man khafa maqama rabbihi wanaha alnnafsa AAani alhawa",
+      "translations": {
+        "en_sahih": "But as for he who feared the position of his Lord and prevented the soul from [unlawful] inclination,",
+        "en_yusufali": "And for such as had entertained the fear of standing before their Lord's (tribunal) and had restrained (their) soul from lower desires,",
+        "ms_basmeih": "Adapun orang yang takutkan keadaan semasa ia berdiri di mahkamah Tuhannya, (untuk dihitung amalnya), serta ia menahan dirinya dari menurut hawa nafsu, -"
+      }
+    },
+    {
+      "ayah": 41,
+      "arabic": "فَإِنَّ ٱلْجَنَّةَ هِىَ ٱلْمَأْوَىٰ",
+      "transliteration": "Fainna aljannata hiya almawa",
+      "translations": {
+        "en_sahih": "Then indeed, Paradise will be [his] refuge.",
+        "en_yusufali": "Their abode will be the Garden.",
+        "ms_basmeih": "Maka sesungguhnya Syurgalah tempat kediamannya."
+      }
+    },
+    {
+      "ayah": 42,
+      "arabic": "يَسْـَٔلُونَكَ عَنِ ٱلسَّاعَةِ أَيَّانَ مُرْسَىٰهَا",
+      "transliteration": "Yasaloonaka AAani alssaAAati ayyana mursaha",
+      "translations": {
+        "en_sahih": "They ask you, [O Muhammad], about the Hour: when is its arrival?",
+        "en_yusufali": "They ask thee about the Hour,-'When will be its appointed time?",
+        "ms_basmeih": "Mereka (yang ingkar) selalu bertanya kepadamu (wahai Muhammad) tentang hari kiamat: \"Bilakah masa datangnya?\""
+      }
+    },
+    {
+      "ayah": 43,
+      "arabic": "فِيمَ أَنتَ مِن ذِكْرَىٰهَآ",
+      "transliteration": "Feema anta min thikraha",
+      "translations": {
+        "en_sahih": "In what [position] are you that you should mention it?",
+        "en_yusufali": "Wherein art thou (concerned) with the declaration thereof?",
+        "ms_basmeih": "Apa hubungannya tugasmu dengan (soal) menerangkan masa kedatangan hari kiamat itu?"
+      }
+    },
+    {
+      "ayah": 44,
+      "arabic": "إِلَىٰ رَبِّكَ مُنتَهَىٰهَآ",
+      "transliteration": "Ila rabbika muntahaha",
+      "translations": {
+        "en_sahih": "To your Lord is its finality.",
+        "en_yusufali": "With thy Lord in the Limit fixed therefor.",
+        "ms_basmeih": "Kepada Tuhanmu lah terserah kesudahan ilmu mengenainya."
+      }
+    },
+    {
+      "ayah": 45,
+      "arabic": "إِنَّمَآ أَنتَ مُنذِرُ مَن يَخْشَىٰهَا",
+      "transliteration": "Innama anta munthiru man yakhshaha",
+      "translations": {
+        "en_sahih": "You are only a warner for those who fear it.",
+        "en_yusufali": "Thou art but a Warner for such as fear it.",
+        "ms_basmeih": "Tugasmu hanyalah memberi amaran kepada orang yang takut akan huru-hara hari kiamat itu."
+      }
+    },
+    {
+      "ayah": 46,
+      "arabic": "كَأَنَّهُمْ يَوْمَ يَرَوْنَهَا لَمْ يَلْبَثُوٓا۟ إِلَّا عَشِيَّةً أَوْ ضُحَىٰهَا",
+      "transliteration": "Kaannahum yawma yarawnaha lam yalbathoo illa AAashiyyatan aw duhaha",
+      "translations": {
+        "en_sahih": "It will be, on the Day they see it, as though they had not remained [in the world] except for an afternoon or a morning thereof.",
+        "en_yusufali": "The Day they see it, (It will be) as if they had tarried but a single evening, or (at most till) the following morn!",
+        "ms_basmeih": "(Sangatlah dahsyatnya huru-hara hari itu, sehingga orang-orang yang bersalah merasa) pada masa melihatnya: seolah-olah mereka tidak tinggal di dunia melainkan sekadar satu petang atau paginya sahaja."
+      }
+    }
+  ]
+}

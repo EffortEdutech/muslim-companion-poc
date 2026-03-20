@@ -1,0 +1,290 @@
+{
+  "surah": 88,
+  "metadata": {
+    "nameArabic": "الغاشية",
+    "nameEnglish": "Al-Ghashiyah",
+    "nameTranslit": "Al-Ghaashiyah",
+    "meaning": "The Overwhelming",
+    "revelation": "Meccan",
+    "revelationOrder": 68,
+    "period": "Early Meccan",
+    "ayahCount": 26,
+    "wordCount": 92,
+    "letterCount": 382,
+    "juz": 30,
+    "pageStart": 592,
+    "themes": [
+      "overwhelming_event",
+      "paradise",
+      "hell",
+      "creation_signs",
+      "reminder"
+    ],
+    "otherNames": [
+      "The Enveloper"
+    ],
+    "significance": "Describes the overwhelming nature of the Day of Judgment and contrasts paradise with hell"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ هَلْ أَتَىٰكَ حَدِيثُ ٱلْغَـٰشِيَةِ",
+      "transliteration": "Hal ataka hadeethu alghashiyati",
+      "translations": {
+        "en_sahih": "Has there reached you the report of the Overwhelming [event]?",
+        "en_yusufali": "Has the story reached thee of the overwhelming (Event)?",
+        "ms_basmeih": "Sudahkah sampai kepadamu (wahai Muhammad) perihal hari kiamat yang huru-haranya meliputi?"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "وُجُوهٌ يَوْمَئِذٍ خَـٰشِعَةٌ",
+      "transliteration": "Wujoohun yawmaithin khashiAAatun",
+      "translations": {
+        "en_sahih": "[Some] faces, that Day, will be humbled,",
+        "en_yusufali": "Some faces, that Day, will be humiliated,",
+        "ms_basmeih": "Muka (orang-orang yang kafir) pada hari itu tunduk kerana merasa hina,"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "عَامِلَةٌ نَّاصِبَةٌ",
+      "transliteration": "AAamilatun nasibatun",
+      "translations": {
+        "en_sahih": "Working [hard] and exhausted.",
+        "en_yusufali": "Labouring (hard), weary,-",
+        "ms_basmeih": "Mereka menjalankan kerja yang berat lagi berpenat lelah,"
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "تَصْلَىٰ نَارًا حَامِيَةً",
+      "transliteration": "Tasla naran hamiyatan",
+      "translations": {
+        "en_sahih": "They will [enter to] burn in an intensely hot Fire.",
+        "en_yusufali": "The while they enter the Blazing Fire,-",
+        "ms_basmeih": "Mereka tetap menderita bakaran neraka yang amat panas (membakar), -"
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "تُسْقَىٰ مِنْ عَيْنٍ ءَانِيَةٍ",
+      "transliteration": "Tusqa min AAaynin aniyatin",
+      "translations": {
+        "en_sahih": "They will be given drink from a boiling spring.",
+        "en_yusufali": "The while they are given, to drink, of a boiling hot spring,",
+        "ms_basmeih": "Mereka diberi minum dari matair yang menggelegak panasnya."
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "لَّيْسَ لَهُمْ طَعَامٌ إِلَّا مِن ضَرِيعٍ",
+      "transliteration": "Laysa lahum taAAamun illa min dareeAAin",
+      "translations": {
+        "en_sahih": "For them there will be no food except from a poisonous, thorny plant",
+        "en_yusufali": "No food will there be for them but a bitter Dhari'",
+        "ms_basmeih": "Tiada makanan bagi mereka (di situ) selain dari pokok-pokok yang berduri,"
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "لَّا يُسْمِنُ وَلَا يُغْنِى مِن جُوعٍ",
+      "transliteration": "La yusminu wala yughnee min jooAAin",
+      "translations": {
+        "en_sahih": "Which neither nourishes nor avails against hunger.",
+        "en_yusufali": "Which will neither nourish nor satisfy hunger.",
+        "ms_basmeih": "Yang tidak menggemokkan, dan tidak pula dapat menghilangkan sedikit kelaparan pun."
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "وُجُوهٌ يَوْمَئِذٍ نَّاعِمَةٌ",
+      "transliteration": "Wujoohun yawmaithin naAAimatun",
+      "translations": {
+        "en_sahih": "[Other] faces, that Day, will show pleasure.",
+        "en_yusufali": "(Other) faces that Day will be joyful,",
+        "ms_basmeih": "(Sebaliknya) muka (orang-orang yang beriman) pada hari itu berseri-seri,"
+      }
+    },
+    {
+      "ayah": 9,
+      "arabic": "لِّسَعْيِهَا رَاضِيَةٌ",
+      "transliteration": "LisaAAyiha radiyatun",
+      "translations": {
+        "en_sahih": "With their effort [they are] satisfied",
+        "en_yusufali": "Pleased with their striving,-",
+        "ms_basmeih": "Berpuas hati dengan balasan amal usahanya (yang baik yang telah dikerjakannya di dunia), -"
+      }
+    },
+    {
+      "ayah": 10,
+      "arabic": "فِى جَنَّةٍ عَالِيَةٍ",
+      "transliteration": "Fee jannatin AAaliyatin",
+      "translations": {
+        "en_sahih": "In an elevated garden,",
+        "en_yusufali": "In a Garden on high,",
+        "ms_basmeih": "(Mereka tinggal menetap) di dalam Syurga tinggi (tempat kedudukannya darjatnya),"
+      }
+    },
+    {
+      "ayah": 11,
+      "arabic": "لَّا تَسْمَعُ فِيهَا لَـٰغِيَةً",
+      "transliteration": "La tasmaAAu feeha laghiyatan",
+      "translations": {
+        "en_sahih": "Wherein they will hear no unsuitable speech.",
+        "en_yusufali": "Where they shall hear no (word) of vanity:",
+        "ms_basmeih": "Mereka tidak mendengar di situ sebarang perkataan yang sia-sia,"
+      }
+    },
+    {
+      "ayah": 12,
+      "arabic": "فِيهَا عَيْنٌ جَارِيَةٌ",
+      "transliteration": "Feeha AAaynun jariyatun",
+      "translations": {
+        "en_sahih": "Within it is a flowing spring.",
+        "en_yusufali": "Therein will be a bubbling spring:",
+        "ms_basmeih": "Di dalam Syurga itu ada matair yang mengalir,"
+      }
+    },
+    {
+      "ayah": 13,
+      "arabic": "فِيهَا سُرُرٌ مَّرْفُوعَةٌ",
+      "transliteration": "Feeha sururun marfooAAatun",
+      "translations": {
+        "en_sahih": "Within it are couches raised high",
+        "en_yusufali": "Therein will be Thrones (of dignity), raised on high,",
+        "ms_basmeih": "Di situ juga ada pelamin-pelamin (berhias) yang tinggi (tempatnya),"
+      }
+    },
+    {
+      "ayah": 14,
+      "arabic": "وَأَكْوَابٌ مَّوْضُوعَةٌ",
+      "transliteration": "Waakwabun mawdooAAatun",
+      "translations": {
+        "en_sahih": "And cups put in place",
+        "en_yusufali": "Goblets placed (ready),",
+        "ms_basmeih": "Dan piala-piala minuman yang disediakan (untuk mereka),"
+      }
+    },
+    {
+      "ayah": 15,
+      "arabic": "وَنَمَارِقُ مَصْفُوفَةٌ",
+      "transliteration": "Wanamariqu masfoofatun",
+      "translations": {
+        "en_sahih": "And cushions lined up",
+        "en_yusufali": "And cushions set in rows,",
+        "ms_basmeih": "Dan bantal-bantal yang teratur (untuk mereka berbaring atau bersandar),"
+      }
+    },
+    {
+      "ayah": 16,
+      "arabic": "وَزَرَابِىُّ مَبْثُوثَةٌ",
+      "transliteration": "Wazarabiyyu mabthoothatun",
+      "translations": {
+        "en_sahih": "And carpets spread around.",
+        "en_yusufali": "And rich carpets (all) spread out.",
+        "ms_basmeih": "Serta hamparan-hamparan yang terbentang."
+      }
+    },
+    {
+      "ayah": 17,
+      "arabic": "أَفَلَا يَنظُرُونَ إِلَى ٱلْإِبِلِ كَيْفَ خُلِقَتْ",
+      "transliteration": "Afala yanthuroona ila alibili kayfa khuliqat",
+      "translations": {
+        "en_sahih": "Then do they not look at the camels - how they are created?",
+        "en_yusufali": "Do they not look at the Camels, how they are made?-",
+        "ms_basmeih": "(Mengapa mereka yang kafir masih mengingkari akhirat) tidakkah mereka memperhatikan keadaan unta bagaimana ia diciptakan?"
+      }
+    },
+    {
+      "ayah": 18,
+      "arabic": "وَإِلَى ٱلسَّمَآءِ كَيْفَ رُفِعَتْ",
+      "transliteration": "Waila alssamai kayfa rufiAAat",
+      "translations": {
+        "en_sahih": "And at the sky - how it is raised?",
+        "en_yusufali": "And at the Sky, how it is raised high?-",
+        "ms_basmeih": "Dan keadaan langit bagaimana ia ditinggikan binaannya.?"
+      }
+    },
+    {
+      "ayah": 19,
+      "arabic": "وَإِلَى ٱلْجِبَالِ كَيْفَ نُصِبَتْ",
+      "transliteration": "Waila aljibali kayfa nusibat",
+      "translations": {
+        "en_sahih": "And at the mountains - how they are erected?",
+        "en_yusufali": "And at the Mountains, how they are fixed firm?-",
+        "ms_basmeih": "Dan keadaan gunung-ganang bagaimana ia ditegakkan?"
+      }
+    },
+    {
+      "ayah": 20,
+      "arabic": "وَإِلَى ٱلْأَرْضِ كَيْفَ سُطِحَتْ",
+      "transliteration": "Waila alardi kayfa sutihat",
+      "translations": {
+        "en_sahih": "And at the earth - how it is spread out?",
+        "en_yusufali": "And at the Earth, how it is spread out?",
+        "ms_basmeih": "Dan keadaan bumi bagaimana ia dihamparkan?"
+      }
+    },
+    {
+      "ayah": 21,
+      "arabic": "فَذَكِّرْ إِنَّمَآ أَنتَ مُذَكِّرٌ",
+      "transliteration": "Fathakkir innama anta muthakkirun",
+      "translations": {
+        "en_sahih": "So remind, [O Muhammad]; you are only a reminder.",
+        "en_yusufali": "Therefore do thou give admonition, for thou art one to admonish.",
+        "ms_basmeih": "Oleh itu berikanlah sahaja peringatan (wahai Muhammad, kepada manusia, dan janganlah berdukacita kiranya ada yang menolaknya), kerana sesungguhnya engkau hanyalah seorang Rasul pemberi ingatan;"
+      }
+    },
+    {
+      "ayah": 22,
+      "arabic": "لَّسْتَ عَلَيْهِم بِمُصَيْطِرٍ",
+      "transliteration": "Lasta AAalayhim bimusaytirin",
+      "translations": {
+        "en_sahih": "You are not over them a controller.",
+        "en_yusufali": "Thou art not one to manage (men's) affairs.",
+        "ms_basmeih": "Bukanlah engkau seorang yang berkuasa memaksa mereka (menerima ajaran Islam yang engkau sampaikan itu)."
+      }
+    },
+    {
+      "ayah": 23,
+      "arabic": "إِلَّا مَن تَوَلَّىٰ وَكَفَرَ",
+      "transliteration": "Illa man tawalla wakafara",
+      "translations": {
+        "en_sahih": "However, he who turns away and disbelieves -",
+        "en_yusufali": "But if any turn away and reject Allah,-",
+        "ms_basmeih": "Akan tetapi sesiapa yang berpaling (dari kebenaran) serta ia kufur ingkar, -"
+      }
+    },
+    {
+      "ayah": 24,
+      "arabic": "فَيُعَذِّبُهُ ٱللَّهُ ٱلْعَذَابَ ٱلْأَكْبَرَ",
+      "transliteration": "FayuAAaththibuhu Allahu alAAathaba alakbara",
+      "translations": {
+        "en_sahih": "Then Allah will punish him with the greatest punishment.",
+        "en_yusufali": "Allah will punish him with a mighty Punishment,",
+        "ms_basmeih": "Maka Allah akan menyeksanya dengan azab seksa yang sebesar-besarnya."
+      }
+    },
+    {
+      "ayah": 25,
+      "arabic": "إِنَّ إِلَيْنَآ إِيَابَهُمْ",
+      "transliteration": "Inna ilayna iyabahum",
+      "translations": {
+        "en_sahih": "Indeed, to Us is their return.",
+        "en_yusufali": "For to Us will be their return;",
+        "ms_basmeih": "Sesungguhnya kepada Kamilah kembalinya mereka,"
+      }
+    },
+    {
+      "ayah": 26,
+      "arabic": "ثُمَّ إِنَّ عَلَيْنَا حِسَابَهُم",
+      "transliteration": "Thumma inna AAalayna hisabahum",
+      "translations": {
+        "en_sahih": "Then indeed, upon Us is their account.",
+        "en_yusufali": "Then it will be for Us to call them to account.",
+        "ms_basmeih": "Selain dari itu, sesungguhnya tanggungan Kamilah soal menghitung amal mereka."
+      }
+    }
+  ]
+}

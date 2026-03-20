@@ -1,0 +1,80 @@
+{
+  "surah": 97,
+  "metadata": {
+    "nameArabic": "القدر",
+    "nameEnglish": "Al-Qadr",
+    "nameTranslit": "Al-Qadr",
+    "meaning": "The Power",
+    "revelation": "Meccan",
+    "revelationOrder": 25,
+    "period": "Early Meccan",
+    "ayahCount": 5,
+    "wordCount": 30,
+    "letterCount": 113,
+    "juz": 30,
+    "pageStart": 598,
+    "themes": [
+      "night_of_power",
+      "angels",
+      "spirit",
+      "peace",
+      "thousand_months"
+    ],
+    "otherNames": [
+      "Laylat al-Qadr (The Night of Decree)"
+    ],
+    "significance": "Describes the Night of Power when the Quran was first revealed"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِّسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ إِنَّآ أَنزَلْنَـٰهُ فِى لَيْلَةِ ٱلْقَدْرِ",
+      "transliteration": "Inna anzalnahu fee laylati alqadri",
+      "translations": {
+        "en_sahih": "Indeed, We sent the Qur'an down during the Night of Decree.",
+        "en_yusufali": "We have indeed revealed this (Message) in the Night of Power:",
+        "ms_basmeih": "Sesungguhnya Kami telah menurunkan (Al-Quran) ini pada Malam Lailatul-Qadar,"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "وَمَآ أَدْرَىٰكَ مَا لَيْلَةُ ٱلْقَدْرِ",
+      "transliteration": "Wama adraka ma laylatu alqadri",
+      "translations": {
+        "en_sahih": "And what can make you know what is the Night of Decree?",
+        "en_yusufali": "And what will explain to thee what the night of power is?",
+        "ms_basmeih": "Dan apa jalannya engkau dapat mengetahui apa dia kebesaran Malam Lailatul-Qadar itu?"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "لَيْلَةُ ٱلْقَدْرِ خَيْرٌ مِّنْ أَلْفِ شَهْرٍ",
+      "transliteration": "Laylatu alqadri khayrun min alfi shahrin",
+      "translations": {
+        "en_sahih": "The Night of Decree is better than a thousand months.",
+        "en_yusufali": "The Night of Power is better than a thousand months.",
+        "ms_basmeih": "Malam Lailatul-Qadar lebih baik daripada seribu bulan."
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "تَنَزَّلُ ٱلْمَلَـٰٓئِكَةُ وَٱلرُّوحُ فِيهَا بِإِذْنِ رَبِّهِم مِّن كُلِّ أَمْرٍ",
+      "transliteration": "Tanazzalu almalaikatu waalrroohu feeha biithni rabbihim min kulli amrin",
+      "translations": {
+        "en_sahih": "The angels and the Spirit descend therein by permission of their Lord for every matter.",
+        "en_yusufali": "Therein come down the angels and the Spirit by Allah's permission, on every errand:",
+        "ms_basmeih": "Pada Malam itu, turun malaikat dan Jibril dengan izin Tuhan mereka, kerana membawa segala perkara (yang ditakdirkan berlakunya pada tahun yang berikut);"
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "سَلَـٰمٌ هِىَ حَتَّىٰ مَطْلَعِ ٱلْفَجْرِ",
+      "transliteration": "Salamun hiya hatta matlaAAi alfajri",
+      "translations": {
+        "en_sahih": "Peace it is until the emergence of dawn.",
+        "en_yusufali": "Peace!... This until the rise of morn!",
+        "ms_basmeih": "Sejahteralah Malam (yang berkat) itu hingga terbit fajar!"
+      }
+    }
+  ]
+}

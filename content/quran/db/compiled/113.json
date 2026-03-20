@@ -1,0 +1,78 @@
+{
+  "surah": 113,
+  "metadata": {
+    "nameArabic": "الفلق",
+    "nameEnglish": "Al-Falaq",
+    "nameTranslit": "Al-Falaq",
+    "meaning": "The Daybreak",
+    "revelation": "Meccan",
+    "revelationOrder": 20,
+    "period": "Early Meccan",
+    "ayahCount": 5,
+    "wordCount": 23,
+    "letterCount": 71,
+    "juz": 30,
+    "pageStart": 604,
+    "themes": [
+      "seeking_refuge",
+      "evil",
+      "darkness",
+      "witchcraft",
+      "envy"
+    ],
+    "otherNames": [],
+    "significance": "First of two protective surahs (Al-Mu'awwidhatain), seeks refuge from evil"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قُلْ أَعُوذُ بِرَبِّ ٱلْفَلَقِ",
+      "transliteration": "Qul aAAoothu birabbi alfalaqi",
+      "translations": {
+        "en_sahih": "Say, \"I seek refuge in the Lord of daybreak",
+        "en_yusufali": "Say: I seek refuge with the Lord of the Dawn",
+        "ms_basmeih": "Katakanlah (wahai Muhammad); \"Aku berlindung kepada (Allah) Tuhan yang menciptakan sekalian makhluk,"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "مِن شَرِّ مَا خَلَقَ",
+      "transliteration": "Min sharri ma khalaqa",
+      "translations": {
+        "en_sahih": "From the evil of that which He created",
+        "en_yusufali": "From the mischief of created things;",
+        "ms_basmeih": "\"Dari bencana makhluk-makhluk yang Ia ciptakan;"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "وَمِن شَرِّ غَاسِقٍ إِذَا وَقَبَ",
+      "transliteration": "Wamin sharri ghasiqin itha waqaba",
+      "translations": {
+        "en_sahih": "And from the evil of darkness when it settles",
+        "en_yusufali": "From the mischief of Darkness as it overspreads;",
+        "ms_basmeih": "\"Dan dari bahaya gelap apabila ia masuk;"
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "وَمِن شَرِّ ٱلنَّفَّـٰثَـٰتِ فِى ٱلْعُقَدِ",
+      "transliteration": "Wamin sharri alnnaffathati fee alAAuqadi",
+      "translations": {
+        "en_sahih": "And from the evil of the blowers in knots",
+        "en_yusufali": "From the mischief of those who practise secret arts;",
+        "ms_basmeih": "\"Dan dari kejahatan makhluk-makhluk yang menghembus-hembus pada simpulan-simpulan (dan ikatan-ikatan);"
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "وَمِن شَرِّ حَاسِدٍ إِذَا حَسَدَ",
+      "transliteration": "Wamin sharri hasidin itha hasada",
+      "translations": {
+        "en_sahih": "And from the evil of an envier when he envies.\"",
+        "en_yusufali": "And from the mischief of the envious one as he practises envy.",
+        "ms_basmeih": "\"Dan dari kejahatan orang yang dengki apabila ia melakukan dengkinya\"."
+      }
+    }
+  ]
+}

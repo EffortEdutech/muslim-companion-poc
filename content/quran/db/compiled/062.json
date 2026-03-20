@@ -1,0 +1,138 @@
+{
+  "surah": 62,
+  "metadata": {
+    "nameArabic": "الجمعة",
+    "nameEnglish": "Al-Jumu'ah",
+    "nameTranslit": "Al-Jumu'ah",
+    "meaning": "The Friday",
+    "revelation": "Medinan",
+    "revelationOrder": 110,
+    "period": "Late Medinan",
+    "ayahCount": 11,
+    "wordCount": 175,
+    "letterCount": 710,
+    "juz": 28,
+    "pageStart": 553,
+    "themes": [
+      "friday_prayer",
+      "education",
+      "trade",
+      "community",
+      "worship"
+    ],
+    "otherNames": [],
+    "significance": "Establishes the importance of Friday prayer and community worship"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ يُسَبِّحُ لِلَّهِ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ٱلْمَلِكِ ٱلْقُدُّوسِ ٱلْعَزِيزِ ٱلْحَكِيمِ",
+      "transliteration": "Yusabbihu lillahi ma fee alssamawati wama fee alardi almaliki alquddoosi alAAazeezi alhakeemi",
+      "translations": {
+        "en_sahih": "Whatever is in the heavens and whatever is on the earth is exalting Allah, the Sovereign, the Pure, the Exalted in Might, the Wise.",
+        "en_yusufali": "Whatever is in the heavens and on earth, doth declare the Praises and Glory of Allah,- the Sovereign, the Holy One, the Exalted in Might, the Wise.",
+        "ms_basmeih": "Segala yang ada di langit dan yang ada di bumi sentiasa mengucap tasbih kepada Allah Yang Menguasai (sekalian alam), Yang Maha Suci, Yang Maha Kuasa, lagi Maha Bijaksana."
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "هُوَ ٱلَّذِى بَعَثَ فِى ٱلْأُمِّيِّـۧنَ رَسُولًا مِّنْهُمْ يَتْلُوا۟ عَلَيْهِمْ ءَايَـٰتِهِۦ وَيُزَكِّيهِمْ وَيُعَلِّمُهُمُ ٱلْكِتَـٰبَ وَٱلْحِكْمَةَ وَإِن كَانُوا۟ مِن قَبْلُ لَفِى ضَلَـٰلٍ مُّبِينٍ",
+      "transliteration": "Huwa allathee baAAatha fee alommiyyeena rasoolan minhum yatloo AAalayhim ayatihi wayuzakkeehim wayuAAallimuhumu alkitaba waalhikmata wain kanoo min qablu lafee dalalin mubeenin",
+      "translations": {
+        "en_sahih": "It is He who has sent among the unlettered a Messenger from themselves reciting to them His verses and purifying them and teaching them the Book and wisdom - although they were before in clear error -",
+        "en_yusufali": "It is He Who has sent amongst the Unlettered a messenger from among themselves, to rehearse to them His Signs, to sanctify them, and to instruct them in Scripture and Wisdom,- although they had been, before, in manifest error;-",
+        "ms_basmeih": "Dia lah yang telah mengutuskan dalam kalangan orang-orang (Arab) yang Ummiyyin, seorang Rasul (Nabi Muhammad s.a.w) dari bangsa mereka sendiri, yang membacakan kepada mereka ayat-ayat Allah (yang membuktikan keesaan Allah dan kekuasaanNya), dan membersihkan mereka (dari iktiqad yang sesat), serta mengajarkan mereka Kitab Allah (Al-Quran) dan Hikmah (pengetahuan yang mendalam mengenai hukum-hukum syarak). Dan sesungguhnya mereka sebelum (kedatangan Nabi Muhammad) itu adalah dalam kesesatan yang nyata."
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "وَءَاخَرِينَ مِنْهُمْ لَمَّا يَلْحَقُوا۟ بِهِمْ ۚ وَهُوَ ٱلْعَزِيزُ ٱلْحَكِيمُ",
+      "transliteration": "Waakhareena minhum lamma yalhaqoo bihim wahuwa alAAazeezu alhakeemu",
+      "translations": {
+        "en_sahih": "And [to] others of them who have not yet joined them. And He is the Exalted in Might, the Wise.",
+        "en_yusufali": "As well as (to confer all these benefits upon) others of them, who have not already joined them: And He is exalted in Might, Wise.",
+        "ms_basmeih": "Dan juga (telah mengutuskan Nabi Muhammad kepada) orang-orang yang lain dari mereka, yang masih belum (datang lagi dan tetap akan datang) menghubungi mereka; dan (ingatlah), Allah jualah Yang Maha Kuasa, lagi Maha Bijaksana."
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "ذَٰلِكَ فَضْلُ ٱللَّهِ يُؤْتِيهِ مَن يَشَآءُ ۚ وَٱللَّهُ ذُو ٱلْفَضْلِ ٱلْعَظِيمِ",
+      "transliteration": "Thalika fadlu Allahi yuteehi man yashao waAllahu thoo alfadli alAAatheemi",
+      "translations": {
+        "en_sahih": "That is the bounty of Allah, which He gives to whom He wills, and Allah is the possessor of great bounty.",
+        "en_yusufali": "Such is the Bounty of Allah, which He bestows on whom He will: and Allah is the Lord of the highest bounty.",
+        "ms_basmeih": "(Pengutusan Nabi Muhammad s.a.w, kepada umat manusia seluruhnya) itu (yang menjadi rahmat) adalah limpah kurnia Allah, diberikanNya kepada sesiapa yang dikehendakiNya; dan sememangnya Allah mempunyai limpah kurnia yang besar."
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "مَثَلُ ٱلَّذِينَ حُمِّلُوا۟ ٱلتَّوْرَىٰةَ ثُمَّ لَمْ يَحْمِلُوهَا كَمَثَلِ ٱلْحِمَارِ يَحْمِلُ أَسْفَارًۢا ۚ بِئْسَ مَثَلُ ٱلْقَوْمِ ٱلَّذِينَ كَذَّبُوا۟ بِـَٔايَـٰتِ ٱللَّهِ ۚ وَٱللَّهُ لَا يَهْدِى ٱلْقَوْمَ ٱلظَّـٰلِمِينَ",
+      "transliteration": "Mathalu allatheena hummiloo alttawrata thumma lam yahmilooha kamathali alhimari yahmilu asfaran bisa mathalu alqawmi allatheena kaththaboo biayati Allahi waAllahu la yahdee alqawma alththalimeena",
+      "translations": {
+        "en_sahih": "The example of those who were entrusted with the Torah and then did not take it on is like that of a donkey who carries volumes [of books]. Wretched is the example of the people who deny the signs of Allah. And Allah does not guide the wrongdoing people.",
+        "en_yusufali": "The similitude of those who were charged with the (obligations of the) Mosaic Law, but who subsequently failed in those (obligations), is that of a donkey which carries huge tomes (but understands them not). Evil is the similitude of people who falsify the Signs of Allah: and Allah guides not people who do wrong.",
+        "ms_basmeih": "(Sifat-sifat Nabi Muhammad itu telahpun diterangkan dalam Kitab Taurat tetapi orang-orang Yahudi tidak juga mempercayainya, maka) bandingan orang-orang (Yahudi) yang ditanggungjawab dan ditugaskan (mengetahui dan melaksanakan hukum) Kitab Taurat, kemudian mereka tidak menyempurnakan tanggungjawab dan tugas itu, samalah seperti keldai yang memikul bendela Kitab-kitab besar (sedang ia tidak mengetahui kandungannya). Buruk sungguh bandingan kaum yang mendustakan ayat-ayat keterangan Allah; dan (ingatlah), Allah tidak memberi hidayah petunjuk kepada kaum yang zalim."
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "قُلْ يَـٰٓأَيُّهَا ٱلَّذِينَ هَادُوٓا۟ إِن زَعَمْتُمْ أَنَّكُمْ أَوْلِيَآءُ لِلَّهِ مِن دُونِ ٱلنَّاسِ فَتَمَنَّوُا۟ ٱلْمَوْتَ إِن كُنتُمْ صَـٰدِقِينَ",
+      "transliteration": "Qul ya ayyuha allatheena hadoo in zaAAamtum annakum awliyao lillahi min dooni alnnasi fatamannawoo almawta in kuntum sadiqeena",
+      "translations": {
+        "en_sahih": "Say, \"O you who are Jews, if you claim that you are allies of Allah, excluding the [other] people, then wish for death, if you should be truthful.\"",
+        "en_yusufali": "Say: \"O ye that stand on Judaism! If ye think that ye are friends to Allah, to the exclusion of (other) men, then express your desire for Death, if ye are truthful!\"",
+        "ms_basmeih": "Katakanlah (wahai Muhammad): \"Wahai orang-orang yang berugama Yahudi, kalau kamu anggap bahawa kamulah sahaja orang-orang yang dikasihi Allah tidak termasuk umat-umat manusia yang lain, maka bercita-citalah hendakkan mati (dengan meminta kepada Allah supaya kamu dimatikan sekarang juga), jika betul kamu orang-orang yang benar!\""
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "وَلَا يَتَمَنَّوْنَهُۥٓ أَبَدًۢا بِمَا قَدَّمَتْ أَيْدِيهِمْ ۚ وَٱللَّهُ عَلِيمٌۢ بِٱلظَّـٰلِمِينَ",
+      "transliteration": "Wala yatamannawnahu abadan bima qaddamat aydeehim waAllahu AAaleemun bialththalimeena",
+      "translations": {
+        "en_sahih": "But they will not wish for it, ever, because of what their hands have put forth. And Allah is Knowing of the wrongdoers.",
+        "en_yusufali": "But never will they express their desire (for Death), because of the (deeds) their hands have sent on before them! and Allah knows well those that do wrong!",
+        "ms_basmeih": "Dan (sudah tentu) mereka tidak akan bercita-cita hendakkan mati itu selama-lamanya, dengan sebab dosa-dosa yang mereka telah lakukan; dan Allah sentiasa mengetahui akan orang-orang yang zalim itu."
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "قُلْ إِنَّ ٱلْمَوْتَ ٱلَّذِى تَفِرُّونَ مِنْهُ فَإِنَّهُۥ مُلَـٰقِيكُمْ ۖ ثُمَّ تُرَدُّونَ إِلَىٰ عَـٰلِمِ ٱلْغَيْبِ وَٱلشَّهَـٰدَةِ فَيُنَبِّئُكُم بِمَا كُنتُمْ تَعْمَلُونَ",
+      "transliteration": "Qul inna almawta allathee tafirroona minhu fainnahu mulaqeekum thumma turaddoona ila AAalimi alghaybi waalshshahadati fayunabbiokum bima kuntum taAAmaloona",
+      "translations": {
+        "en_sahih": "Say, \"Indeed, the death from which you flee - indeed, it will meet you. Then you will be returned to the Knower of the unseen and the witnessed, and He will inform you about what you used to do.\"",
+        "en_yusufali": "Say: \"The Death from which ye flee will truly overtake you: then will ye be sent back to the Knower of things secret and open: and He will tell you (the truth of) the things that ye did!\"",
+        "ms_basmeih": "Katakanlah (wahai Muhammad): \"Sebenarnya maut yang kamu melarikan diri daripadanya itu, tetaplah ia akan menemui kamu; kemudian kamu akan dikembalikan kepada Allah yang mengetahui segala yang ghaib dan yang nyata, lalu Ia memberitahu kepada kamu apa yang kamu telah lakukan (serta membalasnya)\"."
+      }
+    },
+    {
+      "ayah": 9,
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا نُودِىَ لِلصَّلَوٰةِ مِن يَوْمِ ٱلْجُمُعَةِ فَٱسْعَوْا۟ إِلَىٰ ذِكْرِ ٱللَّهِ وَذَرُوا۟ ٱلْبَيْعَ ۚ ذَٰلِكُمْ خَيْرٌ لَّكُمْ إِن كُنتُمْ تَعْلَمُونَ",
+      "transliteration": "Ya ayyuha allatheena amanoo itha noodiya lilssalati min yawmi aljumuAAati faisAAaw ila thikri Allahi watharoo albayAAa thalikum khayrun lakum in kuntum taAAlamoona",
+      "translations": {
+        "en_sahih": "O you who have believed, when [the adhan] is called for the prayer on the day of Jumu'ah [Friday], then proceed to the remembrance of Allah and leave trade. That is better for you, if you only knew.",
+        "en_yusufali": "O ye who believe! When the call is proclaimed to prayer on Friday (the Day of Assembly), hasten earnestly to the Remembrance of Allah, and leave off business (and traffic): That is best for you if ye but knew!",
+        "ms_basmeih": "Wahai orang-orang yang beriman! Apabila diserukan azan (bang) untuk mengerjakan sembahyang pada hari Jumaat, maka segeralah kamu pergi (ke masjid) untuk mengingati Allah (dengan mengerjakan sembahyang jumaat) dan tinggalkanlah berjual-beli (pada saat itu); yang demikian adalah baik bagi kamu, jika kamu mengetahui (hakikat yang sebenarnya),"
+      }
+    },
+    {
+      "ayah": 10,
+      "arabic": "فَإِذَا قُضِيَتِ ٱلصَّلَوٰةُ فَٱنتَشِرُوا۟ فِى ٱلْأَرْضِ وَٱبْتَغُوا۟ مِن فَضْلِ ٱللَّهِ وَٱذْكُرُوا۟ ٱللَّهَ كَثِيرًا لَّعَلَّكُمْ تُفْلِحُونَ",
+      "transliteration": "Faitha qudiyati alssalatu faintashiroo fee alardi waibtaghoo min fadli Allahi waothkuroo Allaha katheeran laAAallakum tuflihoona",
+      "translations": {
+        "en_sahih": "And when the prayer has been concluded, disperse within the land and seek from the bounty of Allah, and remember Allah often that you may succeed.",
+        "en_yusufali": "And when the Prayer is finished, then may ye disperse through the land, and seek of the Bounty of Allah: and celebrate the Praises of Allah often (and without stint): that ye may prosper.",
+        "ms_basmeih": "Kemudian setelah selesai sembahyang, maka bertebaranlah kamu di muka bumi (untuk menjalankan urusan masing-masing), dan carilah apa yang kamu hajati dari limpah kurnia Allah, serta ingatlah akan Allah banyak-banyak (dalam segala keadaan), supaya kamu berjaya (di dunia dan di akhirat)."
+      }
+    },
+    {
+      "ayah": 11,
+      "arabic": "وَإِذَا رَأَوْا۟ تِجَـٰرَةً أَوْ لَهْوًا ٱنفَضُّوٓا۟ إِلَيْهَا وَتَرَكُوكَ قَآئِمًا ۚ قُلْ مَا عِندَ ٱللَّهِ خَيْرٌ مِّنَ ٱللَّهْوِ وَمِنَ ٱلتِّجَـٰرَةِ ۚ وَٱللَّهُ خَيْرُ ٱلرَّٰزِقِينَ",
+      "transliteration": "Waitha raaw tijaratan aw lahwan infaddoo ilayha watarakooka qaiman qul ma AAinda Allahi khayrun mina allahwi wamina alttijarati waAllahu khayru alrraziqeena",
+      "translations": {
+        "en_sahih": "But when they saw a transaction or a diversion, [O Muhammad], they rushed to it and left you standing. Say, \"What is with Allah is better than diversion and than a transaction, and Allah is the best of providers.\"",
+        "en_yusufali": "But when they see some bargain or some amusement, they disperse headlong to it, and leave thee standing. Say: \"The (blessing) from the Presence of Allah is better than any amusement or bargain! and Allah is the Best to provide (for all needs).\"",
+        "ms_basmeih": "Dan apabila mereka mengetahui kedatangan barang-barang dagangan (yang baharu tiba) atau (mendengar) sesuatu hiburan, mereka bersurai (lalu pergi) kepadanya dengan meninggalkan engkau berdiri (di atas mimbar - berkhutbah). Katakanlah (wahai Muhammad:\" Pahala - balasan) yang ada di sisi Allah, lebih baik dari hiburan dan barang-barang dagangan itu; dan Allah sebaik-baik pemberi rezeki."
+      }
+    }
+  ]
+}

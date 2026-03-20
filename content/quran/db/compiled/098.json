@@ -1,0 +1,108 @@
+{
+  "surah": 98,
+  "metadata": {
+    "nameArabic": "البينة",
+    "nameEnglish": "Al-Bayyinah",
+    "nameTranslit": "Al-Bayyinah",
+    "meaning": "The Clear Proof",
+    "revelation": "Medinan",
+    "revelationOrder": 100,
+    "period": "Late Medinan",
+    "ayahCount": 8,
+    "wordCount": 95,
+    "letterCount": 405,
+    "juz": 30,
+    "pageStart": 598,
+    "themes": [
+      "clear_proof",
+      "people_of_book",
+      "pure_religion",
+      "righteous_deeds",
+      "reward"
+    ],
+    "otherNames": [],
+    "significance": "Addresses People of the Book and emphasizes pure monotheistic religion"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ لَمْ يَكُنِ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَـٰبِ وَٱلْمُشْرِكِينَ مُنفَكِّينَ حَتَّىٰ تَأْتِيَهُمُ ٱلْبَيِّنَةُ",
+      "transliteration": "Lam yakuni allatheena kafaroo min ahli alkitabi waalmushrikeena munfakkeena hatta tatiyahumu albayyinatu",
+      "translations": {
+        "en_sahih": "Those who disbelieved among the People of the Scripture and the polytheists were not to be parted [from misbelief] until there came to them clear evidence -",
+        "en_yusufali": "Those who reject (Truth), among the People of the Book and among the Polytheists, were not going to depart (from their ways) until there should come to them Clear Evidence,-",
+        "ms_basmeih": "Orang-orang yang kafir dari Ahli Kitab (Yahudi dan Nasrani) serta orang-orang musyrik, tidak akan terlepas (dari kepercayaan dan amalan masing-masing) sehingga datang kepada mereka bukti yang jelas nyata, -"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "رَسُولٌ مِّنَ ٱللَّهِ يَتْلُوا۟ صُحُفًا مُّطَهَّرَةً",
+      "transliteration": "Rasoolun mina Allahi yatloo suhufan mutahharatan",
+      "translations": {
+        "en_sahih": "A Messenger from Allah, reciting purified scriptures",
+        "en_yusufali": "An messenger from Allah, rehearsing scriptures kept pure and holy:",
+        "ms_basmeih": "Iaitu seorang Rasul dari Allah yang membacakan (kepada mereka) Lembaran-lembaran Suci,"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "فِيهَا كُتُبٌ قَيِّمَةٌ",
+      "transliteration": "Feeha kutubun qayyimatun",
+      "translations": {
+        "en_sahih": "Within which are correct writings.",
+        "en_yusufali": "Wherein are laws (or decrees) right and straight.",
+        "ms_basmeih": "Terkandung di dalamnya pelajaran-pelajaran dan hukum-hukum yang benar."
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "وَمَا تَفَرَّقَ ٱلَّذِينَ أُوتُوا۟ ٱلْكِتَـٰبَ إِلَّا مِنۢ بَعْدِ مَا جَآءَتْهُمُ ٱلْبَيِّنَةُ",
+      "transliteration": "Wama tafarraqa allatheena ootoo alkitaba illa min baAAdi ma jaathumu albayyinatu",
+      "translations": {
+        "en_sahih": "Nor did those who were given the Scripture become divided until after there had come to them clear evidence.",
+        "en_yusufali": "Nor did the People of the Book make schisms, until after there came to them Clear Evidence.",
+        "ms_basmeih": "Dan orang-orang (Yahudi dan Nasrani) yang diberi Kitab (Taurat dan Injil) itu, tidak berpecah-belah melainkan setelah datang kepada mereka bukti yang jelas nyata."
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "وَمَآ أُمِرُوٓا۟ إِلَّا لِيَعْبُدُوا۟ ٱللَّهَ مُخْلِصِينَ لَهُ ٱلدِّينَ حُنَفَآءَ وَيُقِيمُوا۟ ٱلصَّلَوٰةَ وَيُؤْتُوا۟ ٱلزَّكَوٰةَ ۚ وَذَٰلِكَ دِينُ ٱلْقَيِّمَةِ",
+      "transliteration": "Wama omiroo illa liyaAAbudoo Allaha mukhliseena lahu alddeena hunafaa wayuqeemoo alssalata wayutoo alzzakata wathalika deenu alqayyimati",
+      "translations": {
+        "en_sahih": "And they were not commanded except to worship Allah, [being] sincere to Him in religion, inclining to truth, and to establish prayer and to give zakah. And that is the correct religion.",
+        "en_yusufali": "And they have been commanded no more than this: To worship Allah, offering Him sincere devotion, being true (in faith); to establish regular prayer; and to practise regular charity; and that is the Religion Right and Straight.",
+        "ms_basmeih": "Pada hal mereka tidak diperintahkan melainkan supaya menyembah Allah dengan mengikhlaskan ibadat kepadaNya, lagi tetap teguh di atas tauhid; dan supaya mereka mendirikan sembahyang serta memberi zakat. Dan yang demikian itulah Ugama yang benar."
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "إِنَّ ٱلَّذِينَ كَفَرُوا۟ مِنْ أَهْلِ ٱلْكِتَـٰبِ وَٱلْمُشْرِكِينَ فِى نَارِ جَهَنَّمَ خَـٰلِدِينَ فِيهَآ ۚ أُو۟لَـٰٓئِكَ هُمْ شَرُّ ٱلْبَرِيَّةِ",
+      "transliteration": "Inna allatheena kafaroo min ahli alkitabi waalmushrikeena fee nari jahannama khalideena feeha olaika hum sharru albariyyati",
+      "translations": {
+        "en_sahih": "Indeed, they who disbelieved among the People of the Scripture and the polytheists will be in the fire of Hell, abiding eternally therein. Those are the worst of creatures.",
+        "en_yusufali": "Those who reject (Truth), among the People of the Book and among the Polytheists, will be in Hell-Fire, to dwell therein (for aye). They are the worst of creatures.",
+        "ms_basmeih": "Sesungguhnya orang-orang yang kafir dari Ahli Kitab dan orang-orang musyrik itu akan ditempatkan di dalam neraka Jahannam, kekalah mereka di dalamnya. Mereka itulah sejahat-jahat makhluk."
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ أُو۟لَـٰٓئِكَ هُمْ خَيْرُ ٱلْبَرِيَّةِ",
+      "transliteration": "Inna allatheena amanoo waAAamiloo alssalihati olaika hum khayru albariyyati",
+      "translations": {
+        "en_sahih": "Indeed, they who have believed and done righteous deeds - those are the best of creatures.",
+        "en_yusufali": "Those who have faith and do righteous deeds,- they are the best of creatures.",
+        "ms_basmeih": "Seungguhnya orang-orang yang beriman dan beramal soleh, mereka itulah sebaik-baik makhluk."
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "جَزَآؤُهُمْ عِندَ رَبِّهِمْ جَنَّـٰتُ عَدْنٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ خَـٰلِدِينَ فِيهَآ أَبَدًا ۖ رَّضِىَ ٱللَّهُ عَنْهُمْ وَرَضُوا۟ عَنْهُ ۚ ذَٰلِكَ لِمَنْ خَشِىَ رَبَّهُۥ",
+      "transliteration": "Jazaohum AAinda rabbihim jannatu AAadnin tajree min tahtiha alanharu khalideena feeha abadan radiya Allahu AAanhum waradoo AAanhu thalika liman khashiya rabbahu",
+      "translations": {
+        "en_sahih": "Their reward with Allah will be gardens of perpetual residence beneath which rivers flow, wherein they will abide forever, Allah being pleased with them and they with Him. That is for whoever has feared his Lord.",
+        "en_yusufali": "Their reward is with Allah: Gardens of Eternity, beneath which rivers flow; they will dwell therein for ever; Allah well pleased with them, and they with Him: all this for such as fear their Lord and Cherisher.",
+        "ms_basmeih": "Balasan mereka di sisi Tuhannya ialah syurga Adn (tempat tinggal yang tetap), yang mengalir di bawahnya beberapa sungai; kekalah mereka di dalamnya selama-lamanya; Allah reda akan mereka dan merekapun reda (serta bersyukur) akan nikmat pemberianNya. Balasan yang demikian itu untuk orang-orang yang takut (melanggar perintah) Tuhannya."
+      }
+    }
+  ]
+}

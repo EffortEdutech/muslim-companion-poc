@@ -1,0 +1,2871 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "total_surahs": 114,
+    "source": "King Fahd Complex for the Printing of the Holy Quran",
+    "verified_by": ["Al-Azhar University", "ISNA", "Islamic Society of Malaysia"],
+    "last_updated": "2024-01-15T10:30:00Z"
+  },
+  "surahs_metadata": [
+    {
+      "id": 1,
+      "number": 1,
+      "name_arabic": "الفاتحة",
+      "name_english": "Al-Fatihah",
+      "name_transliterated": "Al-Faatihah",
+      "meaning": "The Opening",
+      "other_names": [
+        "Umm al-Quran (Mother of the Quran)",
+        "As-Sab' al-Mathani (Seven Repeated)",
+        "Al-Hamd (The Praise)",
+        "As-Salah (The Prayer)",
+        "Ash-Shifa (The Cure)"
+      ],
+      "revelation": {
+        "place": "Meccan",
+        "order": 5,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 7,
+        "word_count": 25,
+        "letter_count": 113,
+        "juz": 1,
+        "hizb": 1,
+        "page_start": 1,
+        "page_end": 1
+      },
+      "themes": ["praise", "guidance", "prayer", "monotheism", "divine_mercy"],
+      "significance": "Foundation of Islamic prayer, recited in every rak'ah of the five daily prayers"
+    },
+    {
+      "id": 2,
+      "number": 2,
+      "name_arabic": "البقرة",
+      "name_english": "Al-Baqarah",
+      "name_transliterated": "Al-Baqarah",
+      "meaning": "The Cow",
+      "other_names": [
+        "Fustaat al-Quran (The Tent of the Quran)",
+        "Sinam al-Quran (The Peak of the Quran)"
+      ],
+      "revelation": {
+        "place": "Medinan",
+        "order": 87,
+        "period": "Early Medinan"
+      },
+      "structure": {
+        "verse_count": 286,
+        "word_count": 6144,
+        "letter_count": 25613,
+        "juz": "1-3",
+        "hizb": "1-5",
+        "page_start": 2,
+        "page_end": 49
+      },
+      "themes": ["legislation", "stories", "guidance", "monotheism", "community"],
+      "significance": "Longest surah, contains many fundamental Islamic laws and stories"
+    },
+    {
+      "id": 3,
+      "number": 3,
+      "name_arabic": "آل عمران",
+      "name_english": "Aal-E-Imran",
+      "name_transliterated": "Aal 'Imraan",
+      "meaning": "The Family of Imran",
+      "other_names": ["Az-Zahra (The Bright One)"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 89,
+        "period": "Early Medinan"
+      },
+      "structure": {
+        "verse_count": 200,
+        "word_count": 3503,
+        "letter_count": 14605,
+        "juz": "3-4",
+        "hizb": "5-7",
+        "page_start": 50,
+        "page_end": 76
+      },
+      "themes": ["family_stories", "jesus", "mary", "unity", "believers"],
+      "significance": "Contains stories of Jesus and Mary, emphasizes unity of believers"
+    },
+    {
+      "id": 4,
+      "number": 4,
+      "name_arabic": "النساء",
+      "name_english": "An-Nisa",
+      "name_transliterated": "An-Nisaa'",
+      "meaning": "The Women",
+      "other_names": ["An-Nisa al-Kubra (The Greater Women)"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 92,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 176,
+        "word_count": 3745,
+        "letter_count": 16030,
+        "juz": "4-6",
+        "hizb": "7-11",
+        "page_start": 77,
+        "page_end": 106
+      },
+      "themes": ["women_rights", "inheritance", "marriage", "justice", "orphans"],
+      "significance": "Major source of Islamic law regarding women, marriage, and inheritance"
+    },
+    {
+      "id": 5,
+      "number": 5,
+      "name_arabic": "المائدة",
+      "name_english": "Al-Ma'idah",
+      "name_transliterated": "Al-Maa'idah",
+      "meaning": "The Table Spread",
+      "other_names": ["Al-Uqud (The Contracts)", "Al-Munqidha (The Savior)"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 112,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 120,
+        "word_count": 2837,
+        "letter_count": 11950,
+        "juz": "6-7",
+        "hizb": "11-13",
+        "page_start": 106,
+        "page_end": 128
+      },
+      "themes": ["covenants", "food_laws", "jesus_disciples", "contracts", "lawful_unlawful"],
+      "significance": "Last revealed surah, contains final Islamic laws and regulations"
+    },
+    {
+      "id": 6,
+      "number": 6,
+      "name_arabic": "الأنعام",
+      "name_english": "Al-An'am",
+      "name_transliterated": "Al-An'aam",
+      "meaning": "The Cattle",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 55,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 165,
+        "word_count": 3055,
+        "letter_count": 12418,
+        "juz": "7-8",
+        "hizb": "13-15",
+        "page_start": 128,
+        "page_end": 150
+      },
+      "themes": ["monotheism", "creation", "prophets", "idolatry_refutation", "divine_guidance"],
+      "significance": "Emphasizes monotheism and refutes idolatry, revealed in one sitting"
+    },
+    {
+      "id": 7,
+      "number": 7,
+      "name_arabic": "الأعراف",
+      "name_english": "Al-A'raf",
+      "name_transliterated": "Al-A'raaf",
+      "meaning": "The Heights",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 39,
+        "period": "Middle Meccan"
+      },
+      "structure": {
+        "verse_count": 206,
+        "word_count": 3344,
+        "letter_count": 13395,
+        "juz": "8-9",
+        "hizb": "15-17",
+        "page_start": 151,
+        "page_end": 177
+      },
+      "themes": ["prophets_stories", "adam_eve", "moses", "noah", "warnings"],
+      "significance": "Contains detailed stories of earlier prophets and their communities"
+    },
+    {
+      "id": 8,
+      "number": 8,
+      "name_arabic": "الأنفال",
+      "name_english": "Al-Anfal",
+      "name_transliterated": "Al-Anfaal",
+      "meaning": "The Spoils of War",
+      "other_names": ["Badr (Battle of Badr)"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 88,
+        "period": "Early Medinan"
+      },
+      "structure": {
+        "verse_count": 75,
+        "word_count": 1243,
+        "letter_count": 5007,
+        "juz": 9,
+        "hizb": "17-18",
+        "page_start": 177,
+        "page_end": 187
+      },
+      "themes": ["battle_badr", "warfare", "spoils", "divine_help", "believers"],
+      "significance": "Discusses rules of warfare and the Battle of Badr"
+    },
+    {
+      "id": 9,
+      "number": 9,
+      "name_arabic": "التوبة",
+      "name_english": "At-Tawbah",
+      "name_transliterated": "At-Tawbah",
+      "meaning": "The Repentance",
+      "other_names": ["Al-Bara'ah (The Immunity)", "Al-Fadihah (The Exposer)"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 113,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 129,
+        "word_count": 2506,
+        "letter_count": 10552,
+        "juz": "10-11",
+        "hizb": "18-21",
+        "page_start": 187,
+        "page_end": 207
+      },
+      "themes": ["repentance", "hypocrites", "treaties", "jihad", "tabuk_expedition"],
+      "significance": "Only surah without Bismillah, deals with treaties and hypocrites"
+    },
+    {
+      "id": 10,
+      "number": 10,
+      "name_arabic": "يونس",
+      "name_english": "Yunus",
+      "name_transliterated": "Yoonus",
+      "meaning": "Jonah",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 51,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 109,
+        "word_count": 1841,
+        "letter_count": 7425,
+        "juz": 11,
+        "hizb": "21-22",
+        "page_start": 208,
+        "page_end": 221
+      },
+      "themes": ["prophet_jonah", "divine_mercy", "quran_guidance", "resurrection", "faith"],
+      "significance": "Named after Prophet Jonah, emphasizes divine mercy and guidance"
+    },
+    {
+      "id": 11,
+      "number": 11,
+      "name_arabic": "هود",
+      "name_english": "Hud",
+      "name_transliterated": "Hood",
+      "meaning": "Hud",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 52,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 123,
+        "word_count": 1947,
+        "letter_count": 7923,
+        "juz": "11-12",
+        "hizb": "22-23",
+        "page_start": 221,
+        "page_end": 235
+      },
+      "themes": ["prophet_hud", "noah", "lot", "shuayb", "destruction_nations"],
+      "significance": "Stories of Prophet Hud and other messengers, warnings to disbelievers"
+    },
+    {
+      "id": 12,
+      "number": 12,
+      "name_arabic": "يوسف",
+      "name_english": "Yusuf",
+      "name_transliterated": "Yoosuf",
+      "meaning": "Joseph",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 53,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 111,
+        "word_count": 1795,
+        "letter_count": 7125,
+        "juz": 12,
+        "hizb": "23-24",
+        "page_start": 235,
+        "page_end": 248
+      },
+      "themes": ["prophet_joseph", "dreams", "patience", "forgiveness", "divine_plan"],
+      "significance": "Complete story of Prophet Joseph in one surah, called 'Ahsan al-Qasas'"
+    },
+    {
+      "id": 13,
+      "number": 13,
+      "name_arabic": "الرعد",
+      "name_english": "Ar-Ra'd",
+      "name_transliterated": "Ar-Ra'd",
+      "meaning": "The Thunder",
+      "other_names": [],
+      "revelation": {
+        "place": "Medinan",
+        "order": 96,
+        "period": "Early Medinan"
+      },
+      "structure": {
+        "verse_count": 43,
+        "word_count": 854,
+        "letter_count": 3450,
+        "juz": 13,
+        "hizb": "24-25",
+        "page_start": 249,
+        "page_end": 255
+      },
+      "themes": ["thunder", "revelation", "truth_falsehood", "nature_signs", "believers_reward"],
+      "significance": "Emphasizes divine signs in nature and the truth of revelation"
+    },
+    {
+      "id": 14,
+      "number": 14,
+      "name_arabic": "إبراهيم",
+      "name_english": "Ibrahim",
+      "name_transliterated": "Ibraaheem",
+      "meaning": "Abraham",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 72,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 52,
+        "word_count": 830,
+        "letter_count": 3309,
+        "juz": 13,
+        "hizb": 25,
+        "page_start": 255,
+        "page_end": 260
+      },
+      "themes": ["prophet_abraham", "gratitude", "messengers", "warning", "good_evil_tree"],
+      "significance": "Highlights Prophet Abraham's mission and divine guidance"
+    },
+    {
+      "id": 15,
+      "number": 15,
+      "name_arabic": "الحجر",
+      "name_english": "Al-Hijr",
+      "name_transliterated": "Al-Hijr",
+      "meaning": "The Rocky Tract",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 54,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 99,
+        "word_count": 1344,
+        "letter_count": 5353,
+        "juz": 14,
+        "hizb": "25-26",
+        "page_start": 262,
+        "page_end": 267
+      },
+      "themes": ["hijr_people", "creation_adam", "satan", "quran_protection", "messengers"],
+      "significance": "Named after the people of Al-Hijr (Thamud), promises Quran's protection"
+    },
+    {
+      "id": 16,
+      "number": 16,
+      "name_arabic": "النحل",
+      "name_english": "An-Nahl",
+      "name_transliterated": "An-Nahl",
+      "meaning": "The Bee",
+      "other_names": ["An-Ni'am (The Blessings)"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 70,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 128,
+        "word_count": 1845,
+        "letter_count": 7533,
+        "juz": 14,
+        "hizb": "26-27",
+        "page_start": 267,
+        "page_end": 281
+      },
+      "themes": ["bees", "divine_blessings", "creation", "gratitude", "guidance"],
+      "significance": "Emphasizes divine blessings and creation, mentions bees as divine sign"
+    },
+    {
+      "id": 17,
+      "number": 17,
+      "name_arabic": "الإسراء",
+      "name_english": "Al-Isra",
+      "name_transliterated": "Al-Israa'",
+      "meaning": "The Night Journey",
+      "other_names": ["Bani Israil (Children of Israel)"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 50,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 111,
+        "word_count": 1558,
+        "letter_count": 6343,
+        "juz": 15,
+        "hizb": "27-28",
+        "page_start": 282,
+        "page_end": 289
+      },
+      "themes": ["night_journey", "parents_respect", "children_israel", "moral_teachings", "quran_guidance"],
+      "significance": "Mentions Prophet's night journey, contains fundamental moral teachings"
+    },
+    {
+      "id": 18,
+      "number": 18,
+      "name_arabic": "الكهف",
+      "name_english": "Al-Kahf",
+      "name_transliterated": "Al-Kahf",
+      "meaning": "The Cave",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 69,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 110,
+        "word_count": 1583,
+        "letter_count": 6425,
+        "juz": "15-16",
+        "hizb": "28-30",
+        "page_start": 293,
+        "page_end": 305
+      },
+      "themes": ["cave_companions", "two_gardens", "moses_khidr", "dhul_qarnayn", "trials"],
+      "significance": "Contains four famous stories, recommended for Friday recitation"
+    },
+    {
+      "id": 19,
+      "number": 19,
+      "name_arabic": "مريم",
+      "name_english": "Maryam",
+      "name_transliterated": "Maryam",
+      "meaning": "Mary",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 44,
+        "period": "Middle Meccan"
+      },
+      "structure": {
+        "verse_count": 98,
+        "word_count": 972,
+        "letter_count": 3951,
+        "juz": 16,
+        "hizb": 30,
+        "page_start": 305,
+        "page_end": 312
+      },
+      "themes": ["mary", "jesus", "john_baptist", "abraham", "prophets_lineage"],
+      "significance": "Named after Mary, mother of Jesus, emphasizes prophetic lineage"
+    },
+    {
+      "id": 20,
+      "number": 20,
+      "name_arabic": "طه",
+      "name_english": "Ta-Ha",
+      "name_transliterated": "Taa-Haa",
+      "meaning": "Ta-Ha",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 45,
+        "period": "Middle Meccan"
+      },
+      "structure": {
+        "verse_count": 135,
+        "word_count": 1355,
+        "letter_count": 5387,
+        "juz": 16,
+        "hizb": "30-31",
+        "page_start": 312,
+        "page_end": 322
+      },
+      "themes": ["moses", "pharaoh", "aaron", "golden_calf", "divine_guidance"],
+      "significance": "Detailed story of Moses and Pharaoh, begins with mysterious letters"
+    },
+    {
+      "id": 21,
+      "number": 21,
+      "name_arabic": "الأنبياء",
+      "name_english": "Al-Anbiya",
+      "name_transliterated": "Al-Ambiyaa'",
+      "meaning": "The Prophets",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 73,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 112,
+        "word_count": 1177,
+        "letter_count": 4736,
+        "juz": 17,
+        "hizb": "31-32",
+        "page_start": 322,
+        "page_end": 332
+      },
+      "themes": ["prophets", "abraham", "moses", "jesus", "judgment_day"],
+      "significance": "Mentions many prophets and their missions, emphasizes unity of message"
+    },
+    {
+      "id": 22,
+      "number": 22,
+      "name_arabic": "الحج",
+      "name_english": "Al-Hajj",
+      "name_transliterated": "Al-Hajj",
+      "meaning": "The Pilgrimage",
+      "other_names": [],
+      "revelation": {
+        "place": "Medinan",
+        "order": 103,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 78,
+        "word_count": 1279,
+        "letter_count": 5198,
+        "juz": 17,
+        "hizb": "32-33",
+        "page_start": 332,
+        "page_end": 341
+      },
+      "themes": ["hajj", "pilgrimage", "sacrifice", "kaaba", "worship"],
+      "significance": "Details hajj pilgrimage rites and their spiritual significance"
+    },
+    {
+      "id": 23,
+      "number": 23,
+      "name_arabic": "المؤمنون",
+      "name_english": "Al-Mu'minun",
+      "name_transliterated": "Al-Mu'minoon",
+      "meaning": "The Believers",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 74,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 118,
+        "word_count": 1160,
+        "letter_count": 4738,
+        "juz": 18,
+        "hizb": "33-34",
+        "page_start": 342,
+        "page_end": 350
+      },
+      "themes": ["believers_qualities", "creation", "resurrection", "prophets", "success"],
+      "significance": "Begins with qualities of successful believers, emphasizes afterlife"
+    },
+    {
+      "id": 24,
+      "number": 24,
+      "name_arabic": "النور",
+      "name_english": "An-Nur",
+      "name_transliterated": "An-Noor",
+      "meaning": "The Light",
+      "other_names": [],
+      "revelation": {
+        "place": "Medinan",
+        "order": 102,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 64,
+        "word_count": 1314,
+        "letter_count": 5683,
+        "juz": 18,
+        "hizb": "34-35",
+        "page_start": 350,
+        "page_end": 359
+      },
+      "themes": ["light", "modesty", "marriage", "slander", "social_laws"],
+      "significance": "Contains social laws, modesty guidelines, and the famous Light Verse"
+    },
+    {
+      "id": 25,
+      "number": 25,
+      "name_arabic": "الفرقان",
+      "name_english": "Al-Furqan",
+      "name_transliterated": "Al-Furqaan",
+      "meaning": "The Criterion",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 42,
+        "period": "Middle Meccan"
+      },
+      "structure": {
+        "verse_count": 77,
+        "word_count": 896,
+        "letter_count": 3690,
+        "juz": 18,
+        "hizb": 35,
+        "page_start": 359,
+        "page_end": 367
+      },
+      "themes": ["quran_criterion", "prophets", "creation", "servants_rahman", "guidance"],
+      "significance": "Describes Quran as criterion between truth and falsehood"
+    },
+    {
+      "id": 26,
+      "number": 26,
+      "name_arabic": "الشعراء",
+      "name_english": "Ash-Shu'ara",
+      "name_transliterated": "Ash-Shu'araa'",
+      "meaning": "The Poets",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 47,
+        "period": "Middle Meccan"
+      },
+      "structure": {
+        "verse_count": 227,
+        "word_count": 1322,
+        "letter_count": 5320,
+        "juz": "19-20",
+        "hizb": "35-37",
+        "page_start": 367,
+        "page_end": 377
+      },
+      "themes": ["poets", "moses", "abraham", "noah", "lot", "prophets_opposition"],
+      "significance": "Stories of prophets and their opposition, ends with poets' description"
+    },
+    {
+      "id": 27,
+      "number": 27,
+      "name_arabic": "النمل",
+      "name_english": "An-Naml",
+      "name_transliterated": "An-Naml",
+      "meaning": "The Ant",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 48,
+        "period": "Middle Meccan"
+      },
+      "structure": {
+        "verse_count": 93,
+        "word_count": 1159,
+        "letter_count": 4672,
+        "juz": 19,
+        "hizb": "37-38",
+        "page_start": 377,
+        "page_end": 385
+      },
+      "themes": ["ants", "solomon", "queen_sheba", "moses", "lot"],
+      "significance": "Features story of Solomon and Queen of Sheba, mentions speaking ant"
+    },
+    {
+      "id": 28,
+      "number": 28,
+      "name_arabic": "القصص",
+      "name_english": "Al-Qasas",
+      "name_transliterated": "Al-Qasas",
+      "meaning": "The Stories",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 49,
+        "period": "Middle Meccan"
+      },
+      "structure": {
+        "verse_count": 88,
+        "word_count": 1435,
+        "letter_count": 5798,
+        "juz": 20,
+        "hizb": "38-39",
+        "page_start": 385,
+        "page_end": 396
+      },
+      "themes": ["moses_story", "pharaoh", "qarun", "stories", "guidance"],
+      "significance": "Detailed story of Moses from birth to prophethood"
+    },
+    {
+      "id": 29,
+      "number": 29,
+      "name_arabic": "العنكبوت",
+      "name_english": "Al-Ankabut",
+      "name_transliterated": "Al-'Ankaboot",
+      "meaning": "The Spider",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 85,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 69,
+        "word_count": 986,
+        "letter_count": 4021,
+        "juz": 20,
+        "hizb": 39,
+        "page_start": 396,
+        "page_end": 404
+      },
+      "themes": ["spider", "trials", "abraham", "lot", "noah", "faith_test"],
+      "significance": "Compares false gods to spider's web, emphasizes trials of faith"
+    },
+    {
+      "id": 30,
+      "number": 30,
+      "name_arabic": "الروم",
+      "name_english": "Ar-Rum",
+      "name_transliterated": "Ar-Room",
+      "meaning": "The Romans",
+      "other_names": ["The Byzantines"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 84,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 60,
+        "word_count": 816,
+        "letter_count": 3336,
+        "juz": 21,
+        "hizb": 41,
+        "page_start": 404,
+        "page_end": 410
+      },
+      "themes": ["romans_byzantines", "prophecy", "creation_signs", "resurrection", "divine_signs"],
+      "significance": "Contains prophecy about Roman victory over Persians, signs of Allah in creation"
+    },
+    {
+      "id": 31,
+      "number": 31,
+      "name_arabic": "لقمان",
+      "name_english": "Luqman",
+      "name_transliterated": "Luqmaan",
+      "meaning": "Luqman",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 57,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 34,
+        "word_count": 550,
+        "letter_count": 2327,
+        "juz": 21,
+        "hizb": 41,
+        "page_start": 410,
+        "page_end": 414
+      },
+      "themes": ["luqman_wisdom", "father_son_advice", "worship", "parents", "wisdom"],
+      "significance": "Contains wise advice of Luqman to his son, emphasizes parental rights"
+    },
+    {
+      "id": 32,
+      "number": 32,
+      "name_arabic": "السجدة",
+      "name_english": "As-Sajdah",
+      "name_transliterated": "As-Sajdah",
+      "meaning": "The Prostration",
+      "other_names": ["Alif Lam Meem As-Sajdah"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 75,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 30,
+        "word_count": 374,
+        "letter_count": 1528,
+        "juz": 21,
+        "hizb": 41,
+        "page_start": 415,
+        "page_end": 417
+      },
+      "themes": ["prostration", "creation", "revelation", "judgment_day", "believers_fate"],
+      "significance": "Contains verse of prostration (sajdah), emphasizes creation and resurrection"
+    },
+    {
+      "id": 33,
+      "number": 33,
+      "name_arabic": "الأحزاب",
+      "name_english": "Al-Ahzab",
+      "name_transliterated": "Al-Ahzaab",
+      "meaning": "The Combined Forces",
+      "other_names": ["The Confederates", "The Clans"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 90,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 73,
+        "word_count": 1303,
+        "letter_count": 5652,
+        "juz": "21-22",
+        "hizb": "41-43",
+        "page_start": 418,
+        "page_end": 427
+      },
+      "themes": ["battle_trench", "prophet_wives", "adoption", "hijab", "islamic_society"],
+      "significance": "Deals with Battle of the Trench, laws of marriage, adoption, and hijab"
+    },
+    {
+      "id": 34,
+      "number": 34,
+      "name_arabic": "سبأ",
+      "name_english": "Saba",
+      "name_transliterated": "Saba'",
+      "meaning": "Sheba",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 58,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 54,
+        "word_count": 883,
+        "letter_count": 3669,
+        "juz": 22,
+        "hizb": 43,
+        "page_start": 428,
+        "page_end": 434
+      },
+      "themes": ["queen_sheba", "david_solomon", "gratitude", "punishment", "resurrection"],
+      "significance": "Stories of Prophet David and Solomon, Queen of Sheba, importance of gratitude"
+    },
+    {
+      "id": 35,
+      "number": 35,
+      "name_arabic": "فاطر",
+      "name_english": "Fatir",
+      "name_transliterated": "Faatir",
+      "meaning": "Originator",
+      "other_names": ["Al-Mala'ikah (The Angels)"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 43,
+        "period": "Middle Meccan"
+      },
+      "structure": {
+        "verse_count": 45,
+        "word_count": 779,
+        "letter_count": 3118,
+        "juz": 22,
+        "hizb": 43,
+        "page_start": 434,
+        "page_end": 437
+      },
+      "themes": ["creator", "angels", "nature_signs", "revelation", "believers_disbelievers"],
+      "significance": "Emphasizes Allah as the Originator of creation, role of angels"
+    },
+    {
+      "id": 36,
+      "number": 36,
+      "name_arabic": "يس",
+      "name_english": "Ya-Sin",
+      "name_transliterated": "Yaaseen",
+      "meaning": "Ya-Sin",
+      "other_names": ["Heart of the Quran"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 41,
+        "period": "Middle Meccan"
+      },
+      "structure": {
+        "verse_count": 83,
+        "word_count": 733,
+        "letter_count": 2988,
+        "juz": "22-23",
+        "hizb": "43-44",
+        "page_start": 440,
+        "page_end": 446
+      },
+      "themes": ["resurrection", "nature_signs", "messengers", "judgment", "afterlife"],
+      "significance": "Called 'Heart of the Quran', focuses on resurrection and afterlife"
+    },
+    {
+      "id": 37,
+      "number": 37,
+      "name_arabic": "الصافات",
+      "name_english": "As-Saffat",
+      "name_transliterated": "As-Saaffaat",
+      "meaning": "Those Who Set the Ranks",
+      "other_names": ["The Rangers"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 56,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 182,
+        "word_count": 865,
+        "letter_count": 3456,
+        "juz": 23,
+        "hizb": "44-45",
+        "page_start": 446,
+        "page_end": 453
+      },
+      "themes": ["angels_ranks", "abraham_sacrifice", "noah", "lot", "elijah", "prophets_stories"],
+      "significance": "Stories of multiple prophets, emphasizes sacrifice of Abraham"
+    },
+    {
+      "id": 38,
+      "number": 38,
+      "name_arabic": "ص",
+      "name_english": "Sad",
+      "name_transliterated": "Saad",
+      "meaning": "Sad",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 38,
+        "period": "Middle Meccan"
+      },
+      "structure": {
+        "verse_count": 88,
+        "word_count": 735,
+        "letter_count": 2995,
+        "juz": 23,
+        "hizb": 45,
+        "page_start": 453,
+        "page_end": 458
+      },
+      "themes": ["david_solomon", "job", "quran_revelation", "satan", "judgment"],
+      "significance": "Stories of Prophets David, Solomon, and Job, emphasizes divine wisdom"
+    },
+    {
+      "id": 39,
+      "number": 39,
+      "name_arabic": "الزمر",
+      "name_english": "Az-Zumar",
+      "name_transliterated": "Az-Zumar",
+      "meaning": "The Troops",
+      "other_names": ["The Crowds"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 59,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 75,
+        "word_count": 1177,
+        "letter_count": 4846,
+        "juz": 23,
+        "hizb": "45-46",
+        "page_start": 458,
+        "page_end": 467
+      },
+      "themes": ["monotheism", "repentance", "judgment_day", "paradise_hell", "divine_mercy"],
+      "significance": "Emphasizes pure monotheism, divine mercy, and scenes of Judgment Day"
+    },
+    {
+      "id": 40,
+      "number": 40,
+      "name_arabic": "غافر",
+      "name_english": "Ghafir",
+      "name_transliterated": "Ghaafir",
+      "meaning": "The Forgiver",
+      "other_names": ["Al-Mu'min (The Believer)"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 60,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 85,
+        "word_count": 1228,
+        "letter_count": 5098,
+        "juz": 24,
+        "hizb": "46-47",
+        "page_start": 467,
+        "page_end": 477
+      },
+      "themes": ["forgiveness", "moses_pharaoh", "believing_man", "divine_attributes", "prayer"],
+      "significance": "Story of believer among Pharaoh's people, emphasizes Allah's forgiveness"
+    },
+    {
+      "id": 41,
+      "number": 41,
+      "name_arabic": "فصلت",
+      "name_english": "Fussilat",
+      "name_transliterated": "Fussilat",
+      "meaning": "Explained in Detail",
+      "other_names": ["Ha Meem As-Sajdah"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 61,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 54,
+        "word_count": 796,
+        "letter_count": 3287,
+        "juz": 24,
+        "hizb": 47,
+        "page_start": 477,
+        "page_end": 482
+      },
+      "themes": ["quran_details", "creation", "ad_thamud", "prostration", "guidance"],
+      "significance": "Explains Quran's detailed guidance, contains verse of prostration"
+    },
+    {
+      "id": 42,
+      "number": 42,
+      "name_arabic": "الشورى",
+      "name_english": "Ash-Shura",
+      "name_transliterated": "Ash-Shooraa",
+      "meaning": "The Consultation",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 62,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 53,
+        "word_count": 995,
+        "letter_count": 4059,
+        "juz": 25,
+        "hizb": 48,
+        "page_start": 483,
+        "page_end": 489
+      },
+      "themes": ["consultation", "revelation", "unity_believers", "divine_law", "guidance"],
+      "significance": "Emphasizes importance of consultation (shura) in decision-making"
+    },
+    {
+      "id": 43,
+      "number": 43,
+      "name_arabic": "الزخرف",
+      "name_english": "Az-Zukhruf",
+      "name_transliterated": "Az-Zukhruf",
+      "meaning": "The Ornaments of Gold",
+      "other_names": ["The Gold Adornments"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 63,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 89,
+        "word_count": 838,
+        "letter_count": 3474,
+        "juz": 25,
+        "hizb": "48-49",
+        "page_start": 489,
+        "page_end": 496
+      },
+      "themes": ["worldly_ornaments", "jesus", "moses", "pharaoh", "afterlife_reality"],
+      "significance": "Warns against being deceived by worldly gold and ornaments"
+    },
+    {
+      "id": 44,
+      "number": 44,
+      "name_arabic": "الدخان",
+      "name_english": "Ad-Dukhan",
+      "name_transliterated": "Ad-Dukhaan",
+      "meaning": "The Smoke",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 64,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 59,
+        "word_count": 346,
+        "letter_count": 1439,
+        "juz": 25,
+        "hizb": 49,
+        "page_start": 496,
+        "page_end": 499
+      },
+      "themes": ["smoke_sign", "laylat_qadr", "pharaoh_destruction", "hell_paradise", "judgment"],
+      "significance": "Mentions smoke as a sign before Day of Judgment, Night of Decree"
+    },
+    {
+      "id": 45,
+      "number": 45,
+      "name_arabic": "الجاثية",
+      "name_english": "Al-Jathiyah",
+      "name_transliterated": "Al-Jaathiyah",
+      "meaning": "The Crouching",
+      "other_names": ["The Kneeling"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 65,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 37,
+        "word_count": 488,
+        "letter_count": 1943,
+        "juz": 25,
+        "hizb": 49,
+        "page_start": 499,
+        "page_end": 502
+      },
+      "themes": ["kneeling_judgment", "divine_signs", "israelites", "arrogance", "humility"],
+      "significance": "Describes how all nations will kneel before Allah on Judgment Day"
+    },
+    {
+      "id": 46,
+      "number": 46,
+      "name_arabic": "الأحقاف",
+      "name_english": "Al-Ahqaf",
+      "name_transliterated": "Al-Ahqaaf",
+      "meaning": "The Wind-Curved Sand Hills",
+      "other_names": ["The Sand Dunes"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 66,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 35,
+        "word_count": 641,
+        "letter_count": 2631,
+        "juz": 26,
+        "hizb": 50,
+        "page_start": 502,
+        "page_end": 506
+      },
+      "themes": ["ad_people", "sand_dunes", "parents_kindness", "jinn_listening", "guidance"],
+      "significance": "Story of 'Ad people in sand dunes, emphasizes kindness to parents"
+    },
+    {
+      "id": 47,
+      "number": 47,
+      "name_arabic": "محمد",
+      "name_english": "Muhammad",
+      "name_transliterated": "Muhammad",
+      "meaning": "Muhammad",
+      "other_names": ["Al-Qital (The Fighting)"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 95,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 38,
+        "word_count": 541,
+        "letter_count": 2365,
+        "juz": 26,
+        "hizb": 50,
+        "page_start": 507,
+        "page_end": 510
+      },
+      "themes": ["prophet_muhammad", "fighting", "believers_qualities", "hypocrites", "paradise"],
+      "significance": "Only surah named after Prophet Muhammad, deals with believers and fighting"
+    },
+    {
+      "id": 48,
+      "number": 48,
+      "name_arabic": "الفتح",
+      "name_english": "Al-Fath",
+      "name_transliterated": "Al-Fath",
+      "meaning": "The Victory",
+      "other_names": ["The Conquest"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 111,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 29,
+        "word_count": 560,
+        "letter_count": 2445,
+        "juz": 26,
+        "hizb": 50,
+        "page_start": 511,
+        "page_end": 515
+      },
+      "themes": ["hudaybiyyah_treaty", "victory", "conquest", "believers_pledge", "forgiveness"],
+      "significance": "Revealed about Treaty of Hudaybiyyah, called a manifest victory"
+    },
+    {
+      "id": 49,
+      "number": 49,
+      "name_arabic": "الحجرات",
+      "name_english": "Al-Hujurat",
+      "name_transliterated": "Al-Hujuraat",
+      "meaning": "The Private Apartments",
+      "other_names": ["The Inner Apartments"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 106,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 18,
+        "word_count": 353,
+        "letter_count": 1480,
+        "juz": 26,
+        "hizb": 51,
+        "page_start": 515,
+        "page_end": 517
+      },
+      "themes": ["islamic_etiquette", "brotherhood", "respect", "verification", "equality"],
+      "significance": "Contains important Islamic social etiquette and brotherhood principles"
+    },
+    {
+      "id": 50,
+      "number": 50,
+      "name_arabic": "ق",
+      "name_english": "Qaf",
+      "name_transliterated": "Qaaf",
+      "meaning": "Qaf",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 34,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 45,
+        "word_count": 373,
+        "letter_count": 1472,
+        "juz": 26,
+        "hizb": 51,
+        "page_start": 518,
+        "page_end": 520
+      },
+      "themes": ["resurrection", "death", "angels", "paradise_hell", "human_creation"],
+      "significance": "Emphasizes resurrection after death, recording angels, and afterlife"
+    },
+    {
+      "id": 51,
+      "number": 51,
+      "name_arabic": "الذاريات",
+      "name_english": "Adh-Dhariyat",
+      "name_transliterated": "Adh-Dhaariyaat",
+      "meaning": "The Winnowing Winds",
+      "other_names": ["The Scattering Winds"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 67,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 60,
+        "word_count": 360,
+        "letter_count": 1434,
+        "juz": 26,
+        "hizb": 51,
+        "page_start": 520,
+        "page_end": 523
+      },
+      "themes": ["winds", "abraham_guests", "lot", "moses", "judgment_day"],
+      "significance": "Swears by different types of winds, stories of Abraham and Lot"
+    },
+    {
+      "id": 52,
+      "number": 52,
+      "name_arabic": "الطور",
+      "name_english": "At-Tur",
+      "name_transliterated": "At-Toor",
+      "meaning": "The Mount",
+      "other_names": ["Mount Sinai"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 76,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 49,
+        "word_count": 312,
+        "letter_count": 1253,
+        "juz": 27,
+        "hizb": 52,
+        "page_start": 523,
+        "page_end": 526
+      },
+      "themes": ["mount_sinai", "judgment_day", "paradise", "hell", "prophet_comfort"],
+      "significance": "Swears by Mount Tur (Sinai), describes paradise and hell vividly"
+    },
+    {
+      "id": 53,
+      "number": 53,
+      "name_arabic": "النجم",
+      "name_english": "An-Najm",
+      "name_transliterated": "An-Najm",
+      "meaning": "The Star",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 23,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 62,
+        "word_count": 360,
+        "letter_count": 1433,
+        "juz": 27,
+        "hizb": 52,
+        "page_start": 526,
+        "page_end": 528
+      },
+      "themes": ["star", "miraj", "gabriel", "false_gods", "prostration"],
+      "significance": "Describes Prophet's Night Journey (Miraj), contains verse of prostration"
+    },
+    {
+      "id": 54,
+      "number": 54,
+      "name_arabic": "القمر",
+      "name_english": "Al-Qamar",
+      "name_transliterated": "Al-Qamar",
+      "meaning": "The Moon",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 37,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 55,
+        "word_count": 342,
+        "letter_count": 1346,
+        "juz": 27,
+        "hizb": 52,
+        "page_start": 528,
+        "page_end": 531
+      },
+      "themes": ["moon_splitting", "noah", "ad", "thamud", "lot", "pharaoh"],
+      "significance": "Mentions splitting of moon, stories of past nations and their destruction"
+    },
+    {
+      "id": 55,
+      "number": 55,
+      "name_arabic": "الرحمن",
+      "name_english": "Ar-Rahman",
+      "name_transliterated": "Ar-Rahmaan",
+      "meaning": "The Beneficent",
+      "other_names": ["The Most Gracious"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 97,
+        "period": "Early Medinan"
+      },
+      "structure": {
+        "verse_count": 78,
+        "word_count": 352,
+        "letter_count": 1583,
+        "juz": 27,
+        "hizb": "52-53",
+        "page_start": 531,
+        "page_end": 534
+      },
+      "themes": ["divine_mercy", "creation_pairs", "paradise_gardens", "divine_favors", "gratitude"],
+      "significance": "Known as 'Bride of the Quran', repeatedly asks 'Which favors will you deny?'"
+    },
+    {
+      "id": 56,
+      "number": 56,
+      "name_arabic": "الواقعة",
+      "name_english": "Al-Waqi'ah",
+      "name_transliterated": "Al-Waaqi'ah",
+      "meaning": "The Inevitable",
+      "other_names": ["The Event"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 46,
+        "period": "Middle Meccan"
+      },
+      "structure": {
+        "verse_count": 96,
+        "word_count": 379,
+        "letter_count": 1692,
+        "juz": 27,
+        "hizb": 53,
+        "page_start": 534,
+        "page_end": 537
+      },
+      "themes": ["inevitable_day", "three_groups", "paradise", "hell", "quran_honor"],
+      "significance": "Describes three groups of people on Judgment Day and their different fates"
+    },
+    {
+      "id": 57,
+      "number": 57,
+      "name_arabic": "الحديد",
+      "name_english": "Al-Hadid",
+      "name_transliterated": "Al-Hadeed",
+      "meaning": "The Iron",
+      "other_names": [],
+      "revelation": {
+        "place": "Medinan",
+        "order": 94,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 29,
+        "word_count": 575,
+        "letter_count": 2327,
+        "juz": 27,
+        "hizb": 54,
+        "page_start": 537,
+        "page_end": 542
+      },
+      "themes": ["divine_sovereignty", "charity", "faith", "hypocrisy", "iron"],
+      "significance": "Emphasizes divine sovereignty and the importance of charity and faith"
+    },
+    {
+      "id": 58,
+      "number": 58,
+      "name_arabic": "المجادلة",
+      "name_english": "Al-Mujadilah",
+      "name_transliterated": "Al-Mujaadilah",
+      "meaning": "The Pleading Woman",
+      "other_names": ["Al-Mujadalah"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 105,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 22,
+        "word_count": 475,
+        "letter_count": 1946,
+        "juz": 28,
+        "hizb": 55,
+        "page_start": 542,
+        "page_end": 545
+      },
+      "themes": ["family_law", "justice", "debate", "expiation", "women_rights"],
+      "significance": "Addresses family disputes and emphasizes justice and proper conduct"
+    },
+    {
+      "id": 59,
+      "number": 59,
+      "name_arabic": "الحشر",
+      "name_english": "Al-Hashr",
+      "name_transliterated": "Al-Hashr",
+      "meaning": "The Exile",
+      "other_names": ["Al-Gathering"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 101,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 24,
+        "word_count": 508,
+        "letter_count": 2052,
+        "juz": 28,
+        "hizb": 55,
+        "page_start": 545,
+        "page_end": 549
+      },
+      "themes": ["exile", "divine_names", "unity", "hypocrites", "believers"],
+      "significance": "Contains the beautiful names of Allah and discusses the exile of Banu Nadir"
+    },
+    {
+      "id": 60,
+      "number": 60,
+      "name_arabic": "الممتحنة",
+      "name_english": "Al-Mumtahanah",
+      "name_transliterated": "Al-Mumtahanah",
+      "meaning": "The Examined One",
+      "other_names": ["Al-Imtihan (The Test)"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 91,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 13,
+        "word_count": 352,
+        "letter_count": 1438,
+        "juz": 28,
+        "hizb": 55,
+        "page_start": 549,
+        "page_end": 551
+      },
+      "themes": ["loyalty", "testing", "relationships", "treaty", "women"],
+      "significance": "Addresses relationships with non-Muslims and loyalty to faith"
+    },
+    {
+      "id": 61,
+      "number": 61,
+      "name_arabic": "الصف",
+      "name_english": "As-Saff",
+      "name_transliterated": "As-Saff",
+      "meaning": "The Ranks",
+      "other_names": ["The Battle Array"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 109,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 14,
+        "word_count": 226,
+        "letter_count": 918,
+        "juz": 28,
+        "hizb": 55,
+        "page_start": 551,
+        "page_end": 552
+      },
+      "themes": ["unity", "jihad", "jesus", "moses", "muhammad"],
+      "significance": "Emphasizes unity in ranks and mentions Jesus's prophecy of Muhammad"
+    },
+    {
+      "id": 62,
+      "number": 62,
+      "name_arabic": "الجمعة",
+      "name_english": "Al-Jumu'ah",
+      "name_transliterated": "Al-Jumu'ah",
+      "meaning": "The Friday",
+      "other_names": [],
+      "revelation": {
+        "place": "Medinan",
+        "order": 110,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 11,
+        "word_count": 175,
+        "letter_count": 710,
+        "juz": 28,
+        "hizb": 55,
+        "page_start": 553,
+        "page_end": 554
+      },
+      "themes": ["friday_prayer", "education", "trade", "community", "worship"],
+      "significance": "Establishes the importance of Friday prayer and community worship"
+    },
+    {
+      "id": 63,
+      "number": 63,
+      "name_arabic": "المنافقون",
+      "name_english": "Al-Munafiqun",
+      "name_transliterated": "Al-Munaafiqoon",
+      "meaning": "The Hypocrites",
+      "other_names": [],
+      "revelation": {
+        "place": "Medinan",
+        "order": 104,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 11,
+        "word_count": 182,
+        "letter_count": 739,
+        "juz": 28,
+        "hizb": 55,
+        "page_start": 554,
+        "page_end": 555
+      },
+      "themes": ["hypocrisy", "betrayal", "false_oaths", "community", "warning"],
+      "significance": "Exposes the nature and dangers of hypocrisy in the Muslim community"
+    },
+    {
+      "id": 64,
+      "number": 64,
+      "name_arabic": "التغابن",
+      "name_english": "At-Taghabun",
+      "name_transliterated": "At-Taghaabun",
+      "meaning": "The Mutual Disillusion",
+      "other_names": ["Al-Taghabun"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 108,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 18,
+        "word_count": 242,
+        "letter_count": 985,
+        "juz": 28,
+        "hizb": 55,
+        "page_start": 556,
+        "page_end": 557
+      },
+      "themes": ["resurrection", "family", "wealth", "test", "forgiveness"],
+      "significance": "Discusses the Day of Judgment as a day of mutual loss and gain"
+    },
+    {
+      "id": 65,
+      "number": 65,
+      "name_arabic": "الطلاق",
+      "name_english": "At-Talaq",
+      "name_transliterated": "At-Talaaq",
+      "meaning": "The Divorce",
+      "other_names": [],
+      "revelation": {
+        "place": "Medinan",
+        "order": 99,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 12,
+        "word_count": 291,
+        "letter_count": 1174,
+        "juz": 28,
+        "hizb": 56,
+        "page_start": 558,
+        "page_end": 559
+      },
+      "themes": ["divorce", "family_law", "waiting_period", "justice", "fear_of_allah"],
+      "significance": "Provides detailed guidance on divorce procedures and family law"
+    },
+    {
+      "id": 66,
+      "number": 66,
+      "name_arabic": "التحريم",
+      "name_english": "At-Tahrim",
+      "name_transliterated": "At-Tahreem",
+      "meaning": "The Prohibition",
+      "other_names": ["An-Nabi (The Prophet)"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 107,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 12,
+        "word_count": 254,
+        "letter_count": 1033,
+        "juz": 28,
+        "hizb": 56,
+        "page_start": 560,
+        "page_end": 561
+      },
+      "themes": ["prophet_family", "repentance", "wives", "prohibition", "examples"],
+      "significance": "Addresses the Prophet's family matters and provides examples of faith"
+    },
+    {
+      "id": 67,
+      "number": 67,
+      "name_arabic": "الملك",
+      "name_english": "Al-Mulk",
+      "name_transliterated": "Al-Mulk",
+      "meaning": "The Sovereignty",
+      "other_names": ["Tabarak (Blessed)", "Al-Waqiyah (The Protector)", "Al-Munjiyah (The Savior)"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 77,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 30,
+        "word_count": 337,
+        "letter_count": 1316,
+        "juz": 29,
+        "hizb": 57,
+        "page_start": 562,
+        "page_end": 564
+      },
+      "themes": ["divine_sovereignty", "creation", "death", "hell", "blessing"],
+      "significance": "Protects from grave punishment, emphasizes Allah's absolute sovereignty"
+    },
+    {
+      "id": 68,
+      "number": 68,
+      "name_arabic": "القلم",
+      "name_english": "Al-Qalam",
+      "name_transliterated": "Al-Qalam",
+      "meaning": "The Pen",
+      "other_names": ["Nun"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 2,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 52,
+        "word_count": 301,
+        "letter_count": 1183,
+        "juz": 29,
+        "hizb": 57,
+        "page_start": 564,
+        "page_end": 568
+      },
+      "themes": ["prophet_character", "revelation", "pen", "opposition", "reward"],
+      "significance": "Defends the Prophet's character and emphasizes the importance of knowledge"
+    },
+    {
+      "id": 69,
+      "number": 69,
+      "name_arabic": "الحاقة",
+      "name_english": "Al-Haqqah",
+      "name_transliterated": "Al-Haaqqah",
+      "meaning": "The Inevitable",
+      "other_names": ["The Reality", "The Sure Truth"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 78,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 52,
+        "word_count": 260,
+        "letter_count": 1056,
+        "juz": 29,
+        "hizb": 57,
+        "page_start": 566,
+        "page_end": 568
+      },
+      "themes": ["day_of_judgment", "destruction", "previous_nations", "quran_authenticity", "warning"],
+      "significance": "Describes the inevitable Day of Judgment and validates the Quran"
+    },
+    {
+      "id": 70,
+      "number": 70,
+      "name_arabic": "المعارج",
+      "name_english": "Al-Ma'arij",
+      "name_transliterated": "Al-Ma'aarij",
+      "meaning": "The Ascending Stairways",
+      "other_names": ["Saal Sa'il"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 79,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 44,
+        "word_count": 217,
+        "letter_count": 838,
+        "juz": 29,
+        "hizb": 57,
+        "page_start": 568,
+        "page_end": 570
+      },
+      "themes": ["day_of_judgment", "human_nature", "prayer", "charity", "patience"],
+      "significance": "Describes the ascension to Allah and human characteristics"
+    },
+    {
+      "id": 71,
+      "number": 71,
+      "name_arabic": "نوح",
+      "name_english": "Nuh",
+      "name_transliterated": "Nooh",
+      "meaning": "Noah",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 71,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 28,
+        "word_count": 227,
+        "letter_count": 927,
+        "juz": 29,
+        "hizb": 57,
+        "page_start": 570,
+        "page_end": 571
+      },
+      "themes": ["prophet_noah", "flood", "persistence", "da'wah", "punishment"],
+      "significance": "Narrates Noah's persistent call to his people and their destruction"
+    },
+    {
+      "id": 72,
+      "number": 72,
+      "name_arabic": "الجن",
+      "name_english": "Al-Jinn",
+      "name_transliterated": "Al-Jinn",
+      "meaning": "The Jinn",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 40,
+        "period": "Middle Meccan"
+      },
+      "structure": {
+        "verse_count": 28,
+        "word_count": 285,
+        "letter_count": 1109,
+        "juz": 29,
+        "hizb": 57,
+        "page_start": 572,
+        "page_end": 573
+      },
+      "themes": ["jinn", "belief", "quran_recitation", "guidance", "unseen"],
+      "significance": "Describes the jinn's acceptance of Islam after hearing the Quran"
+    },
+    {
+      "id": 73,
+      "number": 73,
+      "name_arabic": "المزمل",
+      "name_english": "Al-Muzzammil",
+      "name_transliterated": "Al-Muzzammil",
+      "meaning": "The Enshrouded One",
+      "other_names": ["The Wrapped One"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 3,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 20,
+        "word_count": 200,
+        "letter_count": 835,
+        "juz": 29,
+        "hizb": 58,
+        "page_start": 574,
+        "page_end": 575
+      },
+      "themes": ["night_prayer", "qiyam", "quran_recitation", "patience", "worship"],
+      "significance": "Commands night prayer and gradual Quran recitation"
+    },
+    {
+      "id": 74,
+      "number": 74,
+      "name_arabic": "المدثر",
+      "name_english": "Al-Muddaththir",
+      "name_transliterated": "Al-Muddaththir",
+      "meaning": "The Cloaked One",
+      "other_names": ["The Wrapped One"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 4,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 56,
+        "word_count": 249,
+        "letter_count": 971,
+        "juz": 29,
+        "hizb": 58,
+        "page_start": 575,
+        "page_end": 577
+      },
+      "themes": ["warning", "da'wah", "hell", "nineteen_angels", "purification"],
+      "significance": "Commands the Prophet to warn mankind and describes hell's guardians"
+    },
+    {
+      "id": 75,
+      "number": 75,
+      "name_arabic": "القيامة",
+      "name_english": "Al-Qiyamah",
+      "name_transliterated": "Al-Qiyaamah",
+      "meaning": "The Resurrection",
+      "other_names": ["Day of Judgment"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 31,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 40,
+        "word_count": 164,
+        "letter_count": 609,
+        "juz": 29,
+        "hizb": 58,
+        "page_start": 577,
+        "page_end": 578
+      },
+      "themes": ["resurrection", "day_of_judgment", "human_creation", "death", "afterlife"],
+      "significance": "Describes the Day of Resurrection and proves life after death"
+    },
+    {
+      "id": 76,
+      "number": 76,
+      "name_arabic": "الإنسان",
+      "name_english": "Al-Insan",
+      "name_transliterated": "Al-Insaan",
+      "meaning": "The Human",
+      "other_names": ["Ad-Dahr (The Time)", "Al-Amshaj", "Hal Ata"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 98,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 31,
+        "word_count": 249,
+        "letter_count": 994,
+        "juz": 29,
+        "hizb": 58,
+        "page_start": 578,
+        "page_end": 580
+      },
+      "themes": ["human_creation", "paradise", "charity", "patience", "reward"],
+      "significance": "Describes human creation and the rewards of the righteous"
+    },
+    {
+      "id": 77,
+      "number": 77,
+      "name_arabic": "المرسلات",
+      "name_english": "Al-Mursalat",
+      "name_transliterated": "Al-Mursalaat",
+      "meaning": "The Emissaries",
+      "other_names": ["Those Sent Forth"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 33,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 50,
+        "word_count": 181,
+        "letter_count": 694,
+        "juz": 29,
+        "hizb": 58,
+        "page_start": 580,
+        "page_end": 582
+      },
+      "themes": ["winds", "day_of_judgment", "destruction", "warning", "woe"],
+      "significance": "Uses natural phenomena to describe the Day of Judgment"
+    },
+    {
+      "id": 78,
+      "number": 78,
+      "name_arabic": "النبأ",
+      "name_english": "An-Naba'",
+      "name_transliterated": "An-Naba'",
+      "meaning": "The Tidings",
+      "other_names": ["The Great News", "Amma Yatasaa'aloon"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 80,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 40,
+        "word_count": 174,
+        "letter_count": 662,
+        "juz": 30,
+        "hizb": 59,
+        "page_start": 582,
+        "page_end": 583
+      },
+      "themes": ["great_news", "resurrection", "creation", "paradise", "hell"],
+      "significance": "Addresses the great news of resurrection and judgment"
+    },
+    {
+      "id": 79,
+      "number": 79,
+      "name_arabic": "النازعات",
+      "name_english": "An-Nazi'at",
+      "name_transliterated": "An-Naazi'aat",
+      "meaning": "Those Who Drag Forth",
+      "other_names": ["As-Sahirah"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 81,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 46,
+        "word_count": 179,
+        "letter_count": 705,
+        "juz": 30,
+        "hizb": 59,
+        "page_start": 583,
+        "page_end": 585
+      },
+      "themes": ["angels", "death", "moses", "pharaoh", "resurrection"],
+      "significance": "Describes angels of death and the story of Moses and Pharaoh"
+    },
+    {
+      "id": 80,
+      "number": 80,
+      "name_arabic": "عبس",
+      "name_english": "Abasa",
+      "name_transliterated": "'Abasa",
+      "meaning": "He Frowned",
+      "other_names": ["As-Safhah", "Al-A'ma"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 24,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 42,
+        "word_count": 133,
+        "letter_count": 508,
+        "juz": 30,
+        "hizb": 59,
+        "page_start": 585,
+        "page_end": 586
+      },
+      "themes": ["equality", "blind_man", "guidance", "human_creation", "accountability"],
+      "significance": "Teaches about treating all people equally regardless of social status"
+    },
+    {
+      "id": 81,
+      "number": 81,
+      "name_arabic": "التكوير",
+      "name_english": "At-Takwir",
+      "name_transliterated": "At-Takweer",
+      "meaning": "The Overthrowing",
+      "other_names": ["The Folding Up"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 7,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 29,
+        "word_count": 104,
+        "letter_count": 415,
+        "juz": 30,
+        "hizb": 59,
+        "page_start": 586,
+        "page_end": 587
+      },
+      "themes": ["day_of_judgment", "cosmic_changes", "infanticide", "revelation", "choice"],
+      "significance": "Describes cosmic changes on the Day of Judgment"
+    },
+    {
+      "id": 82,
+      "number": 82,
+      "name_arabic": "الانفطار",
+      "name_english": "Al-Infitar",
+      "name_transliterated": "Al-Infitaar",
+      "meaning": "The Cleaving",
+      "other_names": ["The Splitting Open"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 82,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 19,
+        "word_count": 81,
+        "letter_count": 312,
+        "juz": 30,
+        "hizb": 59,
+        "page_start": 587,
+        "page_end": 587
+      },
+      "themes": ["day_of_judgment", "cosmic_splitting", "recording_angels", "accountability", "deception"],
+      "significance": "Describes the splitting of the sky on the Day of Judgment"
+    },
+    {
+      "id": 83,
+      "number": 83,
+      "name_arabic": "المطففين",
+      "name_english": "Al-Mutaffifin",
+      "name_transliterated": "Al-Mutaffifeen",
+      "meaning": "The Defrauding",
+      "other_names": ["Those Who Give Short Measure"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 86,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 36,
+        "word_count": 169,
+        "letter_count": 684,
+        "juz": 30,
+        "hizb": 59,
+        "page_start": 587,
+        "page_end": 589
+      },
+      "themes": ["cheating", "justice", "sijjin", "illiyyun", "mockery"],
+      "significance": "Condemns cheating in business and describes the record books"
+    },
+    {
+      "id": 84,
+      "number": 84,
+      "name_arabic": "الانشقاق",
+      "name_english": "Al-Inshiqaq",
+      "name_transliterated": "Al-Inshiqaaq",
+      "meaning": "The Splitting Open",
+      "other_names": ["The Rending"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 83,
+        "period": "Late Meccan"
+      },
+      "structure": {
+        "verse_count": 25,
+        "word_count": 96,
+        "letter_count": 364,
+        "juz": 30,
+        "hizb": 59,
+        "page_start": 589,
+        "page_end": 589
+      },
+      "themes": ["day_of_judgment", "heaven_splitting", "records", "reward", "punishment"],
+      "significance": "Describes the splitting of heaven and receiving of records"
+    },
+    {
+      "id": 85,
+      "number": 85,
+      "name_arabic": "البروج",
+      "name_english": "Al-Buruj",
+      "name_transliterated": "Al-Burooj",
+      "meaning": "The Mansions of the Stars",
+      "other_names": ["The Constellations"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 27,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 22,
+        "word_count": 109,
+        "letter_count": 431,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 590,
+        "page_end": 590
+      },
+      "themes": ["persecution", "people_of_ditch", "pharaoh", "thamud", "quran_preservation"],
+      "significance": "Tells the story of the People of the Ditch and persecution of believers"
+    },
+    {
+      "id": 86,
+      "number": 86,
+      "name_arabic": "الطارق",
+      "name_english": "At-Tariq",
+      "name_transliterated": "At-Taariq",
+      "meaning": "The Morning Star",
+      "other_names": ["The Night Visitor"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 36,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 17,
+        "word_count": 61,
+        "letter_count": 237,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 591,
+        "page_end": 591
+      },
+      "themes": ["stars", "human_creation", "quran_truth", "protection", "plotting"],
+      "significance": "Uses the morning star to affirm the truth of the Quran"
+    },
+    {
+      "id": 87,
+      "number": 87,
+      "name_arabic": "الأعلى",
+      "name_english": "Al-A'la",
+      "name_transliterated": "Al-A'laa",
+      "meaning": "The Most High",
+      "other_names": ["Sabbih"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 8,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 19,
+        "word_count": 72,
+        "letter_count": 286,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 591,
+        "page_end": 592
+      },
+      "themes": ["glorification", "creation", "guidance", "abraham", "moses"],
+      "significance": "Glorifies Allah and mentions the scriptures of Abraham and Moses"
+    },
+    {
+      "id": 88,
+      "number": 88,
+      "name_arabic": "الغاشية",
+      "name_english": "Al-Ghashiyah",
+      "name_transliterated": "Al-Ghaashiyah",
+      "meaning": "The Overwhelming",
+      "other_names": ["The Enveloper"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 68,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 26,
+        "word_count": 92,
+        "letter_count": 382,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 592,
+        "page_end": 592
+      },
+      "themes": ["overwhelming_event", "paradise", "hell", "creation_signs", "reminder"],
+      "significance": "Describes the overwhelming nature of the Day of Judgment and contrasts paradise with hell"
+    },
+    {
+      "id": 89,
+      "number": 89,
+      "name_arabic": "الفجر",
+      "name_english": "Al-Fajr",
+      "name_transliterated": "Al-Fajr",
+      "meaning": "The Dawn",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 10,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 30,
+        "word_count": 139,
+        "letter_count": 584,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 593,
+        "page_end": 594
+      },
+      "themes": ["dawn", "ad_people", "thamud", "pharaoh", "soul_at_peace"],
+      "significance": "Opens with oath by dawn, tells of destroyed nations, and describes the peaceful soul"
+    },
+    {
+      "id": 90,
+      "number": 90,
+      "name_arabic": "البلد",
+      "name_english": "Al-Balad",
+      "name_transliterated": "Al-Balad",
+      "meaning": "The City",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 35,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 20,
+        "word_count": 82,
+        "letter_count": 312,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 594,
+        "page_end": 594
+      },
+      "themes": ["city", "steep_path", "freeing_slave", "charity", "righteous_deeds"],
+      "significance": "Refers to Mecca as the city and emphasizes the steep path of righteousness"
+    },
+    {
+      "id": 91,
+      "number": 91,
+      "name_arabic": "الشمس",
+      "name_english": "Ash-Shams",
+      "name_transliterated": "Ash-Shams",
+      "meaning": "The Sun",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 26,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 15,
+        "word_count": 54,
+        "letter_count": 219,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 595,
+        "page_end": 595
+      },
+      "themes": ["sun", "soul_purification", "thamud", "salih", "corruption"],
+      "significance": "Opens with oaths by cosmic phenomena, emphasizes soul purification and corruption"
+    },
+    {
+      "id": 92,
+      "number": 92,
+      "name_arabic": "الليل",
+      "name_english": "Al-Layl",
+      "name_transliterated": "Al-Layl",
+      "meaning": "The Night",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 9,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 21,
+        "word_count": 72,
+        "letter_count": 281,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 595,
+        "page_end": 595
+      },
+      "themes": ["night", "day", "charity", "piety", "two_paths"],
+      "significance": "Contrasts night and day, emphasizes charity and piety leading to different paths"
+    },
+    {
+      "id": 93,
+      "number": 93,
+      "name_arabic": "الضحى",
+      "name_english": "Ad-Duha",
+      "name_transliterated": "Ad-Duhaa",
+      "meaning": "The Morning Hours",
+      "other_names": ["The Forenoon"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 11,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 11,
+        "word_count": 40,
+        "letter_count": 168,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 596,
+        "page_end": 596
+      },
+      "themes": ["morning_hours", "divine_favor", "orphan", "needy", "gratitude"],
+      "significance": "Comforts the Prophet, reminds of Allah's continuous favor and care"
+    },
+    {
+      "id": 94,
+      "number": 94,
+      "name_arabic": "الشرح",
+      "name_english": "Ash-Sharh",
+      "name_transliterated": "Ash-Sharh",
+      "meaning": "The Relief",
+      "other_names": ["Al-Inshirah (The Opening)", "Alam Nashrah"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 12,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 8,
+        "word_count": 27,
+        "letter_count": 122,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 596,
+        "page_end": 596
+      },
+      "themes": ["chest_expansion", "burden_removal", "ease_with_hardship", "worship"],
+      "significance": "Describes Allah's favors to the Prophet including expanding his chest and removing his burden"
+    },
+    {
+      "id": 95,
+      "number": 95,
+      "name_arabic": "التين",
+      "name_english": "At-Tin",
+      "name_transliterated": "At-Teen",
+      "meaning": "The Fig",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 28,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 8,
+        "word_count": 33,
+        "letter_count": 135,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 597,
+        "page_end": 597
+      },
+      "themes": ["fig", "olive", "sinai", "secure_city", "human_creation", "righteous_deeds"],
+      "significance": "Opens with oath by fig and olive, emphasizes human creation and righteousness"
+    },
+    {
+      "id": 96,
+      "number": 96,
+      "name_arabic": "العلق",
+      "name_english": "Al-Alaq",
+      "name_transliterated": "Al-'Alaq",
+      "meaning": "The Clot",
+      "other_names": ["Iqra (Read)"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 1,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 19,
+        "word_count": 72,
+        "letter_count": 285,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 597,
+        "page_end": 597
+      },
+      "themes": ["read", "knowledge", "creation", "arrogance", "prayer"],
+      "significance": "First revelation to Prophet Muhammad, emphasizes reading, knowledge, and creation"
+    },
+    {
+      "id": 97,
+      "number": 97,
+      "name_arabic": "القدر",
+      "name_english": "Al-Qadr",
+      "name_transliterated": "Al-Qadr",
+      "meaning": "The Power",
+      "other_names": ["Laylat al-Qadr (The Night of Decree)"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 25,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 5,
+        "word_count": 30,
+        "letter_count": 113,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 598,
+        "page_end": 598
+      },
+      "themes": ["night_of_power", "angels", "spirit", "peace", "thousand_months"],
+      "significance": "Describes the Night of Power when the Quran was first revealed"
+    },
+    {
+      "id": 98,
+      "number": 98,
+      "name_arabic": "البينة",
+      "name_english": "Al-Bayyinah",
+      "name_transliterated": "Al-Bayyinah",
+      "meaning": "The Clear Proof",
+      "other_names": [],
+      "revelation": {
+        "place": "Medinan",
+        "order": 100,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 8,
+        "word_count": 95,
+        "letter_count": 405,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 598,
+        "page_end": 599
+      },
+      "themes": ["clear_proof", "people_of_book", "pure_religion", "righteous_deeds", "reward"],
+      "significance": "Addresses People of the Book and emphasizes pure monotheistic religion"
+    },
+    {
+      "id": 99,
+      "number": 99,
+      "name_arabic": "الزلزلة",
+      "name_english": "Az-Zalzalah",
+      "name_transliterated": "Az-Zalzalah",
+      "meaning": "The Earthquake",
+      "other_names": [],
+      "revelation": {
+        "place": "Medinan",
+        "order": 93,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 8,
+        "word_count": 36,
+        "letter_count": 158,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 599,
+        "page_end": 599
+      },
+      "themes": ["earthquake", "earth_testimony", "human_deeds", "judgment_day", "atom_weight"],
+      "significance": "Describes the final earthquake and emphasizes that all deeds will be weighed"
+    },
+    {
+      "id": 100,
+      "number": 100,
+      "name_arabic": "العاديات",
+      "name_english": "Al-Adiyat",
+      "name_transliterated": "Al-'Aadiyaat",
+      "meaning": "The Chargers",
+      "other_names": ["The Coursers"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 14,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 11,
+        "word_count": 40,
+        "letter_count": 167,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 599,
+        "page_end": 600
+      },
+      "themes": ["charging_horses", "sparks", "ingratitude", "love_of_wealth", "resurrection"],
+      "significance": "Opens with oath by charging war horses, criticizes human ingratitude and materialism"
+    },
+    {
+      "id": 101,
+      "number": 101,
+      "name_arabic": "القارعة",
+      "name_english": "Al-Qari'ah",
+      "name_transliterated": "Al-Qaari'ah",
+      "meaning": "The Striking Calamity",
+      "other_names": ["The Disaster"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 30,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 11,
+        "word_count": 36,
+        "letter_count": 153,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 600,
+        "page_end": 600
+      },
+      "themes": ["striking_calamity", "scattered_moths", "carded_wool", "scale_weighing", "hell_fire"],
+      "significance": "Describes the Day of Judgment as a striking calamity with vivid imagery"
+    },
+    {
+      "id": 102,
+      "number": 102,
+      "name_arabic": "التكاثر",
+      "name_english": "At-Takathur",
+      "name_transliterated": "At-Takaathur",
+      "meaning": "The Rivalry in World Increase",
+      "other_names": ["Competition"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 16,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 8,
+        "word_count": 28,
+        "letter_count": 118,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 600,
+        "page_end": 600
+      },
+      "themes": ["worldly_competition", "graveyard", "certainty", "hell_fire", "accountability"],
+      "significance": "Criticizes excessive competition for worldly gain and warns of the hereafter"
+    },
+    {
+      "id": 103,
+      "number": 103,
+      "name_arabic": "العصر",
+      "name_english": "Al-Asr",
+      "name_transliterated": "Al-'Asr",
+      "meaning": "The Declining Day",
+      "other_names": ["Time"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 13,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 3,
+        "word_count": 14,
+        "letter_count": 70,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 601,
+        "page_end": 601
+      },
+      "themes": ["time", "human_loss", "faith", "righteous_deeds", "truth", "patience"],
+      "significance": "Considered essence of the Quran, emphasizes faith, righteous deeds, truth, and patience"
+    },
+    {
+      "id": 104,
+      "number": 104,
+      "name_arabic": "الهمزة",
+      "name_english": "Al-Humazah",
+      "name_transliterated": "Al-Humazah",
+      "meaning": "The Traducer",
+      "other_names": ["The Scandalmonger"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 32,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 9,
+        "word_count": 33,
+        "letter_count": 133,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 601,
+        "page_end": 601
+      },
+      "themes": ["backbiting", "wealth_hoarding", "crushing_fire", "columns", "punishment"],
+      "significance": "Condemns those who backbite and slander, warns of hell's punishment"
+    },
+    {
+      "id": 105,
+      "number": 105,
+      "name_arabic": "الفيل",
+      "name_english": "Al-Fil",
+      "name_transliterated": "Al-Feel",
+      "meaning": "The Elephant",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 19,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 5,
+        "word_count": 23,
+        "letter_count": 96,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 601,
+        "page_end": 601
+      },
+      "themes": ["elephant", "abraha", "kaaba_protection", "birds", "stones"],
+      "significance": "Tells of Abraha's failed attack on Kaaba with elephants, year of Prophet's birth"
+    },
+    {
+      "id": 106,
+      "number": 106,
+      "name_arabic": "قريش",
+      "name_english": "Quraysh",
+      "name_transliterated": "Quraysh",
+      "meaning": "Quraysh",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 29,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 4,
+        "word_count": 17,
+        "letter_count": 71,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 602,
+        "page_end": 602
+      },
+      "themes": ["quraysh_tribe", "winter_summer_journey", "worship", "house_lord"],
+      "significance": "References the trade journeys of Quraysh and calls them to worship Allah"
+    },
+    {
+      "id": 107,
+      "number": 107,
+      "name_arabic": "الماعون",
+      "name_english": "Al-Ma'un",
+      "name_transliterated": "Al-Maa'oon",
+      "meaning": "The Small Kindnesses",
+      "other_names": ["Almsgiving"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 17,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 7,
+        "word_count": 25,
+        "letter_count": 112,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 602,
+        "page_end": 602
+      },
+      "themes": ["judgment_denial", "orphan_treatment", "prayer_neglect", "showing_off", "kindness"],
+      "significance": "Criticizes those who deny judgment, neglect orphans, and show off in worship"
+    },
+    {
+      "id": 108,
+      "number": 108,
+      "name_arabic": "الكوثر",
+      "name_english": "Al-Kawthar",
+      "name_transliterated": "Al-Kawthar",
+      "meaning": "The Abundance",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 15,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 3,
+        "word_count": 10,
+        "letter_count": 42,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 602,
+        "page_end": 602
+      },
+      "themes": ["abundance", "prayer", "sacrifice", "enemy_cutoff"],
+      "significance": "Shortest surah, promises Prophet abundance and tells him to pray and sacrifice"
+    },
+    {
+      "id": 109,
+      "number": 109,
+      "name_arabic": "الكافرون",
+      "name_english": "Al-Kafirun",
+      "name_transliterated": "Al-Kaafiroon",
+      "meaning": "The Disbelievers",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 18,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 6,
+        "word_count": 27,
+        "letter_count": 95,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 603,
+        "page_end": 603
+      },
+      "themes": ["religious_separation", "worship_distinction", "tolerance", "clear_boundaries"],
+      "significance": "Establishes clear religious boundaries, 'to you your religion and to me mine'"
+    },
+    {
+      "id": 110,
+      "number": 110,
+      "name_arabic": "النصر",
+      "name_english": "An-Nasr",
+      "name_transliterated": "An-Nasr",
+      "meaning": "The Divine Support",
+      "other_names": ["The Help", "The Victory"],
+      "revelation": {
+        "place": "Medinan",
+        "order": 114,
+        "period": "Late Medinan"
+      },
+      "structure": {
+        "verse_count": 3,
+        "word_count": 19,
+        "letter_count": 77,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 603,
+        "page_end": 603
+      },
+      "themes": ["divine_help", "conquest", "people_entering_islam", "praise", "forgiveness"],
+      "significance": "Last complete surah revealed, about conquest of Mecca and people entering Islam"
+    },
+    {
+      "id": 111,
+      "number": 111,
+      "name_arabic": "المسد",
+      "name_english": "Al-Masad",
+      "name_transliterated": "Al-Masad",
+      "meaning": "The Palm Fibre",
+      "other_names": ["Al-Lahab (The Flame)", "Abu Lahab"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 6,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 5,
+        "word_count": 23,
+        "letter_count": 81,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 603,
+        "page_end": 603
+      },
+      "themes": ["abu_lahab", "his_wife", "punishment", "fire", "thorns"],
+      "significance": "Condemns Abu Lahab and his wife for their opposition to Islam"
+    },
+    {
+      "id": 112,
+      "number": 112,
+      "name_arabic": "الإخلاص",
+      "name_english": "Al-Ikhlas",
+      "name_transliterated": "Al-Ikhlaas",
+      "meaning": "The Sincerity",
+      "other_names": ["At-Tawhid (The Unity)", "As-Samad"],
+      "revelation": {
+        "place": "Meccan",
+        "order": 22,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 4,
+        "word_count": 15,
+        "letter_count": 47,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 604,
+        "page_end": 604
+      },
+      "themes": ["monotheism", "divine_unity", "eternal", "begetting", "comparison"],
+      "significance": "Pure monotheism, equals one-third of Quran in reward when recited"
+    },
+    {
+      "id": 113,
+      "number": 113,
+      "name_arabic": "الفلق",
+      "name_english": "Al-Falaq",
+      "name_transliterated": "Al-Falaq",
+      "meaning": "The Daybreak",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 20,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 5,
+        "word_count": 23,
+        "letter_count": 71,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 604,
+        "page_end": 604
+      },
+      "themes": ["seeking_refuge", "evil", "darkness", "witchcraft", "envy"],
+      "significance": "First of two protective surahs (Al-Mu'awwidhatain), seeks refuge from evil"
+    },
+    {
+      "id": 114,
+      "number": 114,
+      "name_arabic": "الناس",
+      "name_english": "An-Nas",
+      "name_transliterated": "An-Naas",
+      "meaning": "Mankind",
+      "other_names": [],
+      "revelation": {
+        "place": "Meccan",
+        "order": 21,
+        "period": "Early Meccan"
+      },
+      "structure": {
+        "verse_count": 6,
+        "word_count": 20,
+        "letter_count": 80,
+        "juz": 30,
+        "hizb": 60,
+        "page_start": 604,
+        "page_end": 604
+      },
+      "themes": ["seeking_refuge", "lord_of_mankind", "whispers", "satan", "protection"],
+      "significance": "Final surah of Quran, second protective surah, seeks refuge from Satan's whispers"
+    }
+  ]
+}
+

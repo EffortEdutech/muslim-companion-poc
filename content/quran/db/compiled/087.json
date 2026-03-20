@@ -1,0 +1,220 @@
+{
+  "surah": 87,
+  "metadata": {
+    "nameArabic": "الأعلى",
+    "nameEnglish": "Al-A'la",
+    "nameTranslit": "Al-A'laa",
+    "meaning": "The Most High",
+    "revelation": "Meccan",
+    "revelationOrder": 8,
+    "period": "Early Meccan",
+    "ayahCount": 19,
+    "wordCount": 72,
+    "letterCount": 286,
+    "juz": 30,
+    "pageStart": 591,
+    "themes": [
+      "glorification",
+      "creation",
+      "guidance",
+      "abraham",
+      "moses"
+    ],
+    "otherNames": [
+      "Sabbih"
+    ],
+    "significance": "Glorifies Allah and mentions the scriptures of Abraham and Moses"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ سَبِّحِ ٱسْمَ رَبِّكَ ٱلْأَعْلَى",
+      "transliteration": "Sabbihi isma rabbika alaAAla",
+      "translations": {
+        "en_sahih": "Exalt the name of your Lord, the Most High,",
+        "en_yusufali": "Glorify the name of thy Guardian-Lord Most High,",
+        "ms_basmeih": "Bertasbihlah mensucikan nama Tuhanmu Yang Maha Tinggi (dari segala sifat-sifat kekurangan), -"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "ٱلَّذِى خَلَقَ فَسَوَّىٰ",
+      "transliteration": "Allathee khalaqa fasawwa",
+      "translations": {
+        "en_sahih": "Who created and proportioned",
+        "en_yusufali": "Who hath created, and further, given order and proportion;",
+        "ms_basmeih": "Yang telah menciptakan (sekalian makhlukNya) serta menyempurnakan kejadiannya dengan kelengkapan yang sesuai dengan keadaannya;"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "وَٱلَّذِى قَدَّرَ فَهَدَىٰ",
+      "transliteration": "Waallathee qaddara fahada",
+      "translations": {
+        "en_sahih": "And who destined and [then] guided",
+        "en_yusufali": "Who hath ordained laws. And granted guidance;",
+        "ms_basmeih": "Dan Yang telah mengatur (keadaan makhluk-makhlukNya) serta memberikan hidayah petunjuk (ke jalan keselamatannya dan kesempurnaannya);"
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "وَٱلَّذِىٓ أَخْرَجَ ٱلْمَرْعَىٰ",
+      "transliteration": "Waallathee akhraja almarAAa",
+      "translations": {
+        "en_sahih": "And who brings out the pasture",
+        "en_yusufali": "And Who bringeth out the (green and luscious) pasture,",
+        "ms_basmeih": "Dan Yang telah mengeluarkan tumbuh-tumbuhan untuk binatang-binatang ternak,"
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "فَجَعَلَهُۥ غُثَآءً أَحْوَىٰ",
+      "transliteration": "FajaAAalahu ghuthaan ahwa",
+      "translations": {
+        "en_sahih": "And [then] makes it black stubble.",
+        "en_yusufali": "And then doth make it (but) swarthy stubble.",
+        "ms_basmeih": "Kemudian Ia menjadikan (tumbuh-tumbuhan yang menghijau) itu kering - (berubah warnanya) kehitam-hitaman."
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "سَنُقْرِئُكَ فَلَا تَنسَىٰٓ",
+      "transliteration": "Sanuqrioka fala tansa",
+      "translations": {
+        "en_sahih": "We will make you recite, [O Muhammad], and you will not forget,",
+        "en_yusufali": "By degrees shall We teach thee to declare (the Message), so thou shalt not forget,",
+        "ms_basmeih": "Kami sentiasa menjadikan engkau (wahai Muhammad) dapat membaca (Al-Quran yang diturunkan kepadamu - dengan perantaraan jibril), sehingga engkau (menghafaznya dan) tidak lupa,"
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "إِلَّا مَا شَآءَ ٱللَّهُ ۚ إِنَّهُۥ يَعْلَمُ ٱلْجَهْرَ وَمَا يَخْفَىٰ",
+      "transliteration": "Illa ma shaa Allahu innahu yaAAlamu aljahra wama yakhfa",
+      "translations": {
+        "en_sahih": "Except what Allah should will. Indeed, He knows what is declared and what is hidden.",
+        "en_yusufali": "Except as Allah wills: For He knoweth what is manifest and what is hidden.",
+        "ms_basmeih": "Kecuali apa yang dikehendaki Allah engkau lupakan; sesungguhnya Ia mengetahui (segala keadaan yang patut berlaku), dan yang tersembunyi."
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "وَنُيَسِّرُكَ لِلْيُسْرَىٰ",
+      "transliteration": "Wanuyassiruka lilyusra",
+      "translations": {
+        "en_sahih": "And We will ease you toward ease.",
+        "en_yusufali": "And We will make it easy for thee (to follow) the simple (Path).",
+        "ms_basmeih": "Dan Kami tetap memberi kemudahan kepadamu untuk (melaksanakan segala perkara) Ugama yang mudah diterima oleh akal yang sihat."
+      }
+    },
+    {
+      "ayah": 9,
+      "arabic": "فَذَكِّرْ إِن نَّفَعَتِ ٱلذِّكْرَىٰ",
+      "transliteration": "Fathakkir in nafaAAati alththikra",
+      "translations": {
+        "en_sahih": "So remind, if the reminder should benefit;",
+        "en_yusufali": "Therefore give admonition in case the admonition profits (the hearer).",
+        "ms_basmeih": "Oleh itu berilah peringatan (kepada umat manusia dengan ajaran Al-Quran), kalau-kalau peringatan itu berguna (dan sudah tentu berguna);"
+      }
+    },
+    {
+      "ayah": 10,
+      "arabic": "سَيَذَّكَّرُ مَن يَخْشَىٰ",
+      "transliteration": "Sayaththakkaru man yakhsha",
+      "translations": {
+        "en_sahih": "He who fears [Allah] will be reminded.",
+        "en_yusufali": "The admonition will be received by those who fear (Allah):",
+        "ms_basmeih": "Kerana orang yang takut (melanggar perintah Allah) akan menerima peringatan itu;"
+      }
+    },
+    {
+      "ayah": 11,
+      "arabic": "وَيَتَجَنَّبُهَا ٱلْأَشْقَى",
+      "transliteration": "Wayatajannabuha alashqa",
+      "translations": {
+        "en_sahih": "But the wretched one will avoid it -",
+        "en_yusufali": "But it will be avoided by those most unfortunate ones,",
+        "ms_basmeih": "Dan (sebaliknya) orang yang sangat celaka akan menjauhinya,"
+      }
+    },
+    {
+      "ayah": 12,
+      "arabic": "ٱلَّذِى يَصْلَى ٱلنَّارَ ٱلْكُبْرَىٰ",
+      "transliteration": "Allathee yasla alnnara alkubra",
+      "translations": {
+        "en_sahih": "[He] who will [enter and] burn in the greatest Fire,",
+        "en_yusufali": "Who will enter the Great Fire,",
+        "ms_basmeih": "Dia lah orang yang akan menderita bakaran neraka yang amat besar (azab seksanya),"
+      }
+    },
+    {
+      "ayah": 13,
+      "arabic": "ثُمَّ لَا يَمُوتُ فِيهَا وَلَا يَحْيَىٰ",
+      "transliteration": "Thumma la yamootu feeha wala yahya",
+      "translations": {
+        "en_sahih": "Neither dying therein nor living.",
+        "en_yusufali": "In which they will then neither die nor live.",
+        "ms_basmeih": "Selain dari itu, ia tidak mati di dalamnya dan tidak pula hidup senang."
+      }
+    },
+    {
+      "ayah": 14,
+      "arabic": "قَدْ أَفْلَحَ مَن تَزَكَّىٰ",
+      "transliteration": "Qad aflaha man tazakka",
+      "translations": {
+        "en_sahih": "He has certainly succeeded who purifies himself",
+        "en_yusufali": "But those will prosper who purify themselves,",
+        "ms_basmeih": "Sesungguhnya berjayalah orang yang - setelah menerima peringatan itu - berusaha membersihkan dirinya (dengan taat dan amal yang soleh),"
+      }
+    },
+    {
+      "ayah": 15,
+      "arabic": "وَذَكَرَ ٱسْمَ رَبِّهِۦ فَصَلَّىٰ",
+      "transliteration": "Wathakara isma rabbihi fasalla",
+      "translations": {
+        "en_sahih": "And mentions the name of his Lord and prays.",
+        "en_yusufali": "And glorify the name of their Guardian-Lord, and (lift their hearts) in prayer.",
+        "ms_basmeih": "Dan menyebut-nyebut dengan lidah dan hatinya akan nama Tuhannya serta mangerjakan sembahyang (dengan khusyuk)."
+      }
+    },
+    {
+      "ayah": 16,
+      "arabic": "بَلْ تُؤْثِرُونَ ٱلْحَيَوٰةَ ٱلدُّنْيَا",
+      "transliteration": "Bal tuthiroona alhayata alddunya",
+      "translations": {
+        "en_sahih": "But you prefer the worldly life,",
+        "en_yusufali": "Nay (behold), ye prefer the life of this world;",
+        "ms_basmeih": "(Tetapi kebanyakkan kamu tidak melakukan yang demikian), bahkan kamu utamakan kehidupan dunia;"
+      }
+    },
+    {
+      "ayah": 17,
+      "arabic": "وَٱلْـَٔاخِرَةُ خَيْرٌ وَأَبْقَىٰٓ",
+      "transliteration": "Waalakhiratu khayrun waabqa",
+      "translations": {
+        "en_sahih": "While the Hereafter is better and more enduring.",
+        "en_yusufali": "But the Hereafter is better and more enduring.",
+        "ms_basmeih": "Padahal kehidupan akhirat lebih baik dan lebih kekal."
+      }
+    },
+    {
+      "ayah": 18,
+      "arabic": "إِنَّ هَـٰذَا لَفِى ٱلصُّحُفِ ٱلْأُولَىٰ",
+      "transliteration": "Inna hatha lafee alssuhufi aloola",
+      "translations": {
+        "en_sahih": "Indeed, this is in the former scriptures,",
+        "en_yusufali": "And this is in the Books of the earliest (Revelation),-",
+        "ms_basmeih": "Sesungguhnya (keterangan-keterangan yang dinyatakan) ini ada (disebutkan) di dalam Kitab-kitab yang terdahulu, -"
+      }
+    },
+    {
+      "ayah": 19,
+      "arabic": "صُحُفِ إِبْرَٰهِيمَ وَمُوسَىٰ",
+      "transliteration": "Suhufi ibraheema wamoosa",
+      "translations": {
+        "en_sahih": "The scriptures of Abraham and Moses.",
+        "en_yusufali": "The Books of Abraham and Moses.",
+        "ms_basmeih": "Iaitu Kitab-kitab Nabi Ibrahim dan Nabi Musa."
+      }
+    }
+  ]
+}

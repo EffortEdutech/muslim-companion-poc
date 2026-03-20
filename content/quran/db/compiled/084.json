@@ -1,0 +1,280 @@
+{
+  "surah": 84,
+  "metadata": {
+    "nameArabic": "الانشقاق",
+    "nameEnglish": "Al-Inshiqaq",
+    "nameTranslit": "Al-Inshiqaaq",
+    "meaning": "The Splitting Open",
+    "revelation": "Meccan",
+    "revelationOrder": 83,
+    "period": "Late Meccan",
+    "ayahCount": 25,
+    "wordCount": 96,
+    "letterCount": 364,
+    "juz": 30,
+    "pageStart": 589,
+    "themes": [
+      "day_of_judgment",
+      "heaven_splitting",
+      "records",
+      "reward",
+      "punishment"
+    ],
+    "otherNames": [
+      "The Rending"
+    ],
+    "significance": "Describes the splitting of heaven and receiving of records"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ إِذَا ٱلسَّمَآءُ ٱنشَقَّتْ",
+      "transliteration": "Itha alssamao inshaqqat",
+      "translations": {
+        "en_sahih": "When the sky has split [open]",
+        "en_yusufali": "When the sky is rent asunder,",
+        "ms_basmeih": "Apabila langit terbelah,"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ",
+      "transliteration": "Waathinat lirabbiha wahuqqat",
+      "translations": {
+        "en_sahih": "And has responded to its Lord and was obligated [to do so]",
+        "en_yusufali": "And hearkens to (the Command of) its Lord, and it must needs (do so);-",
+        "ms_basmeih": "Serta mematuhi perintah Tuhannya, dan sudah semestinya ia patuh;"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "وَإِذَا ٱلْأَرْضُ مُدَّتْ",
+      "transliteration": "Waitha alardu muddat",
+      "translations": {
+        "en_sahih": "And when the earth has been extended",
+        "en_yusufali": "And when the earth is flattened out,",
+        "ms_basmeih": "Dan apabila bumi diratakan,"
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "وَأَلْقَتْ مَا فِيهَا وَتَخَلَّتْ",
+      "transliteration": "Waalqat ma feeha watakhallat",
+      "translations": {
+        "en_sahih": "And has cast out that within it and relinquished [it]",
+        "en_yusufali": "And casts forth what is within it and becomes (clean) empty,",
+        "ms_basmeih": "Serta mengeluarkan apa yang di dalamnya, dan menjadi kosong,"
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "وَأَذِنَتْ لِرَبِّهَا وَحُقَّتْ",
+      "transliteration": "Waathinat lirabbiha wahuqqat",
+      "translations": {
+        "en_sahih": "And has responded to its Lord and was obligated [to do so] -",
+        "en_yusufali": "And hearkens to (the Command of) its Lord,- and it must needs (do so);- (then will come Home the full reality).",
+        "ms_basmeih": "Serta mematuhi perintah Tuhannya, dan sudah semestinya ia patuh; - (Maka pada saat itu tiap-tiap seorang akan mengetahui apa yang telah dilakukannya)."
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "يَـٰٓأَيُّهَا ٱلْإِنسَـٰنُ إِنَّكَ كَادِحٌ إِلَىٰ رَبِّكَ كَدْحًا فَمُلَـٰقِيهِ",
+      "transliteration": "Ya ayyuha alinsanu innaka kadihun ila rabbika kadhan famulaqeehi",
+      "translations": {
+        "en_sahih": "O mankind, indeed you are laboring toward your Lord with [great] exertion and will meet it.",
+        "en_yusufali": "O thou man! Verily thou art ever toiling on towards thy Lord- painfully toiling,- but thou shalt meet Him.",
+        "ms_basmeih": "Wahai manusia! Sesungguhnya engkau sentiasa berpenat-lelah (menjalankan keadaan hidupmu) dengan sedaya upayamu hinggalah (semasa engkau) kembali kepada Tuhanmu, kemudian engkau tetap menemui balasan apa yang engkau telah usahakan itu (tercatit semuanya)."
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "فَأَمَّا مَنْ أُوتِىَ كِتَـٰبَهُۥ بِيَمِينِهِۦ",
+      "transliteration": "Faama man ootiya kitabahu biyameenihi",
+      "translations": {
+        "en_sahih": "Then as for he who is given his record in his right hand,",
+        "en_yusufali": "Then he who is given his Record in his right hand,",
+        "ms_basmeih": "Kemudian sesiapa yang diberi menerima surat amalnya dengan tangan kanannya, -"
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "فَسَوْفَ يُحَاسَبُ حِسَابًا يَسِيرًا",
+      "transliteration": "Fasawfa yuhasabu hisaban yaseeran",
+      "translations": {
+        "en_sahih": "He will be judged with an easy account",
+        "en_yusufali": "Soon will his account be taken by an easy reckoning,",
+        "ms_basmeih": "Maka ia akan dihisab dengan cara yang mudah dan ringan,"
+      }
+    },
+    {
+      "ayah": 9,
+      "arabic": "وَيَنقَلِبُ إِلَىٰٓ أَهْلِهِۦ مَسْرُورًا",
+      "transliteration": "Wayanqalibu ila ahlihi masrooran",
+      "translations": {
+        "en_sahih": "And return to his people in happiness.",
+        "en_yusufali": "And he will turn to his people, rejoicing!",
+        "ms_basmeih": "Dan ia akan pergi kepada keluarganya (yang beriman) dengan sukacita."
+      }
+    },
+    {
+      "ayah": 10,
+      "arabic": "وَأَمَّا مَنْ أُوتِىَ كِتَـٰبَهُۥ وَرَآءَ ظَهْرِهِۦ",
+      "transliteration": "Waamma man ootiya kitabahu waraa thahrihi",
+      "translations": {
+        "en_sahih": "But as for he who is given his record behind his back,",
+        "en_yusufali": "But he who is given his Record behind his back,-",
+        "ms_basmeih": "Dan sesiapa yang diberi menerima surat amalnya (dengan tangan kiri), dari sebelah belakangnya,"
+      }
+    },
+    {
+      "ayah": 11,
+      "arabic": "فَسَوْفَ يَدْعُوا۟ ثُبُورًا",
+      "transliteration": "Fasawfa yadAAoo thubooran",
+      "translations": {
+        "en_sahih": "He will cry out for destruction",
+        "en_yusufali": "Soon will he cry for perdition,",
+        "ms_basmeih": "Maka ia akan meraung menyebut-nyebut kebinasaannya,"
+      }
+    },
+    {
+      "ayah": 12,
+      "arabic": "وَيَصْلَىٰ سَعِيرًا",
+      "transliteration": "Wayasla saAAeeran",
+      "translations": {
+        "en_sahih": "And [enter to] burn in a Blaze.",
+        "en_yusufali": "And he will enter a Blazing Fire.",
+        "ms_basmeih": "Dan ia akan menderita bakaran neraka yang marak menjulang."
+      }
+    },
+    {
+      "ayah": 13,
+      "arabic": "إِنَّهُۥ كَانَ فِىٓ أَهْلِهِۦ مَسْرُورًا",
+      "transliteration": "Innahu kana fee ahlihi masrooran",
+      "translations": {
+        "en_sahih": "Indeed, he had [once] been among his people in happiness;",
+        "en_yusufali": "Truly, did he go about among his people, rejoicing!",
+        "ms_basmeih": "Sebenarnya ia semasa di dunia dahulu bersukaria dalam kalangan keluarganya (yang juga kufur ingkar)!"
+      }
+    },
+    {
+      "ayah": 14,
+      "arabic": "إِنَّهُۥ ظَنَّ أَن لَّن يَحُورَ",
+      "transliteration": "Innahu thanna an lan yahoora",
+      "translations": {
+        "en_sahih": "Indeed, he had thought he would never return [to Allah].",
+        "en_yusufali": "Truly, did he think that he would not have to return (to Us)!",
+        "ms_basmeih": "Sesungguhnya ia menyangka bahawa ia tidak sekali-kali akan kembali (kepada Kami untuk menerima balasan) !"
+      }
+    },
+    {
+      "ayah": 15,
+      "arabic": "بَلَىٰٓ إِنَّ رَبَّهُۥ كَانَ بِهِۦ بَصِيرًا",
+      "transliteration": "Bala inna rabbahu kana bihi baseeran",
+      "translations": {
+        "en_sahih": "But yes! Indeed, his Lord was ever of him, Seeing.",
+        "en_yusufali": "Nay, nay! for his Lord was (ever) watchful of him!",
+        "ms_basmeih": "(Sangkaannya itu tidak betul) bahkan ia tetap kembali! Sesungguhnya Tuhannya sentiasa Melihat dan Mengetahui keadaannya!"
+      }
+    },
+    {
+      "ayah": 16,
+      "arabic": "فَلَآ أُقْسِمُ بِٱلشَّفَقِ",
+      "transliteration": "Fala oqsimu bialshshafaqi",
+      "translations": {
+        "en_sahih": "So I swear by the twilight glow",
+        "en_yusufali": "So I do call to witness the ruddy glow of Sunset;",
+        "ms_basmeih": "Maka Aku bersumpah, demi mega;"
+      }
+    },
+    {
+      "ayah": 17,
+      "arabic": "وَٱلَّيْلِ وَمَا وَسَقَ",
+      "transliteration": "Waallayli wama wasaqa",
+      "translations": {
+        "en_sahih": "And [by] the night and what it envelops",
+        "en_yusufali": "The Night and its Homing;",
+        "ms_basmeih": "Dan malam serta segala yang dihimpunkannya;"
+      }
+    },
+    {
+      "ayah": 18,
+      "arabic": "وَٱلْقَمَرِ إِذَا ٱتَّسَقَ",
+      "transliteration": "Waalqamari itha ittasaqa",
+      "translations": {
+        "en_sahih": "And [by] the moon when it becomes full",
+        "en_yusufali": "And the Moon in her fullness:",
+        "ms_basmeih": "Dan bulan apabila (penuh cahayanya) menjadi purnama:"
+      }
+    },
+    {
+      "ayah": 19,
+      "arabic": "لَتَرْكَبُنَّ طَبَقًا عَن طَبَقٍ",
+      "transliteration": "Latarkabunna tabaqan AAan tabaqin",
+      "translations": {
+        "en_sahih": "[That] you will surely experience state after state.",
+        "en_yusufali": "Ye shall surely travel from stage to stage.",
+        "ms_basmeih": "Sesungguhnya kamu tetap melalui beberapa keadaan yang bertingkat-tingkat baik buruknya, (sebelum kamu menemui Tuhan - menerima kesenangan dan kebahagiaan atau sebaliknya)"
+      }
+    },
+    {
+      "ayah": 20,
+      "arabic": "فَمَا لَهُمْ لَا يُؤْمِنُونَ",
+      "transliteration": "Fama lahum la yuminoona",
+      "translations": {
+        "en_sahih": "So what is [the matter] with them [that] they do not believe,",
+        "en_yusufali": "What then is the matter with them, that they believe not?-",
+        "ms_basmeih": "Maka apakah alasan bagi mereka bersikap tidak mahu beriman?"
+      }
+    },
+    {
+      "ayah": 21,
+      "arabic": "وَإِذَا قُرِئَ عَلَيْهِمُ ٱلْقُرْءَانُ لَا يَسْجُدُونَ ۩",
+      "transliteration": "Waitha quria AAalayhimu alquranu la yasjudoona",
+      "translations": {
+        "en_sahih": "And when the Qur'an is recited to them, they do not prostrate [to Allah]?",
+        "en_yusufali": "And when the Qur'an is read to them, they fall not prostrate,",
+        "ms_basmeih": "Dan (apakah pula alasannya) apabila dibacakan Al-Quran kepada mereka, mereka tidak mahu taat dan sujud?"
+      }
+    },
+    {
+      "ayah": 22,
+      "arabic": "بَلِ ٱلَّذِينَ كَفَرُوا۟ يُكَذِّبُونَ",
+      "transliteration": "Bali allatheena kafaroo yukaththiboona",
+      "translations": {
+        "en_sahih": "But those who have disbelieved deny,",
+        "en_yusufali": "But on the contrary the Unbelievers reject (it).",
+        "ms_basmeih": "(Tidak ada satu alasan pun) bahkan orang-orang yang kafir, semata-mata mendustakannya;"
+      }
+    },
+    {
+      "ayah": 23,
+      "arabic": "وَٱللَّهُ أَعْلَمُ بِمَا يُوعُونَ",
+      "transliteration": "WaAllahu aAAlamu bima yooAAoona",
+      "translations": {
+        "en_sahih": "And Allah is most knowing of what they keep within themselves.",
+        "en_yusufali": "But Allah has full knowledge of what they secrete (in their breasts)",
+        "ms_basmeih": "Sedang Allah mengetahui apa yang mereka rahsiakan dalam hati."
+      }
+    },
+    {
+      "ayah": 24,
+      "arabic": "فَبَشِّرْهُم بِعَذَابٍ أَلِيمٍ",
+      "transliteration": "Fabashshirhum biAAathabin aleemin",
+      "translations": {
+        "en_sahih": "So give them tidings of a painful punishment,",
+        "en_yusufali": "So announce to them a Penalty Grievous,",
+        "ms_basmeih": "Maka khabarkanlah kepada mereka dengan azab yang tidak terperi sakitnya;"
+      }
+    },
+    {
+      "ayah": 25,
+      "arabic": "إِلَّا ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ لَهُمْ أَجْرٌ غَيْرُ مَمْنُونٍۭ",
+      "transliteration": "Illa allatheena amanoo waAAamiloo alssalihati lahum ajrun ghayru mamnoonin",
+      "translations": {
+        "en_sahih": "Except for those who believe and do righteous deeds. For them is a reward uninterrupted.",
+        "en_yusufali": "Except to those who believe and work righteous deeds: For them is a Reward that will never fail.",
+        "ms_basmeih": "Tetapi orang-orang yang beriman dan beramal soleh mereka beroleh pahala balasan yang tidak putus-putus."
+      }
+    }
+  ]
+}

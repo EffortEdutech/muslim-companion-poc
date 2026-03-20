@@ -1,0 +1,390 @@
+{
+  "surah": 83,
+  "metadata": {
+    "nameArabic": "المطففين",
+    "nameEnglish": "Al-Mutaffifin",
+    "nameTranslit": "Al-Mutaffifeen",
+    "meaning": "The Defrauding",
+    "revelation": "Meccan",
+    "revelationOrder": 86,
+    "period": "Late Meccan",
+    "ayahCount": 36,
+    "wordCount": 169,
+    "letterCount": 684,
+    "juz": 30,
+    "pageStart": 587,
+    "themes": [
+      "cheating",
+      "justice",
+      "sijjin",
+      "illiyyun",
+      "mockery"
+    ],
+    "otherNames": [
+      "Those Who Give Short Measure"
+    ],
+    "significance": "Condemns cheating in business and describes the record books"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ وَيْلٌ لِّلْمُطَفِّفِينَ",
+      "transliteration": "Waylun lilmutaffifeena",
+      "translations": {
+        "en_sahih": "Woe to those who give less [than due],",
+        "en_yusufali": "Woe to those that deal in fraud,-",
+        "ms_basmeih": "Kecelakaan besar bagi orang-orang yang curang (dalam timbangan dan sukatan),"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "ٱلَّذِينَ إِذَا ٱكْتَالُوا۟ عَلَى ٱلنَّاسِ يَسْتَوْفُونَ",
+      "transliteration": "Allatheena itha iktaloo AAala alnnasi yastawfoona",
+      "translations": {
+        "en_sahih": "Who, when they take a measure from people, take in full.",
+        "en_yusufali": "Those who, when they have to receive by measure from men, exact full measure,",
+        "ms_basmeih": "Iaitu mereka yang apabila menerima sukatan (gantang cupak) dari orang lain mereka mengambilnya dengan cukup,"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "وَإِذَا كَالُوهُمْ أَو وَّزَنُوهُمْ يُخْسِرُونَ",
+      "transliteration": "Waitha kaloohum aw wazanoohum yukhsiroona",
+      "translations": {
+        "en_sahih": "But if they give by measure or by weight to them, they cause loss.",
+        "en_yusufali": "But when they have to give by measure or weight to men, give less than due.",
+        "ms_basmeih": "Dan (sebaliknya) apabila mereka menyukat atau menimbang untuk orang lain, mereka kurangi."
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "أَلَا يَظُنُّ أُو۟لَـٰٓئِكَ أَنَّهُم مَّبْعُوثُونَ",
+      "transliteration": "Ala yathunnu olaika annahum mabAAoothoona",
+      "translations": {
+        "en_sahih": "Do they not think that they will be resurrected",
+        "en_yusufali": "Do they not think that they will be called to account?-",
+        "ms_basmeih": "Tidakkah mereka menyangka bahawa mereka akan dibangkitkan (hidup semula sesudah mati)?"
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "لِيَوْمٍ عَظِيمٍ",
+      "transliteration": "Liyawmin AAatheemin",
+      "translations": {
+        "en_sahih": "For a tremendous Day -",
+        "en_yusufali": "On a Mighty Day,",
+        "ms_basmeih": "Pada hari (kiamat) yang amat besar (huru-haranya),"
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "يَوْمَ يَقُومُ ٱلنَّاسُ لِرَبِّ ٱلْعَـٰلَمِينَ",
+      "transliteration": "Yawma yaqoomu alnnasu lirabbi alAAalameena",
+      "translations": {
+        "en_sahih": "The Day when mankind will stand before the Lord of the worlds?",
+        "en_yusufali": "A Day when (all) mankind will stand before the Lord of the Worlds?",
+        "ms_basmeih": "Hari berdiri manusia untuk mengadap Tuhan sekalian alam?"
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "كَلَّآ إِنَّ كِتَـٰبَ ٱلْفُجَّارِ لَفِى سِجِّينٍ",
+      "transliteration": "Kalla inna kitaba alfujjari lafee sijjeenin",
+      "translations": {
+        "en_sahih": "No! Indeed, the record of the wicked is in sijjeen.",
+        "en_yusufali": "Nay! Surely the record of the wicked is (preserved) in Sijjin.",
+        "ms_basmeih": "Tidak sepatutnya (mereka melakukan perbuatan yang salah itu dan melalaikan hari akhirat)! Sesungguhnya \"kitab suratan amal\" orang-orang yang berdosa itu (didaftarkan) dalam \"Sijjiin\"."
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "وَمَآ أَدْرَىٰكَ مَا سِجِّينٌ",
+      "transliteration": "Wama adraka ma sijjeenun",
+      "translations": {
+        "en_sahih": "And what can make you know what is sijjeen?",
+        "en_yusufali": "And what will explain to thee what Sijjin is?",
+        "ms_basmeih": "Dan apa jalannya engkau dapat mengetahui: apa dia \"Sijjiin\" itu,"
+      }
+    },
+    {
+      "ayah": 9,
+      "arabic": "كِتَـٰبٌ مَّرْقُومٌ",
+      "transliteration": "Kitabun marqoomun",
+      "translations": {
+        "en_sahih": "It is [their destination recorded in] a register inscribed.",
+        "en_yusufali": "(There is) a Register (fully) inscribed.",
+        "ms_basmeih": "Ialah (tempat simpanan) kitab catitan yang jelas nyata, (yang menghimpunkan amalan orang-orang yang berdosa)."
+      }
+    },
+    {
+      "ayah": 10,
+      "arabic": "وَيْلٌ يَوْمَئِذٍ لِّلْمُكَذِّبِينَ",
+      "transliteration": "Waylun yawmaithin lilmukaththibeena",
+      "translations": {
+        "en_sahih": "Woe, that Day, to the deniers,",
+        "en_yusufali": "Woe, that Day, to those that deny-",
+        "ms_basmeih": "Kecelakaan besar, pada hari itu, bagi orang-orang yang mendustakan -"
+      }
+    },
+    {
+      "ayah": 11,
+      "arabic": "ٱلَّذِينَ يُكَذِّبُونَ بِيَوْمِ ٱلدِّينِ",
+      "transliteration": "Allatheena yukaththiboona biyawmi alddeeni",
+      "translations": {
+        "en_sahih": "Who deny the Day of Recompense.",
+        "en_yusufali": "Those that deny the Day of Judgment.",
+        "ms_basmeih": "Iaitu mereka yang mendustakan hari pembalasan."
+      }
+    },
+    {
+      "ayah": 12,
+      "arabic": "وَمَا يُكَذِّبُ بِهِۦٓ إِلَّا كُلُّ مُعْتَدٍ أَثِيمٍ",
+      "transliteration": "Wama yukaththibu bihi illa kullu muAAtadin atheemin",
+      "translations": {
+        "en_sahih": "And none deny it except every sinful transgressor.",
+        "en_yusufali": "And none can deny it but the Transgressor beyond bounds the Sinner!",
+        "ms_basmeih": "Dan tiada yang mendustakannya melainkan tiap-tiap orang yang melampaui batas (kebenaran), lagi amat derhaka!"
+      }
+    },
+    {
+      "ayah": 13,
+      "arabic": "إِذَا تُتْلَىٰ عَلَيْهِ ءَايَـٰتُنَا قَالَ أَسَـٰطِيرُ ٱلْأَوَّلِينَ",
+      "transliteration": "Itha tutla AAalayhi ayatuna qala asateeru alawwaleena",
+      "translations": {
+        "en_sahih": "When Our verses are recited to him, he says, \"Legends of the former peoples.\"",
+        "en_yusufali": "When Our Signs are rehearsed to him, he says, \"Tales of the ancients!\"",
+        "ms_basmeih": "(Sehingga) apabila ia dibacakan kepadanya ayat-ayat Kami, ia berkata:\" Ini ialah dongeng orang-orang dahulu kala!\""
+      }
+    },
+    {
+      "ayah": 14,
+      "arabic": "كَلَّا ۖ بَلْ ۜ رَانَ عَلَىٰ قُلُوبِهِم مَّا كَانُوا۟ يَكْسِبُونَ",
+      "transliteration": "Kalla bal rana AAala quloobihim ma kanoo yaksiboona",
+      "translations": {
+        "en_sahih": "No! Rather, the stain has covered their hearts of that which they were earning.",
+        "en_yusufali": "By no means! but on their hearts is the stain of the (ill) which they do!",
+        "ms_basmeih": "Sebenarnya! (Ayat-ayat Kami itu tidak ada cacatnya) bahkan mata hati mereka telah diselaputi kekotoran (dosa), dengan sebab (perbuatan kufur dan maksiat) yang mereka kerjakan."
+      }
+    },
+    {
+      "ayah": 15,
+      "arabic": "كَلَّآ إِنَّهُمْ عَن رَّبِّهِمْ يَوْمَئِذٍ لَّمَحْجُوبُونَ",
+      "transliteration": "Kalla innahum AAan rabbihim yawmaithin lamahjooboona",
+      "translations": {
+        "en_sahih": "No! Indeed, from their Lord, that Day, they will be partitioned.",
+        "en_yusufali": "Verily, from (the Light of) their Lord, that Day, will they be veiled.",
+        "ms_basmeih": "Jangan lagi mereka berlaku demikian! (kalau tidak), mereka pada hari itu, tetap terdinding dari (rahmat) Tuhannya."
+      }
+    },
+    {
+      "ayah": 16,
+      "arabic": "ثُمَّ إِنَّهُمْ لَصَالُوا۟ ٱلْجَحِيمِ",
+      "transliteration": "Thumma innahum lasaloo aljaheemi",
+      "translations": {
+        "en_sahih": "Then indeed, they will [enter and] burn in Hellfire.",
+        "en_yusufali": "Further, they will enter the Fire of Hell.",
+        "ms_basmeih": "Kemudian, sesungguhnya mereka akan menderita bakaran neraka."
+      }
+    },
+    {
+      "ayah": 17,
+      "arabic": "ثُمَّ يُقَالُ هَـٰذَا ٱلَّذِى كُنتُم بِهِۦ تُكَذِّبُونَ",
+      "transliteration": "Thumma yuqalu hatha allathee kuntum bihi tukaththiboona",
+      "translations": {
+        "en_sahih": "Then it will be said [to them], \"This is what you used to deny.\"",
+        "en_yusufali": "Further, it will be said to them: \"This is the (reality) which ye rejected as false!",
+        "ms_basmeih": "Akhirnya dikatakan (kepada mereka): \"Inilah dia (azab seksa) yang kamu dustakan dahulu.\""
+      }
+    },
+    {
+      "ayah": 18,
+      "arabic": "كَلَّآ إِنَّ كِتَـٰبَ ٱلْأَبْرَارِ لَفِى عِلِّيِّينَ",
+      "transliteration": "Kalla inna kitaba alabrari lafee AAilliyyeena",
+      "translations": {
+        "en_sahih": "No! Indeed, the record of the righteous is in 'illiyyun.",
+        "en_yusufali": "Nay, verily the record of the Righteous is (preserved) in 'Illiyin.",
+        "ms_basmeih": "Ingatlah wahai manusia! Sesungguhnya \"kitab suratan amal\" orang-orang yang berbakti (dengan taat dan amal kebajikan), adalah (didaftarkan) dalam\" Illiyiin\"."
+      }
+    },
+    {
+      "ayah": 19,
+      "arabic": "وَمَآ أَدْرَىٰكَ مَا عِلِّيُّونَ",
+      "transliteration": "Wama adraka ma AAilliyyoona",
+      "translations": {
+        "en_sahih": "And what can make you know what is 'illiyyun?",
+        "en_yusufali": "And what will explain to thee what 'Illiyun is?",
+        "ms_basmeih": "Dan apa jalannya engkau dapat mengetahui, apa dia \"Illiyiin\" itu?"
+      }
+    },
+    {
+      "ayah": 20,
+      "arabic": "كِتَـٰبٌ مَّرْقُومٌ",
+      "transliteration": "Kitabun marqoomun",
+      "translations": {
+        "en_sahih": "It is [their destination recorded in] a register inscribed",
+        "en_yusufali": "(There is) a Register (fully) inscribed,",
+        "ms_basmeih": "Ialah (tempat simpanan) kitab catitan yang jelas nyata,"
+      }
+    },
+    {
+      "ayah": 21,
+      "arabic": "يَشْهَدُهُ ٱلْمُقَرَّبُونَ",
+      "transliteration": "Yashhaduhu almuqarraboona",
+      "translations": {
+        "en_sahih": "Which is witnessed by those brought near [to Allah].",
+        "en_yusufali": "To which bear witness those Nearest (to Allah).",
+        "ms_basmeih": "Yang disaksikan oleh sekumpulan malaikat, yang didampingkan Tuhan di sisinya."
+      }
+    },
+    {
+      "ayah": 22,
+      "arabic": "إِنَّ ٱلْأَبْرَارَ لَفِى نَعِيمٍ",
+      "transliteration": "Inna alabrara lafee naAAeemin",
+      "translations": {
+        "en_sahih": "Indeed, the righteous will be in pleasure",
+        "en_yusufali": "Truly the Righteous will be in Bliss:",
+        "ms_basmeih": "Sesungguhnya orang-orang yang berbakti (dengan taat dan amal kebajikan), tetap berada di dalam Syurga yang penuh nikmat:"
+      }
+    },
+    {
+      "ayah": 23,
+      "arabic": "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ",
+      "transliteration": "AAala alaraiki yanthuroona",
+      "translations": {
+        "en_sahih": "On adorned couches, observing.",
+        "en_yusufali": "On Thrones (of Dignity) will they command a sight (of all things):",
+        "ms_basmeih": "Mereka berehat di atas pelamin-pelamin (yang berhias), sambil melihat (segala keindahan dan kemuliaan yang disediakan untuk mereka di situ)."
+      }
+    },
+    {
+      "ayah": 24,
+      "arabic": "تَعْرِفُ فِى وُجُوهِهِمْ نَضْرَةَ ٱلنَّعِيمِ",
+      "transliteration": "TaAArifu fee wujoohihim nadrata alnnaAAeemi",
+      "translations": {
+        "en_sahih": "You will recognize in their faces the radiance of pleasure.",
+        "en_yusufali": "Thou wilt recognise in their faces the beaming brightness of Bliss.",
+        "ms_basmeih": "Engkau dapat melihat pada muka mereka: cahaya nikmat yang mereka perolehi."
+      }
+    },
+    {
+      "ayah": 25,
+      "arabic": "يُسْقَوْنَ مِن رَّحِيقٍ مَّخْتُومٍ",
+      "transliteration": "Yusqawna min raheeqin makhtoomin",
+      "translations": {
+        "en_sahih": "They will be given to drink [pure] wine [which was] sealed.",
+        "en_yusufali": "Their thirst will be slaked with Pure Wine sealed:",
+        "ms_basmeih": "Mereka diberi minum dari satu minuman yang termeterai bekasnya,"
+      }
+    },
+    {
+      "ayah": 26,
+      "arabic": "خِتَـٰمُهُۥ مِسْكٌ ۚ وَفِى ذَٰلِكَ فَلْيَتَنَافَسِ ٱلْمُتَنَـٰفِسُونَ",
+      "transliteration": "Khitamuhu miskun wafee thalika falyatanafasi almutanafisoona",
+      "translations": {
+        "en_sahih": "The last of it is musk. So for this let the competitors compete.",
+        "en_yusufali": "The seal thereof will be Musk: And for this let those aspire, who have aspirations:",
+        "ms_basmeih": "Meterainya kasturi; - dan untuk (memperolehi nikmat kesenangan) itu hendaknya berlumba-lumba mereka yang ingin merebut kelebihan dan kesenangan;"
+      }
+    },
+    {
+      "ayah": 27,
+      "arabic": "وَمِزَاجُهُۥ مِن تَسْنِيمٍ",
+      "transliteration": "Wamizajuhu min tasneemin",
+      "translations": {
+        "en_sahih": "And its mixture is of Tasneem,",
+        "en_yusufali": "With it will be (given) a mixture of Tasnim:",
+        "ms_basmeih": "Dan campuran minuman itu adalah dari \"Tasnim\":"
+      }
+    },
+    {
+      "ayah": 28,
+      "arabic": "عَيْنًا يَشْرَبُ بِهَا ٱلْمُقَرَّبُونَ",
+      "transliteration": "AAaynan yashrabu biha almuqarraboona",
+      "translations": {
+        "en_sahih": "A spring from which those near [to Allah] drink.",
+        "en_yusufali": "A spring, from (the waters) whereof drink those Nearest to Allah.",
+        "ms_basmeih": "laitu matair yang diminum daripadanya oleh orang-orang yang di dampingkan (Tuhan di sisiNya)."
+      }
+    },
+    {
+      "ayah": 29,
+      "arabic": "إِنَّ ٱلَّذِينَ أَجْرَمُوا۟ كَانُوا۟ مِنَ ٱلَّذِينَ ءَامَنُوا۟ يَضْحَكُونَ",
+      "transliteration": "Inna allatheena ajramoo kanoo mina allatheena amanoo yadhakoona",
+      "translations": {
+        "en_sahih": "Indeed, those who committed crimes used to laugh at those who believed.",
+        "en_yusufali": "Those in sin used to laugh at those who believed,",
+        "ms_basmeih": "Sesungguhnya orang-orang yang derhaka, mereka selalu tertawakan orang-orang yang beriman."
+      }
+    },
+    {
+      "ayah": 30,
+      "arabic": "وَإِذَا مَرُّوا۟ بِهِمْ يَتَغَامَزُونَ",
+      "transliteration": "Waitha marroo bihim yataghamazoona",
+      "translations": {
+        "en_sahih": "And when they passed by them, they would exchange derisive glances.",
+        "en_yusufali": "And whenever they passed by them, used to wink at each other (in mockery);",
+        "ms_basmeih": "Dan apabila orang-orang yang beriman lalu dekat mereka, mereka mengerling dan memejam celikkan mata sesama sendiri (mencemuhnya)."
+      }
+    },
+    {
+      "ayah": 31,
+      "arabic": "وَإِذَا ٱنقَلَبُوٓا۟ إِلَىٰٓ أَهْلِهِمُ ٱنقَلَبُوا۟ فَكِهِينَ",
+      "transliteration": "Waitha inqalaboo ila ahlihimu inqalaboo fakiheena",
+      "translations": {
+        "en_sahih": "And when they returned to their people, they would return jesting.",
+        "en_yusufali": "And when they returned to their own people, they would return jesting;",
+        "ms_basmeih": "Dan apabila mereka kembali kepada kaum keluarganya, mereka kembali dengan riang gembira;"
+      }
+    },
+    {
+      "ayah": 32,
+      "arabic": "وَإِذَا رَأَوْهُمْ قَالُوٓا۟ إِنَّ هَـٰٓؤُلَآءِ لَضَآلُّونَ",
+      "transliteration": "Waitha raawhum qaloo inna haolai ladalloona",
+      "translations": {
+        "en_sahih": "And when they saw them, they would say, \"Indeed, those are truly lost.\"",
+        "en_yusufali": "And whenever they saw them, they would say, \"Behold! These are the people truly astray!\"",
+        "ms_basmeih": "Dan apabila mereka melihat orang-orang yang beriman, mereka berkata: \"Sesungguhnya orang-orang itu adalah golongan yang sesat!\""
+      }
+    },
+    {
+      "ayah": 33,
+      "arabic": "وَمَآ أُرْسِلُوا۟ عَلَيْهِمْ حَـٰفِظِينَ",
+      "transliteration": "Wama orsiloo AAalayhim hafitheena",
+      "translations": {
+        "en_sahih": "But they had not been sent as guardians over them.",
+        "en_yusufali": "But they had not been sent as keepers over them!",
+        "ms_basmeih": "Pada hal mereka tidak diutus untuk menjaga sesat atau tidaknya orang-orang yang beriman itu!"
+      }
+    },
+    {
+      "ayah": 34,
+      "arabic": "فَٱلْيَوْمَ ٱلَّذِينَ ءَامَنُوا۟ مِنَ ٱلْكُفَّارِ يَضْحَكُونَ",
+      "transliteration": "Faalyawma allatheena amanoo mina alkuffari yadhakoona",
+      "translations": {
+        "en_sahih": "So Today those who believed are laughing at the disbelievers,",
+        "en_yusufali": "But on this Day the Believers will laugh at the Unbelievers:",
+        "ms_basmeih": "Maka pada hari ini, orang-orang yang beriman pula tertawakan orang yang kafir itu."
+      }
+    },
+    {
+      "ayah": 35,
+      "arabic": "عَلَى ٱلْأَرَآئِكِ يَنظُرُونَ",
+      "transliteration": "AAala alaraiki yanthuroona",
+      "translations": {
+        "en_sahih": "On adorned couches, observing.",
+        "en_yusufali": "On Thrones (of Dignity) they will command (a sight) (of all things).",
+        "ms_basmeih": "Sambil mereka berehat di atas pelamin-pelamin (yang berhias), serta melihat (hal yang berlaku kepada musuhnya)."
+      }
+    },
+    {
+      "ayah": 36,
+      "arabic": "هَلْ ثُوِّبَ ٱلْكُفَّارُ مَا كَانُوا۟ يَفْعَلُونَ",
+      "transliteration": "Hal thuwwiba alkuffaru ma kanoo yafAAaloona",
+      "translations": {
+        "en_sahih": "Have the disbelievers [not] been rewarded [this Day] for what they used to do?",
+        "en_yusufali": "Will not the Unbelievers have been paid back for what they did?",
+        "ms_basmeih": "(Untuk menambahkan kegembiraan mereka, mereka ditanya): \"Bukankah orang-orang yang kafir itu telah dibalas akan apa yang mereka telah kerjakan dahulu?\""
+      }
+    }
+  ]
+}

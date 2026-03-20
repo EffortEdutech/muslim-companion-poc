@@ -1,0 +1,57 @@
+{
+  "surah": 108,
+  "metadata": {
+    "nameArabic": "الكوثر",
+    "nameEnglish": "Al-Kawthar",
+    "nameTranslit": "Al-Kawthar",
+    "meaning": "The Abundance",
+    "revelation": "Meccan",
+    "revelationOrder": 15,
+    "period": "Early Meccan",
+    "ayahCount": 3,
+    "wordCount": 10,
+    "letterCount": 42,
+    "juz": 30,
+    "pageStart": 602,
+    "themes": [
+      "abundance",
+      "prayer",
+      "sacrifice",
+      "enemy_cutoff"
+    ],
+    "otherNames": [],
+    "significance": "Shortest surah, promises Prophet abundance and tells him to pray and sacrifice"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ إِنَّآ أَعْطَيْنَـٰكَ ٱلْكَوْثَرَ",
+      "transliteration": "Inna aAAtaynaka alkawthara",
+      "translations": {
+        "en_sahih": "Indeed, We have granted you, [O Muhammad], al-Kawthar.",
+        "en_yusufali": "To thee have We granted the Fount (of Abundance).",
+        "ms_basmeih": "Sesungguhnya Kami telah mengurniakan kepadamu (wahai Muhammad) kebaikan yang banyak (di dunia dan di akhirat)."
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "فَصَلِّ لِرَبِّكَ وَٱنْحَرْ",
+      "transliteration": "Fasalli lirabbika wainhar",
+      "translations": {
+        "en_sahih": "So pray to your Lord and sacrifice [to Him alone].",
+        "en_yusufali": "Therefore to thy Lord turn in Prayer and Sacrifice.",
+        "ms_basmeih": "Oleh itu, kerjakanlah sembahyang kerana Tuhanmu semata-mata, dan sembelihlah korban (sebagai bersyukur)."
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "إِنَّ شَانِئَكَ هُوَ ٱلْأَبْتَرُ",
+      "transliteration": "Inna shaniaka huwa alabtaru",
+      "translations": {
+        "en_sahih": "Indeed, your enemy is the one cut off.",
+        "en_yusufali": "For he who hateth thee, he will be cut off (from Future Hope).",
+        "ms_basmeih": "Sesungguhnya orang yang bencikan engkau, Dia lah yang terputus (dari mendapat sebarang perkara yang diingininya)."
+      }
+    }
+  ]
+}

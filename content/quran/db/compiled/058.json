@@ -1,0 +1,250 @@
+{
+  "surah": 58,
+  "metadata": {
+    "nameArabic": "المجادلة",
+    "nameEnglish": "Al-Mujadilah",
+    "nameTranslit": "Al-Mujaadilah",
+    "meaning": "The Pleading Woman",
+    "revelation": "Medinan",
+    "revelationOrder": 105,
+    "period": "Late Medinan",
+    "ayahCount": 22,
+    "wordCount": 475,
+    "letterCount": 1946,
+    "juz": 28,
+    "pageStart": 542,
+    "themes": [
+      "family_law",
+      "justice",
+      "debate",
+      "expiation",
+      "women_rights"
+    ],
+    "otherNames": [
+      "Al-Mujadalah"
+    ],
+    "significance": "Addresses family disputes and emphasizes justice and proper conduct"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ قَدْ سَمِعَ ٱللَّهُ قَوْلَ ٱلَّتِى تُجَـٰدِلُكَ فِى زَوْجِهَا وَتَشْتَكِىٓ إِلَى ٱللَّهِ وَٱللَّهُ يَسْمَعُ تَحَاوُرَكُمَآ ۚ إِنَّ ٱللَّهَ سَمِيعٌۢ بَصِيرٌ",
+      "transliteration": "Qad samiAAa Allahu qawla allatee tujadiluka fee zawjiha watashtakee ila Allahi waAllahu yasmaAAu tahawurakuma inna Allaha sameeAAun baseerun",
+      "translations": {
+        "en_sahih": "Certainly has Allah heard the speech of the one who argues with you, [O Muhammad], concerning her husband and directs her complaint to Allah. And Allah hears your dialogue; indeed, Allah is Hearing and Seeing.",
+        "en_yusufali": "Allah has indeed heard (and accepted) the statement of the woman who pleads with thee concerning her husband and carries her complaint (in prayer) to Allah: and Allah (always) hears the arguments between both sides among you: for Allah hears and sees (all things).",
+        "ms_basmeih": "Sesungguhnya Allah telah mendengar (dan memperkenan) aduan perempuan yang bersoal jawab denganmu (wahai Muhammad) mengenai suaminya, sambil ia berdoa merayu kepada Allah (mengenai perkara yang menyusahkannya), sedang Allah sedia mendengar perbincangan kamu berdua. Sesungguhnya Allah Maha Mendengar, lagi Maha Melihat."
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "ٱلَّذِينَ يُظَـٰهِرُونَ مِنكُم مِّن نِّسَآئِهِم مَّا هُنَّ أُمَّهَـٰتِهِمْ ۖ إِنْ أُمَّهَـٰتُهُمْ إِلَّا ٱلَّـٰٓـِٔى وَلَدْنَهُمْ ۚ وَإِنَّهُمْ لَيَقُولُونَ مُنكَرًا مِّنَ ٱلْقَوْلِ وَزُورًا ۚ وَإِنَّ ٱللَّهَ لَعَفُوٌّ غَفُورٌ",
+      "transliteration": "Allatheena yuthahiroona minkum min nisaihim ma hunna ommahatihim in ommahatuhum illa allaee waladnahum wainnahum layaqooloona munkaran mina alqawli wazooran wainna Allaha laAAafuwwun ghafoorun",
+      "translations": {
+        "en_sahih": "Those who pronounce thihar among you [to separate] from their wives - they are not [consequently] their mothers. Their mothers are none but those who gave birth to them. And indeed, they are saying an objectionable statement and a falsehood. But indeed, Allah is Pardoning and Forgiving.",
+        "en_yusufali": "If any men among you divorce their wives by Zihar (calling them mothers), they cannot be their mothers: None can be their mothers except those who gave them birth. And in fact they use words (both) iniquitous and false: but truly Allah is one that blots out (sins), and forgives (again and again).",
+        "ms_basmeih": "Orang-orang yang \"ziharkan\" isterinya dari kalangan kamu (adalah orang-orang yang bersalah, kerana) isteri-isteri mereka bukanlah ibu-ibu mereka. Ibu-ibu mereka tidak lain hanyalah perempuan-perempuan yang melahirkan mereka. Dan sesungguhnya mereka (dengan melakukan yang demikian) memperkatakan suatu perkara yang mungkar dan dusta. Dan (ingatlah), sesungguhnya Allah Maha Pemaaf, lagi Maha Pengampun."
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "وَٱلَّذِينَ يُظَـٰهِرُونَ مِن نِّسَآئِهِمْ ثُمَّ يَعُودُونَ لِمَا قَالُوا۟ فَتَحْرِيرُ رَقَبَةٍ مِّن قَبْلِ أَن يَتَمَآسَّا ۚ ذَٰلِكُمْ تُوعَظُونَ بِهِۦ ۚ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ",
+      "transliteration": "Waallatheena yuthahiroona min nisaihim thumma yaAAoodoona lima qaloo fatahreeru raqabatin min qabli an yatamassa thalikum tooAAathoona bihi waAllahu bima taAAmaloona khabeerun",
+      "translations": {
+        "en_sahih": "And those who pronounce thihar from their wives and then [wish to] go back on what they said - then [there must be] the freeing of a slave before they touch one another. That is what you are admonished thereby; and Allah is Acquainted with what you do.",
+        "en_yusufali": "But those who divorce their wives by Zihar, then wish to go back on the words they uttered,- (It is ordained that such a one) should free a slave before they touch each other: Thus are ye admonished to perform: and Allah is well-acquainted with (all) that ye do.",
+        "ms_basmeih": "Dan orang-orang yang \"ziharkan\" isterinya, kemudian mereka berbalik dari apa yang mereka ucapkan (bahawa isterinya itu haram kepadanya), maka hendaklah (suami itu) memerdekakan seorang hamba sebelum mereka berdua (suami isteri) bercampur. Dengan hukum yang demikian, kamu diberi pengajaran (supaya jangan mendekati perkara yang mungkar itu). Dan (ingatlah), Allah Maha Mendalam PengetahuanNya akan apa yang kamu lakukan."
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "فَمَن لَّمْ يَجِدْ فَصِيَامُ شَهْرَيْنِ مُتَتَابِعَيْنِ مِن قَبْلِ أَن يَتَمَآسَّا ۖ فَمَن لَّمْ يَسْتَطِعْ فَإِطْعَامُ سِتِّينَ مِسْكِينًا ۚ ذَٰلِكَ لِتُؤْمِنُوا۟ بِٱللَّهِ وَرَسُولِهِۦ ۚ وَتِلْكَ حُدُودُ ٱللَّهِ ۗ وَلِلْكَـٰفِرِينَ عَذَابٌ أَلِيمٌ",
+      "transliteration": "Faman lam yajid fasiyamu shahrayni mutatabiAAayni min qabli an yatamassa faman lam yastatiAA faitAAamu sitteena miskeenan thalika lituminoo biAllahi warasoolihi watilka hudoodu Allahi walilkafireena AAathabun aleemun",
+      "translations": {
+        "en_sahih": "And he who does not find [a slave] - then a fast for two months consecutively before they touch one another; and he who is unable - then the feeding of sixty poor persons. That is for you to believe [completely] in Allah and His Messenger; and those are the limits [set by] Allah. And for the disbelievers is a painful punishment.",
+        "en_yusufali": "And if any has not (the wherewithal), he should fast for two months consecutively before they touch each other. But if any is unable to do so, he should feed sixty indigent ones, this, that ye may show your faith in Allah and His Messenger. Those are limits (set by) Allah. For those who reject (Him), there is a grievous Penalty.",
+        "ms_basmeih": "Kemudian, sesiapa yang tidak dapat (memerdekakan hamba), maka hendaklah ia berpuasa dua bulan berturut-turut sebelum mereka (suami isteri) itu bercampur. Akhirnya sesiapa yang tidak sanggup berpuasa, maka hendaklah ia memberi makan enam puluh orang miskin. Ditetapkan hukum itu untuk membuktikan iman kamu kepada Allah dan RasulNya (dengan mematuhi perintahNya serta menjauhi adat Jahiliyah). Dan itulah batas-batas hukum Allah; dan bagi orang-orang yang kafir disediakan azab seksa yang tidak terperi sakitnya."
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "إِنَّ ٱلَّذِينَ يُحَآدُّونَ ٱللَّهَ وَرَسُولَهُۥ كُبِتُوا۟ كَمَا كُبِتَ ٱلَّذِينَ مِن قَبْلِهِمْ ۚ وَقَدْ أَنزَلْنَآ ءَايَـٰتٍۭ بَيِّنَـٰتٍ ۚ وَلِلْكَـٰفِرِينَ عَذَابٌ مُّهِينٌ",
+      "transliteration": "Inna allatheena yuhaddoona Allaha warasoolahu kubitoo kama kubita allatheena min qablihim waqad anzalna ayatin bayyinatin walilkafireena AAathabun muheenun",
+      "translations": {
+        "en_sahih": "Indeed, those who oppose Allah and His Messenger are abased as those before them were abased. And We have certainly sent down verses of clear evidence. And for the disbelievers is a humiliating punishment.",
+        "en_yusufali": "Those who resist Allah and His Messenger will be humbled to dust, as were those before them: for We have already sent down Clear Signs. And the Unbelievers (will have) a humiliating Penalty,-",
+        "ms_basmeih": "Sesungguhnya orang-orang yang menentang (perintah) Allah dan RasulNya, mereka tetap ditimpa kehinaan sebagaimana orang-orang yang terdahulu dari mereka ditimpa kehinaan; kerana sesungguhnya Kami telah menurunkan keterangan-keterangan yang jelas nyata. Dan bagi orang-orang yang kafir disediakan azab seksa yang menghina,"
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "يَوْمَ يَبْعَثُهُمُ ٱللَّهُ جَمِيعًا فَيُنَبِّئُهُم بِمَا عَمِلُوٓا۟ ۚ أَحْصَىٰهُ ٱللَّهُ وَنَسُوهُ ۚ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍ شَهِيدٌ",
+      "transliteration": "Yawma yabAAathuhumu Allahu jameeAAan fayunabbiohum bima AAamiloo ahsahu Allahu wanasoohu waAllahu AAala kulli shayin shaheedun",
+      "translations": {
+        "en_sahih": "On the Day when Allah will resurrect them all and inform them of what they did. Allah had enumerated it, while they forgot it; and Allah is, over all things, Witness.",
+        "en_yusufali": "On the Day that Allah will raise them all up (again) and show them the Truth (and meaning) of their conduct. Allah has reckoned its (value), though they may have forgotten it, for Allah is Witness to all things.",
+        "ms_basmeih": "Semasa mereka semuanya dibangkitkan hidup semula oleh Allah (pada hari kiamat), lalu diterangkan kepada mereka segala yang mereka telah kerjakan. Allah telah menghitung amal-amal mereka itu satu persatu, sedang mereka telah melupakannya. Dan (ingatlah), Allah menjadi Saksi akan tiap-tiap sesuatu."
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "أَلَمْ تَرَ أَنَّ ٱللَّهَ يَعْلَمُ مَا فِى ٱلسَّمَـٰوَٰتِ وَمَا فِى ٱلْأَرْضِ ۖ مَا يَكُونُ مِن نَّجْوَىٰ ثَلَـٰثَةٍ إِلَّا هُوَ رَابِعُهُمْ وَلَا خَمْسَةٍ إِلَّا هُوَ سَادِسُهُمْ وَلَآ أَدْنَىٰ مِن ذَٰلِكَ وَلَآ أَكْثَرَ إِلَّا هُوَ مَعَهُمْ أَيْنَ مَا كَانُوا۟ ۖ ثُمَّ يُنَبِّئُهُم بِمَا عَمِلُوا۟ يَوْمَ ٱلْقِيَـٰمَةِ ۚ إِنَّ ٱللَّهَ بِكُلِّ شَىْءٍ عَلِيمٌ",
+      "transliteration": "Alam tara anna Allaha yaAAlamu ma fee alssamawati wama fee alardi ma yakoonu min najwa thalathatin illa huwa rabiAAuhum wala khamsatin illa huwa sadisuhum wala adna min thalika wala akthara illa huwa maAAahum ayna ma kanoo thumma yunabbiohum bima AAamiloo yawma alqiyamati inna Allaha bikulli shayin AAaleemun",
+      "translations": {
+        "en_sahih": "Have you not considered that Allah knows what is in the heavens and what is on the earth? There is in no private conversation three but that He is the fourth of them, nor are there five but that He is the sixth of them - and no less than that and no more except that He is with them [in knowledge] wherever they are. Then He will inform them of what they did, on the Day of Resurrection. Indeed Allah is, of all things, Knowing.",
+        "en_yusufali": "Seest thou not that Allah doth know (all) that is in the heavens and on earth? There is not a secret consultation between three, but He makes the fourth among them, - Nor between five but He makes the sixth,- nor between fewer nor more, but He is in their midst, wheresoever they be: In the end will He tell them the truth of their conduct, on the Day of Judgment. For Allah has full knowledge of all things.",
+        "ms_basmeih": "Tidakkah engkau memikirkan, bahawa sesungguhnya Allah mengetahui segala yang ada di langit dan yang ada di bumi? Tiada berlaku bisikan antara tiga orang melainkan Dia lah yang keempatnya, dan tiada (berlaku antara) lima orang melainkan Dia lah yang keenamnya, dan tiada yang kurang dari bilangan itu dan tiada yang lebih ramai, melainkan Ia ada bersama-sama mereka di mana sahaja mereka berada. Kemudian Ia akan memberi tahu kepada mereka - pada hari kiamat - apa yang mereka telah kerjakan. Sesungguhnya Allah Maha Mengetahui akan tiap-tiap sesuatu."
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "أَلَمْ تَرَ إِلَى ٱلَّذِينَ نُهُوا۟ عَنِ ٱلنَّجْوَىٰ ثُمَّ يَعُودُونَ لِمَا نُهُوا۟ عَنْهُ وَيَتَنَـٰجَوْنَ بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَمَعْصِيَتِ ٱلرَّسُولِ وَإِذَا جَآءُوكَ حَيَّوْكَ بِمَا لَمْ يُحَيِّكَ بِهِ ٱللَّهُ وَيَقُولُونَ فِىٓ أَنفُسِهِمْ لَوْلَا يُعَذِّبُنَا ٱللَّهُ بِمَا نَقُولُ ۚ حَسْبُهُمْ جَهَنَّمُ يَصْلَوْنَهَا ۖ فَبِئْسَ ٱلْمَصِيرُ",
+      "transliteration": "Alam tara ila allatheena nuhoo AAani alnnajwa thumma yaAAoodoona lima nuhoo AAanhu wayatanajawna bialithmi waalAAudwani wamaAAsiyati alrrasooli waitha jaooka hayyawka bima lam yuhayyika bihi Allahu wayaqooloona fee anfusihim lawla yuAAaththibuna Allahu bima naqoolu hasbuhum jahannamu yaslawnaha fabisa almaseeru",
+      "translations": {
+        "en_sahih": "Have you not considered those who were forbidden from private conversation, then they return to that which they were forbidden and converse among themselves about sin and aggression and disobedience to the Messenger? And when they come to you, they greet you with that [word] by which Allah does not greet you and say among themselves, \"Why does Allah not punish us for what we say?\" Sufficient for them is Hell, which they will [enter to] burn, and wretched is the destination.",
+        "en_yusufali": "Turnest thou not thy sight towards those who were forbidden secret counsels yet revert to that which they were forbidden (to do)? And they hold secret counsels among themselves for iniquity and hostility, and disobedience to the Messenger. And when they come to thee, they salute thee, not as Allah salutes thee, (but in crooked ways): And they say to themselves, \"Why does not Allah punish us for our words?\" Enough for them is Hell: In it will they burn, and evil is that destination!",
+        "ms_basmeih": "Tidakkah engkau memerhatikan (wahai Muhammad) akan orang-orang (Yahudi) yang telah dilarang daripada perbuatan berbisik-bisik, kemudian mereka berbalik melakukan perbuatan yang telah dilarang itu serta mereka berbisik-bisik berkenaan dengan melakukan dosa dan pencerobohan serta kederhakaan kepada Rasulullah? Dan lagi apabila mereka datang kepadamu, mereka memberi salam hormat bukan dengan lafaz salam hormat yang diberikan Allah kepadamu; dan mereka berkata sesama sendiri: \"(Kalau benar Muhammad utusan Tuhan, maka) sepatutnya kami diseksa oleh Allah disebabkan (kata-kata buruk) yang kami ucapkan itu?\" Cukuplah untuk mereka neraka Jahannam, yang mereka akan dibakar di dalamnya; maka itulah seburuk-buruk tempat kembali."
+      }
+    },
+    {
+      "ayah": 9,
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا تَنَـٰجَيْتُمْ فَلَا تَتَنَـٰجَوْا۟ بِٱلْإِثْمِ وَٱلْعُدْوَٰنِ وَمَعْصِيَتِ ٱلرَّسُولِ وَتَنَـٰجَوْا۟ بِٱلْبِرِّ وَٱلتَّقْوَىٰ ۖ وَٱتَّقُوا۟ ٱللَّهَ ٱلَّذِىٓ إِلَيْهِ تُحْشَرُونَ",
+      "transliteration": "Ya ayyuha allatheena amanoo itha tanajaytum fala tatanajaw bialithmi waalAAudwani wamaAAsiyati alrrasooli watanajaw bialbirri waalttaqwa waittaqoo Allaha allathee ilayhi tuhsharoona",
+      "translations": {
+        "en_sahih": "O you who have believed, when you converse privately, do not converse about sin and aggression and disobedience to the Messenger but converse about righteousness and piety. And fear Allah, to whom you will be gathered.",
+        "en_yusufali": "O ye who believe! When ye hold secret counsel, do it not for iniquity and hostility, and disobedience to the Prophet; but do it for righteousness and self-restraint; and fear Allah, to Whom ye shall be brought back.",
+        "ms_basmeih": "Wahai orang-orang yang beriman! Apabila kamu berbisik-bisik sesama sendiri, maka janganlah kamu berbisik-bisik untuk melakukan dosa dan pencerobohan serta perbuatan derhaka kepada Rasulullah; dan (sebaliknya) berbisiklah untuk berbuat kebajikan dan bertaqwa. Dan hendaklah kamu tetap bertaqwa kepada Allah yang kepadaNya kamu semua akan dihimpunkan (pada hari kiamat untuk dihitung amal kamu dan menerima balasan)."
+      }
+    },
+    {
+      "ayah": 10,
+      "arabic": "إِنَّمَا ٱلنَّجْوَىٰ مِنَ ٱلشَّيْطَـٰنِ لِيَحْزُنَ ٱلَّذِينَ ءَامَنُوا۟ وَلَيْسَ بِضَآرِّهِمْ شَيْـًٔا إِلَّا بِإِذْنِ ٱللَّهِ ۚ وَعَلَى ٱللَّهِ فَلْيَتَوَكَّلِ ٱلْمُؤْمِنُونَ",
+      "transliteration": "Innama alnnajwa mina alshshaytani liyahzuna allatheena amanoo walaysa bidarrihim shayan illa biithni Allahi waAAala Allahi falyatawakkali almuminoona",
+      "translations": {
+        "en_sahih": "Private conversation is only from Satan that he may grieve those who have believed, but he will not harm them at all except by permission of Allah. And upon Allah let the believers rely.",
+        "en_yusufali": "Secret counsels are only (inspired) by the Evil One, in order that he may cause grief to the Believers; but he cannot harm them in the least, except as Allah permits; and on Allah let the Believers put their trust.",
+        "ms_basmeih": "Sesungguhnya perbuatan berbisik (dengan kejahatan) itu adalah dari (hasutan) Syaitan, untuk menjadikan orang-orang yang beriman berdukacita; sedang bisikan itu tidak akan dapat membahayakan mereka sedikitpun melainkan dengan izin Allah; dan kepada Allah jualah hendaknya orang-orang yang beriman berserah diri."
+      }
+    },
+    {
+      "ayah": 11,
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا قِيلَ لَكُمْ تَفَسَّحُوا۟ فِى ٱلْمَجَـٰلِسِ فَٱفْسَحُوا۟ يَفْسَحِ ٱللَّهُ لَكُمْ ۖ وَإِذَا قِيلَ ٱنشُزُوا۟ فَٱنشُزُوا۟ يَرْفَعِ ٱللَّهُ ٱلَّذِينَ ءَامَنُوا۟ مِنكُمْ وَٱلَّذِينَ أُوتُوا۟ ٱلْعِلْمَ دَرَجَـٰتٍ ۚ وَٱللَّهُ بِمَا تَعْمَلُونَ خَبِيرٌ",
+      "transliteration": "Ya ayyuha allatheena amanoo itha qeela lakum tafassahoo fee almajalisi faifsahoo yafsahi Allahu lakum waitha qeela onshuzoo faonshuzoo yarfaAAi Allahu allatheena amanoo minkum waallatheena ootoo alAAilma darajatin waAllahu bima taAAmaloona khabeerun",
+      "translations": {
+        "en_sahih": "O you who have believed, when you are told, \"Space yourselves\" in assemblies, then make space; Allah will make space for you. And when you are told, \"Arise,\" then arise; Allah will raise those who have believed among you and those who were given knowledge, by degrees. And Allah is Acquainted with what you do.",
+        "en_yusufali": "O ye who believe! When ye are told to make room in the assemblies, (spread out and) make room: (ample) room will Allah provide for you. And when ye are told to rise up, rise up Allah will rise up, to (suitable) ranks (and degrees), those of you who believe and who have been granted (mystic) Knowledge. And Allah is well-acquainted with all ye do.",
+        "ms_basmeih": "Wahai orang-orang yang beriman! Apabila diminta kepada kamu memberi lapang dari tempat duduk kamu (untuk orang lain) maka lapangkanlah seboleh-bolehnya supaya Allah melapangkan (segala halnya) untuk kamu. Dan apabila diminta kamu bangun maka bangunlah, supaya Allah meninggikan darjat orang-orang yang beriman di antara kamu, dan orang-orang yang diberi ilmu pengetahuan ugama (dari kalangan kamu) - beberapa darjat. Dan (ingatlah), Allah Maha Mendalam PengetahuanNya tentang apa yang kamu lakukan."
+      }
+    },
+    {
+      "ayah": 12,
+      "arabic": "يَـٰٓأَيُّهَا ٱلَّذِينَ ءَامَنُوٓا۟ إِذَا نَـٰجَيْتُمُ ٱلرَّسُولَ فَقَدِّمُوا۟ بَيْنَ يَدَىْ نَجْوَىٰكُمْ صَدَقَةً ۚ ذَٰلِكَ خَيْرٌ لَّكُمْ وَأَطْهَرُ ۚ فَإِن لَّمْ تَجِدُوا۟ فَإِنَّ ٱللَّهَ غَفُورٌ رَّحِيمٌ",
+      "transliteration": "Ya ayyuha allatheena amanoo itha najaytumu alrrasoola faqaddimoo bayna yaday najwakum sadaqatan thalika khayrun lakum waatharu fain lam tajidoo fainna Allaha ghafoorun raheemun",
+      "translations": {
+        "en_sahih": "O you who have believed, when you [wish to] privately consult the Messenger, present before your consultation a charity. That is better for you and purer. But if you find not [the means] - then indeed, Allah is Forgiving and Merciful.",
+        "en_yusufali": "O ye who believe! When ye consult the Messenger in private, spend something in charity before your private consultation. That will be best for you, and most conducive to purity (of conduct). But if ye find not (the wherewithal), Allah is Oft-Forgiving, Most Merciful.",
+        "ms_basmeih": "Wahai orang-orang yang beriman! Apabila kamu hendak mengadap dan bertanyakan sesuatu kepada Rasulullah, maka hendaklah kamu bersedekah (kepada fakir miskin) sebelum kamu mengadapnya; (pemberian sedekah) itu adalah lebih baik bagi kamu dan lebih bersih. Dalam pada itu, kalau kamu tidak ada benda yang hendak disedekahkan, (kamu dibenarkan juga mengadapnya mengenai perkara yang tak dapat dielak), kerana sesungguhnya Allah Maha Pengampun, lagi Maha Mengasihani."
+      }
+    },
+    {
+      "ayah": 13,
+      "arabic": "ءَأَشْفَقْتُمْ أَن تُقَدِّمُوا۟ بَيْنَ يَدَىْ نَجْوَىٰكُمْ صَدَقَـٰتٍ ۚ فَإِذْ لَمْ تَفْعَلُوا۟ وَتَابَ ٱللَّهُ عَلَيْكُمْ فَأَقِيمُوا۟ ٱلصَّلَوٰةَ وَءَاتُوا۟ ٱلزَّكَوٰةَ وَأَطِيعُوا۟ ٱللَّهَ وَرَسُولَهُۥ ۚ وَٱللَّهُ خَبِيرٌۢ بِمَا تَعْمَلُونَ",
+      "transliteration": "Aashfaqtum an tuqaddimoo bayna yaday najwakum sadaqatin faith lam tafAAaloo wataba Allahu AAalaykum faaqeemoo alssalata waatoo alzzakata waateeAAoo Allaha warasoolahu waAllahu khabeerun bima taAAmaloona",
+      "translations": {
+        "en_sahih": "Have you feared to present before your consultation charities? Then when you do not and Allah has forgiven you, then [at least] establish prayer and give zakah and obey Allah and His Messenger. And Allah is Acquainted with what you do.",
+        "en_yusufali": "Is it that ye are afraid of spending sums in charity before your private consultation (with him)? If, then, ye do not so, and Allah forgives you, then (at least) establish regular prayer; practise regular charity; and obey Allah and His Messenger. And Allah is well-acquainted with all that ye do.",
+        "ms_basmeih": "Adakah kamu takut (akan kemiskinan) kerana kerap kali kamu memberi sedekah sebelum kamu mengadap? Kalau kamu tidak melakukan (perintah) itu, dan Allah pun memaafkan kamu (kerana kamu tidak mampu), maka dirikanlah sembahyang dan berikanlah zakat (sebagaimana yang sewajibnya), serta taatlah kamu kepada Allah dan RasulNya. Dan (ingatlah), Allah Maha Mendalam PengetahuanNya akan segala amalan yang kamu lakukan."
+      }
+    },
+    {
+      "ayah": 14,
+      "arabic": "۞ أَلَمْ تَرَ إِلَى ٱلَّذِينَ تَوَلَّوْا۟ قَوْمًا غَضِبَ ٱللَّهُ عَلَيْهِم مَّا هُم مِّنكُمْ وَلَا مِنْهُمْ وَيَحْلِفُونَ عَلَى ٱلْكَذِبِ وَهُمْ يَعْلَمُونَ",
+      "transliteration": "Alam tara ila allatheena tawallaw qawman ghadiba Allahu AAalayhim ma hum minkum wala minhum wayahlifoona AAala alkathibi wahum yaAAlamoona",
+      "translations": {
+        "en_sahih": "Have you not considered those who make allies of a people with whom Allah has become angry? They are neither of you nor of them, and they swear to untruth while they know [they are lying].",
+        "en_yusufali": "Turnest thou not thy attention to those who turn (in friendship) to such as have the Wrath of Allah upon them? They are neither of you nor of them, and they swear to falsehood knowingly.",
+        "ms_basmeih": "Tidakkah engkau melihat (bagaimana jahatnya) orang-orang yang bersahabat karib dengan kaum yang telah dimurkai Allah (dengan sebab kekufuran dan khianatnya)? Mereka itu bukanlah dari golongan kamu dan bukan pula dari golongan kaum yang tersebut itu (kerana mereka ialah golongan munafik); dan lagi mereka selalu bersumpah dengan dusta, sedang mereka mengetahui (bahawa mereka adalah berdusta)."
+      }
+    },
+    {
+      "ayah": 15,
+      "arabic": "أَعَدَّ ٱللَّهُ لَهُمْ عَذَابًا شَدِيدًا ۖ إِنَّهُمْ سَآءَ مَا كَانُوا۟ يَعْمَلُونَ",
+      "transliteration": "aAAadda Allahu lahum AAathaban shadeedan innahum saa ma kanoo yaAAmaloona",
+      "translations": {
+        "en_sahih": "Allah has prepared for them a severe punishment. Indeed, it was evil that they were doing.",
+        "en_yusufali": "Allah has prepared for them a severe Penalty: evil indeed are their deeds.",
+        "ms_basmeih": "Allah telah menyediakan bagi mereka azab seksa yang berat; sesungguhnya amatlah buruk apa yang mereka telah lakukan."
+      }
+    },
+    {
+      "ayah": 16,
+      "arabic": "ٱتَّخَذُوٓا۟ أَيْمَـٰنَهُمْ جُنَّةً فَصَدُّوا۟ عَن سَبِيلِ ٱللَّهِ فَلَهُمْ عَذَابٌ مُّهِينٌ",
+      "transliteration": "Ittakhathoo aymanahum junnatan fasaddoo AAan sabeeli Allahi falahum AAathabun muheenun",
+      "translations": {
+        "en_sahih": "They took their [false] oaths as a cover, so they averted [people] from the way of Allah, and for them is a humiliating punishment.",
+        "en_yusufali": "They have made their oaths a screen (for their misdeeds): thus they obstruct (men) from the Path of Allah: therefore shall they have a humiliating Penalty.",
+        "ms_basmeih": "Mereka menjadikan sumpahnya sebagai perisai (untuk menyelamatkan diri dan harta bendanya daripada dirampas atau dibunuh), maka dengan yang demikian dapatlah mereka menghalang (dirinya dan orang lain) dari jalan Allah; oleh itu mereka beroleh azab seksa yang menghina."
+      }
+    },
+    {
+      "ayah": 17,
+      "arabic": "لَّن تُغْنِىَ عَنْهُمْ أَمْوَٰلُهُمْ وَلَآ أَوْلَـٰدُهُم مِّنَ ٱللَّهِ شَيْـًٔا ۚ أُو۟لَـٰٓئِكَ أَصْحَـٰبُ ٱلنَّارِ ۖ هُمْ فِيهَا خَـٰلِدُونَ",
+      "transliteration": "Lan tughniya AAanhum amwaluhum wala awladuhum mina Allahi shayan olaika ashabu alnnari hum feeha khalidoona",
+      "translations": {
+        "en_sahih": "Never will their wealth or their children avail them against Allah at all. Those are the companions of the Fire; they will abide therein eternally",
+        "en_yusufali": "Of no profit whatever to them, against Allah, will be their riches nor their sons: they will be Companions of the Fire, to dwell therein (for aye)!",
+        "ms_basmeih": "harta benda mereka dan anak pinak mereka tidak sekali-kali akan dapat memberikan sebarang pertolongan kepada mereka dari azab Allah. Merekalah ahli neraka, mereka tetap kekal di dalamnya."
+      }
+    },
+    {
+      "ayah": 18,
+      "arabic": "يَوْمَ يَبْعَثُهُمُ ٱللَّهُ جَمِيعًا فَيَحْلِفُونَ لَهُۥ كَمَا يَحْلِفُونَ لَكُمْ ۖ وَيَحْسَبُونَ أَنَّهُمْ عَلَىٰ شَىْءٍ ۚ أَلَآ إِنَّهُمْ هُمُ ٱلْكَـٰذِبُونَ",
+      "transliteration": "Yawma yabAAathuhumu Allahu jameeAAan fayahlifoona lahu kama yahlifoona lakum wayahsaboona annahum AAala shayin ala innahum humu alkathiboona",
+      "translations": {
+        "en_sahih": "On the Day Allah will resurrect them all, and they will swear to Him as they swear to you and think that they are [standing] on something. Unquestionably, it is they who are the liars.",
+        "en_yusufali": "One day will Allah raise them all up (for Judgment): then will they swear to Him as they swear to you: And they think that they have something (to stand upon). No, indeed! they are but liars!",
+        "ms_basmeih": "(Setelah nyata kepada orang-orang munafik itu bahawa harta benda dan anak pinaknya tidak dapat memberikan pertolongan), ketika mereka semuanya dibangkitkan oleh Allah (pada hari kiamat), maka mereka bersumpah kepadaNya (bahawa mereka adalah orang-orang mukmin) sebagaimana biasanya mereka bersumpah kepada kamu; dan mereka menyangka bahawa (dengan berbuat demikian) mereka akan mendapat sesuatu (yang berfaedah kepada mereka). Ketahuilah! Bahawa sesungguhnya merekalah golongan pendusta."
+      }
+    },
+    {
+      "ayah": 19,
+      "arabic": "ٱسْتَحْوَذَ عَلَيْهِمُ ٱلشَّيْطَـٰنُ فَأَنسَىٰهُمْ ذِكْرَ ٱللَّهِ ۚ أُو۟لَـٰٓئِكَ حِزْبُ ٱلشَّيْطَـٰنِ ۚ أَلَآ إِنَّ حِزْبَ ٱلشَّيْطَـٰنِ هُمُ ٱلْخَـٰسِرُونَ",
+      "transliteration": "Istahwatha AAalayhimu alshshaytanu faansahum thikra Allahi olaika hizbu alshshaytani ala inna hizba alshshaytani humu alkhasiroona",
+      "translations": {
+        "en_sahih": "Satan has overcome them and made them forget the remembrance of Allah. Those are the party of Satan. Unquestionably, the party of Satan - they will be the losers.",
+        "en_yusufali": "The Evil One has got the better of them: so he has made them lose the remembrance of Allah. They are the Party of the Evil One. Truly, it is the Party of the Evil One that will perish!",
+        "ms_basmeih": "Syaitan telah menguasai dan mempengaruhi mereka, sehingga menyebabkan mereka lupa mengingati (ajaran dan amaran) Allah; mereka itulah puak Syaitan. Ketahuilah! Bahawa puak Syaitan itu sebenarnya orang-orang yang rugi."
+      }
+    },
+    {
+      "ayah": 20,
+      "arabic": "إِنَّ ٱلَّذِينَ يُحَآدُّونَ ٱللَّهَ وَرَسُولَهُۥٓ أُو۟لَـٰٓئِكَ فِى ٱلْأَذَلِّينَ",
+      "transliteration": "Inna allatheena yuhaddoona Allaha warasoolahu olaika fee alathalleena",
+      "translations": {
+        "en_sahih": "Indeed, the ones who oppose Allah and His Messenger - those will be among the most humbled.",
+        "en_yusufali": "Those who resist Allah and His Messenger will be among those most humiliated.",
+        "ms_basmeih": "Sesungguhnya orang-orang yang menentang (perintah) Allah dan RasulNya, mereka termasuk dalam golongan yang amat hina."
+      }
+    },
+    {
+      "ayah": 21,
+      "arabic": "كَتَبَ ٱللَّهُ لَأَغْلِبَنَّ أَنَا۠ وَرُسُلِىٓ ۚ إِنَّ ٱللَّهَ قَوِىٌّ عَزِيزٌ",
+      "transliteration": "Kataba Allahu laaghlibanna ana warusulee inna Allaha qawiyyun AAazeezun",
+      "translations": {
+        "en_sahih": "Allah has written, \"I will surely overcome, I and My messengers.\" Indeed, Allah is Powerful and Exalted in Might.",
+        "en_yusufali": "Allah has decreed: \"It is I and My messengers who must prevail\": For Allah is One full of strength, able to enforce His Will.",
+        "ms_basmeih": "Allah telah menetapkan: \"Sesungguhnya Aku dan Rasul-rasulKu tetap mengalahkan (golongan yang menentang) \". Sesungguhnya Allah Maha Kuat, lagi Maha kuasa."
+      }
+    },
+    {
+      "ayah": 22,
+      "arabic": "لَّا تَجِدُ قَوْمًا يُؤْمِنُونَ بِٱللَّهِ وَٱلْيَوْمِ ٱلْـَٔاخِرِ يُوَآدُّونَ مَنْ حَآدَّ ٱللَّهَ وَرَسُولَهُۥ وَلَوْ كَانُوٓا۟ ءَابَآءَهُمْ أَوْ أَبْنَآءَهُمْ أَوْ إِخْوَٰنَهُمْ أَوْ عَشِيرَتَهُمْ ۚ أُو۟لَـٰٓئِكَ كَتَبَ فِى قُلُوبِهِمُ ٱلْإِيمَـٰنَ وَأَيَّدَهُم بِرُوحٍ مِّنْهُ ۖ وَيُدْخِلُهُمْ جَنَّـٰتٍ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ خَـٰلِدِينَ فِيهَا ۚ رَضِىَ ٱللَّهُ عَنْهُمْ وَرَضُوا۟ عَنْهُ ۚ أُو۟لَـٰٓئِكَ حِزْبُ ٱللَّهِ ۚ أَلَآ إِنَّ حِزْبَ ٱللَّهِ هُمُ ٱلْمُفْلِحُونَ",
+      "transliteration": "La tajidu qawman yuminoona biAllahi waalyawmi alakhiri yuwaddoona man hadda Allaha warasoolahu walaw kanoo abaahum aw abnaahum aw ikhwanahum aw AAasheeratahum olaika kataba fee quloobihimu aleemana waayyadahum biroohin minhu wayudkhiluhum jannatin tajree min tahtiha alanharu khalideena feeha radiya Allahu AAanhum waradoo AAanhu olaika hizbu Allahi ala inna hizba Allahi humu almuflihoona",
+      "translations": {
+        "en_sahih": "You will not find a people who believe in Allah and the Last Day having affection for those who oppose Allah and His Messenger, even if they were their fathers or their sons or their brothers or their kindred. Those - He has decreed within their hearts faith and supported them with spirit from Him. And We will admit them to gardens beneath which rivers flow, wherein they abide eternally. Allah is pleased with them, and they are pleased with Him - those are the party of Allah. Unquestionably, the party of Allah - they are the successful.",
+        "en_yusufali": "Thou wilt not find any people who believe in Allah and the Last Day, loving those who resist Allah and His Messenger, even though they were their fathers or their sons, or their brothers, or their kindred. For such He has written Faith in their hearts, and strengthened them with a spirit from Himself. And He will admit them to Gardens beneath which Rivers flow, to dwell therein (for ever). Allah will be well pleased with them, and they with Him. They are the Party of Allah. Truly it is the Party of Allah that will achieve Felicity.",
+        "ms_basmeih": "Engkau tidak akan dapati sesuatu kaum yang beriman kepada Allah dan hari akhirat, tergamak berkasih-mesra dengan orang-orang yang menentang (perintah) Allah dan RasulNya, sekalipun orang-orang yang menentang itu ialah bapa-bapa mereka, atau anak-anak mereka, atau saudara-saudara mereka, ataupun keluarga mereka. Mereka (yang setia) itu, Allah telah menetapkan iman dalam hati mereka, dan telah menguatkan mereka dengan semangat pertolongan daripadaNya; dan Dia akan memasukkan mereka ke dalam Syurga yang mengalir di bawahnya beberapa sungai, mereka tetap kekal di dalamnya. Allah reda akan mereka dan mereka reda (serta bersyukur) akan nikmat pemberianNya. Merekalah penyokong-penyokong (ugama) Allah. Ketahuilah! Sesungguhnya penyokong-penyokong (ugama) Allah itu ialah orang-orang yang berjaya."
+      }
+    }
+  ]
+}

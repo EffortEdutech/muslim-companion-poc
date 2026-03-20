@@ -1,0 +1,250 @@
+{
+  "surah": 85,
+  "metadata": {
+    "nameArabic": "البروج",
+    "nameEnglish": "Al-Buruj",
+    "nameTranslit": "Al-Burooj",
+    "meaning": "The Mansions of the Stars",
+    "revelation": "Meccan",
+    "revelationOrder": 27,
+    "period": "Early Meccan",
+    "ayahCount": 22,
+    "wordCount": 109,
+    "letterCount": 431,
+    "juz": 30,
+    "pageStart": 590,
+    "themes": [
+      "persecution",
+      "people_of_ditch",
+      "pharaoh",
+      "thamud",
+      "quran_preservation"
+    ],
+    "otherNames": [
+      "The Constellations"
+    ],
+    "significance": "Tells the story of the People of the Ditch and persecution of believers"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ وَٱلسَّمَآءِ ذَاتِ ٱلْبُرُوجِ",
+      "transliteration": "Waalssamai thati alburooji",
+      "translations": {
+        "en_sahih": "By the sky containing great stars",
+        "en_yusufali": "By the sky, (displaying) the Zodiacal Signs;",
+        "ms_basmeih": "Demi langit yang mempunyai tempat-tempat peredaran bintang-bintang;"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "وَٱلْيَوْمِ ٱلْمَوْعُودِ",
+      "transliteration": "Waalyawmi almawAAoodi",
+      "translations": {
+        "en_sahih": "And [by] the promised Day",
+        "en_yusufali": "By the promised Day (of Judgment);",
+        "ms_basmeih": "Dan hari (pembalasan) yang dijanjikan;"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "وَشَاهِدٍ وَمَشْهُودٍ",
+      "transliteration": "Washahidin wamashhoodin",
+      "translations": {
+        "en_sahih": "And [by] the witness and what is witnessed,",
+        "en_yusufali": "By one that witnesses, and the subject of the witness;-",
+        "ms_basmeih": "Dan makhluk-makhluk yang hadir menyaksikan hari itu, serta segala keadaan yang disaksikan; -"
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "قُتِلَ أَصْحَـٰبُ ٱلْأُخْدُودِ",
+      "transliteration": "Qutila ashabu alukhdoodi",
+      "translations": {
+        "en_sahih": "Cursed were the companions of the trench",
+        "en_yusufali": "Woe to the makers of the pit (of fire),",
+        "ms_basmeih": "Celakalah kaum yang menggali parit,"
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "ٱلنَّارِ ذَاتِ ٱلْوَقُودِ",
+      "transliteration": "Alnnari thati alwaqoodi",
+      "translations": {
+        "en_sahih": "[Containing] the fire full of fuel,",
+        "en_yusufali": "Fire supplied (abundantly) with fuel:",
+        "ms_basmeih": "(Parit) api yang penuh dengan bahan bakaran,"
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "إِذْ هُمْ عَلَيْهَا قُعُودٌ",
+      "transliteration": "Ith hum AAalayha quAAoodun",
+      "translations": {
+        "en_sahih": "When they were sitting near it",
+        "en_yusufali": "Behold! they sat over against the (fire),",
+        "ms_basmeih": "(Mereka dilaknat) ketika mereka duduk di kelilingnya,"
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "وَهُمْ عَلَىٰ مَا يَفْعَلُونَ بِٱلْمُؤْمِنِينَ شُهُودٌ",
+      "transliteration": "Wahum AAala ma yafAAaloona bialmumineena shuhoodun",
+      "translations": {
+        "en_sahih": "And they, to what they were doing against the believers, were witnesses.",
+        "en_yusufali": "And they witnessed (all) that they were doing against the Believers.",
+        "ms_basmeih": "Sambil mereka melihat apa yang mereka lakukan kepada orang-orang yang beriman."
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "وَمَا نَقَمُوا۟ مِنْهُمْ إِلَّآ أَن يُؤْمِنُوا۟ بِٱللَّهِ ٱلْعَزِيزِ ٱلْحَمِيدِ",
+      "transliteration": "Wama naqamoo minhum illa an yuminoo biAllahi alAAazeezi alhameedi",
+      "translations": {
+        "en_sahih": "And they resented them not except because they believed in Allah, the Exalted in Might, the Praiseworthy,",
+        "en_yusufali": "And they ill-treated them for no other reason than that they believed in Allah, Exalted in Power, Worthy of all Praise!-",
+        "ms_basmeih": "Dan mereka tidak marah dan menyeksakan orang-orang yang beriman itu melainkan kerana orang-orang itu beriman kepada Allah Yang Maha Kuasa, lagi Maha Terpuji!"
+      }
+    },
+    {
+      "ayah": 9,
+      "arabic": "ٱلَّذِى لَهُۥ مُلْكُ ٱلسَّمَـٰوَٰتِ وَٱلْأَرْضِ ۚ وَٱللَّهُ عَلَىٰ كُلِّ شَىْءٍ شَهِيدٌ",
+      "transliteration": "Allathee lahu mulku alssamawati waalardi waAllahu AAala kulli shayin shaheedun",
+      "translations": {
+        "en_sahih": "To whom belongs the dominion of the heavens and the earth. And Allah, over all things, is Witness.",
+        "en_yusufali": "Him to Whom belongs the dominion of the heavens and the earth! And Allah is Witness to all things.",
+        "ms_basmeih": "Tuhan yang menguasai segala alam langit dan bumi. Dan (ingatlah), Allah sentiasa menyaksikan tiap-tiap sesuatu."
+      }
+    },
+    {
+      "ayah": 10,
+      "arabic": "إِنَّ ٱلَّذِينَ فَتَنُوا۟ ٱلْمُؤْمِنِينَ وَٱلْمُؤْمِنَـٰتِ ثُمَّ لَمْ يَتُوبُوا۟ فَلَهُمْ عَذَابُ جَهَنَّمَ وَلَهُمْ عَذَابُ ٱلْحَرِيقِ",
+      "transliteration": "Inna allatheena fatanoo almumineena waalmuminati thumma lam yatooboo falahum AAathabu jahannama walahum AAathabu alhareeqi",
+      "translations": {
+        "en_sahih": "Indeed, those who have tortured the believing men and believing women and then have not repented will have the punishment of Hell, and they will have the punishment of the Burning Fire.",
+        "en_yusufali": "Those who persecute (or draw into temptation) the Believers, men and women, and do not turn in repentance, will have the Penalty of Hell: They will have the Penalty of the Burning Fire.",
+        "ms_basmeih": "Sesungguhnya orang-orang yang menimpakan bencana untuk memesongkan orang-orang lelaki yang beriman dan orang-orang perempuan yang beriman, kemudian mereka tidak bertaubat, maka mereka akan beroleh azab neraka Jahannam (kerana perbuatan buruk itu), dan mereka akan beroleh lagi azab api yang kuat membakar (kerana mereka tidak bertaubat)."
+      }
+    },
+    {
+      "ayah": 11,
+      "arabic": "إِنَّ ٱلَّذِينَ ءَامَنُوا۟ وَعَمِلُوا۟ ٱلصَّـٰلِحَـٰتِ لَهُمْ جَنَّـٰتٌ تَجْرِى مِن تَحْتِهَا ٱلْأَنْهَـٰرُ ۚ ذَٰلِكَ ٱلْفَوْزُ ٱلْكَبِيرُ",
+      "transliteration": "Inna allatheena amanoo waAAamiloo alssalihati lahum jannatun tajree min tahtiha alanharu thalika alfawzu alkabeeru",
+      "translations": {
+        "en_sahih": "Indeed, those who have believed and done righteous deeds will have gardens beneath which rivers flow. That is the great attainment.",
+        "en_yusufali": "For those who believe and do righteous deeds, will be Gardens; beneath which rivers flow: That is the great Salvation, (the fulfilment of all desires),",
+        "ms_basmeih": "Sesungguhnya orang-orang yang beriman dan beramal soleh, mereka akan beroleh Syurga yang mengalir di bawahnya beberapa sungai; yang demikian itu ialah kemenangan yang besar."
+      }
+    },
+    {
+      "ayah": 12,
+      "arabic": "إِنَّ بَطْشَ رَبِّكَ لَشَدِيدٌ",
+      "transliteration": "Inna batsha rabbika lashadeedun",
+      "translations": {
+        "en_sahih": "Indeed, the vengeance of your Lord is severe.",
+        "en_yusufali": "Truly strong is the Grip (and Power) of thy Lord.",
+        "ms_basmeih": "Sesungguhnya azab Tuhanmu (terhadap orang-orang yang kufur ingkar) amatlah berat."
+      }
+    },
+    {
+      "ayah": 13,
+      "arabic": "إِنَّهُۥ هُوَ يُبْدِئُ وَيُعِيدُ",
+      "transliteration": "Innahu huwa yubdio wayuAAeedu",
+      "translations": {
+        "en_sahih": "Indeed, it is He who originates [creation] and repeats.",
+        "en_yusufali": "It is He Who creates from the very beginning, and He can restore (life).",
+        "ms_basmeih": "Sesungguhnya Dia lah yang menciptakan (sekalian makhluk) pada mulanya, dan yang mengembalikannya (hidup semula sesudah mati)."
+      }
+    },
+    {
+      "ayah": 14,
+      "arabic": "وَهُوَ ٱلْغَفُورُ ٱلْوَدُودُ",
+      "transliteration": "Wahuwa alghafooru alwadoodu",
+      "translations": {
+        "en_sahih": "And He is the Forgiving, the Affectionate,",
+        "en_yusufali": "And He is the Oft-Forgiving, Full of Loving-Kindness,",
+        "ms_basmeih": "Dan Dia lah yang Maha Pengampun, lagi Maha Pengasih."
+      }
+    },
+    {
+      "ayah": 15,
+      "arabic": "ذُو ٱلْعَرْشِ ٱلْمَجِيدُ",
+      "transliteration": "Thoo alAAarshi almajeedi",
+      "translations": {
+        "en_sahih": "Honorable Owner of the Throne,",
+        "en_yusufali": "Lord of the Throne of Glory,",
+        "ms_basmeih": "Tuhan yang mempunyai Arasy yang tinggi kemuliaannya,"
+      }
+    },
+    {
+      "ayah": 16,
+      "arabic": "فَعَّالٌ لِّمَا يُرِيدُ",
+      "transliteration": "FaAAAAalun lima yureedu",
+      "translations": {
+        "en_sahih": "Effecter of what He intends.",
+        "en_yusufali": "Doer (without let) of all that He intends.",
+        "ms_basmeih": "Yang berkuasa melakukan segala yang dikehendakinya."
+      }
+    },
+    {
+      "ayah": 17,
+      "arabic": "هَلْ أَتَىٰكَ حَدِيثُ ٱلْجُنُودِ",
+      "transliteration": "Hal ataka hadeethu aljunoodi",
+      "translations": {
+        "en_sahih": "Has there reached you the story of the soldiers -",
+        "en_yusufali": "Has the story reached thee, of the forces-",
+        "ms_basmeih": "Sudahkah sampai kepadamu (wahai Muhammad) perihal (kebinasaan yang telah menimpa) kaum-kaum yang menentang (Rasul-rasul yang diutuskan kepada mereka)?"
+      }
+    },
+    {
+      "ayah": 18,
+      "arabic": "فِرْعَوْنَ وَثَمُودَ",
+      "transliteration": "FirAAawna wathamooda",
+      "translations": {
+        "en_sahih": "[Those of] Pharaoh and Thamud?",
+        "en_yusufali": "Of Pharaoh and the Thamud?",
+        "ms_basmeih": "(Mereka itu ialah kaum) Firaun, dan Thamud (kaum Nabi Soleh)."
+      }
+    },
+    {
+      "ayah": 19,
+      "arabic": "بَلِ ٱلَّذِينَ كَفَرُوا۟ فِى تَكْذِيبٍ",
+      "transliteration": "Bali allatheena kafaroo fee taktheebin",
+      "translations": {
+        "en_sahih": "But they who disbelieve are in [persistent] denial,",
+        "en_yusufali": "And yet the Unbelievers (persist) in rejecting (the Truth)!",
+        "ms_basmeih": "(Kaummu wahai Muhammad, bukan sahaja menolak ajaranmu), bahkan orang-orang yang kafir itu terus tenggelam dalam keadaan mendustakan kebenaran;"
+      }
+    },
+    {
+      "ayah": 20,
+      "arabic": "وَٱللَّهُ مِن وَرَآئِهِم مُّحِيطٌۢ",
+      "transliteration": "WaAllahu min waraihim muheetun",
+      "translations": {
+        "en_sahih": "While Allah encompasses them from behind.",
+        "en_yusufali": "But Allah doth encompass them from behind!",
+        "ms_basmeih": "Sedang Allah, dari belakang mereka, melingkungi mereka (dengan kekuasaanNya)!"
+      }
+    },
+    {
+      "ayah": 21,
+      "arabic": "بَلْ هُوَ قُرْءَانٌ مَّجِيدٌ",
+      "transliteration": "Bal huwa quranun majeedun",
+      "translations": {
+        "en_sahih": "But this is an honored Qur'an",
+        "en_yusufali": "Nay, this is a Glorious Qur'an,",
+        "ms_basmeih": "(Sebenarnya apa yang engkau sampaikan kepada mereka bukanlah syair atau sihir), bahkan ialah Al-Quran yang tertinggi kemuliaannya;"
+      }
+    },
+    {
+      "ayah": 22,
+      "arabic": "فِى لَوْحٍ مَّحْفُوظٍۭ",
+      "transliteration": "Fee lawhin mahfoothin",
+      "translations": {
+        "en_sahih": "[Inscribed] in a Preserved Slate.",
+        "en_yusufali": "(Inscribed) in a Tablet Preserved!",
+        "ms_basmeih": "(Lagi yang terpelihara dengan sebaik-baiknya) pada Lauh Mahfuz."
+      }
+    }
+  ]
+}

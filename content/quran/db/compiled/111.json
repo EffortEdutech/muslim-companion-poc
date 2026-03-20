@@ -1,0 +1,81 @@
+{
+  "surah": 111,
+  "metadata": {
+    "nameArabic": "المسد",
+    "nameEnglish": "Al-Masad",
+    "nameTranslit": "Al-Masad",
+    "meaning": "The Palm Fibre",
+    "revelation": "Meccan",
+    "revelationOrder": 6,
+    "period": "Early Meccan",
+    "ayahCount": 5,
+    "wordCount": 23,
+    "letterCount": 81,
+    "juz": 30,
+    "pageStart": 603,
+    "themes": [
+      "abu_lahab",
+      "his_wife",
+      "punishment",
+      "fire",
+      "thorns"
+    ],
+    "otherNames": [
+      "Al-Lahab (The Flame)",
+      "Abu Lahab"
+    ],
+    "significance": "Condemns Abu Lahab and his wife for their opposition to Islam"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ تَبَّتْ يَدَآ أَبِى لَهَبٍ وَتَبَّ",
+      "transliteration": "Tabbat yada abee lahabin watabba",
+      "translations": {
+        "en_sahih": "May the hands of Abu Lahab be ruined, and ruined is he.",
+        "en_yusufali": "Perish the hands of the Father of Flame! Perish he!",
+        "ms_basmeih": "Binasalah kedua-dua tangan Abu lahab, dan binasalah ia bersama!"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "مَآ أَغْنَىٰ عَنْهُ مَالُهُۥ وَمَا كَسَبَ",
+      "transliteration": "Ma aghna AAanhu maluhu wama kasaba",
+      "translations": {
+        "en_sahih": "His wealth will not avail him or that which he gained.",
+        "en_yusufali": "No profit to him from all his wealth, and all his gains!",
+        "ms_basmeih": "Hartanya dan segala yang diusahakannya, tidak dapat menolongnya."
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "سَيَصْلَىٰ نَارًا ذَاتَ لَهَبٍ",
+      "transliteration": "Sayasla naran thata lahabin",
+      "translations": {
+        "en_sahih": "He will [enter to] burn in a Fire of [blazing] flame",
+        "en_yusufali": "Burnt soon will he be in a Fire of Blazing Flame!",
+        "ms_basmeih": "Ia akan menderita bakaran api neraka yang marak menjulang."
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "وَٱمْرَأَتُهُۥ حَمَّالَةَ ٱلْحَطَبِ",
+      "transliteration": "Waimraatuhu hammalata alhatabi",
+      "translations": {
+        "en_sahih": "And his wife [as well] - the carrier of firewood.",
+        "en_yusufali": "His wife shall carry the (crackling) wood - As fuel!-",
+        "ms_basmeih": "Dan juga isterinya, seorang perempuan pemunggah kayu api. -"
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "فِى جِيدِهَا حَبْلٌ مِّن مَّسَدٍۭ",
+      "transliteration": "Fee jeediha hablun min masadin",
+      "translations": {
+        "en_sahih": "Around her neck is a rope of [twisted] fiber.",
+        "en_yusufali": "A twisted rope of palm-leaf fibre round her (own) neck!",
+        "ms_basmeih": "Di lehernya sejenis tali, dari tali-tali yang dipintal."
+      }
+    }
+  ]
+}

@@ -1,0 +1,551 @@
+{
+  "surah": 69,
+  "metadata": {
+    "nameArabic": "الحاقة",
+    "nameEnglish": "Al-Haqqah",
+    "nameTranslit": "Al-Haaqqah",
+    "meaning": "The Inevitable",
+    "revelation": "Meccan",
+    "revelationOrder": 78,
+    "period": "Late Meccan",
+    "ayahCount": 52,
+    "wordCount": 260,
+    "letterCount": 1056,
+    "juz": 29,
+    "pageStart": 566,
+    "themes": [
+      "day_of_judgment",
+      "destruction",
+      "previous_nations",
+      "quran_authenticity",
+      "warning"
+    ],
+    "otherNames": [
+      "The Reality",
+      "The Sure Truth"
+    ],
+    "significance": "Describes the inevitable Day of Judgment and validates the Quran"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ ٱلْحَآقَّةُ",
+      "transliteration": "Alhaqqatu",
+      "translations": {
+        "en_sahih": "The Inevitable Reality -",
+        "en_yusufali": "The Sure Reality!",
+        "ms_basmeih": "Saat yang tetap berlaku itu -"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "مَا ٱلْحَآقَّةُ",
+      "transliteration": "Ma alhaqqatu",
+      "translations": {
+        "en_sahih": "What is the Inevitable Reality?",
+        "en_yusufali": "What is the Sure Reality?",
+        "ms_basmeih": "Apakah dia sifat dan keadaan saat yang tetap berlaku itu?"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "وَمَآ أَدْرَىٰكَ مَا ٱلْحَآقَّةُ",
+      "transliteration": "Wama adraka ma alhaqqatu",
+      "translations": {
+        "en_sahih": "And what can make you know what is the Inevitable Reality?",
+        "en_yusufali": "And what will make thee realise what the Sure Reality is?",
+        "ms_basmeih": "Dan apa jalannya engkau dapat mengetahui tentang sifat dan keadaan saat yang tetap berlaku itu? (Saat itu ialah hari kiamat)."
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "كَذَّبَتْ ثَمُودُ وَعَادٌۢ بِٱلْقَارِعَةِ",
+      "transliteration": "Kaththabat thamoodu waAAadun bialqariAAati",
+      "translations": {
+        "en_sahih": "Thamud and 'Aad denied the Striking Calamity.",
+        "en_yusufali": "The Thamud and the 'Ad People (branded) as false the Stunning Calamity!",
+        "ms_basmeih": "Kaum Thamud dan Aad telah mendustakan hari (kiamat) yang menggempar dan mengharukan itu."
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "فَأَمَّا ثَمُودُ فَأُهْلِكُوا۟ بِٱلطَّاغِيَةِ",
+      "transliteration": "Faamma thamoodu faohlikoo bialttaghiyati",
+      "translations": {
+        "en_sahih": "So as for Thamud, they were destroyed by the overpowering [blast].",
+        "en_yusufali": "But the Thamud,- they were destroyed by a terrible Storm of thunder and lightning!",
+        "ms_basmeih": "Maka (masing-masing menerima azab dunianya) - adapun Thamud (kaum Nabi Soleh), maka mereka telah dibinasakan dengan (petir) yang melampau dahsyatnya."
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "وَأَمَّا عَادٌ فَأُهْلِكُوا۟ بِرِيحٍ صَرْصَرٍ عَاتِيَةٍ",
+      "transliteration": "Waamma AAadun faohlikoo bireehin sarsarin AAatiyatin",
+      "translations": {
+        "en_sahih": "And as for 'Aad, they were destroyed by a screaming, violent wind",
+        "en_yusufali": "And the 'Ad, they were destroyed by a furious Wind, exceedingly violent;",
+        "ms_basmeih": "Adapun Aad (kaum Nabi Hud), maka mereka telah dibinasakan dengan angin ribut yang kencang, yang melampau kencangnya, -"
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "سَخَّرَهَا عَلَيْهِمْ سَبْعَ لَيَالٍ وَثَمَـٰنِيَةَ أَيَّامٍ حُسُومًا فَتَرَى ٱلْقَوْمَ فِيهَا صَرْعَىٰ كَأَنَّهُمْ أَعْجَازُ نَخْلٍ خَاوِيَةٍ",
+      "transliteration": "Sakhkharaha AAalayhim sabAAa layalin wathamaniyata ayyamin husooman fatara alqawma feeha sarAAa kaannahum aAAjazu nakhlin khawiyatun",
+      "translations": {
+        "en_sahih": "Which Allah imposed upon them for seven nights and eight days in succession, so you would see the people therein fallen as if they were hollow trunks of palm trees.",
+        "en_yusufali": "He made it rage against them seven nights and eight days in succession: so that thou couldst see the (whole) people lying prostrate in its (path), as they had been roots of hollow palm-trees tumbled down!",
+        "ms_basmeih": "Yang diarahkannya menyerang mereka tujuh malam lapan hari terus-menerus; (kalaulah engkau menyaksikannya) maka engkau akan melihat kaum itu bergelimpangan mati, seolah-olah mereka: batang-batang pohon kurma yang (tumbang dan) lompang."
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "فَهَلْ تَرَىٰ لَهُم مِّنۢ بَاقِيَةٍ",
+      "transliteration": "Fahal tara lahum min baqiyatin",
+      "translations": {
+        "en_sahih": "Then do you see of them any remains?",
+        "en_yusufali": "Then seest thou any of them left surviving?",
+        "ms_basmeih": "Dengan yang demikian, dapatkah engkau melihat lagi sisa-sisa mereka (yang masih hidup)?"
+      }
+    },
+    {
+      "ayah": 9,
+      "arabic": "وَجَآءَ فِرْعَوْنُ وَمَن قَبْلَهُۥ وَٱلْمُؤْتَفِكَـٰتُ بِٱلْخَاطِئَةِ",
+      "transliteration": "Wajaa firAAawnu waman qablahu waalmutafikatu bialkhatiati",
+      "translations": {
+        "en_sahih": "And there came Pharaoh and those before him and the overturned cities with sin.",
+        "en_yusufali": "And Pharaoh, and those before him, and the Cities Overthrown, committed habitual Sin.",
+        "ms_basmeih": "Dan (selain dari mereka) datanglah Firaun, dan orang-orang yang terdahulu daripadanya, serta penduduk negeri-negeri yang telah ditunggang balikkan - dengan melakukan perkara-perkara yang salah."
+      }
+    },
+    {
+      "ayah": 10,
+      "arabic": "فَعَصَوْا۟ رَسُولَ رَبِّهِمْ فَأَخَذَهُمْ أَخْذَةً رَّابِيَةً",
+      "transliteration": "FaAAasaw rasoola rabbihim faakhathahum akhthatan rabiyatan",
+      "translations": {
+        "en_sahih": "And they disobeyed the messenger of their Lord, so He seized them with a seizure exceeding [in severity].",
+        "en_yusufali": "And disobeyed (each) the messenger of their Lord; so He punished them with an abundant Penalty.",
+        "ms_basmeih": "Iaitu masing-masing menderhaka kepada Rasul (yang diutuskan oleh) Tuhan mereka, lalu Allah menyeksa mereka dengan azab yang sentiasa bertambah."
+      }
+    },
+    {
+      "ayah": 11,
+      "arabic": "إِنَّا لَمَّا طَغَا ٱلْمَآءُ حَمَلْنَـٰكُمْ فِى ٱلْجَارِيَةِ",
+      "transliteration": "Inna lamma tagha almao hamalnakum fee aljariyati",
+      "translations": {
+        "en_sahih": "Indeed, when the water overflowed, We carried your ancestors in the sailing ship",
+        "en_yusufali": "We, when the water (of Noah's Flood) overflowed beyond its limits, carried you (mankind), in the floating (Ark),",
+        "ms_basmeih": "Sesungguhnya Kami, - ketika air (banjir) melampaui hadnya (serta menenggelamkan gunung-ganang), - telah mengangkut (serta menyelamatkan nenek moyang) kamu ke dalam bahtera Nabi Nuh (yang bergerak laju pelayarannya)."
+      }
+    },
+    {
+      "ayah": 12,
+      "arabic": "لِنَجْعَلَهَا لَكُمْ تَذْكِرَةً وَتَعِيَهَآ أُذُنٌ وَٰعِيَةٌ",
+      "transliteration": "LinajAAalaha lakum tathkiratan wataAAiyaha othunun waAAiyatun",
+      "translations": {
+        "en_sahih": "That We might make it for you a reminder and [that] a conscious ear would be conscious of it.",
+        "en_yusufali": "That We might make it a Message unto you, and that ears (that should hear the tale and) retain its memory should bear its (lessons) in remembrance.",
+        "ms_basmeih": "(Kami lakukan yang demikian) untuk Kami jadikan peristiwa itu satu pelajaran bagi kamu, dan untuk didengar serta diambil ingat oleh telinga (orang-orang) yang mahu menerima pengajaran."
+      }
+    },
+    {
+      "ayah": 13,
+      "arabic": "فَإِذَا نُفِخَ فِى ٱلصُّورِ نَفْخَةٌ وَٰحِدَةٌ",
+      "transliteration": "Faitha nufikha fee alssoori nafkhatun wahidatun",
+      "translations": {
+        "en_sahih": "Then when the Horn is blown with one blast",
+        "en_yusufali": "Then, when one blast is sounded on the Trumpet,",
+        "ms_basmeih": "Kemudian (ketahuilah bahawa) apabila ditiup Sangkakala dengan sekali tiup, -"
+      }
+    },
+    {
+      "ayah": 14,
+      "arabic": "وَحُمِلَتِ ٱلْأَرْضُ وَٱلْجِبَالُ فَدُكَّتَا دَكَّةً وَٰحِدَةً",
+      "transliteration": "Wahumilati alardu waaljibalu fadukkata dakkatan wahidatan",
+      "translations": {
+        "en_sahih": "And the earth and the mountains are lifted and leveled with one blow -",
+        "en_yusufali": "And the earth is moved, and its mountains, and they are crushed to powder at one stroke,-",
+        "ms_basmeih": "Dan bumi serta gunung-ganang diangkat (dari tempatnya) lalu dihancurkan keduanya dengan sekali hancur, -"
+      }
+    },
+    {
+      "ayah": 15,
+      "arabic": "فَيَوْمَئِذٍ وَقَعَتِ ٱلْوَاقِعَةُ",
+      "transliteration": "Fayawmaithin waqaAAati alwaqiAAatu",
+      "translations": {
+        "en_sahih": "Then on that Day, the Resurrection will occur,",
+        "en_yusufali": "On that Day shall the (Great) Event come to pass.",
+        "ms_basmeih": "Maka pada saat itu berlakulah hari kiamat, -"
+      }
+    },
+    {
+      "ayah": 16,
+      "arabic": "وَٱنشَقَّتِ ٱلسَّمَآءُ فَهِىَ يَوْمَئِذٍ وَاهِيَةٌ",
+      "transliteration": "Wainshaqqati alssamao fahiya yawmaithin wahiyatun",
+      "translations": {
+        "en_sahih": "And the heaven will split [open], for that Day it is infirm.",
+        "en_yusufali": "And the sky will be rent asunder, for it will that Day be flimsy,",
+        "ms_basmeih": "Dan terbelahlah langit, lalu menjadilah ia pada saat itu reput (dan runtuh),"
+      }
+    },
+    {
+      "ayah": 17,
+      "arabic": "وَٱلْمَلَكُ عَلَىٰٓ أَرْجَآئِهَا ۚ وَيَحْمِلُ عَرْشَ رَبِّكَ فَوْقَهُمْ يَوْمَئِذٍ ثَمَـٰنِيَةٌ",
+      "transliteration": "Waalmalaku AAala arjaiha wayahmilu AAarsha rabbika fawqahum yawmaithin thamaniyatun",
+      "translations": {
+        "en_sahih": "And the angels are at its edges. And there will bear the Throne of your Lord above them, that Day, eight [of them].",
+        "en_yusufali": "And the angels will be on its sides, and eight will, that Day, bear the Throne of thy Lord above them.",
+        "ms_basmeih": "Sedang malaikat-malaikat (ditempatkan) mengawal segala penjurunya, dan Arasy Tuhanmu pada saat itu dipikul oleh lapan malaikat di atas malaikat-malaikat yang mengawal itu."
+      }
+    },
+    {
+      "ayah": 18,
+      "arabic": "يَوْمَئِذٍ تُعْرَضُونَ لَا تَخْفَىٰ مِنكُمْ خَافِيَةٌ",
+      "transliteration": "Yawmaithin tuAAradoona la takhfa minkum khafiyatun",
+      "translations": {
+        "en_sahih": "That Day, you will be exhibited [for judgement]; not hidden among you is anything concealed.",
+        "en_yusufali": "That Day shall ye be brought to Judgment: not an act of yours that ye hide will be hidden.",
+        "ms_basmeih": "Pada hari itu, kamu semua dihadapkan (untuk hitungan amal); tidak ada sesuatu pun yang tersembunyi (kepada Allah) dari perkara-perkara kamu yang tersembunyi."
+      }
+    },
+    {
+      "ayah": 19,
+      "arabic": "فَأَمَّا مَنْ أُوتِىَ كِتَـٰبَهُۥ بِيَمِينِهِۦ فَيَقُولُ هَآؤُمُ ٱقْرَءُوا۟ كِتَـٰبِيَهْ",
+      "transliteration": "Faamma man ootiya kitabahu biyameenihi fayaqoolu haomu iqraoo kitabiyah",
+      "translations": {
+        "en_sahih": "So as for he who is given his record in his right hand, he will say, \"Here, read my record!",
+        "en_yusufali": "Then he that will be given his Record in his right hand will say: \"Ah here! Read ye my Record!",
+        "ms_basmeih": "Maka sesiapa yang diberikan menerima Kitab amalnya dengan tangan kanannya, maka ia akan berkata (dengan sukacitanya kepada sesiapa yang ada di sisinya): ` Nah! Bacalah kamu Kitab amalku ini!"
+      }
+    },
+    {
+      "ayah": 20,
+      "arabic": "إِنِّى ظَنَنتُ أَنِّى مُلَـٰقٍ حِسَابِيَهْ",
+      "transliteration": "Innee thanantu annee mulaqin hisabiyah",
+      "translations": {
+        "en_sahih": "Indeed, I was certain that I would be meeting my account.\"",
+        "en_yusufali": "\"I did really understand that my Account would (One Day) reach me!\"",
+        "ms_basmeih": "\"Sesungguhnya aku telah mengetahui dengan yakin, bahawa aku akan menghadapi hitungan amalku (pada hari yang ditentukan)!\""
+      }
+    },
+    {
+      "ayah": 21,
+      "arabic": "فَهُوَ فِى عِيشَةٍ رَّاضِيَةٍ",
+      "transliteration": "Fahuwa fee AAeeshatin radiyatin",
+      "translations": {
+        "en_sahih": "So he will be in a pleasant life -",
+        "en_yusufali": "And he will be in a life of Bliss,",
+        "ms_basmeih": "Maka (dengan itu) tinggalah dia dalam kehidupan yang senang lenang lagi memuaskan, -"
+      }
+    },
+    {
+      "ayah": 22,
+      "arabic": "فِى جَنَّةٍ عَالِيَةٍ",
+      "transliteration": "Fee jannatin AAaliyatin",
+      "translations": {
+        "en_sahih": "In an elevated garden,",
+        "en_yusufali": "In a Garden on high,",
+        "ms_basmeih": "Di dalam Syurga yang tinggi (darjatnya), -"
+      }
+    },
+    {
+      "ayah": 23,
+      "arabic": "قُطُوفُهَا دَانِيَةٌ",
+      "transliteration": "Qutoofuha daniyatun",
+      "translations": {
+        "en_sahih": "Its [fruit] to be picked hanging near.",
+        "en_yusufali": "The Fruits whereof (will hang in bunches) low and near.",
+        "ms_basmeih": "Buah-buahannya dekat untuk dipetik."
+      }
+    },
+    {
+      "ayah": 24,
+      "arabic": "كُلُوا۟ وَٱشْرَبُوا۟ هَنِيٓـًٔۢا بِمَآ أَسْلَفْتُمْ فِى ٱلْأَيَّامِ ٱلْخَالِيَةِ",
+      "transliteration": "Kuloo waishraboo haneean bima aslaftum fee alayyami alkhaliyati",
+      "translations": {
+        "en_sahih": "[They will be told], \"Eat and drink in satisfaction for what you put forth in the days past.\"",
+        "en_yusufali": "\"Eat ye and drink ye, with full satisfaction; because of the (good) that ye sent before you, in the days that are gone!\"",
+        "ms_basmeih": "(Masing-masing dipersilakan menikmatinya dengan dikatakan): \"Makan dan minumlah kamu makanan dan minuman sebagai nikmat yang lazat dan baik kesudahannya, dengan sebab (amal-amal soleh) yang telah kamu kerjakan pada masa yang lalu (di dunia)!\""
+      }
+    },
+    {
+      "ayah": 25,
+      "arabic": "وَأَمَّا مَنْ أُوتِىَ كِتَـٰبَهُۥ بِشِمَالِهِۦ فَيَقُولُ يَـٰلَيْتَنِى لَمْ أُوتَ كِتَـٰبِيَهْ",
+      "transliteration": "Waamma man ootiya kitabahu bishimalihi fayaqoolu ya laytanee lam oota kitabiyah",
+      "translations": {
+        "en_sahih": "But as for he who is given his record in his left hand, he will say, \"Oh, I wish I had not been given my record",
+        "en_yusufali": "And he that will be given his Record in his left hand, will say: \"Ah! Would that my Record had not been given to me!",
+        "ms_basmeih": "Adapun orang yang diberikan menerima Kitab amalnya dengan tangan kirinya, maka ia akan berkata (dengan sesalnya): \"Alangkah baiknya kalau aku tidak diberikan Kitab amalku, -"
+      }
+    },
+    {
+      "ayah": 26,
+      "arabic": "وَلَمْ أَدْرِ مَا حِسَابِيَهْ",
+      "transliteration": "Walam adri ma hisabiyah",
+      "translations": {
+        "en_sahih": "And had not known what is my account.",
+        "en_yusufali": "\"And that I had never realised how my account (stood)!",
+        "ms_basmeih": "\"Dan aku tidak dapat mengetahui hitungan amalku."
+      }
+    },
+    {
+      "ayah": 27,
+      "arabic": "يَـٰلَيْتَهَا كَانَتِ ٱلْقَاضِيَةَ",
+      "transliteration": "Ya laytaha kanati alqadiyatu",
+      "translations": {
+        "en_sahih": "I wish my death had been the decisive one.",
+        "en_yusufali": "\"Ah! Would that (Death) had made an end of me!",
+        "ms_basmeih": "\"Alangkah baiknya kalau kematianku di dunia dahulu, menjadi kematian pemutus (yang menamatkan kesudahanku, tidak dibangkitkan lagi); -"
+      }
+    },
+    {
+      "ayah": 28,
+      "arabic": "مَآ أَغْنَىٰ عَنِّى مَالِيَهْ ۜ",
+      "transliteration": "Ma aghna AAannee maliyah",
+      "translations": {
+        "en_sahih": "My wealth has not availed me.",
+        "en_yusufali": "\"Of no profit to me has been my wealth!",
+        "ms_basmeih": "\"Harta kekayaanku tidak dapat menolongku sedikitpun; -"
+      }
+    },
+    {
+      "ayah": 29,
+      "arabic": "هَلَكَ عَنِّى سُلْطَـٰنِيَهْ",
+      "transliteration": "Halaka AAannee sultaniyah",
+      "translations": {
+        "en_sahih": "Gone from me is my authority.\"",
+        "en_yusufali": "\"My power has perished from me!\"...",
+        "ms_basmeih": "Kuat kuasaku (dan hujjah-hujjahku membela diri), telah binasa dan hilang lenyap dariku\"."
+      }
+    },
+    {
+      "ayah": 30,
+      "arabic": "خُذُوهُ فَغُلُّوهُ",
+      "transliteration": "Khuthoohu faghulloohu",
+      "translations": {
+        "en_sahih": "[Allah will say], \"Seize him and shackle him.",
+        "en_yusufali": "(The stern command will say): \"Seize ye him, and bind ye him,",
+        "ms_basmeih": "(Lalu diperintahkan malaikat penjaga neraka): \"Tangkaplah orang yang berdosa itu serta belenggulah dia, -"
+      }
+    },
+    {
+      "ayah": 31,
+      "arabic": "ثُمَّ ٱلْجَحِيمَ صَلُّوهُ",
+      "transliteration": "Thumma aljaheema salloohu",
+      "translations": {
+        "en_sahih": "Then into Hellfire drive him.",
+        "en_yusufali": "\"And burn ye him in the Blazing Fire.",
+        "ms_basmeih": "\"Kemudian bakarlah dia di dalam neraka Jahiim; -"
+      }
+    },
+    {
+      "ayah": 32,
+      "arabic": "ثُمَّ فِى سِلْسِلَةٍ ذَرْعُهَا سَبْعُونَ ذِرَاعًا فَٱسْلُكُوهُ",
+      "transliteration": "Thumma fee silsilatin tharAAuha sabAAoona thiraAAan faoslukoohu",
+      "translations": {
+        "en_sahih": "Then into a chain whose length is seventy cubits insert him.\"",
+        "en_yusufali": "\"Further, make him march in a chain, whereof the length is seventy cubits!",
+        "ms_basmeih": "\"Selain dari itu, masukkanlah dia dalam (lingkaran) rantai besi yang ukuran panjangnya tujuh puluh hasta, (dengan membelitkannya ke badannya)!"
+      }
+    },
+    {
+      "ayah": 33,
+      "arabic": "إِنَّهُۥ كَانَ لَا يُؤْمِنُ بِٱللَّهِ ٱلْعَظِيمِ",
+      "transliteration": "Innahu kana la yuminu biAllahi alAAatheemi",
+      "translations": {
+        "en_sahih": "Indeed, he did not used to believe in Allah, the Most Great,",
+        "en_yusufali": "\"This was he that would not believe in Allah Most High.",
+        "ms_basmeih": "\"Sesungguhnya dia dahulu tidak beriman kepada Allah Yang Maha Besar,"
+      }
+    },
+    {
+      "ayah": 34,
+      "arabic": "وَلَا يَحُضُّ عَلَىٰ طَعَامِ ٱلْمِسْكِينِ",
+      "transliteration": "Wala yahuddu AAala taAAami almiskeeni",
+      "translations": {
+        "en_sahih": "Nor did he encourage the feeding of the poor.",
+        "en_yusufali": "\"And would not encourage the feeding of the indigent!",
+        "ms_basmeih": "\"Dan dia juga tidak menggalakkan (dirinya dan orang lain) memberi makanan (yang berhak diterima oleh) orang miskin."
+      }
+    },
+    {
+      "ayah": 35,
+      "arabic": "فَلَيْسَ لَهُ ٱلْيَوْمَ هَـٰهُنَا حَمِيمٌ",
+      "transliteration": "Falaysa lahu alyawma hahuna hameemun",
+      "translations": {
+        "en_sahih": "So there is not for him here this Day any devoted friend",
+        "en_yusufali": "\"So no friend hath he here this Day.",
+        "ms_basmeih": "\"Maka pada hari ini, tidak ada baginya di sini (seorangpun dari) kaum kerabat serta sahabat handai (yang dapat menolongnya), -"
+      }
+    },
+    {
+      "ayah": 36,
+      "arabic": "وَلَا طَعَامٌ إِلَّا مِنْ غِسْلِينٍ",
+      "transliteration": "Wala taAAamun illa min ghisleenin",
+      "translations": {
+        "en_sahih": "Nor any food except from the discharge of wounds;",
+        "en_yusufali": "\"Nor hath he any food except the corruption from the washing of wounds,",
+        "ms_basmeih": "\"Dan tidak ada makanan (baginya) melainkan dari air danur,"
+      }
+    },
+    {
+      "ayah": 37,
+      "arabic": "لَّا يَأْكُلُهُۥٓ إِلَّا ٱلْخَـٰطِـُٔونَ",
+      "transliteration": "La yakuluhu illa alkhatioona",
+      "translations": {
+        "en_sahih": "None will eat it except the sinners.",
+        "en_yusufali": "\"Which none do eat but those in sin.\"",
+        "ms_basmeih": "\"Yang tidak memakannya melainkan orang-orang yang melakukan perkara yang salah\"."
+      }
+    },
+    {
+      "ayah": 38,
+      "arabic": "فَلَآ أُقْسِمُ بِمَا تُبْصِرُونَ",
+      "transliteration": "Fala oqsimu bima tubsiroona",
+      "translations": {
+        "en_sahih": "So I swear by what you see",
+        "en_yusufali": "So I do call to witness what ye see,",
+        "ms_basmeih": "Maka Aku bersumpah: Demi segala (yang nyata) yang kamu melihatnya, -"
+      }
+    },
+    {
+      "ayah": 39,
+      "arabic": "وَمَا لَا تُبْصِرُونَ",
+      "transliteration": "Wama la tubsiroona",
+      "translations": {
+        "en_sahih": "And what you do not see",
+        "en_yusufali": "And what ye see not,",
+        "ms_basmeih": "Dan segala (yang ghaib) yang kamu tidak melihatnya, -"
+      }
+    },
+    {
+      "ayah": 40,
+      "arabic": "إِنَّهُۥ لَقَوْلُ رَسُولٍ كَرِيمٍ",
+      "transliteration": "Innahu laqawlu rasoolin kareemin",
+      "translations": {
+        "en_sahih": "[That] indeed, the Qur'an is the word of a noble Messenger.",
+        "en_yusufali": "That this is verily the word of an honoured messenger;",
+        "ms_basmeih": "Bahawa sesungguhnya Al-Quran itu ialah (wahyu dari Kami) yang disampaikan oleh Rasul yang mulia."
+      }
+    },
+    {
+      "ayah": 41,
+      "arabic": "وَمَا هُوَ بِقَوْلِ شَاعِرٍ ۚ قَلِيلًا مَّا تُؤْمِنُونَ",
+      "transliteration": "Wama huwa biqawli shaAAirin qaleelan ma tuminoona",
+      "translations": {
+        "en_sahih": "And it is not the word of a poet; little do you believe.",
+        "en_yusufali": "It is not the word of a poet: little it is ye believe!",
+        "ms_basmeih": "Dan bukanlah Al-Quran itu perkataan seorang penyair (sebagaimana yang kamu dakwakan. Tetapi sayang!) amatlah sedikit kamu beriman."
+      }
+    },
+    {
+      "ayah": 42,
+      "arabic": "وَلَا بِقَوْلِ كَاهِنٍ ۚ قَلِيلًا مَّا تَذَكَّرُونَ",
+      "transliteration": "Wala biqawli kahinin qaleelan ma tathakkaroona",
+      "translations": {
+        "en_sahih": "Nor the word of a soothsayer; little do you remember.",
+        "en_yusufali": "Nor is it the word of a soothsayer: little admonition it is ye receive.",
+        "ms_basmeih": "Dan juga bukanlah Al-Quran itu perkataan seorang pawang (sebagaimana yang kamu katakan. Tetapi sayang!) amatlah sedikit kamu mengambil peringatan."
+      }
+    },
+    {
+      "ayah": 43,
+      "arabic": "تَنزِيلٌ مِّن رَّبِّ ٱلْعَـٰلَمِينَ",
+      "transliteration": "Tanzeelun min rabbi alAAalameena",
+      "translations": {
+        "en_sahih": "[It is] a revelation from the Lord of the worlds.",
+        "en_yusufali": "(This is) a Message sent down from the Lord of the Worlds.",
+        "ms_basmeih": "(Al-Quran itu) diturunkan dari Allah Tuhan sekalian alam."
+      }
+    },
+    {
+      "ayah": 44,
+      "arabic": "وَلَوْ تَقَوَّلَ عَلَيْنَا بَعْضَ ٱلْأَقَاوِيلِ",
+      "transliteration": "Walaw taqawwala AAalayna baAAda alaqaweeli",
+      "translations": {
+        "en_sahih": "And if Muhammad had made up about Us some [false] sayings,",
+        "en_yusufali": "And if the messenger were to invent any sayings in Our name,",
+        "ms_basmeih": "Dan kalaulah (Nabi Muhammad yang menyampaikan Al-Quran itu) mengatakan atas nama Kami secara dusta - sebarang kata-kata rekaan, -"
+      }
+    },
+    {
+      "ayah": 45,
+      "arabic": "لَأَخَذْنَا مِنْهُ بِٱلْيَمِينِ",
+      "transliteration": "Laakhathna minhu bialyameeni",
+      "translations": {
+        "en_sahih": "We would have seized him by the right hand;",
+        "en_yusufali": "We should certainly seize him by his right hand,",
+        "ms_basmeih": "Sudah tentu Kami akan menyentapnya, dengan kekuasaan Kami, -"
+      }
+    },
+    {
+      "ayah": 46,
+      "arabic": "ثُمَّ لَقَطَعْنَا مِنْهُ ٱلْوَتِينَ",
+      "transliteration": "Thumma laqataAAna minhu alwateena",
+      "translations": {
+        "en_sahih": "Then We would have cut from him the aorta.",
+        "en_yusufali": "And We should certainly then cut off the artery of his heart:",
+        "ms_basmeih": "Kemudian sudah tentu Kami akan memutuskan tali jantungnya (supaya ia mati dengan serta-merta);"
+      }
+    },
+    {
+      "ayah": 47,
+      "arabic": "فَمَا مِنكُم مِّنْ أَحَدٍ عَنْهُ حَـٰجِزِينَ",
+      "transliteration": "Fama minkum min ahadin AAanhu hajizeena",
+      "translations": {
+        "en_sahih": "And there is no one of you who could prevent [Us] from him.",
+        "en_yusufali": "Nor could any of you withhold him (from Our wrath).",
+        "ms_basmeih": "Maka tidak ada seorangpun di antara kamu yang dapat menghalang (tindakan Kami itu) daripada menimpanya."
+      }
+    },
+    {
+      "ayah": 48,
+      "arabic": "وَإِنَّهُۥ لَتَذْكِرَةٌ لِّلْمُتَّقِينَ",
+      "transliteration": "Wainnahu latathkiratun lilmuttaqeena",
+      "translations": {
+        "en_sahih": "And indeed, the Qur'an is a reminder for the righteous.",
+        "en_yusufali": "But verily this is a Message for the Allah-fearing.",
+        "ms_basmeih": "Dan sesungguhnya (Al-Quran) itu tetap menjadi peringatan bagi orang-orang yang bertaqwa."
+      }
+    },
+    {
+      "ayah": 49,
+      "arabic": "وَإِنَّا لَنَعْلَمُ أَنَّ مِنكُم مُّكَذِّبِينَ",
+      "transliteration": "Wainna lanaAAlamu anna minkum mukaththibeena",
+      "translations": {
+        "en_sahih": "And indeed, We know that among you are deniers.",
+        "en_yusufali": "And We certainly know that there are amongst you those that reject (it).",
+        "ms_basmeih": "Dan sesungguhnya Kami sedia mengetahui bahawa ada di antara kamu yang mendustakan (Al-Quran, maka Kami akan membalasnya)."
+      }
+    },
+    {
+      "ayah": 50,
+      "arabic": "وَإِنَّهُۥ لَحَسْرَةٌ عَلَى ٱلْكَـٰفِرِينَ",
+      "transliteration": "Wainnahu lahasratun AAala alkafireena",
+      "translations": {
+        "en_sahih": "And indeed, it will be [a cause of] regret upon the disbelievers.",
+        "en_yusufali": "But truly (Revelation) is a cause of sorrow for the Unbelievers.",
+        "ms_basmeih": "Dan sesungguhnya Al-Quran itu sudah tentu akan menyebabkan penyesalan bagi orang-orang yang kafir (semasa mereka menerima balasan)."
+      }
+    },
+    {
+      "ayah": 51,
+      "arabic": "وَإِنَّهُۥ لَحَقُّ ٱلْيَقِينِ",
+      "transliteration": "Wainnahu lahaqqu alyaqeeni",
+      "translations": {
+        "en_sahih": "And indeed, it is the truth of certainty.",
+        "en_yusufali": "But verily it is Truth of assured certainty.",
+        "ms_basmeih": "Dan sesungguhnya Al-Quran itu adalah kebenaran yang diyakini (dengan seyakin-yakinnya)."
+      }
+    },
+    {
+      "ayah": 52,
+      "arabic": "فَسَبِّحْ بِٱسْمِ رَبِّكَ ٱلْعَظِيمِ",
+      "transliteration": "Fasabbih biismi rabbika alAAatheemi",
+      "translations": {
+        "en_sahih": "So exalt the name of your Lord, the Most Great.",
+        "en_yusufali": "So glorify the name of thy Lord Most High.",
+        "ms_basmeih": "Oleh itu bertasbihlah dengan memuji nama Tuhanmu Yang Maha Besar."
+      }
+    }
+  ]
+}

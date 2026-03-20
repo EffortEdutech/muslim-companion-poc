@@ -1,0 +1,108 @@
+{
+  "surah": 99,
+  "metadata": {
+    "nameArabic": "الزلزلة",
+    "nameEnglish": "Az-Zalzalah",
+    "nameTranslit": "Az-Zalzalah",
+    "meaning": "The Earthquake",
+    "revelation": "Medinan",
+    "revelationOrder": 93,
+    "period": "Late Medinan",
+    "ayahCount": 8,
+    "wordCount": 36,
+    "letterCount": 158,
+    "juz": 30,
+    "pageStart": 599,
+    "themes": [
+      "earthquake",
+      "earth_testimony",
+      "human_deeds",
+      "judgment_day",
+      "atom_weight"
+    ],
+    "otherNames": [],
+    "significance": "Describes the final earthquake and emphasizes that all deeds will be weighed"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "arabic": "بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ إِذَا زُلْزِلَتِ ٱلْأَرْضُ زِلْزَالَهَا",
+      "transliteration": "Itha zulzilati alardu zilzalaha",
+      "translations": {
+        "en_sahih": "When the earth is shaken with its [final] earthquake",
+        "en_yusufali": "When the earth is shaken to her (utmost) convulsion,",
+        "ms_basmeih": "Apabila bumi digegarkan dengan gegaran yang sedahsyat-dahsyatnya,"
+      }
+    },
+    {
+      "ayah": 2,
+      "arabic": "وَأَخْرَجَتِ ٱلْأَرْضُ أَثْقَالَهَا",
+      "transliteration": "Waakhrajati alardu athqalaha",
+      "translations": {
+        "en_sahih": "And the earth discharges its burdens",
+        "en_yusufali": "And the earth throws up her burdens (from within),",
+        "ms_basmeih": "Serta bumi itu mengeluarkan segala isinya,"
+      }
+    },
+    {
+      "ayah": 3,
+      "arabic": "وَقَالَ ٱلْإِنسَـٰنُ مَا لَهَا",
+      "transliteration": "Waqala alinsanu ma laha",
+      "translations": {
+        "en_sahih": "And man says, \"What is [wrong] with it?\" -",
+        "en_yusufali": "And man cries (distressed): 'What is the matter with her?'-",
+        "ms_basmeih": "Dan berkatalah manusia (dengan perasaan gerun); \"Apa yang sudah terjadi kepada bumi?\""
+      }
+    },
+    {
+      "ayah": 4,
+      "arabic": "يَوْمَئِذٍ تُحَدِّثُ أَخْبَارَهَا",
+      "transliteration": "Yawmaithin tuhaddithu akhbaraha",
+      "translations": {
+        "en_sahih": "That Day, it will report its news",
+        "en_yusufali": "On that Day will she declare her tidings:",
+        "ms_basmeih": "Pada hari itu bumipun menceritakan khabar beritanya:"
+      }
+    },
+    {
+      "ayah": 5,
+      "arabic": "بِأَنَّ رَبَّكَ أَوْحَىٰ لَهَا",
+      "transliteration": "Bianna rabbaka awha laha",
+      "translations": {
+        "en_sahih": "Because your Lord has commanded it.",
+        "en_yusufali": "For that thy Lord will have given her inspiration.",
+        "ms_basmeih": "Bahawa Tuhanmu telah memerintahnya (berlaku demikian)."
+      }
+    },
+    {
+      "ayah": 6,
+      "arabic": "يَوْمَئِذٍ يَصْدُرُ ٱلنَّاسُ أَشْتَاتًا لِّيُرَوْا۟ أَعْمَـٰلَهُمْ",
+      "transliteration": "Yawmaithin yasduru alnnasu ashtatan liyuraw aAAmalahum",
+      "translations": {
+        "en_sahih": "That Day, the people will depart separated [into categories] to be shown [the result of] their deeds.",
+        "en_yusufali": "On that Day will men proceed in companies sorted out, to be shown the deeds that they (had done).",
+        "ms_basmeih": "Pada hari itu manusia akan keluar berselerak (dari kubur masing-masing) - untuk diperlihatkan kepada mereka (balasan) amal-amal mereka."
+      }
+    },
+    {
+      "ayah": 7,
+      "arabic": "فَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ خَيْرًا يَرَهُۥ",
+      "transliteration": "Faman yaAAmal mithqala tharratin khayran yarahu",
+      "translations": {
+        "en_sahih": "So whoever does an atom's weight of good will see it,",
+        "en_yusufali": "Then shall anyone who has done an atom's weight of good, see it!",
+        "ms_basmeih": "Maka sesiapa berbuat kebajikan seberat zarah, nescaya akan dilihatnya (dalam surat amalnya)!"
+      }
+    },
+    {
+      "ayah": 8,
+      "arabic": "وَمَن يَعْمَلْ مِثْقَالَ ذَرَّةٍ شَرًّا يَرَهُۥ",
+      "transliteration": "Waman yaAAmal mithqala tharratin sharran yarahu",
+      "translations": {
+        "en_sahih": "And whoever does an atom's weight of evil will see it.",
+        "en_yusufali": "And anyone who has done an atom's weight of evil, shall see it.",
+        "ms_basmeih": "Dan sesiapa berbuat kejahatan seberat zarah, nescaya akan dilihatnya (dalam surat amalnya)!"
+      }
+    }
+  ]
+}

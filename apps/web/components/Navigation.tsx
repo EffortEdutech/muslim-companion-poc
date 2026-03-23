@@ -30,8 +30,12 @@ export default function Navigation() {
     setQuery('');
   }
 
-  const isActive = (href: string) =>
-    href === '/' ? pathname === '/' : pathname.startsWith(href);
+  // Active check — /quran/* is active for Quran, /hadith/* for Hadith, exact match only for Search/Bookmarks
+  const isActive = (href: string) => {
+    if (href === '/quran') return pathname === '/quran' || (pathname.startsWith('/quran') && pathname !== '/quran/search');
+    if (href === '/hadith') return pathname.startsWith('/hadith');
+    return pathname === href || pathname.startsWith(href + '/');
+  };
 
   return (
     <>
@@ -49,9 +53,9 @@ export default function Navigation() {
 
           {/* Nav links */}
           <div className="hidden sm:flex items-center gap-1">
-            <Link href="/"          className={`nav-link ${isActive('/') && !isActive('/quran') ? 'active' : ''}`}>Hadith</Link>
-            <Link href="/quran"     className={`nav-link ${isActive('/quran') ? 'active' : ''}`}>Quran</Link>
-            <Link href="/search"    className={`nav-link ${isActive('/search') ? 'active' : ''}`}>Search</Link>
+            <Link href="/quran"     className={`nav-link ${isActive('/quran')     ? 'active' : ''}`}>Quran</Link>
+            <Link href="/hadith"    className={`nav-link ${isActive('/hadith')    ? 'active' : ''}`}>Hadith</Link>
+            <Link href="/search"    className={`nav-link ${isActive('/search')    ? 'active' : ''}`}>Search</Link>
             <Link href="/bookmarks" className={`nav-link ${isActive('/bookmarks') ? 'active' : ''}`}>Bookmarks</Link>
           </div>
 
@@ -75,11 +79,17 @@ export default function Navigation() {
             <form onSubmit={handleSearch}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '16px 20px' }}>
                 <SearchIcon style={{ color: 'var(--gold)', flexShrink: 0 }} />
-                <input ref={inputRef} value={query} onChange={(e) => setQuery(e.target.value)} placeholder="Search hadith in Arabic or English…" style={{ flex: 1, background: 'none', border: 'none', outline: 'none', fontSize: '1.05rem', color: 'var(--ink)', fontFamily: 'var(--font-lora)' }} />
+                <input
+                  ref={inputRef}
+                  value={query}
+                  onChange={(e) => setQuery(e.target.value)}
+                  placeholder="Search Quran or Hadith…"
+                  style={{ flex: 1, background: 'none', border: 'none', outline: 'none', fontSize: '1.05rem', color: 'var(--ink)', fontFamily: 'var(--font-lora)' }}
+                />
                 {query && <button type="button" onClick={() => setQuery('')} style={{ color: 'var(--ink-muted)', background: 'none', border: 'none', cursor: 'pointer' }}>✕</button>}
               </div>
-              <div style={{ borderTop: '1px solid var(--gold-border)', padding: '9px 16px', display: 'flex', alignItems: 'center', gap: '8px' }}>
-                <span style={{ fontSize: '0.72rem', color: 'var(--ink-muted)' }}>Hadith search · Arabic &amp; English · Try "#33" for hadith number</span>
+              <div style={{ borderTop: '1px solid var(--gold-border)', padding: '9px 16px', display: 'flex', gap: '8px', alignItems: 'center' }}>
+                <span style={{ fontSize: '0.72rem', color: 'var(--ink-muted)' }}>Arabic &amp; English · try 2:255 for ayah · #33 for hadith</span>
                 <span style={{ marginLeft: 'auto', fontSize: '0.72rem', color: 'var(--ink-muted)' }}>Esc to close</span>
               </div>
             </form>

@@ -55,7 +55,34 @@ body {
   letter-spacing: 0.01em;
 }
 
-/* ── Scrollbar ──────────────────────────────────────────────────── */
+/* ── Tafseer text ────────────────────────────────────────────────── */
+/* QUL tafseer HTML uses <b>, <i>, <p>, <h1>-<h6> for structure */
+.tafseer-text p { margin-bottom: 0.85rem; }
+.tafseer-text p:last-child { margin-bottom: 0; }
+.tafseer-text b, .tafseer-text strong { color: var(--ink); font-weight: 600; }
+.tafseer-text i, .tafseer-text em { color: var(--ink-secondary); }
+.tafseer-text h1, .tafseer-text h2, .tafseer-text h3,
+.tafseer-text h4, .tafseer-text h5, .tafseer-text h6 {
+  font-family: var(--font-cormorant), serif;
+  font-weight: 600;
+  color: var(--ink);
+  margin: 1.1rem 0 0.4rem;
+  letter-spacing: -0.01em;
+}
+.tafseer-text h1 { font-size: 1.3rem; }
+.tafseer-text h2 { font-size: 1.15rem; }
+.tafseer-text h3 { font-size: 1.05rem; }
+/* Arabic text inside tafseer */
+.tafseer-text [lang="ar"],
+.tafseer-text [dir="rtl"] {
+  font-family: var(--font-amiri), serif;
+  direction: rtl;
+  font-size: 1.3em;
+  color: var(--ink-arabic);
+  line-height: 2.2;
+  display: block;
+  margin: 0.5rem 0;
+}
 ::-webkit-scrollbar { width: 6px; height: 6px; }
 ::-webkit-scrollbar-track { background: var(--bg-primary); }
 ::-webkit-scrollbar-thumb { background: var(--gold-border); border-radius: 3px; }

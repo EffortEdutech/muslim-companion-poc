@@ -128,6 +128,34 @@ const surahIndex  = [];
 const searchIndex = [];   // flat array — one entry per ayah
 let   totalAyahs  = 0;
 
+// ── Bismillah prefix stripping ────────────────────────────────────
+// Tanzil quran-uthmani prepends bismillah to ayah 1 of every surah
+// except surah 1 (where it IS ayah 1) and surah 9 (no bismillah).
+// We strip it at compile time so the app has no runtime stripping logic.
+
+const DIAC_STRIP_RE = /[\u0600-\u0615\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0640]/g;
+const DIAC_TEST_RE  = /[\u0600-\u0615\u064B-\u065F\u0670\u06D6-\u06DC\u06DF-\u06E4\u06E7\u06E8\u06EA-\u06ED\u0640]/;
+
+function stripDiac(s) {
+  return s.replace(new RegExp(DIAC_STRIP_RE.source, 'g'), '').replace(/\u0671/g, '\u0627');
+}
+
+const BISMI_BARE = 'بسم الله الرحمن الرحيم';  // 22 chars, no diacritics
+
+function stripBismillah(arabic) {
+  if (!stripDiac(arabic).startsWith(BISMI_BARE)) return arabic;
+  const target = BISMI_BARE.length;
+  let count = 0, i = 0;
+  for (i = 0; i < arabic.length; i++) {
+    const nc = stripDiac(arabic[i]);
+    if (nc) count += nc.length;
+    if (count >= target) { i++; break; }
+  }
+  // Skip trailing spaces AND any dangling diacritics after the bismillah
+  while (i < arabic.length && (arabic[i] === ' ' || DIAC_TEST_RE.test(arabic[i]))) i++;
+  return arabic.slice(i);
+}
+
 console.log(`\nCompiling ${surahNumbers.length} surahs…`);
 
 for (const n of surahNumbers) {
@@ -140,9 +168,14 @@ for (const n of surahNumbers) {
 
   const ayahs = ayahNums.map(a => {
     const key = `${n}:${a}`;
+    // Strip bismillah prefix from ayah 1 for all surahs except 1 and 9
+    const rawArabic = arabicMap.get(key) || '';
+    const arabic = (a === 1 && n !== 1 && n !== 9)
+      ? stripBismillah(rawArabic)
+      : rawArabic;
     return {
       ayah:            a,
-      arabic:          arabicMap.get(key)   || '',
+      arabic,
       transliteration: translitMap.get(key) || '',
       translations: {
         en_sahih:    sahihMap.get(key)    || '',

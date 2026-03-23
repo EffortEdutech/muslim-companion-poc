@@ -1,10 +1,10 @@
-const CACHE_NAME = 'iqra-digital-v1';
-const STATIC_CACHE = 'iqra-static-v1';
+// ── Cache names ── bump version here to force full cache refresh ──
+const CACHE_NAME   = 'iqra-digital-v2';
+const STATIC_CACHE = 'iqra-static-v2';
 
-// Pages to precache on install
-const PRECACHE = ['/', '/search', '/bookmarks', '/manifest.json'];
+const PRECACHE = ['/', '/search', '/bookmarks', '/quran', '/manifest.json'];
 
-// ── Install ──────────────────────────────────────────────────────
+// ── Install ───────────────────────────────────────────────────────
 self.addEventListener('install', (e) => {
   e.waitUntil(
     caches.open(CACHE_NAME)
@@ -13,7 +13,7 @@ self.addEventListener('install', (e) => {
   );
 });
 
-// ── Activate — clear old caches ──────────────────────────────────
+// ── Activate — delete ALL old caches ─────────────────────────────
 self.addEventListener('activate', (e) => {
   e.waitUntil(
     caches.keys()
@@ -28,39 +28,43 @@ self.addEventListener('activate', (e) => {
   );
 });
 
-// ── Fetch ────────────────────────────────────────────────────────
+// ── Fetch ─────────────────────────────────────────────────────────
 self.addEventListener('fetch', (e) => {
   const url = new URL(e.request.url);
 
-  // Only handle same-origin GET requests
+  // Only handle same-origin GET
   if (e.request.method !== 'GET' || url.origin !== self.location.origin) return;
 
-  // Next.js static chunks — content-hashed filenames, cache forever
+  // Next.js content-hashed static chunks — cache forever
   if (url.pathname.startsWith('/_next/static/')) {
     e.respondWith(
       caches.open(STATIC_CACHE).then(async (cache) => {
         const hit = await cache.match(e.request);
         if (hit) return hit;
         const res = await fetch(e.request);
-        if (res.ok) cache.put(e.request, res.clone());
+        // Clone BEFORE any consumption
+        if (res.ok) await cache.put(e.request, res.clone());
         return res;
       })
     );
     return;
   }
 
-  // Skip other Next.js internals (RSC payloads, HMR, data fetching)
+  // Skip other Next.js internals
   if (url.pathname.startsWith('/_next/')) return;
 
-  // API routes — network only (search must be live)
+  // API routes — always network, never cache
   if (url.pathname.startsWith('/api/')) return;
 
-  // Pages — network first, fall back to cache for offline
+  // Pages — network first, fall back to cache
   e.respondWith(
     fetch(e.request)
-      .then((res) => {
+      .then(async (res) => {
         if (res.ok) {
-          caches.open(CACHE_NAME).then((c) => c.put(e.request, res.clone()));
+          // Clone IMMEDIATELY before any async gap
+          const clone = res.clone();
+          const cache = await caches.open(CACHE_NAME);
+          await cache.put(e.request, clone);
         }
         return res;
       })

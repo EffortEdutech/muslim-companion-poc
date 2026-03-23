@@ -17,6 +17,7 @@ interface Props {
   rangeStart: number;
   rangeEnd: number;
   total: number;
+  bottomOffset?: number;  // px from bottom — default 24. Pass higher value when sticky nav is present.
 }
 
 const SIZES: { key: FontSize; px: number }[] = [
@@ -27,7 +28,7 @@ const SIZES: { key: FontSize; px: number }[] = [
 ];
 
 export default function ReaderControls({
-  bookSlug, chapterId, page, rangeStart, rangeEnd, total,
+  bookSlug, chapterId, page, rangeStart, rangeEnd, total, bottomOffset = 24,
 }: Props) {
   const [fontSize, setFontSize] = useState<FontSize>('md');
   const [mounted, setMounted] = useState(false);
@@ -55,7 +56,7 @@ export default function ReaderControls({
     <div
       style={{
         position: 'fixed',
-        bottom: '24px',
+        bottom: `${bottomOffset}px`,
         right: '20px',
         zIndex: 40,
         display: 'flex',

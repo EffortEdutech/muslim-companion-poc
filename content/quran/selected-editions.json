@@ -1,0 +1,217 @@
+{
+  "quran": {
+    "description": "Quran translation editions bundled with ilmMate",
+    "editions": [
+      {
+        "key":        "ara-uthmani",
+        "file":       "content/quran/db/ara-uthmani.json",
+        "language":   "Arabic",
+        "lang_code":  "ara",
+        "label":      "القرآن الكريم — النص العثماني",
+        "label_en":   "Arabic — Uthmani Script",
+        "translator": "Official Uthmani Script",
+        "direction":  "rtl",
+        "tier":       1,
+        "is_source":  true,
+        "notes":      "The primary Arabic source text. Always shown alongside translations."
+      },
+      {
+        "key":        "transliteration",
+        "file":       "content/quran/db/transliteration.json",
+        "language":   "Transliteration",
+        "lang_code":  "en-translit",
+        "label":      "Transliteration",
+        "label_en":   "Transliteration (Latin script)",
+        "translator": "Tanzil.net",
+        "direction":  "ltr",
+        "tier":       1,
+        "is_source":  false,
+        "notes":      "Latin-script romanisation for pronunciation support."
+      },
+      {
+        "key":        "eng-sahih",
+        "file":       "content/quran/db/eng-sahih.json",
+        "language":   "English",
+        "lang_code":  "eng",
+        "label":      "English — Saheeh International",
+        "label_en":   "English — Saheeh International",
+        "translator": "Saheeh International",
+        "direction":  "ltr",
+        "tier":       1,
+        "default":    true,
+        "notes":      "Clear modern English. Primary English edition and search index source."
+      },
+      {
+        "key":        "eng-yusufali",
+        "file":       "content/quran/db/eng-yusufali.json",
+        "language":   "English",
+        "lang_code":  "eng",
+        "label":      "English — Yusuf Ali",
+        "label_en":   "English — Abdullah Yusuf Ali",
+        "translator": "Abdullah Yusuf Ali",
+        "direction":  "ltr",
+        "tier":       1,
+        "notes":      "Classical English translation with poetic character."
+      },
+      {
+        "key":        "urd-jalandhry",
+        "file":       "content/quran/db/urd-jalandhry.json",
+        "language":   "Urdu",
+        "lang_code":  "urd",
+        "label":      "اردو — جالندھری",
+        "label_en":   "Urdu — Fateh Muhammad Jalandhry",
+        "translator": "Fateh Muhammad Jalandhry",
+        "direction":  "rtl",
+        "tier":       1,
+        "notes":      "Most widely used Urdu Quran translation."
+      },
+      {
+        "key":        "mal-basmeih",
+        "file":       "content/quran/db/mal-basmeih.json",
+        "language":   "Malay",
+        "lang_code":  "mal",
+        "label":      "Bahasa Melayu — Basmeih",
+        "label_en":   "Malay — Abdullah Muhammad Basmeih",
+        "translator": "Abdullah Muhammad Basmeih",
+        "direction":  "ltr",
+        "tier":       1,
+        "notes":      "Official Malaysian translation by JAKIM."
+      },
+      {
+        "key":        "ind-indonesian",
+        "file":       "content/quran/db/ind-indonesian.json",
+        "language":   "Indonesian",
+        "lang_code":  "ind",
+        "label":      "Bahasa Indonesia — Kemenag",
+        "label_en":   "Indonesian — Ministry of Religious Affairs",
+        "translator": "Kementerian Agama Republik Indonesia",
+        "direction":  "ltr",
+        "tier":       1,
+        "notes":      "Official Indonesian government translation."
+      },
+      {
+        "key":        "spa-montada",
+        "file":       "content/quran/db/spa-montada.json",
+        "language":   "Spanish",
+        "lang_code":  "spa",
+        "label":      "Español — Centro Islámico",
+        "label_en":   "Spanish — Centro Cultural Islámico de Madrid",
+        "translator": "Centro Cultural Islámico de Madrid",
+        "direction":  "ltr",
+        "tier":       1,
+        "notes":      "Spanish translation by the Islamic Cultural Centre of Madrid."
+      },
+      {
+        "key":        "fra-hamidullah",
+        "file":       "content/quran/db/fra-hamidullah.json",
+        "language":   "French",
+        "lang_code":  "fra",
+        "label":      "Français — Hamidullah",
+        "label_en":   "French — Dr. Muhammad Hamidullah",
+        "translator": "Dr. Muhammad Hamidullah",
+        "direction":  "ltr",
+        "tier":       1,
+        "notes":      "French translation by Dr. Muhammad Hamidullah."
+      }
+    ]
+  },
+  "tafsir": {
+    "description": "Tafseer editions bundled with ilmMate",
+    "editions": [
+      {
+        "slug":       "en-al-jalalayn",
+        "folder":     "content/tafsir/db/en-al-jalalayn",
+        "language":   "English",
+        "lang_code":  "eng",
+        "label":      "Al-Jalalayn (English)",
+        "label_en":   "Tafsir Al-Jalalayn — English",
+        "author":     "Jalal al-Din al-Mahalli & Jalal al-Din al-Suyuti",
+        "level":      "foundational",
+        "tier":       1,
+        "default":    true,
+        "search_index": true,
+        "notes":      "Concise classical tafseer. Best for beginners. Primary tafseer for search index."
+      },
+      {
+        "slug":       "en-tafisr-ibn-kathir",
+        "folder":     "content/tafsir/db/en-tafisr-ibn-kathir",
+        "language":   "English",
+        "lang_code":  "eng",
+        "label":      "Ibn Kathir (English)",
+        "label_en":   "Tafsir Ibn Kathir — English (abridged)",
+        "author":     "Hafiz Ibn Kathir",
+        "level":      "intermediate",
+        "tier":       1,
+        "search_index": true,
+        "notes":      "Most widely referenced tafseer in English."
+      },
+      {
+        "slug":       "en-tafsir-maarif-ul-quran",
+        "folder":     "content/tafsir/db/en-tafsir-maarif-ul-quran",
+        "language":   "English",
+        "lang_code":  "eng",
+        "label":      "Maarif-ul-Quran (English)",
+        "label_en":   "Maarif-ul-Quran — Mufti Shafi",
+        "author":     "Mufti Muhammad Shafi",
+        "level":      "intermediate",
+        "tier":       2,
+        "search_index": false,
+        "notes":      "Comprehensive Deobandi tafseer in English."
+      },
+      {
+        "slug":       "ar-tafsir-muyassar",
+        "folder":     "content/tafsir/db/ar-tafsir-muyassar",
+        "language":   "Arabic",
+        "lang_code":  "ara",
+        "label":      "تفسير الميسر",
+        "label_en":   "Tafsir Muyassar — Arabic",
+        "author":     "King Fahd Complex Group of Scholars",
+        "level":      "intermediate",
+        "tier":       1,
+        "default_arabic": true,
+        "search_index": true,
+        "notes":      "Simplified Arabic tafseer. Best starting point for Arabic readers."
+      },
+      {
+        "slug":       "ar-tafsir-ibn-kathir",
+        "folder":     "content/tafsir/db/ar-tafsir-ibn-kathir",
+        "language":   "Arabic",
+        "lang_code":  "ara",
+        "label":      "تفسير ابن كثير",
+        "label_en":   "Tafsir Ibn Kathir — Arabic (full)",
+        "author":     "Hafiz Ibn Kathir",
+        "level":      "advanced",
+        "tier":       2,
+        "search_index": false,
+        "notes":      "Full classical Arabic Ibn Kathir. Large files."
+      },
+      {
+        "slug":       "ur-tafseer-ibn-e-kaseer",
+        "folder":     "content/tafsir/db/ur-tafseer-ibn-e-kaseer",
+        "language":   "Urdu",
+        "lang_code":  "urd",
+        "label":      "تفسیر ابن کثیر (اردو)",
+        "label_en":   "Tafsir Ibn Kathir — Urdu",
+        "author":     "Hafiz Ibn Kathir",
+        "level":      "intermediate",
+        "tier":       1,
+        "default_urdu": true,
+        "search_index": true,
+        "notes":      "Urdu Ibn Kathir — primary tafseer for Urdu-speaking users."
+      }
+    ]
+  },
+  "hadith": {
+    "description": "Hadith collections bundled with ilmMate",
+    "tier1_editions": [
+      { "edition": "eng-bukhari", "book": "bukhari", "lang": "eng", "label": "Sahih Bukhari — English" },
+      { "edition": "ara-bukhari", "book": "bukhari", "lang": "ara", "label": "صحيح البخاري — عربي" },
+      { "edition": "eng-muslim",  "book": "muslim",  "lang": "eng", "label": "Sahih Muslim — English" },
+      { "edition": "ara-muslim",  "book": "muslim",  "lang": "ara", "label": "صحيح مسلم — عربي" },
+      { "edition": "eng-nawawi40","book": "nawawi40","lang": "eng", "label": "40 Hadith Nawawi — English" },
+      { "edition": "ara-nawawi40","book": "nawawi40","lang": "ara", "label": "الأربعين النووية — عربي" },
+      { "edition": "fra-nawawi40","book": "nawawi40","lang": "fra", "label": "40 Hadiths de Nawawi — Français" },
+      { "edition": "ind-nawawi40","book": "nawawi40","lang": "ind", "label": "Hadits Arba'in — Bahasa Indonesia" }
+    ]
+  }
+}

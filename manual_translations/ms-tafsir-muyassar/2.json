@@ -1,0 +1,104 @@
+{
+  "_meta": {
+    "source_slug": "ar-tafsir-muyassar",
+    "output_slug": "ms-tafsir-muyassar",
+    "surah": 2,
+    "edition": "Tafsir Muyassar",
+    "author": "Al-Muyassar Group of Scholars",
+    "lang": "ms",
+    "translation_type": "faithful_translation",
+    "review_status": "draft_partial"
+  },
+  "ayahs": [
+    {
+      "ayah": 1,
+      "surah": 2,
+      "source_text_ar": "هذه الحروف وغيرها من الحروف المقطَّعة في أوائل السور فيها إشارة إلى إعجاز القرآن؛ فقد وقع به تحدي المشركين، فعجزوا عن معارضته، وهو مركَّب من هذه الحروف التي تتكون منها لغة العرب. فدَلَّ عجز العرب عن الإتيان بمثله -مع أنهم أفصح الناس- على أن القرآن وحي من الله.",
+      "text_ms": "Huruf-huruf ini dan selainnya daripada huruf-huruf muqatta‘ah pada permulaan surah-surah mengandungi isyarat kepada kemukjizatan al-Quran. Dengan al-Quran itu orang-orang musyrik telah dicabar, namun mereka tidak mampu mendatangkan yang sebanding dengannya, sedangkan al-Quran itu tersusun daripada huruf-huruf yang membentuk bahasa Arab mereka sendiri. Maka ketidakmampuan orang Arab untuk mendatangkan yang seumpamanya - padahal mereka ialah golongan yang paling fasih - menunjukkan bahawa al-Quran ialah wahyu daripada Allah.",
+      "translator_notes": "Huruf muqatta‘ah dikekalkan sebagai istilah teknikal.",
+      "review_notes": "",
+      "status": "draft"
+    },
+    {
+      "ayah": 2,
+      "surah": 2,
+      "source_text_ar": "ذلك القرآن هو الكتاب العظيم الذي لا شَكَّ أنه من عند الله، فلا يصح أن يرتاب فيه أحد لوضوحه، ينتفع به المتقون بالعلم النافع والعمل الصالح وهم الذين يخافون الله، ويتبعون أحكامه.",
+      "text_ms": "Al-Quran itu ialah kitab yang agung yang tidak ada sebarang keraguan bahawa ia datang daripada Allah. Maka tidak patut seseorang pun meraguinya kerana kejelasannya. Yang mengambil manfaat daripadanya ialah orang-orang yang bertakwa dengan ilmu yang bermanfaat dan amal soleh, iaitu mereka yang takut kepada Allah dan mengikuti hukum-hukum-Nya.",
+      "translator_notes": "",
+      "review_notes": "",
+      "status": "draft"
+    },
+    {
+      "ayah": 3,
+      "surah": 2,
+      "source_text_ar": "وهم الذين يُصَدِّقون بالغيب الذي لا تدركه حواسُّهم ولا عقولهم وحدها؛ لأنه لا يُعْرف إلا بوحي الله إلى رسله، مثل الإيمان بالملائكة، والجنة، والنار، وغير ذلك مما أخبر الله به أو أخبر به رسوله، (والإيمان: كلمة جامعة للإقرار بالله وملائكته وكتبه ورسله واليوم الآخر والقدر خيره وشره، وتصديق الإقرار بالقول والعمل بالقلب واللسان والجوارح) وهم مع تصديقهم بالغيب يحافظون على أداء الصلاة في مواقيتها أداءً صحيحًا وَفْق ما شرع الله لنبيه محمد صلى الله عليه وسلم، ومما أعطيناهم من المال يخرجون صدقة أموالهم الواجبة والمستحبة.",
+      "text_ms": "Dan mereka ialah orang-orang yang membenarkan perkara ghaib yang tidak dapat dicapai oleh pancaindera mereka dan tidak pula diketahui oleh akal semata-mata; kerana ia hanya diketahui melalui wahyu Allah kepada para rasul-Nya, seperti beriman kepada malaikat, syurga, neraka, dan selainnya daripada perkara yang dikhabarkan oleh Allah atau Rasul-Nya. Iman itu ialah suatu lafaz yang menghimpunkan pengakuan terhadap Allah, malaikat-malaikat-Nya, kitab-kitab-Nya, rasul-rasul-Nya, hari akhirat, serta qadar yang baik dan yang buruk; dan kebenaran pengakuan itu dibuktikan dengan perkataan serta amalan hati, lisan, dan anggota badan. Bersama pembenaran mereka terhadap perkara ghaib, mereka juga memelihara pelaksanaan solat pada waktunya dengan pelaksanaan yang sahih menurut apa yang telah disyariatkan Allah kepada Nabi Muhammad SAW, dan daripada harta yang Kami kurniakan kepada mereka, mereka mengeluarkan sedekah harta yang wajib dan yang sunat.",
+      "translator_notes": "Ayat ini padat dengan definisi iman; kekalkan istilah ghaib, qadar, dan struktur definisi secara dekat kepada sumber.",
+      "review_notes": "",
+      "status": "draft"
+    },
+    {
+      "ayah": 4,
+      "surah": 2,
+      "source_text_ar": "والذين يُصَدِّقون بما أُنزل إليك أيها الرسول من القرآن، وبما أنزل إليك من الحكمة، وهي السنة، وبكل ما أُنزل مِن قبلك على الرسل من كتب، كالتوراة والإنجيل وغيرهما، ويُصَدِّقون بدار الحياة بعد الموت وما فيها من الحساب والجزاء، تصديقا بقلوبهم يظهر على ألسنتهم وجوارحهم وخص يوم الآخرة؛ لأن الإيمان به من أعظم البواعث على فعل الطاعات، واجتناب المحرمات، ومحاسبة النفس.",
+      "text_ms": "Dan mereka juga membenarkan apa yang diturunkan kepadamu wahai Rasul daripada al-Quran, dan apa yang diturunkan kepadamu daripada hikmah, iaitu sunnah, serta segala yang telah diturunkan sebelum engkau kepada para rasul berupa kitab-kitab seperti Taurat, Injil, dan selainnya. Mereka juga membenarkan negeri kehidupan sesudah mati dan segala yang ada padanya berupa hisab dan pembalasan, dengan pembenaran hati yang tampak kesannya pada lisan dan anggota tubuh mereka. Hari akhirat disebut secara khusus kerana keimanan terhadapnya termasuk antara dorongan yang paling besar untuk melakukan ketaatan, menjauhi perkara-perkara yang diharamkan, dan menghisab diri sendiri.",
+      "translator_notes": "Istilah hikmah = sunnah dikekalkan sebagaimana sumber.",
+      "review_notes": "",
+      "status": "draft"
+    },
+    {
+      "ayah": 5,
+      "surah": 2,
+      "source_text_ar": "أصحاب هذه الصفات يسيرون على نور من ربهم وبتوفيق مِن خالقهم وهاديهم، وهم الفائزون الذين أدركوا ما طلبوا، ونَجَوا من شرِّ ما منه هربوا.",
+      "text_ms": "Golongan yang memiliki sifat-sifat ini berjalan di atas cahaya daripada Rabb mereka dan dengan taufik daripada Pencipta serta Pemberi petunjuk mereka. Mereka itulah orang-orang yang berjaya, yang memperoleh apa yang mereka cari dan terselamat daripada keburukan yang mereka lari daripadanya.",
+      "translator_notes": "Rabb dikekalkan.",
+      "review_notes": "",
+      "status": "draft"
+    },
+    {
+      "ayah": 6,
+      "surah": 2,
+      "source_text_ar": "إن الذين جحدوا ما أُنزل إليك من ربك استكبارًا وطغيانًا، لن يقع منهم الإيمان، سواء أخوَّفتهم وحذرتهم من عذاب الله، أم تركت ذلك؛ لإصرارهم على باطلهم.",
+      "text_ms": "Sesungguhnya orang-orang yang mengingkari apa yang diturunkan kepadamu daripada Rabbmu dengan kesombongan dan kezaliman melampau, tidak akan terhasil daripada mereka keimanan; sama ada engkau memberi amaran dan menakutkan mereka dengan azab Allah ataupun engkau meninggalkannya, kerana mereka terus berkeras di atas kebatilan mereka.",
+      "translator_notes": "",
+      "review_notes": "",
+      "status": "draft"
+    },
+    {
+      "ayah": 7,
+      "surah": 2,
+      "source_text_ar": "طبع الله على قلوب هؤلاء وعلى سمعهم، وجعل على أبصارهم غطاء؛ بسبب كفرهم وعنادهم مِن بعد ما تبيَّن لهم الحق، فلم يوفقهم للهدى، ولهم عذاب شديد في نار جهنم.",
+      "text_ms": "Allah telah memeteraikan hati mereka dan pendengaran mereka, serta menjadikan pada penglihatan mereka suatu penutup; disebabkan kekufuran dan kedegilan mereka setelah nyata bagi mereka kebenaran. Maka Allah tidak memberikan mereka taufik kepada petunjuk, dan bagi mereka azab yang berat di dalam neraka Jahannam.",
+      "translator_notes": "Sensitif aqidah; kekalkan lafaz memeteraikan tanpa tafsiran tambahan.",
+      "review_notes": "",
+      "status": "draft"
+    },
+    {
+      "ayah": 8,
+      "surah": 2,
+      "source_text_ar": "ومن الناس فريق يتردد متحيِّرًا بين المؤمنين والكافرين، وهم المنافقون الذين يقولون بألسنتهم: صدَّقْنَا بالله وباليوم الآخر، وهم في باطنهم كاذبون لم يؤمنوا.",
+      "text_ms": "Dan di antara manusia ada satu golongan yang teragak-agak dan bingung antara orang-orang beriman dan orang-orang kafir. Mereka ialah orang-orang munafik yang berkata dengan lisan mereka: "Kami telah beriman kepada Allah dan kepada hari akhirat," padahal dalam batin mereka mereka berdusta dan tidak beriman.",
+      "translator_notes": "",
+      "review_notes": "",
+      "status": "draft"
+    },
+    {
+      "ayah": 9,
+      "surah": 2,
+      "source_text_ar": "يعتقدون بجهلهم أنهم يخادعون الله والذين آمنوا بإظهارهم الإيمان وإضمارهم الكفر، وما يخدعون إلا أنفسهم؛ لأن عاقبة خداعهم تعود عليهم. ومِن فرط جهلهم لا يُحِسُّون بذلك؛ لفساد قلوبهم.",
+      "text_ms": "Mereka menyangka kerana kejahilan mereka bahawa mereka sedang memperdayakan Allah dan orang-orang yang beriman dengan menzahirkan iman dan menyembunyikan kufur. Padahal mereka tidak memperdayakan melainkan diri mereka sendiri, kerana akibat tipu daya mereka kembali menimpa mereka. Namun oleh sebab terlalu jahil, mereka tidak menyedarinya, kerana rosaknya hati mereka.",
+      "translator_notes": "",
+      "review_notes": "",
+      "status": "draft"
+    },
+    {
+      "ayah": 10,
+      "surah": 2,
+      "source_text_ar": "في قلوبهم شكٌّ وفساد فابْتُلوا بالمعاصي الموجبة لعقوبتهم، فزادهم الله شكًا، ولهم عقوبة موجعة بسبب كذبهم ونفاقهم.",
+      "text_ms": "Di dalam hati mereka ada keraguan dan kerosakan, lalu mereka diuji dengan maksiat yang menyebabkan hukuman ke atas mereka. Maka Allah menambahkan lagi keraguan mereka, dan bagi mereka azab yang menyakitkan disebabkan kedustaan dan nifak mereka.",
+      "translator_notes": "",
+      "review_notes": "",
+      "status": "draft"
+    }
+  ]
+}

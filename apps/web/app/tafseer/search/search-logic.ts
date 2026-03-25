@@ -1,0 +1,132 @@
+// apps/web/app/tafseer/search/search-logic.ts
+// Server-side Tafseer search — mirrors the Quran search pattern exactly.
+// Reads from the pre-built index at content/tafsir/db/metadata/index-eng.json
+
+import path from 'path';
+import fs   from 'fs';
+import {
+  TafseerIndexEntry,
+  TafseerSearchResult,
+  TafseerSearchResponse,
+} from '@/lib/tafseer-search-types';
+
+const INDEX_PATH = path.join(
+  process.env.REPO_ROOT || path.join(process.cwd(), '..', '..'),
+  'content', 'tafsir', 'db', 'metadata', 'index-eng.json'
+);
+
+const LIMIT = 20;
+
+// ── Cached index — loaded once per server process ─────────────────────────────
+let _cache: TafseerIndexEntry[] | null = null;
+
+function loadIndex(): TafseerIndexEntry[] {
+  if (_cache) return _cache;
+  if (!fs.existsSync(INDEX_PATH)) return [];
+  try {
+    _cache = JSON.parse(fs.readFileSync(INDEX_PATH, 'utf-8'));
+    return _cache!;
+  } catch {
+    return [];
+  }
+}
+
+// ── Scoring ───────────────────────────────────────────────────────────────────
+
+function scoreText(text: string, query: string, terms: string[]): number {
+  if (!text) return 0;
+  const lower = text.toLowerCase();
+  if (lower.includes(query.toLowerCase())) return 3;
+  const matched = terms.filter(t => lower.includes(t)).length;
+  if (matched === terms.length) return 2;
+  if (matched > 0)              return matched / terms.length;
+  return 0;
+}
+
+// Detect reference patterns: "2:255", "2|255", "surah 2 ayah 255"
+function parseReference(query: string): { surah: number; ayah: number | null } | null {
+  const q = query.trim();
+
+  const colonMatch = q.match(/^(\d{1,3})[:|](\d{1,3})$/);
+  if (colonMatch) {
+    return { surah: parseInt(colonMatch[1], 10), ayah: parseInt(colonMatch[2], 10) };
+  }
+
+  const surahMatch = q.match(/surah\s+(\d{1,3})(?:\s+(?:ayah|verse|aya)\s+(\d{1,3}))?/i);
+  if (surahMatch) {
+    return {
+      surah: parseInt(surahMatch[1], 10),
+      ayah:  surahMatch[2] ? parseInt(surahMatch[2], 10) : null,
+    };
+  }
+
+  return null;
+}
+
+// ── Main ──────────────────────────────────────────────────────────────────────
+
+export default function searchTafseer(
+  rawQuery: string,
+  page:     number
+): TafseerSearchResponse {
+  const query = rawQuery.trim();
+
+  if (query.length < 2) {
+    return { results: [], total: 0, query, page, limit: LIMIT };
+  }
+
+  const index = loadIndex();
+  if (index.length === 0) {
+    return { results: [], total: 0, query, page, limit: LIMIT };
+  }
+
+  const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 1);
+  const ref   = parseReference(query);
+  const scored: TafseerSearchResult[] = [];
+
+  for (const entry of index) {
+    let maxScore = 0;
+
+    // Reference lookup — highest priority
+    if (ref) {
+      if (ref.surah === entry.s) {
+        if (ref.ayah === null || ref.ayah === entry.a) {
+          maxScore = 4;
+        }
+      }
+    }
+
+    if (maxScore < 4) {
+      // Search the tafseer text snippet
+      const txScore = scoreText(entry.tx, query, terms);
+      if (txScore > maxScore) maxScore = txScore;
+
+      // Surah name match (lower weight)
+      const snScore = scoreText(entry.sn, query, terms) * 0.4;
+      if (snScore > maxScore) maxScore = snScore;
+    }
+
+    if (maxScore > 0) {
+      scored.push({
+        surah:     entry.s,
+        ayah:      entry.a,
+        surahName: entry.sn,
+        text:      entry.tx,
+        score:     maxScore,
+      });
+    }
+  }
+
+  // Sort: score desc, then surah asc, then ayah asc
+  scored.sort((a, b) =>
+    b.score - a.score ||
+    a.surah - b.surah ||
+    a.ayah  - b.ayah
+  );
+
+  const total   = scored.length;
+  const offset  = (page - 1) * LIMIT;
+  const results = scored.slice(offset, offset + LIMIT);
+
+  return { results, total, query, page, limit: LIMIT };
+}

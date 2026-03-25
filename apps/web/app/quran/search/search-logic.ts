@@ -1,5 +1,9 @@
+// apps/web/app/quran/search/search-logic.ts
+// UPDATED: Now searches 7 languages (added Indonesian, Urdu, French, Spanish)
+// Same scoring pattern, backwards compatible with existing index structure.
+
 import path from 'path';
-import fs from 'fs';
+import fs   from 'fs';
 import {
   SearchIndexEntry,
   QuranSearchResult,
@@ -7,12 +11,13 @@ import {
 } from '@/lib/quran-search-types';
 
 const INDEX_PATH = path.join(
-  process.cwd(), '..', '..', 'content', 'quran', 'db', 'metadata', 'search-index.json'
+  process.env.REPO_ROOT || path.join(process.cwd(), '..', '..'),
+  'content', 'quran', 'db', 'metadata', 'search-index.json'
 );
 
 const LIMIT = 20;
 
-// ── Cached index — loaded once per server process ─────────────────
+// ── Cached index ──────────────────────────────────────────────────────────────
 let _cache: SearchIndexEntry[] | null = null;
 
 function loadIndex(): SearchIndexEntry[] {
@@ -26,30 +31,27 @@ function loadIndex(): SearchIndexEntry[] {
   }
 }
 
-// ── Arabic normalisation ──────────────────────────────────────────
-// Strips tashkeel so diacritic-free queries match fully-vowelled text.
-
+// ── Arabic normalisation ──────────────────────────────────────────────────────
 function normalizeArabic(text: string): string {
   return text
-    .replace(/[\u064B-\u065F\u0670]/g, '')   // tashkeel / harakat
-    .replace(/\u0640/g, '')                    // tatweel (kashida)
-    .replace(/[\u0622\u0623\u0625\u0671]/g, '\u0627')  // alef variants → ا
-    .replace(/\u0649/g, '\u064A')              // alef maqsura → ي
-    .replace(/\u0629/g, '\u0647')              // taa marbuta → ه
-    .replace(/\u0624/g, '\u0648')              // hamza on waw → و
-    .replace(/\u0626/g, '\u064A')              // hamza on ya → ي
+    .replace(/[\u064B-\u065F\u0670]/g, '')
+    .replace(/\u0640/g, '')
+    .replace(/[\u0622\u0623\u0625\u0671]/g, '\u0627')
+    .replace(/\u0649/g, '\u064A')
+    .replace(/\u0629/g, '\u0647')
+    .replace(/\u0624/g, '\u0648')
+    .replace(/\u0626/g, '\u064A')
     .trim();
 }
 
-// ── Scoring helpers ───────────────────────────────────────────────
-
+// ── Scoring ───────────────────────────────────────────────────────────────────
 function scoreText(text: string, query: string, terms: string[]): number {
   if (!text) return 0;
   const lower = text.toLowerCase();
   if (lower.includes(query.toLowerCase())) return 3;
   const matched = terms.filter(t => lower.includes(t)).length;
   if (matched === terms.length) return 2;
-  if (matched > 0) return matched / terms.length;
+  if (matched > 0)              return matched / terms.length;
   return 0;
 }
 
@@ -62,21 +64,16 @@ function scoreArabic(arabic: string, rawQuery: string): number {
   const words   = normQuery.split(/\s+/).filter(Boolean);
   const matched = words.filter(w => normText.includes(w)).length;
   if (matched === words.length) return 2;
-  if (matched > 0) return matched / words.length;
+  if (matched > 0)              return matched / words.length;
   return 0;
 }
 
-// Detect reference patterns: "2:255", "2|255", "surah 2 ayah 255"
 function parseReference(query: string): { surah: number; ayah: number | null } | null {
   const q = query.trim();
-
-  // "2:255" or "2|255"
   const colonMatch = q.match(/^(\d{1,3})[:|](\d{1,3})$/);
   if (colonMatch) {
     return { surah: parseInt(colonMatch[1], 10), ayah: parseInt(colonMatch[2], 10) };
   }
-
-  // "surah 2" or "surah 2 ayah 3"
   const surahMatch = q.match(/surah\s+(\d{1,3})(?:\s+(?:ayah|verse|aya)\s+(\d{1,3}))?/i);
   if (surahMatch) {
     return {
@@ -84,15 +81,13 @@ function parseReference(query: string): { surah: number; ayah: number | null } |
       ayah:  surahMatch[2] ? parseInt(surahMatch[2], 10) : null,
     };
   }
-
   return null;
 }
 
-// ── Main search ───────────────────────────────────────────────────
-
+// ── Main ──────────────────────────────────────────────────────────────────────
 export default function searchQuran(
   rawQuery: string,
-  page: number
+  page:     number
 ): QuranSearchResponse {
   const query = rawQuery.trim();
 
@@ -112,32 +107,46 @@ export default function searchQuran(
   for (const entry of index) {
     let maxScore = 0;
 
-    // Reference lookup — highest priority (score 4)
     if (ref) {
-      if (ref.surah === entry.s) {
-        if (ref.ayah === null || ref.ayah === entry.a) {
-          maxScore = 4;
-        }
+      if (ref.surah === entry.s && (ref.ayah === null || ref.ayah === entry.a)) {
+        maxScore = 4;
       }
     }
 
     if (maxScore < 4) {
-      // Arabic — normalised matching
+      // Arabic
       const arScore = scoreArabic(entry.ar, query);
       if (arScore > maxScore) maxScore = arScore;
 
-      // English translations
+      // English — Sahih International
       const saScore = scoreText(entry.sa, query, terms);
       if (saScore > maxScore) maxScore = saScore;
 
+      // English — Yusuf Ali
       const yuScore = scoreText(entry.yu, query, terms);
       if (yuScore > maxScore) maxScore = yuScore;
 
-      // Malay
+      // Malay (Basmeih)
       const msScore = scoreText(entry.ms, query, terms);
       if (msScore > maxScore) maxScore = msScore;
 
-      // Surah name (lower weight — partial match only)
+      // Indonesian — NEW
+      const idScore = scoreText((entry as any).id, query, terms);
+      if (idScore > maxScore) maxScore = idScore;
+
+      // Urdu — NEW
+      const urScore = scoreText((entry as any).ur, query, terms);
+      if (urScore > maxScore) maxScore = urScore;
+
+      // French — NEW
+      const frScore = scoreText((entry as any).fr, query, terms);
+      if (frScore > maxScore) maxScore = frScore;
+
+      // Spanish — NEW
+      const esScore = scoreText((entry as any).es, query, terms);
+      if (esScore > maxScore) maxScore = esScore;
+
+      // Surah name (lower weight)
       const snScore = scoreText(entry.sn, query, terms) * 0.4;
       if (snScore > maxScore) maxScore = snScore;
     }
@@ -156,7 +165,6 @@ export default function searchQuran(
     }
   }
 
-  // Sort: score desc, then surah asc, then ayah asc
   scored.sort((a, b) =>
     b.score - a.score ||
     a.surah - b.surah ||

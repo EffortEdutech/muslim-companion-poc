@@ -186,7 +186,7 @@ function searchPerFile(
     try { book = JSON.parse(fs.readFileSync(filePath, 'utf-8')); }
     catch { continue; }
 
-    const chapterMap = new Map((book.chapters || []).map((c: any) => [c.id, c]));
+    const chapterMap = new Map<number, { id: number; english: string; arabic?: string }>((book.chapters || []).map((c: any) => [c.id, c]));
 
     for (const hadith of (book.hadiths || [])) {
       let maxScore = 0;

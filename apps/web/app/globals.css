@@ -175,3 +175,6 @@ body {
   .border-subtle { border-color: var(--gold-border); }
   .border-gold { border-color: var(--gold-border-strong); }
 }
+
+.tafseer-surah-card-link > div { transition: border-color 0.15s, background 0.15s; }
+.tafseer-surah-card-link:hover > div { border-color: var(--gold) !important; background: var(--bg-hover) !important; }

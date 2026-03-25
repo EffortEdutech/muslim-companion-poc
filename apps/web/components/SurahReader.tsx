@@ -1,18 +1,24 @@
 'use client';
 
+// apps/web/components/SurahReader.tsx
+// UPDATED: TafseerEditionSwitcher added to sticky toolbar.
+// currentTafseerSlug comes from the server (URL param), shown in switcher.
+
 import { useMemo } from 'react';
 import { CompiledSurah } from '@/lib/quran-types';
-import { TafseerEntry } from '@/lib/tafseer-types';
+import { TafseerEntry }  from '@/lib/tafseer-types';
 import { useTranslationConfig } from './TranslationSwitcher';
-import TranslationSwitcher from './TranslationSwitcher';
-import AyahCard from './AyahCard';
+import TranslationSwitcher      from './TranslationSwitcher';
+import TafseerEditionSwitcher   from './TafseerEditionSwitcher';
+import AyahCard                 from './AyahCard';
 
 interface Props {
-  surah:          CompiledSurah;
-  tafseerEntries: TafseerEntry[];
+  surah:              CompiledSurah;
+  tafseerEntries:     TafseerEntry[];
+  currentTafseerSlug: string;  // from server — drives the switcher display
 }
 
-export default function SurahReader({ surah, tafseerEntries }: Props) {
+export default function SurahReader({ surah, tafseerEntries, currentTafseerSlug }: Props) {
   const [config, setConfig] = useTranslationConfig();
 
   const tafseerMap = useMemo(() => {
@@ -23,31 +29,63 @@ export default function SurahReader({ surah, tafseerEntries }: Props) {
     return map;
   }, [tafseerEntries]);
 
-  // Surah 1 (Al-Fatiha): ayah 1 IS the bismillah — no separate decorative header
-  // Surah 9 (At-Tawba): no bismillah
-  // All others: show bismillah header (compile script already stripped it from ayah 1)
   const showBismillah = surah.surah !== 1 && surah.surah !== 9;
 
   return (
     <>
-      {/* Sticky translation toolbar */}
-      <div style={{ position: 'sticky', top: 'var(--nav-height)', zIndex: 20, background: 'rgba(13,17,23,0.94)', backdropFilter: 'blur(12px)', borderBottom: '1px solid var(--gold-border)', padding: '8px 0', marginBottom: '24px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: '12px' }}>
-          <div style={{ fontFamily: 'var(--font-lora)', fontSize: '0.8rem', color: 'var(--ink-muted)' }}>
+      {/* Sticky toolbar — translation + tafseer switchers */}
+      <div style={{
+        position:       'sticky',
+        top:            'var(--nav-height)',
+        zIndex:         20,
+        background:     'rgba(13,17,23,0.94)',
+        backdropFilter: 'blur(12px)',
+        borderBottom:   '1px solid var(--gold-border)',
+        padding:        '8px 0',
+        marginBottom:   '24px',
+      }}>
+        <div style={{
+          display:        'flex',
+          alignItems:     'center',
+          justifyContent: 'space-between',
+          gap:            '8px',
+          flexWrap:       'wrap',
+        }}>
+          <div style={{
+            fontFamily: 'var(--font-lora)',
+            fontSize:   '0.8rem',
+            color:      'var(--ink-muted)',
+          }}>
             {surah.metadata.ayahCount} ayahs
           </div>
-          <TranslationSwitcher config={config} onChange={setConfig} />
+
+          {/* Right side — two switchers */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <TafseerEditionSwitcher currentSlug={currentTafseerSlug} />
+            <TranslationSwitcher config={config} onChange={setConfig} />
+          </div>
         </div>
       </div>
 
-      {/* Decorative bismillah — surahs 2–114 except At-Tawba */}
+      {/* Decorative bismillah */}
       {showBismillah && (
-        <div dir="rtl" lang="ar" style={{ fontFamily: 'var(--font-amiri)', fontSize: 'clamp(1.5rem, 3vw, 2rem)', color: 'var(--gold)', textAlign: 'center', lineHeight: '2.2', marginBottom: '28px', padding: '16px', background: 'var(--bg-card)', border: '1px solid var(--gold-border)', borderRadius: '12px' }}>
+        <div dir="rtl" lang="ar" style={{
+          fontFamily:    'var(--font-amiri)',
+          fontSize:      'clamp(1.5rem, 3vw, 2rem)',
+          color:         'var(--gold)',
+          textAlign:     'center',
+          lineHeight:    '2.2',
+          marginBottom:  '28px',
+          padding:       '16px',
+          background:    'var(--bg-card)',
+          border:        '1px solid var(--gold-border)',
+          borderRadius:  '12px',
+        }}>
           بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَّحِيمِ
         </div>
       )}
 
-      {/* Ayah list — arabic text in compiled JSON is already clean */}
+      {/* Ayah list */}
       <div className="flex flex-col gap-5">
         {surah.ayahs.map((ayah) => (
           <AyahCard

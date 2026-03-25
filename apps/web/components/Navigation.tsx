@@ -1,5 +1,8 @@
 'use client';
 
+// apps/web/components/Navigation.tsx
+// UPDATED: Added Tafseer tab between Hadith and Search
+
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useState, useRef, useEffect, FormEvent } from 'react';
@@ -30,10 +33,10 @@ export default function Navigation() {
     setQuery('');
   }
 
-  // Active check — /quran/* is active for Quran, /hadith/* for Hadith, exact match only for Search/Bookmarks
   const isActive = (href: string) => {
-    if (href === '/quran') return pathname === '/quran' || (pathname.startsWith('/quran') && pathname !== '/quran/search');
-    if (href === '/hadith') return pathname.startsWith('/hadith');
+    if (href === '/quran')   return pathname === '/quran' || (pathname.startsWith('/quran') && pathname !== '/quran/search');
+    if (href === '/hadith')  return pathname.startsWith('/hadith');
+    if (href === '/tafseer') return pathname.startsWith('/tafseer');
     return pathname === href || pathname.startsWith(href + '/');
   };
 
@@ -54,6 +57,7 @@ export default function Navigation() {
           {/* Nav links */}
           <div className="hidden sm:flex items-center gap-1">
             <Link href="/quran"     className={`nav-link ${isActive('/quran')     ? 'active' : ''}`}>Quran</Link>
+            <Link href="/tafseer"   className={`nav-link ${isActive('/tafseer')   ? 'active' : ''}`}>Tafseer</Link>
             <Link href="/hadith"    className={`nav-link ${isActive('/hadith')    ? 'active' : ''}`}>Hadith</Link>
             <Link href="/search"    className={`nav-link ${isActive('/search')    ? 'active' : ''}`}>Search</Link>
             <Link href="/bookmarks" className={`nav-link ${isActive('/bookmarks') ? 'active' : ''}`}>Bookmarks</Link>
@@ -74,7 +78,11 @@ export default function Navigation() {
 
       {/* Search modal */}
       {searchOpen && (
-        <div className="fixed inset-0 z-[100] flex items-start justify-center pt-[15vh] px-4" style={{ background: 'rgba(5,8,15,0.82)', backdropFilter: 'blur(4px)' }} onClick={(e) => { if (e.target === e.currentTarget) setSearchOpen(false); }}>
+        <div
+          className="fixed inset-0 z-[100] flex items-start justify-center pt-[15vh] px-4"
+          style={{ background: 'rgba(5,8,15,0.82)', backdropFilter: 'blur(4px)' }}
+          onClick={(e) => { if (e.target === e.currentTarget) setSearchOpen(false); }}
+        >
           <div style={{ width: '100%', maxWidth: '620px', background: 'var(--bg-surface)', border: '1px solid var(--gold-border-strong)', borderRadius: '16px', overflow: 'hidden', boxShadow: '0 24px 64px rgba(0,0,0,0.6)' }}>
             <form onSubmit={handleSearch}>
               <div style={{ display: 'flex', alignItems: 'center', gap: '12px', padding: '16px 20px' }}>
@@ -83,10 +91,12 @@ export default function Navigation() {
                   ref={inputRef}
                   value={query}
                   onChange={(e) => setQuery(e.target.value)}
-                  placeholder="Search Quran or Hadith…"
+                  placeholder="Search Quran, Tafseer or Hadith…"
                   style={{ flex: 1, background: 'none', border: 'none', outline: 'none', fontSize: '1.05rem', color: 'var(--ink)', fontFamily: 'var(--font-lora)' }}
                 />
-                {query && <button type="button" onClick={() => setQuery('')} style={{ color: 'var(--ink-muted)', background: 'none', border: 'none', cursor: 'pointer' }}>✕</button>}
+                {query && (
+                  <button type="button" onClick={() => setQuery('')} style={{ color: 'var(--ink-muted)', background: 'none', border: 'none', cursor: 'pointer' }}>✕</button>
+                )}
               </div>
               <div style={{ borderTop: '1px solid var(--gold-border)', padding: '9px 16px', display: 'flex', gap: '8px', alignItems: 'center' }}>
                 <span style={{ fontSize: '0.72rem', color: 'var(--ink-muted)' }}>Arabic &amp; English · try 2:255 for ayah · #33 for hadith</span>
@@ -102,8 +112,8 @@ export default function Navigation() {
 
 function SearchIcon({ style }: { style?: React.CSSProperties }) {
   return (
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={style}>
-      <circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" />
+    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={style}>
+      <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
     </svg>
   );
 }

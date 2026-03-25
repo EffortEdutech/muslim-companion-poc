@@ -1,30 +1,36 @@
-# dependencies
+# ── Dependencies ──────────────────────────────────────────────────
 node_modules/
 .pnpm-store/
 
-# next / build
-.next/
-out/
-dist/
-coverage/
+# ── Next.js build output ──────────────────────────────────────────
+apps/web/.next/
+apps/web/out/
 
-# env
+# ── Environment files ─────────────────────────────────────────────
 .env
 .env.local
 .env.*.local
 
-# os / editor
+# ── OS / Editor ───────────────────────────────────────────────────
 .DS_Store
 Thumbs.db
 .vscode/
-.idea/
-
-# logs
+*.swp
+*.log
 npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
 
-# temp
-tmp/
-temp/
+# ── Tafsir source files (large raw files — regenerate locally) ────
+content/tafsir/source/
+
+# ── Vercel free tier size management (~241 MB without these) ──────
+#
+# by_chapter is build-time only — runtime reads from by_book/ only.
+# Removing it saves 71 MB with zero impact on the live site.
+content/hadith/db/by_chapter/
+#
+# Arabic and Urdu tafsir editions excluded to stay under 250 MB.
+# Re-add when upgrading to Vercel Pro or moving to self-hosted.
+content/tafsir/db/ar-tafsir-ibn-kathir/
+content/tafsir/db/ar-tafsir-muyassar/
+content/tafsir/db/en-tafsir-maarif-ul-quran/
+content/tafsir/db/ur-tafseer-ibn-e-kaseer/

@@ -112,8 +112,8 @@ export async function generateMetadata({ searchParams }: PageProps): Promise<Met
 export default async function SearchPage({ searchParams }: PageProps) {
   const { q = '', src = 'all', book = '', page: pageStr = '1' } = await searchParams;
   const query       = q.trim();
-  const source: Source = (['hadith', 'quran', 'tafseer'] as const).includes(src as Source)
-    ? src as Source : 'all';
+  const source: Source = (['hadith', 'quran', 'tafseer'] as const).includes(src as 'hadith' | 'quran' | 'tafseer')
+    ? src as 'hadith' | 'quran' | 'tafseer' : 'all';
   const currentPage = Math.max(1, parseInt(pageStr, 10));
 
   let hadithResponse:  SearchResponse        | null = null;

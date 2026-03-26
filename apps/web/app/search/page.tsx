@@ -16,6 +16,7 @@ import SearchBar                                 from '@/components/SearchBar';
 import UnifiedSearchTabs                         from '@/components/UnifiedSearchTabs';
 import SearchDiscoveryBar                        from '@/components/SearchDiscoveryBar';
 import SearchResults, { CrossRefHadith }         from '@/components/search/SearchResults';
+import SearchPersist, { NewSearchButton } from '@/components/SearchPersist';
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -168,11 +169,22 @@ export default async function SearchPage({ searchParams }: PageProps) {
         </p>
 
         <Suspense fallback={null}>
-          <SearchBar
-            defaultQuery={query}
-            defaultBook={source === 'hadith' ? book : ''}
-            autoFocus={!query}
+          <SearchPersist
+            query={query}
+            source={source}
+            book={book}
+            shouldRestore={!query}
           />
+          <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
+            <div style={{ flex: 1 }}>
+              <SearchBar
+                defaultQuery={query}
+                defaultBook={source === 'hadith' ? book : ''}
+                autoFocus={!query}
+              />
+            </div>
+            <NewSearchButton visible={query.length >= 2} />
+          </div>
         </Suspense>
 
         {/* Tabs — show source counts, no duplication */}

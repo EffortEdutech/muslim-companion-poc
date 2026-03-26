@@ -6,6 +6,8 @@ import Link from 'next/link';
 import { TAFSEER_COLLECTIONS, TafseerCollectionMeta } from '@/lib/tafseer-types';
 import { scanContentAvailability } from '@/lib/content-availability';
 
+export const dynamic = 'force-dynamic'; // always re-scan content on each request
+
 export const metadata: Metadata = {
   title: 'Tafseer | IQRA Digital',
   description: 'Read classical Tafseer from scholarly editions for all 114 surahs.',

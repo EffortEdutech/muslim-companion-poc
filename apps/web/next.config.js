@@ -18,11 +18,26 @@ const nextConfig = {
     ];
   },
 
-  // ── No outputFileTracing overrides needed ─────────────────────────────────
-  // On Vercel: build command copies content/ into apps/web/content/
-  //   REPO_ROOT=. → path.join('.', 'content', ...) resolves correctly
-  // On localhost: REPO_ROOT not set → fallback path.join(cwd, '..', '..')
-  //   resolves to monorepo root where content/ lives
+  // ── File tracing ──────────────────────────────────────────────────────────
+  // After "cp -r ../../content ." in vercel.json buildCommand,
+  // content lands at apps/web/content/ — i.e. INSIDE __dirname.
+  // So outputFileTracingRoot = __dirname (apps/web), not the monorepo root.
+  // Paths in outputFileTracingIncludes are relative to that root.
+  outputFileTracingRoot: __dirname,
+
+  experimental: {
+    outputFileTracingIncludes: {
+      '/**': [
+        'content/quran/db/compiled/**',
+        'content/quran/db/metadata/**',
+        'content/hadith/db/by_book/**',
+        'content/hadith/db/metadata/**',
+        'content/tafsir/db/en-tafisr-ibn-kathir/**',
+        'content/tafsir/db/en-al-jalalayn/**',
+        'content/tafsir/db/metadata/**',
+      ],
+    },
+  },
 
   eslint: {
     ignoreDuringBuilds: true,

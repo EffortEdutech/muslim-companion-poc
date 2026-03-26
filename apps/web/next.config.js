@@ -18,26 +18,11 @@ const nextConfig = {
     ];
   },
 
-  // ── File tracing root — points to the monorepo root ──────────────────────
-  // This tells Next.js to trace files relative to the monorepo root,
-  // not relative to apps/web.
-  outputFileTracingRoot: path.join(__dirname, '..', '..'),
-
-  experimental: {
-    // Paths here are RELATIVE TO outputFileTracingRoot (the monorepo root).
-    // Do NOT use ../../ — that would go above the monorepo root and find nothing.
-    outputFileTracingIncludes: {
-      '/**': [
-        'content/quran/db/compiled/**',
-        'content/quran/db/metadata/**',
-        'content/hadith/db/by_book/**',
-        'content/hadith/db/metadata/**',
-        'content/tafsir/db/en-tafisr-ibn-kathir/**',
-        'content/tafsir/db/en-al-jalalayn/**',
-        'content/tafsir/db/metadata/**',
-      ],
-    },
-  },
+  // ── No outputFileTracing overrides needed ─────────────────────────────────
+  // On Vercel: build command copies content/ into apps/web/content/
+  //   REPO_ROOT=. → path.join('.', 'content', ...) resolves correctly
+  // On localhost: REPO_ROOT not set → fallback path.join(cwd, '..', '..')
+  //   resolves to monorepo root where content/ lives
 
   eslint: {
     ignoreDuringBuilds: true,

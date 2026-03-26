@@ -4,29 +4,28 @@ const path = require('path');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 
-  // ── Security headers (existing) ───────────────────────────────────────────
+  // ── Security headers ──────────────────────────────────────────────────────
   async headers() {
     return [
       {
         source: '/(.*)',
         headers: [
-          { key: 'X-Content-Type-Options',  value: 'nosniff'       },
-          { key: 'X-Frame-Options',          value: 'DENY'          },
-          { key: 'X-XSS-Protection',         value: '1; mode=block' },
+          { key: 'X-Content-Type-Options', value: 'nosniff'       },
+          { key: 'X-Frame-Options',         value: 'DENY'          },
+          { key: 'X-XSS-Protection',        value: '1; mode=block' },
         ],
       },
     ];
   },
 
-  // ── REPO_ROOT for content path resolution ─────────────────────────────────
-  env: {
-    REPO_ROOT: '.',
-  },
+  // ── REPO_ROOT ─────────────────────────────────────────────────────────────
+  // DO NOT set REPO_ROOT here — it would override the fallback for local dev.
+  // Set REPO_ROOT=. in Vercel dashboard Environment Variables only.
+  // Local dev uses the fallback: path.join(process.cwd(), '..', '..')
 
-  // ── outputFileTracingRoot at TOP LEVEL (Next.js 14 requirement) ───────────
+  // ── File tracing root (monorepo) ──────────────────────────────────────────
   outputFileTracingRoot: path.join(__dirname, '..', '..'),
 
-  // ── outputFileTracingIncludes inside experimental (Next.js 14 requirement) ─
   experimental: {
     outputFileTracingIncludes: {
       '/**': [
@@ -34,9 +33,7 @@ const nextConfig = {
         '../../content/quran/db/metadata/**',
         '../../content/hadith/db/by_book/**',
         '../../content/hadith/db/metadata/**',
-        '../../content/tafsir/db/en-tafisr-ibn-kathir/**',
-        '../../content/tafsir/db/en-al-jalalayn/**',
-        '../../content/tafsir/db/metadata/**',
+        '../../content/tafsir/db/**',
       ],
     },
   },

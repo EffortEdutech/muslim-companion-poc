@@ -1,10 +1,14 @@
+// apps/web/lib/quran.ts
 import path from 'path';
 import fs from 'fs';
 import { CompiledSurah, SurahIndex } from './quran-types';
 
-const DB_BASE = path.join(process.cwd(), '..', '..', 'content', 'quran', 'db');
-const COMPILED = path.join(DB_BASE, 'compiled');
-const META     = path.join(DB_BASE, 'metadata');
+// Use REPO_ROOT env (set to '.' on Vercel) — same pattern as lib/tafseer.ts
+// and lib/hadith.ts so all loaders resolve content consistently.
+const REPO_ROOT = process.env.REPO_ROOT || path.join(process.cwd(), '..', '..');
+const DB_BASE   = path.join(REPO_ROOT, 'content', 'quran', 'db');
+const COMPILED  = path.join(DB_BASE, 'compiled');
+const META      = path.join(DB_BASE, 'metadata');
 
 function pad(n: number): string {
   return String(n).padStart(3, '0');
@@ -26,7 +30,6 @@ export function loadSurah(surahNumber: number): CompiledSurah | null {
 
 /**
  * Load the lightweight surah index (for the browse page).
- * Does NOT load all 6,236 ayahs — just names and metadata.
  */
 export function loadSurahIndex(): SurahIndex | null {
   const filePath = path.join(META, 'surah-index.json');

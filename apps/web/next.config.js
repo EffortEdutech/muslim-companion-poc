@@ -18,14 +18,17 @@ const nextConfig = {
     ];
   },
 
-  // ── File tracing ──────────────────────────────────────────────────────────
-  // After "cp -r ../../content ." in vercel.json buildCommand,
-  // content lands at apps/web/content/ — i.e. INSIDE __dirname.
-  // So outputFileTracingRoot = __dirname (apps/web), not the monorepo root.
-  // Paths in outputFileTracingIncludes are relative to that root.
-  outputFileTracingRoot: __dirname,
-
   experimental: {
+    // outputFileTracingRoot MUST be inside experimental in Next.js 14.
+    // Setting it at top level is silently ignored (unrecognized key warning).
+    // __dirname = apps/web/ — limits file tracing to THIS directory only.
+    // This prevents Next.js from also bundling the original content/ at repo
+    // root, which was causing 361 MB functions (double-bundling).
+    outputFileTracingRoot: __dirname,
+
+    // These paths are relative to outputFileTracingRoot (apps/web/).
+    // After "cp -r ../../content ." in buildCommand, content lands at
+    // apps/web/content/ — exactly where these paths point.
     outputFileTracingIncludes: {
       '/**': [
         'content/quran/db/compiled/**',

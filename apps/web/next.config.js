@@ -1,9 +1,6 @@
 // apps/web/next.config.js
 const path = require('path');
 
-// Monorepo root — two levels above apps/web/
-const MONOREPO_ROOT = path.join(__dirname, '..', '..');
-
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 
@@ -19,20 +16,13 @@ const nextConfig = {
   },
 
   experimental: {
-    // Set tracing root to the monorepo root so content/ files are found.
-    // Paths in outputFileTracingIncludes are relative to this root.
-    outputFileTracingRoot: MONOREPO_ROOT,
-    outputFileTracingIncludes: {
-      '/**': [
-        'content/quran/db/compiled/**',
-        'content/quran/db/metadata/**',
-        'content/hadith/db/by_book/**',
-        'content/hadith/db/metadata/**',
-        'content/tafsir/db/en-tafisr-ibn-kathir/**',
-        'content/tafsir/db/en-al-jalalayn/**',
-        'content/tafsir/db/metadata/**',
-      ],
-    },
+    // __dirname = apps/web — restricts tracing to ONLY files under apps/web/.
+    // This prevents double-bundling of ../../content/ at the monorepo root.
+    // The cp in buildCommand puts content/ inside apps/web/ before next build runs,
+    // so apps/web/content/ gets traced and bundled into the Lambda.
+    // REPO_ROOT='.' (set in Vercel dashboard) makes the runtime resolve
+    // path.join('.', 'content') = apps/web/content/ which exists in the Lambda.
+    outputFileTracingRoot: path.join(__dirname),
   },
 
   eslint: { ignoreDuringBuilds: true },

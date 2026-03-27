@@ -8,7 +8,8 @@ import HadithCard from '@/components/HadithCard';
 import ReaderControls from '@/components/ReaderControls';
 import ScrollToHash from '@/components/ScrollToHash';
 import HadithHashRedirect from '@/components/HadithHashRedirect';
-import ReadingProgress from '@/components/ReadingProgress';
+import ReadingProgress        from '@/components/ReadingProgress';
+import MobileChapterSelect    from '@/components/MobileChapterSelect';
 import { Suspense } from 'react';
 
 interface PageProps {
@@ -139,50 +140,16 @@ export default async function BookPage({ params, searchParams }: PageProps) {
         )}
       </header>
 
-      {/* FIX #4: Mobile chapter selector — replaces sidebar on small screens */}
+      {/* Mobile chapter selector — client component (handles onChange) */}
       {!isSingleChapter && (
-        <div className="block sm:hidden" style={{ marginBottom: '16px' }}>
-          <label style={{ fontFamily: 'var(--font-lora)', fontSize: '0.75rem', color: 'var(--ink-muted)', textTransform: 'uppercase', letterSpacing: '0.06em', display: 'block', marginBottom: '6px' }}>
-            Chapter
-          </label>
-          <div style={{ position: 'relative' }}>
-            <select
-              defaultValue={selectedChapterId ?? ''}
-              onChange={(e) => {
-                if (typeof window !== 'undefined') {
-                  window.location.href = `/hadith/${bookSlug}?chapter=${e.target.value}`;
-                }
-              }}
-              style={{
-                width: '100%',
-                fontFamily: 'var(--font-lora)',
-                fontSize: '0.88rem',
-                color: 'var(--ink)',
-                background: 'var(--bg-card)',
-                border: '1px solid var(--gold-border)',
-                borderRadius: '10px',
-                padding: '10px 36px 10px 14px',
-                cursor: 'pointer',
-                appearance: 'none',
-                WebkitAppearance: 'none',
-                outline: 'none',
-              }}
-            >
-              <option value="" disabled>Select a chapter…</option>
-              {book.chapters.map((ch) => {
-                const count = book.hadiths.filter((h) => h.chapterId === ch.id).length;
-                return (
-                  <option key={ch.id} value={ch.id}>
-                    {ch.english || `Chapter ${ch.id}`} ({count})
-                  </option>
-                );
-              })}
-            </select>
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="2" style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }}>
-              <polyline points="6 9 12 15 18 9"/>
-            </svg>
-          </div>
-        </div>
+        <MobileChapterSelect
+          bookSlug={bookSlug}
+          chapters={book.chapters}
+          hadithCounts={Object.fromEntries(
+            book.chapters.map((ch) => [ch.id, book.hadiths.filter((h) => h.chapterId === ch.id).length])
+          )}
+          selectedChapterId={selectedChapterId}
+        />
       )}
 
       {/* Layout — desktop: sidebar + content. Mobile: full-width content only */}

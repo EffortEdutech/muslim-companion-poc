@@ -9,6 +9,8 @@ import ReaderControls from '@/components/ReaderControls';
 import ScrollToHash from '@/components/ScrollToHash';
 import HadithHashRedirect from '@/components/HadithHashRedirect';
 import ReadingProgress        from '@/components/ReadingProgress';
+import StudyFootstep          from '@/components/StudyFootstep';
+import ScrollRestore          from '@/components/ScrollRestore';
 import MobileChapterSelect    from '@/components/MobileChapterSelect';
 import { Suspense } from 'react';
 
@@ -99,6 +101,9 @@ export default async function BookPage({ params, searchParams }: PageProps) {
           { label: collection.displayName, href: null },
         ]}
       />
+
+      <ScrollRestore />
+      <StudyFootstep section="hadith" homeUrl="/hadith" />
 
       {/* Breadcrumb — FIX #6: "Hadith Collections" not "Collections" */}
       <nav style={{ marginBottom: '20px' }}>

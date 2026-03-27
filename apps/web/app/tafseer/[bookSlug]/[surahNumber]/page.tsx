@@ -9,7 +9,9 @@ import { loadSurah }                       from '@/lib/quran';
 import { getTafseerById }                  from '@/lib/tafseer-types';
 import TafseerReader      from '@/components/TafseerReader';
 import StickyBottomNav    from '@/components/StickyBottomNav';
-import ReadingProgress    from '@/components/ReadingProgress';
+import ReadingProgress  from '@/components/ReadingProgress';
+import StudyFootstep    from '@/components/StudyFootstep';
+import ScrollRestore    from '@/components/ScrollRestore';
 
 interface PageProps {
   params:       Promise<{ bookSlug: string; surahNumber: string }>;
@@ -62,6 +64,9 @@ export default async function TafseerSurahPage({ params, searchParams }: PagePro
           { label: surahName, href: null },
         ]}
       />
+
+      <ScrollRestore />
+      <StudyFootstep section="tafseer" homeUrl="/tafseer" />
 
       {/* ── Surah header ─────────────────────────────────────────────────── */}
       <header style={{ marginBottom: '32px' }}>

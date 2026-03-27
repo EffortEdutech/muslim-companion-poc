@@ -12,7 +12,9 @@ import TafseerLink     from '@/components/TafseerLink';
 import ReaderControls  from '@/components/ReaderControls';
 import StickyBottomNav from '@/components/StickyBottomNav';
 import ScrollToHash    from '@/components/ScrollToHash';
-import ReadingProgress from '@/components/ReadingProgress';
+import ReadingProgress  from '@/components/ReadingProgress';
+import StudyFootstep    from '@/components/StudyFootstep';
+import ScrollRestore    from '@/components/ScrollRestore';
 
 const DEFAULT_TAFSEER = 'en-tafisr-ibn-kathir';
 
@@ -83,6 +85,9 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
           { label: surah.metadata.nameEnglish, href: null },
         ]}
       />
+
+      <ScrollRestore />
+      <StudyFootstep section="quran" homeUrl="/quran" />
 
       
 

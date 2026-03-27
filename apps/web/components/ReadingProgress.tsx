@@ -1,33 +1,33 @@
 // apps/web/components/ReadingProgress.tsx
 'use client';
 
-// Invisible component — renders nothing, saves reading position silently.
-// Drop into any reader page. No UI, no pill, no button.
+// Invisible — renders nothing. Saves reading position + breadcrumb silently.
 //
-// On mount it:
-//   1. Saves current URL to localStorage so Navigation restores it next visit
-//   2. Saves breadcrumb parts so Navigation can show context in the top bar
-//
-// This replaces StudyFootstep. Remove <StudyFootstep> from pages and add
-// <ReadingProgress> instead — same props pattern, zero visual output.
+// FIX 1: Dispatches 'iqra:breadcrumb-updated' custom event after saving
+//         so Navigation updates immediately (storage event doesn't fire same-tab).
+// FIX 2: saveLastUrl reads window.location — no url prop needed.
+// FIX 3: breadcrumb uses BreadcrumbPart[] with href for clickable links.
 
 import { useEffect } from 'react';
-import { saveLastUrl, saveBreadcrumb, SectionKey } from '@/lib/study-context';
+import { saveLastUrl, saveBreadcrumb, SectionKey, BreadcrumbPart } from '@/lib/study-context';
 
 interface Props {
-  section:      SectionKey;
-  url:          string;    // full path e.g. /quran/18
-  label:        string;    // short name e.g. "Al-Kahf"
-  breadcrumb:   string[];  // e.g. ["Quran", "Al-Kahf"] or ["Tafseer", "Ibn Kathir", "Al-Kahf"]
+  section:    SectionKey;
+  label:      string;
+  breadcrumb: BreadcrumbPart[];
 }
 
-export default function ReadingProgress({
-  section, url, label, breadcrumb,
-}: Props) {
+export default function ReadingProgress({ section, label, breadcrumb }: Props) {
   useEffect(() => {
-    saveLastUrl(section, url, label);
+    // saveLastUrl reads window.location.pathname + search — captures ?chapter= etc.
+    saveLastUrl(section, label);
     saveBreadcrumb({ section, parts: breadcrumb });
-  }, [section, url, label]); // eslint-disable-line react-hooks/exhaustive-deps
 
-  return null;  // renders nothing
+    // Dispatch custom event so Navigation in same tab reacts immediately.
+    // (The browser's 'storage' event only fires in OTHER tabs.)
+    window.dispatchEvent(new Event('iqra:breadcrumb-updated'));
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [section, label]);
+
+  return null;
 }

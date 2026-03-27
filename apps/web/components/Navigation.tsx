@@ -1,12 +1,9 @@
 // apps/web/components/Navigation.tsx
 'use client';
 
-// TOP BAR  — Logo (ilm-mate) · Breadcrumb · Search
-// DESKTOP  — Top bar also shows Quran/Tafseer/Hadith/Search/Bookmarks links
-// MOBILE   — Fixed bottom tab bar (flex sm:hidden — NOT inline display:flex)
-//
-// FIX: inline style had display:'flex' overriding sm:hidden.
-//      Removed display from style object, className="flex sm:hidden" now controls visibility.
+// FIX 1: Listens to localStorage 'storage' event so breadcrumb updates
+//         the instant ReadingProgress writes — no race condition.
+// FIX 3: Breadcrumb parts now render as <Link> when href is provided.
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
@@ -22,9 +19,40 @@ export default function Navigation() {
   const [crumb,      setCrumb]      = useState<BreadcrumbState | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
+  // ── FIX 1: Read breadcrumb on mount + on every localStorage write ──────────
+  // ReadingProgress writes AFTER Navigation's pathname effect fires.
+  // Listening to 'storage' event catches the write and updates the crumb.
   useEffect(() => {
+    // Read immediately (covers initial load and same-tab navigation)
     setCrumb(loadBreadcrumb());
+
+    // Also react when localStorage is written from the same tab
+    function onStorage(e: StorageEvent) {
+      if (e.key === 'iqra:breadcrumb') {
+        setCrumb(loadBreadcrumb());
+      }
+    }
+    // storageEvent fires for cross-tab; for same-tab we use a custom event
+    window.addEventListener('storage', onStorage);
+    return () => window.removeEventListener('storage', onStorage);
+  }, []); // once on mount
+
+  // Re-read on route change (catches navigations where ReadingProgress has
+  // already written on a previous visit to this exact URL)
+  useEffect(() => {
+    // Small delay: let ReadingProgress useEffect run first
+    const t = setTimeout(() => setCrumb(loadBreadcrumb()), 50);
+    return () => clearTimeout(t);
   }, [pathname]);
+
+  // Custom event for same-tab storage updates (storage event doesn't fire in same tab)
+  useEffect(() => {
+    function onBreadcrumbUpdate() {
+      setCrumb(loadBreadcrumb());
+    }
+    window.addEventListener('iqra:breadcrumb-updated', onBreadcrumbUpdate);
+    return () => window.removeEventListener('iqra:breadcrumb-updated', onBreadcrumbUpdate);
+  }, []);
 
   useEffect(() => {
     function onKey(e: KeyboardEvent) {
@@ -60,7 +88,7 @@ export default function Navigation() {
   };
 
   const onReaderPage = isActive('/quran') || isActive('/tafseer') || isActive('/hadith');
-  const showCrumb = crumb && onReaderPage;
+  const showCrumb    = crumb && onReaderPage;
 
   return (
     <>
@@ -77,7 +105,7 @@ export default function Navigation() {
       >
         <div className="max-w-6xl mx-auto h-full px-4 sm:px-6 flex items-center gap-4">
 
-          {/* Logo — "ilm-mate" */}
+          {/* Logo */}
           <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none', flexShrink: 0 }}>
             <span style={{ fontFamily: 'var(--font-amiri)', fontSize: '1.35rem', color: 'var(--gold)', lineHeight: 1 }} dir="rtl" lang="ar">إقرأ</span>
             <span style={{ fontFamily: 'var(--font-cormorant)', fontSize: '1.15rem', fontWeight: 700, color: 'var(--ink)', letterSpacing: '-0.02em' }}>
@@ -94,27 +122,45 @@ export default function Navigation() {
             <Link   href="/bookmarks" className={`nav-link ${isActive('/bookmarks') ? 'active' : ''}`}>Bookmarks</Link>
           </div>
 
-          {/* Breadcrumb — centre of top bar on reader pages */}
+          {/* ── FIX 3: Breadcrumb — parts with href render as links ────────── */}
           {showCrumb && crumb ? (
             <div style={{
-              flex: 1, display: 'flex', alignItems: 'center', gap: '5px',
+              flex: 1, display: 'flex', alignItems: 'center', gap: '4px',
               overflow: 'hidden', fontFamily: 'var(--font-lora)',
-              fontSize: '0.75rem', color: 'var(--ink-muted)', minWidth: 0,
+              fontSize: '0.75rem', minWidth: 0,
             }}>
-              {crumb.parts.map((part, i) => (
-                <span key={i} style={{ display: 'flex', alignItems: 'center', gap: '5px', minWidth: 0 }}>
-                  {i > 0 && <span style={{ opacity: 0.4, flexShrink: 0 }}>›</span>}
-                  <span style={{
-                    color:        i === crumb.parts.length - 1 ? 'var(--gold)' : 'var(--ink-muted)',
-                    fontWeight:   i === crumb.parts.length - 1 ? 600 : 400,
-                    whiteSpace:   'nowrap',
-                    overflow:     'hidden',
-                    textOverflow: 'ellipsis',
-                  }}>
-                    {part}
+              {crumb.parts.map((part, i) => {
+                const isLast = i === crumb.parts.length - 1;
+                return (
+                  <span key={i} style={{ display: 'flex', alignItems: 'center', gap: '4px', minWidth: 0 }}>
+                    {i > 0 && <span style={{ color: 'var(--ink-muted)', opacity: 0.4, flexShrink: 0 }}>›</span>}
+                    {/* FIX: render as Link if href provided, else plain span */}
+                    {part.href && !isLast ? (
+                      <Link
+                        href={part.href}
+                        style={{
+                          color:          'var(--ink-muted)',
+                          textDecoration: 'none',
+                          whiteSpace:     'nowrap',
+                          transition:     'color 0.15s',
+                        }}
+                      >
+                        {part.label}
+                      </Link>
+                    ) : (
+                      <span style={{
+                        color:        isLast ? 'var(--gold)' : 'var(--ink-muted)',
+                        fontWeight:   isLast ? 600 : 400,
+                        whiteSpace:   'nowrap',
+                        overflow:     'hidden',
+                        textOverflow: 'ellipsis',
+                      }}>
+                        {part.label}
+                      </span>
+                    )}
                   </span>
-                </span>
-              ))}
+                );
+              })}
             </div>
           ) : (
             <div style={{ flex: 1 }} />
@@ -139,21 +185,14 @@ export default function Navigation() {
         </div>
       </nav>
 
-      {/* ── Mobile bottom tab bar ─────────────────────────────────────────
-           KEY FIX: className="flex sm:hidden" — NO display in style object.
-           Inline display:'flex' was overriding sm:hidden. Now Tailwind controls it. ── */}
+      {/* ── Mobile bottom tab bar — className controls visibility, NOT inline style ── */}
       <div
         className="flex sm:hidden"
         style={{
-          position:   'fixed',
-          bottom:     0,
-          left:       0,
-          right:      0,
-          zIndex:     50,
+          position:   'fixed', bottom: 0, left: 0, right: 0, zIndex: 50,
           background: 'rgba(13,17,23,0.97)',
           borderTop:  '1px solid var(--gold-border)',
-          backdropFilter: 'blur(16px)',
-          WebkitBackdropFilter: 'blur(16px)',
+          backdropFilter: 'blur(16px)', WebkitBackdropFilter: 'blur(16px)',
           height:     '60px',
           paddingBottom: 'env(safe-area-inset-bottom)',
         }}
@@ -197,8 +236,6 @@ export default function Navigation() {
   );
 }
 
-// ─── Mobile tab ───────────────────────────────────────────────────────────────
-
 function MobileTab({ label, active, onClick, href, icon }: {
   label: string; active: boolean; onClick?: () => void; href?: string; icon: React.ReactNode;
 }) {
@@ -207,8 +244,7 @@ function MobileTab({ label, active, onClick, href, icon }: {
     alignItems: 'center', justifyContent: 'center', gap: '3px',
     background: 'none', border: 'none', cursor: 'pointer', padding: '6px 0',
     color: active ? 'var(--gold)' : 'var(--ink-muted)',
-    fontFamily: 'var(--font-lora)', fontSize: '0.58rem',
-    fontWeight: active ? 600 : 400,
+    fontFamily: 'var(--font-lora)', fontSize: '0.58rem', fontWeight: active ? 600 : 400,
     textDecoration: 'none', transition: 'color 0.15s', position: 'relative',
   };
   const content = (
@@ -221,8 +257,6 @@ function MobileTab({ label, active, onClick, href, icon }: {
   if (href) return <Link href={href} style={s}>{content}</Link>;
   return <button onClick={onClick} style={s}>{content}</button>;
 }
-
-// ─── Icons ────────────────────────────────────────────────────────────────────
 
 const IconBook     = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>;
 const IconScroll   = () => <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>;

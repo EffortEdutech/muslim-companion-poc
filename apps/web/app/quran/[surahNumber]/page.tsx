@@ -12,7 +12,7 @@ import TafseerLink     from '@/components/TafseerLink';
 import ReaderControls  from '@/components/ReaderControls';
 import StickyBottomNav from '@/components/StickyBottomNav';
 import ScrollToHash    from '@/components/ScrollToHash';
-import StudyFootstep   from '@/components/StudyFootstep';
+import ReadingProgress from '@/components/ReadingProgress';
 
 const DEFAULT_TAFSEER = 'en-tafisr-ibn-kathir';
 
@@ -75,23 +75,16 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
 
       <ScrollToHash />
 
-      <StudyFootstep
+      <ReadingProgress
         section="quran"
-        url={`/quran/${n}`}
         label={surah.metadata.nameEnglish}
-        homeUrl="/quran"
+        breadcrumb={[
+          { label: 'Quran', href: '/quran' },
+          { label: surah.metadata.nameEnglish, href: null },
+        ]}
       />
 
-      {/* Breadcrumb */}
-      <nav style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
-        <Link href="/" style={{ fontFamily: 'var(--font-lora)', fontSize: '0.82rem', color: 'var(--ink-muted)', textDecoration: 'none' }}>Home</Link>
-        <span style={{ color: 'var(--ink-muted)', fontSize: '0.82rem' }}>›</span>
-        <Link href="/quran" style={{ fontFamily: 'var(--font-lora)', fontSize: '0.82rem', color: 'var(--ink-muted)', textDecoration: 'none' }}>Quran</Link>
-        <span style={{ color: 'var(--ink-muted)', fontSize: '0.82rem' }}>›</span>
-        <span style={{ fontFamily: 'var(--font-lora)', fontSize: '0.82rem', color: 'var(--ink-secondary)' }}>
-          {surah.metadata.nameEnglish}
-        </span>
-      </nav>
+      
 
       {/* Surah header */}
       <header className="mb-8 text-center">

@@ -93,9 +93,11 @@ export default async function BookPage({ params, searchParams }: PageProps) {
 
       <ReadingProgress
         section="hadith"
-        url={`/hadith/${bookSlug}`}
         label={collection.displayName}
-        breadcrumb={['Hadith', collection.displayName]}
+        breadcrumb={[
+          { label: 'Hadith', href: '/hadith' },
+          { label: collection.displayName, href: null },
+        ]}
       />
 
       {/* Breadcrumb — FIX #6: "Hadith Collections" not "Collections" */}

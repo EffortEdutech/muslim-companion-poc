@@ -1,7 +1,6 @@
 // apps/web/lib/study-context.ts
-// Silently saves last visited URL and page label per section.
-// Navigation reads these to restore last position when user taps a nav tab.
-// Also stores current breadcrumb so Navigation can display it in the top bar.
+// Saves last visited URL + breadcrumb per section.
+// Navigation reads these to restore last position and show context in top bar.
 
 const KEYS = {
   quran:      'iqra:last-quran',
@@ -16,16 +15,19 @@ export type SectionKey = 'quran' | 'tafseer' | 'hadith';
 
 export interface StoredPosition {
   url:     string;
-  label:   string;   // e.g. "Al-Baqarah" or "Sahih al-Bukhari"
+  label:   string;
   savedAt: number;
+}
+
+export interface BreadcrumbPart {
+  label: string;
+  href:  string | null;  // null = current page (not a link)
 }
 
 export interface BreadcrumbState {
   section: SectionKey;
-  parts:   string[];  // e.g. ["Quran", "Al-Baqarah"] or ["Tafseer", "Ibn Kathir", "Al-Fatiha"]
+  parts:   BreadcrumbPart[];
 }
-
-// ── Internal helpers ──────────────────────────────────────────────────────────
 
 function get<T>(key: string): T | null {
   try {
@@ -35,22 +37,22 @@ function get<T>(key: string): T | null {
   } catch { return null; }
 }
 
-function set(key: string, value: unknown): void {
+function safeSet(key: string, value: unknown): void {
   try { localStorage.setItem(key, JSON.stringify(value)); } catch {}
 }
 
-// ── Last position (for nav restoration) ──────────────────────────────────────
-
-/** Called from ReadingProgress on every reader page. */
-export function saveLastUrl(
-  section: SectionKey,
-  url:     string,
-  label:   string,
-): void {
-  set(KEYS[section], { url, label, savedAt: Date.now() } satisfies StoredPosition);
+/**
+ * Save last visited URL for a section.
+ * Reads window.location directly so ?chapter= and other query params are included.
+ * NOT the prop — the prop is server-rendered and never has the current query string.
+ */
+export function saveLastUrl(section: SectionKey, label: string): void {
+  if (typeof window === 'undefined') return;
+  const url = window.location.pathname + window.location.search;
+  safeSet(KEYS[section], { url, label, savedAt: Date.now() } satisfies StoredPosition);
 }
 
-/** Called from Navigation when user taps a section tab. */
+/** Load last visited URL for a section. */
 export function loadLastUrl(section: SectionKey): StoredPosition | null {
   const data = get<StoredPosition>(KEYS[section]);
   if (!data) return null;
@@ -61,14 +63,12 @@ export function loadLastUrl(section: SectionKey): StoredPosition | null {
   return data;
 }
 
-// ── Breadcrumb (for top nav display) ─────────────────────────────────────────
-
-/** Called from ReadingProgress on every reader page. */
+/** Save breadcrumb state for top bar display. */
 export function saveBreadcrumb(state: BreadcrumbState): void {
-  set(KEYS.breadcrumb, state);
+  safeSet(KEYS.breadcrumb, state);
 }
 
-/** Called from Navigation to show context in the top bar. */
+/** Load breadcrumb state for top bar display. */
 export function loadBreadcrumb(): BreadcrumbState | null {
   return get<BreadcrumbState>(KEYS.breadcrumb);
 }

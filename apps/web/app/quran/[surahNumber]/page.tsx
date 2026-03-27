@@ -76,12 +76,10 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
       <ScrollToHash />
 
       <StudyFootstep
-        type="quran"
-        surah={n}
-        surahName={surah.metadata.nameEnglish}
-        surahNameAr={surah.metadata.nameArabic}
-        tafseerBookSlug={tafseerSlug}
+        section="quran"
         url={`/quran/${n}`}
+        label={surah.metadata.nameEnglish}
+        homeUrl="/quran"
       />
 
       {/* Breadcrumb */}

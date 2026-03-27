@@ -1,11 +1,14 @@
+// apps/web/components/Navigation.tsx
 'use client';
 
-// apps/web/components/Navigation.tsx
-// UPDATED: Added Tafseer tab between Hadith and Search
+// UPDATED: Quran / Tafseer / Hadith nav links restore the last visited page
+// instead of always going to the section home.
+// If no saved URL exists, falls back to the section home as before.
 
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useState, useRef, useEffect, FormEvent } from 'react';
+import { loadLastUrl, SectionKey } from '@/lib/study-context';
 
 export default function Navigation() {
   const pathname = usePathname();
@@ -33,11 +36,17 @@ export default function Navigation() {
     setQuery('');
   }
 
-  const isActive = (href: string) => {
-    if (href === '/quran')   return pathname === '/quran' || (pathname.startsWith('/quran') && pathname !== '/quran/search');
-    if (href === '/hadith')  return pathname.startsWith('/hadith');
-    if (href === '/tafseer') return pathname.startsWith('/tafseer');
-    return pathname === href || pathname.startsWith(href + '/');
+  // Navigate to last visited page for a section, or fall back to section home.
+  function goToSection(section: SectionKey, homeUrl: string) {
+    const saved = loadLastUrl(section);
+    router.push(saved?.url ?? homeUrl);
+  }
+
+  const isActive = (base: string) => {
+    if (base === '/quran')   return pathname === '/quran' || (pathname.startsWith('/quran') && pathname !== '/quran/search');
+    if (base === '/hadith')  return pathname.startsWith('/hadith');
+    if (base === '/tafseer') return pathname.startsWith('/tafseer');
+    return pathname === base || pathname.startsWith(base + '/');
   };
 
   return (
@@ -56,9 +65,31 @@ export default function Navigation() {
 
           {/* Nav links */}
           <div className="hidden sm:flex items-center gap-1">
-            <Link href="/quran"     className={`nav-link ${isActive('/quran')     ? 'active' : ''}`}>Quran</Link>
-            <Link href="/tafseer"   className={`nav-link ${isActive('/tafseer')   ? 'active' : ''}`}>Tafseer</Link>
-            <Link href="/hadith"    className={`nav-link ${isActive('/hadith')    ? 'active' : ''}`}>Hadith</Link>
+
+            {/* Quran — restores last surah */}
+            <button
+              onClick={() => goToSection('quran', '/quran')}
+              className={`nav-link ${isActive('/quran') ? 'active' : ''}`}
+            >
+              Quran
+            </button>
+
+            {/* Tafseer — restores last tafseer page */}
+            <button
+              onClick={() => goToSection('tafseer', '/tafseer')}
+              className={`nav-link ${isActive('/tafseer') ? 'active' : ''}`}
+            >
+              Tafseer
+            </button>
+
+            {/* Hadith — restores last hadith book/chapter */}
+            <button
+              onClick={() => goToSection('hadith', '/hadith')}
+              className={`nav-link ${isActive('/hadith') ? 'active' : ''}`}
+            >
+              Hadith
+            </button>
+
             <Link href="/search"    className={`nav-link ${isActive('/search')    ? 'active' : ''}`}>Search</Link>
             <Link href="/bookmarks" className={`nav-link ${isActive('/bookmarks') ? 'active' : ''}`}>Bookmarks</Link>
           </div>
@@ -112,7 +143,9 @@ export default function Navigation() {
 
 function SearchIcon({ style }: { style?: React.CSSProperties }) {
   return (
-    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={style}>
+    <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
+      style={style}>
       <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
     </svg>
   );

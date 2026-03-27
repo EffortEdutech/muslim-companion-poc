@@ -75,12 +75,10 @@ export default async function TafseerSurahPage({ params, searchParams }: PagePro
 
       {/* ── Study footstep ───────────────────────────────────────────────── */}
       <StudyFootstep
-        type="tafseer"
-        surah={n}
-        surahName={surah?.metadata.nameEnglish}
-        surahNameAr={surah?.metadata.nameArabic}
-        tafseerBookSlug={book.id}
+        section="tafseer"
         url={`/tafseer/${book.id}/${n}`}
+        label={surah?.metadata.nameEnglish ?? `Surah ${n}`}
+        homeUrl="/tafseer"
       />
 
       {/* ── Surah header ─────────────────────────────────────────────────── */}

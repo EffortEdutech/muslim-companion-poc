@@ -8,8 +8,8 @@ import HadithCard from '@/components/HadithCard';
 import ReaderControls from '@/components/ReaderControls';
 import ScrollToHash from '@/components/ScrollToHash';
 import HadithHashRedirect from '@/components/HadithHashRedirect';
+import StudyFootstep from '@/components/StudyFootstep';
 import { Suspense } from 'react';
-import StudyFootstep   from '@/components/StudyFootstep';
 
 interface PageProps {
   params: Promise<{ bookSlug: string }>;
@@ -100,11 +100,12 @@ export default async function BookPage({ params, searchParams }: PageProps) {
         <HadithHashRedirect hadithToChapter={hadithToChapter} />
       </Suspense>
 
+      {/* Study footstep — saves last hadith page, pill resets to /hadith */}
       <StudyFootstep
-        type="hadith"
-        hadithBookSlug={bookSlug}
-        hadithBookTitle={collection.displayName}
+        section="hadith"
         url={`/hadith/${bookSlug}`}
+        label={collection.displayName}
+        homeUrl="/hadith"
       />
 
       {/* Breadcrumb */}
@@ -245,7 +246,7 @@ export default async function BookPage({ params, searchParams }: PageProps) {
         </div>
       </div>
 
-      {/* Reading progress + font size controls (client island) */}
+      {/* Font size controls */}
       {(isSingleChapter || selectedChapterId !== null) && totalHadiths > 0 && (
         <ReaderControls
           bookSlug={bookSlug}

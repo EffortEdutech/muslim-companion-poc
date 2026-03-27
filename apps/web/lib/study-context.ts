@@ -1,70 +1,49 @@
 // apps/web/lib/study-context.ts
-// Saves the user's current study context to localStorage.
-// Shared between Quran, Tafseer, and Hadith pages so they can show
-// contextual navigation links to related content.
+// Stores last visited URL per section (quran / tafseer / hadith).
+// Navigation.tsx reads these to restore the last page when user clicks a nav link.
+// StudyFootstep writes to these on every reader page visit.
 
-const STORAGE_KEY    = 'iqra:study-context';
-const SEARCH_KEY     = 'iqra:last-search';  // written by SearchPersist
-const MAX_AGE_MS     = 7 * 24 * 60 * 60 * 1000; // 7 days
+const KEYS = {
+  quran:   'iqra:last-quran',
+  tafseer: 'iqra:last-tafseer',
+  hadith:  'iqra:last-hadith',
+} as const;
 
-// ─── Types ────────────────────────────────────────────────────────────────────
+const MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000; // 30 days
 
-export type StudyContextType = 'quran' | 'tafseer' | 'hadith';
+export type SectionKey = keyof typeof KEYS;
 
-export interface StudyContext {
-  type:            StudyContextType;
-  // Quran / Tafseer context
-  surah?:          number;
-  ayah?:           number;
-  surahName?:      string;
-  surahNameAr?:    string;
-  tafseerBookSlug?: string;
-  // Hadith context
-  hadithBookSlug?:  string;
-  hadithBookTitle?: string;
-  hadithId?:        number;
-  // Metadata
-  url:             string;   // full path for "go back" link
-  savedAt:         number;
+interface StoredUrl {
+  url:       string;
+  label:     string;   // human-readable e.g. "Al-Baqarah" or "Bukhari"
+  savedAt:   number;
 }
 
-export interface LastSearch {
-  q:    string;
-  src:  string;
-  book: string;
-}
-
-// ─── Helpers ──────────────────────────────────────────────────────────────────
-
-function safeGet<T>(key: string): T | null {
+function safeGet(key: string): StoredUrl | null {
   try {
     const raw = localStorage.getItem(key);
     if (!raw) return null;
-    return JSON.parse(raw) as T;
+    const data: StoredUrl = JSON.parse(raw);
+    if (Date.now() - data.savedAt > MAX_AGE_MS) { localStorage.removeItem(key); return null; }
+    return data;
   } catch { return null; }
 }
 
-function safeSet(key: string, value: unknown): void {
+function safeSet(key: string, value: StoredUrl): void {
   try { localStorage.setItem(key, JSON.stringify(value)); } catch {}
 }
 
-// ─── Public API ───────────────────────────────────────────────────────────────
-
-export function saveStudyContext(ctx: Omit<StudyContext, 'savedAt'>): void {
-  safeSet(STORAGE_KEY, { ...ctx, savedAt: Date.now() });
+/** Save the last visited URL for a section. Call from reader pages. */
+export function saveLastUrl(section: SectionKey, url: string, label: string): void {
+  safeSet(KEYS[section], { url, label, savedAt: Date.now() });
 }
 
-export function loadStudyContext(): StudyContext | null {
-  const ctx = safeGet<StudyContext>(STORAGE_KEY);
-  if (!ctx) return null;
-  if (Date.now() - ctx.savedAt > MAX_AGE_MS) return null;
-  return ctx;
+/** Load the last visited URL for a section. Returns null if none or expired. */
+export function loadLastUrl(section: SectionKey): StoredUrl | null {
+  return safeGet(KEYS[section]);
 }
 
-export function loadLastSearch(): LastSearch | null {
-  return safeGet<LastSearch>(SEARCH_KEY);
-}
-
-export function clearStudyContext(): void {
-  try { localStorage.removeItem(STORAGE_KEY); } catch {}
+/** Clear the stored URL for a section (used by the reset pill). */
+export function clearLastUrl(section: SectionKey): void {
+  try { localStorage.removeItem(KEYS[section]); } catch {}
 }

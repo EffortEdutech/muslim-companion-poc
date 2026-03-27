@@ -1,48 +1,62 @@
+// apps/web/components/ReaderControls.tsx
 'use client';
 
-import { useState, useEffect } from 'react';
+// Minimal floating font-size control — single "Aa" icon, expands on tap.
+// Progress is saved silently in background — NOT shown in UI.
+// Bookmark shortcut kept inside the expanded panel.
+
+import { useState, useEffect, useRef } from 'react';
 import Link from 'next/link';
 import {
-  getReaderPrefs,
-  saveReaderPrefs,
-  applyFontSize,
-  saveProgress,
-  FontSize,
+  getReaderPrefs, saveReaderPrefs, applyFontSize, saveProgress, FontSize,
 } from '@/lib/reader-store';
 
 interface Props {
-  bookSlug: string;
-  chapterId: number | null;
-  page: number;
-  rangeStart: number;
-  rangeEnd: number;
-  total: number;
-  bottomOffset?: number;  // px from bottom — default 24. Pass higher value when sticky nav is present.
+  bookSlug:     string;
+  chapterId:    number | null;
+  page:         number;
+  rangeStart:   number;
+  rangeEnd:     number;
+  total:        number;
+  bottomOffset?: number;
 }
 
-const SIZES: { key: FontSize; px: number }[] = [
-  { key: 'sm', px: 11 },
-  { key: 'md', px: 13 },
-  { key: 'lg', px: 16 },
-  { key: 'xl', px: 19 },
+const SIZES: { key: FontSize; label: string }[] = [
+  { key: 'sm', label: 'A'  },
+  { key: 'md', label: 'A'  },
+  { key: 'lg', label: 'A'  },
+  { key: 'xl', label: 'A'  },
 ];
+
+const SIZE_PX: Record<FontSize, number> = { sm: 10, md: 13, lg: 16, xl: 20 };
 
 export default function ReaderControls({
   bookSlug, chapterId, page, rangeStart, rangeEnd, total, bottomOffset = 24,
 }: Props) {
   const [fontSize, setFontSize] = useState<FontSize>('md');
-  const [mounted, setMounted] = useState(false);
+  const [open,     setOpen]     = useState(false);
+  const [mounted,  setMounted]  = useState(false);
+  const panelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const prefs = getReaderPrefs();
     setFontSize(prefs.fontSize);
     applyFontSize(prefs.fontSize);
-
-    // Persist reading progress
     saveProgress({ bookSlug, chapterId, page, lastVisited: Date.now() });
-
     setMounted(true);
   }, [bookSlug, chapterId, page]);
+
+  // Close on outside click
+  useEffect(() => {
+    if (!open) return;
+    function onClickOutside(e: MouseEvent) {
+      if (panelRef.current && !panelRef.current.contains(e.target as Node)) {
+        setOpen(false);
+      }
+    }
+    document.addEventListener('mousedown', onClickOutside);
+    return () => document.removeEventListener('mousedown', onClickOutside);
+  }, [open]);
 
   function pickSize(size: FontSize) {
     setFontSize(size);
@@ -50,143 +64,103 @@ export default function ReaderControls({
     saveReaderPrefs({ fontSize: size });
   }
 
-  const pct = total > 0 ? Math.round((rangeEnd / total) * 100) : 0;
+  if (!mounted) return null;
 
   return (
     <div
+      ref={panelRef}
       style={{
-        position: 'fixed',
-        bottom: `${bottomOffset}px`,
-        right: '20px',
-        zIndex: 40,
-        display: 'flex',
+        position:  'fixed',
+        bottom:    `${bottomOffset}px`,
+        left:      '16px',   // left side — away from StudyFootstep on right
+        zIndex:    44,
+        display:   'flex',
         flexDirection: 'column',
-        alignItems: 'flex-end',
-        gap: '8px',
-        opacity: mounted ? 1 : 0,
-        transform: mounted ? 'translateY(0)' : 'translateY(10px)',
-        transition: 'opacity 0.35s ease, transform 0.35s ease',
-        pointerEvents: mounted ? 'auto' : 'none',
+        alignItems: 'flex-start',
+        gap:       '6px',
       }}
     >
-      {/* Progress pill */}
-      <div
-        style={{
-          background: 'var(--bg-card)',
-          border: '1px solid var(--gold-border)',
+      {/* Expanded panel */}
+      {open && (
+        <div style={{
+          display:      'flex',
+          alignItems:   'center',
+          gap:          '4px',
+          padding:      '5px 8px',
+          background:   'rgba(13,17,23,0.95)',
+          backdropFilter: 'blur(12px)',
+          border:       '1px solid var(--gold-border)',
           borderRadius: '20px',
-          padding: '4px 12px',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '6px',
-          fontFamily: 'var(--font-lora)',
-          fontSize: '0.7rem',
-          color: 'var(--ink-muted)',
-          backdropFilter: 'blur(8px)',
-        }}
-      >
-        <span style={{ color: 'var(--ink-secondary)' }}>{rangeStart}–{rangeEnd}</span>
-        <span style={{ opacity: 0.4 }}>of</span>
-        <span>{total}</span>
-        <span
-          style={{
-            display: 'inline-block',
-            width: '40px',
-            height: '3px',
-            background: 'var(--gold-border)',
-            borderRadius: '2px',
-            overflow: 'hidden',
-            marginLeft: '4px',
-          }}
-        >
-          <span
-            style={{
-              display: 'block',
-              height: '100%',
-              width: `${pct}%`,
-              background: 'var(--gold)',
-              borderRadius: '2px',
-              transition: 'width 0.4s ease',
-            }}
-          />
-        </span>
-        <span style={{ color: 'var(--gold)', minWidth: '28px', textAlign: 'right' }}>{pct}%</span>
-      </div>
-
-      {/* Controls bar */}
-      <div
-        style={{
-          background: 'var(--bg-card)',
-          border: '1px solid var(--gold-border)',
-          borderRadius: '12px',
-          padding: '5px 8px',
-          display: 'flex',
-          alignItems: 'center',
-          gap: '2px',
-          backdropFilter: 'blur(8px)',
-        }}
-      >
-        {/* Label */}
-        <span
-          style={{
-            fontFamily: 'var(--font-lora)',
-            fontSize: '0.65rem',
-            color: 'var(--ink-muted)',
-            paddingRight: '7px',
-            borderRight: '1px solid var(--gold-border)',
-            marginRight: '4px',
-            letterSpacing: '0.04em',
-          }}
-        >
-          Aa
-        </span>
-
-        {/* Size buttons */}
-        {SIZES.map(({ key, px }) => (
-          <button
-            key={key}
-            onClick={() => pickSize(key)}
-            title={`Font size ${key}`}
-            style={{
-              background: fontSize === key ? 'var(--gold-glow)' : 'none',
-              border: fontSize === key ? '1px solid var(--gold-border-strong)' : '1px solid transparent',
-              borderRadius: '6px',
-              cursor: 'pointer',
-              padding: '3px 8px',
-              color: fontSize === key ? 'var(--gold)' : 'var(--ink-muted)',
-              fontFamily: 'var(--font-lora)',
-              fontSize: `${px}px`,
-              fontWeight: fontSize === key ? 600 : 400,
-              lineHeight: 1.6,
-              transition: 'all 0.15s',
-            }}
+          boxShadow:    '0 4px 20px rgba(0,0,0,0.45)',
+          animation:    'rc-fadein 0.15s ease',
+        }}>
+          {SIZES.map(({ key }) => (
+            <button
+              key={key}
+              onClick={() => pickSize(key)}
+              style={{
+                background:  fontSize === key ? 'var(--gold)' : 'none',
+                border:      'none',
+                borderRadius:'12px',
+                cursor:      'pointer',
+                padding:     '3px 7px',
+                color:       fontSize === key ? '#0d1117' : 'var(--ink-muted)',
+                fontFamily:  'var(--font-lora)',
+                fontSize:    `${SIZE_PX[key]}px`,
+                fontWeight:  fontSize === key ? 700 : 400,
+                lineHeight:  1.4,
+                transition:  'all 0.12s',
+              }}
+            >
+              A
+            </button>
+          ))}
+          <div style={{ width:'1px', height:'16px', background:'var(--gold-border)', margin:'0 4px' }} />
+          <Link
+            href="/bookmarks"
+            onClick={() => setOpen(false)}
+            title="Bookmarks"
+            style={{ display:'flex', alignItems:'center', padding:'3px 5px', color:'var(--ink-muted)', textDecoration:'none' }}
           >
-            A
-          </button>
-        ))}
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M5 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v18l-7-3-7 3V4z"/>
+            </svg>
+          </Link>
+        </div>
+      )}
 
-        {/* Divider */}
-        <div style={{ width: '1px', height: '18px', background: 'var(--gold-border)', margin: '0 5px' }} />
+      {/* Trigger — tiny Aa pill */}
+      <button
+        onClick={() => setOpen(o => !o)}
+        title="Font size"
+        style={{
+          display:      'flex',
+          alignItems:   'center',
+          gap:          '3px',
+          padding:      '5px 10px',
+          borderRadius: '20px',
+          border:       '1px solid var(--gold-border)',
+          background:   open ? 'var(--gold)' : 'rgba(13,17,23,0.88)',
+          backdropFilter: 'blur(10px)',
+          color:        open ? '#0d1117' : 'var(--ink-muted)',
+          cursor:       'pointer',
+          fontFamily:   'var(--font-lora)',
+          fontSize:     '0.72rem',
+          fontWeight:   600,
+          boxShadow:    '0 2px 10px rgba(0,0,0,0.35)',
+          transition:   'all 0.15s',
+          letterSpacing:'0.03em',
+        }}
+      >
+        Aa
+      </button>
 
-        {/* Bookmarks shortcut */}
-        <Link
-          href="/bookmarks"
-          title="Your bookmarks"
-          style={{
-            display: 'flex',
-            alignItems: 'center',
-            padding: '3px 6px',
-            borderRadius: '6px',
-            color: 'var(--ink-muted)',
-            transition: 'color 0.15s',
-            textDecoration: 'none',
-          }}
-        >
-          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M5 4a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v18l-7-3-7 3V4z" />
-          </svg>
-        </Link>
-      </div>
+      <style>{`
+        @keyframes rc-fadein {
+          from { opacity:0; transform:translateY(4px); }
+          to   { opacity:1; transform:translateY(0);   }
+        }
+      `}</style>
     </div>
   );
 }

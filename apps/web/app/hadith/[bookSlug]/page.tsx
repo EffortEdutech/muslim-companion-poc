@@ -1,3 +1,4 @@
+// apps/web/app/hadith/[bookSlug]/page.tsx
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
@@ -52,14 +53,16 @@ export default async function BookPage({ params, searchParams }: PageProps) {
     );
   }
 
-
-  // ── Build hadith→chapter map for deep-link redirect ─────────────────────────
-  // HadithHashRedirect uses this to find which chapter contains #hadith-N
-  // when no ?chapter= param is present (e.g. links from search results).
-  const hadithToChapter: Record<number, number> = {};
+  // Build hadith→chapter map for deep-link redirect.
+  // chapterIndex = position within the chapter (0-based) for page calculation.
+  const hadithToChapter: Record<number, { chapterId: number; chapterIndex: number }> = {};
+  const chapterCounters: Record<number, number> = {};
   for (const h of book.hadiths) {
-    hadithToChapter[h.idInBook] = h.chapterId;
+    const idx = chapterCounters[h.chapterId] ?? 0;
+    hadithToChapter[h.idInBook] = { chapterId: h.chapterId, chapterIndex: idx };
+    chapterCounters[h.chapterId] = idx + 1;
   }
+
   const isSingleChapter = book.chapters.length <= 1;
   const currentPage = Math.max(1, parseInt(pageParam || '1', 10));
 
@@ -90,7 +93,7 @@ export default async function BookPage({ params, searchParams }: PageProps) {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
 
-      {/* Scroll to hash anchor + deep-link chapter redirect */}
+      {/* Scroll + deep-link redirect */}
       <Suspense fallback={null}>
         <ScrollToHash />
         <HadithHashRedirect hadithToChapter={hadithToChapter} />

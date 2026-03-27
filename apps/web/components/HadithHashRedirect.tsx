@@ -1,47 +1,53 @@
+// apps/web/components/HadithHashRedirect.tsx
 'use client';
 
 // apps/web/components/HadithHashRedirect.tsx
-// When the URL has #hadith-N but no ?chapter= param,
-// find which chapter contains that hadith and redirect to include it.
-// This makes deep links from search (/hadith/bukhari?page=1#hadith-3) work.
+// When URL has #hadith-N but no ?chapter= param, finds the correct chapter
+// AND the correct page within that chapter, then redirects.
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { useRouter, usePathname, useSearchParams } from 'next/navigation';
 
-interface ChapterMap {
-  [hadithIdInBook: number]: number; // hadithIdInBook → chapterId
+const HADITHS_PER_PAGE = 50;
+
+interface HadithInfo {
+  chapterId:   number;
+  chapterIndex: number; // position within chapter (0-based) for page calc
 }
 
 interface Props {
-  // Pre-built map of hadithIdInBook → chapterId (passed from server)
-  hadithToChapter: ChapterMap;
+  hadithToChapter: Record<number, HadithInfo>;
 }
 
 export default function HadithHashRedirect({ hadithToChapter }: Props) {
   const router       = useRouter();
   const pathname     = usePathname();
   const searchParams = useSearchParams();
+  const hasRun       = useRef(false);
 
   useEffect(() => {
     const hash = window.location.hash;
-    if (!hash) return;
+    if (!hash || hasRun.current) return;
 
-    // Already has a chapter param — no redirect needed
+    // Already has chapter — no redirect needed, ScrollToHash handles it
     if (searchParams.get('chapter')) return;
 
-    // Parse #hadith-N
     const match = hash.match(/^#hadith-(\d+)$/);
     if (!match) return;
 
-    const hadithId  = parseInt(match[1], 10);
-    const chapterId = hadithToChapter[hadithId];
-    if (!chapterId) return;
+    const hadithId = parseInt(match[1], 10);
+    const info     = hadithToChapter[hadithId];
+    if (!info) return;
 
-    // Redirect to same page with chapter param + hash preserved
+    hasRun.current = true;
+
+    // Calculate which page within the chapter this hadith falls on
+    const page = Math.ceil((info.chapterIndex + 1) / HADITHS_PER_PAGE);
+
     const params = new URLSearchParams(searchParams.toString());
-    params.set('chapter', String(chapterId));
-    // Remove page param — let it default to 1 for the chapter
-    params.delete('page');
+    params.set('chapter', String(info.chapterId));
+    params.delete('page'); // remove old page
+    if (page > 1) params.set('page', String(page));
 
     router.replace(`${pathname}?${params.toString()}${hash}`);
   }, [hadithToChapter, pathname, router, searchParams]);

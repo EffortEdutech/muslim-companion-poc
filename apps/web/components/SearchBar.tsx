@@ -1,3 +1,4 @@
+// apps/web/components/SearchBar.tsx
 'use client';
 
 import { useRouter, useSearchParams } from 'next/navigation';
@@ -6,22 +7,30 @@ import { COLLECTIONS } from '@/lib/collections';
 
 interface Props {
   defaultQuery?: string;
-  defaultBook?: string;
-  autoFocus?: boolean;
+  defaultBook?:  string;
+  autoFocus?:    boolean;
 }
 
 export default function SearchBar({ defaultQuery = '', defaultBook = '', autoFocus = false }: Props) {
-  const router = useRouter();
+  const router      = useRouter();
   const [query, setQuery] = useState(defaultQuery);
-  const [book, setBook] = useState(defaultBook);
-  const inputRef = useRef<HTMLInputElement>(null);
+  const [book,  setBook]  = useState(defaultBook);
+  const inputRef    = useRef<HTMLInputElement>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // Sync input when defaultQuery changes externally (e.g. SearchPersist restore)
+  useEffect(() => {
+    setQuery(defaultQuery);
+  }, [defaultQuery]);
+
+  useEffect(() => {
+    setBook(defaultBook);
+  }, [defaultBook]);
 
   useEffect(() => {
     if (autoFocus) inputRef.current?.focus();
   }, [autoFocus]);
 
-  // Debounced navigation on query change
   const navigate = useCallback(
     (q: string, b: string) => {
       if (debounceRef.current) clearTimeout(debounceRef.current);
@@ -63,19 +72,10 @@ export default function SearchBar({ defaultQuery = '', defaultBook = '', autoFoc
       <div className="flex flex-col sm:flex-row gap-3">
         {/* Main search input */}
         <div className="relative flex-1">
-          <div
-            style={{
-              position: 'absolute',
-              left: '18px',
-              top: '50%',
-              transform: 'translateY(-50%)',
-              color: 'var(--gold)',
-              pointerEvents: 'none',
-            }}
-          >
+          <div style={{ position: 'absolute', left: '18px', top: '50%', transform: 'translateY(-50%)', color: 'var(--gold)', pointerEvents: 'none' }}>
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-              <circle cx="11" cy="11" r="8" />
-              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
             </svg>
           </div>
           <input
@@ -83,71 +83,38 @@ export default function SearchBar({ defaultQuery = '', defaultBook = '', autoFoc
             type="search"
             value={query}
             onChange={handleQueryChange}
-            placeholder="Search in Arabic or English…"
+            placeholder="Search Quran, Tafseer, Hadith in Arabic or English…"
             className="search-input"
             style={{ paddingLeft: '48px' }}
-            aria-label="Search hadith"
             autoComplete="off"
             spellCheck={false}
+            dir="auto"
           />
         </div>
 
-        {/* Book filter */}
+        {/* Book filter — only shown when source is hadith */}
         <select
           value={book}
           onChange={handleBookChange}
+          className="search-select"
           style={{
-            background: 'var(--bg-card)',
-            border: '1px solid var(--gold-border)',
-            borderRadius: '12px',
-            color: book ? 'var(--ink)' : 'var(--ink-muted)',
-            padding: '12px 16px',
-            fontFamily: 'var(--font-lora)',
-            fontSize: '0.9rem',
-            cursor: 'pointer',
-            outline: 'none',
-            minWidth: '200px',
-            transition: 'border-color 0.2s',
+            fontFamily:   'var(--font-lora)',
+            fontSize:     '0.88rem',
+            background:   'var(--bg-card)',
+            border:       '1px solid var(--gold-border)',
+            borderRadius: '10px',
+            color:        'var(--ink-secondary)',
+            padding:      '0 14px',
+            minWidth:     '160px',
+            height:       '48px',
+            cursor:       'pointer',
           }}
-          aria-label="Filter by collection"
         >
           <option value="">All collections</option>
-          <optgroup label="The Nine Books">
-            {COLLECTIONS.filter((c) => c.group === 'the_9_books').map((c) => (
-              <option key={c.slug} value={c.slug}>{c.displayName}</option>
-            ))}
-          </optgroup>
-          <optgroup label="Other Collections">
-            {COLLECTIONS.filter((c) => c.group === 'other_books').map((c) => (
-              <option key={c.slug} value={c.slug}>{c.displayName}</option>
-            ))}
-          </optgroup>
-          <optgroup label="The Forties">
-            {COLLECTIONS.filter((c) => c.group === 'forties').map((c) => (
-              <option key={c.slug} value={c.slug}>{c.displayName}</option>
-            ))}
-          </optgroup>
+          {COLLECTIONS.map((c) => (
+            <option key={c.slug} value={c.slug}>{c.shortName}</option>
+          ))}
         </select>
-
-        {/* Submit button */}
-        <button
-          type="submit"
-          style={{
-            background: 'var(--gold)',
-            color: '#0d1117',
-            border: 'none',
-            borderRadius: '12px',
-            padding: '12px 24px',
-            fontFamily: 'var(--font-lora)',
-            fontSize: '0.9rem',
-            fontWeight: 600,
-            cursor: 'pointer',
-            whiteSpace: 'nowrap',
-            transition: 'opacity 0.15s',
-          }}
-        >
-          Search
-        </button>
       </div>
     </form>
   );

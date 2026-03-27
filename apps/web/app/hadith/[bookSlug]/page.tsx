@@ -8,7 +8,7 @@ import HadithCard from '@/components/HadithCard';
 import ReaderControls from '@/components/ReaderControls';
 import ScrollToHash from '@/components/ScrollToHash';
 import HadithHashRedirect from '@/components/HadithHashRedirect';
-import StudyFootstep from '@/components/StudyFootstep';
+import ReadingProgress from '@/components/ReadingProgress';
 import { Suspense } from 'react';
 
 interface PageProps {
@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const collection = getCollectionBySlug(bookSlug);
   if (!collection) return {};
   return {
-    title: `${collection.displayName} | IQRA Digital`,
+    title: `${collection.displayName} | ilm-mate`,
     description: `Browse the hadith of ${collection.displayName} by ${collection.author}.`,
   };
 }
@@ -40,22 +40,18 @@ export default async function BookPage({ params, searchParams }: PageProps) {
     return (
       <div className="max-w-4xl mx-auto px-4 py-16 text-center">
         <div style={{ color: 'var(--gold)', fontSize: '2rem', marginBottom: '16px' }}>⚠</div>
-        <h1 className="page-heading" style={{ fontSize: '1.6rem', marginBottom: '12px' }}>
-          Collection Not Yet Imported
-        </h1>
+        <h1 className="page-heading" style={{ fontSize: '1.6rem', marginBottom: '12px' }}>Collection Not Yet Imported</h1>
         <p style={{ color: 'var(--ink-secondary)', fontFamily: 'var(--font-lora)' }}>
           The file for <strong style={{ color: 'var(--ink)' }}>{collection.displayName}</strong> has not been
           imported yet. Copy the JSON file into <code>content/hadith/db/by_book/{collection.group}/</code>.
         </p>
-        <Link href="/" style={{ display: 'inline-block', marginTop: '24px', color: 'var(--gold)', fontFamily: 'var(--font-lora)', textDecoration: 'none' }}>
-          ← Back to collections
+        <Link href="/hadith" style={{ display: 'inline-block', marginTop: '24px', color: 'var(--gold)', fontFamily: 'var(--font-lora)', textDecoration: 'none' }}>
+          ← Back to Hadith Collections
         </Link>
       </div>
     );
   }
 
-  // Build hadith→chapter map for deep-link redirect.
-  // chapterIndex = position within the chapter (0-based) for page calculation.
   const hadithToChapter: Record<number, { chapterId: number; chapterIndex: number }> = {};
   const chapterCounters: Record<number, number> = {};
   for (const h of book.hadiths) {
@@ -66,27 +62,22 @@ export default async function BookPage({ params, searchParams }: PageProps) {
 
   const isSingleChapter = book.chapters.length <= 1;
   const currentPage = Math.max(1, parseInt(pageParam || '1', 10));
-
   const selectedChapterId = chapterParam !== undefined
     ? parseInt(chapterParam, 10)
-    : isSingleChapter
-    ? (book.chapters[0]?.id ?? 0)
-    : null;
+    : isSingleChapter ? (book.chapters[0]?.id ?? 0) : null;
 
   const filteredHadiths = selectedChapterId !== null
     ? book.hadiths.filter((h) => h.chapterId === selectedChapterId)
     : book.hadiths;
 
   const totalHadiths = filteredHadiths.length;
-  const totalPages = Math.ceil(totalHadiths / HADITHS_PER_PAGE);
+  const totalPages   = Math.ceil(totalHadiths / HADITHS_PER_PAGE);
   const pagedHadiths = filteredHadiths.slice(
     (currentPage - 1) * HADITHS_PER_PAGE,
     currentPage * HADITHS_PER_PAGE
   );
-
-  const rangeStart = totalHadiths === 0 ? 0 : (currentPage - 1) * HADITHS_PER_PAGE + 1;
-  const rangeEnd = Math.min(currentPage * HADITHS_PER_PAGE, totalHadiths);
-
+  const rangeStart    = totalHadiths === 0 ? 0 : (currentPage - 1) * HADITHS_PER_PAGE + 1;
+  const rangeEnd      = Math.min(currentPage * HADITHS_PER_PAGE, totalHadiths);
   const currentChapter = selectedChapterId !== null
     ? book.chapters.find((c) => c.id === selectedChapterId)
     : null;
@@ -94,33 +85,31 @@ export default async function BookPage({ params, searchParams }: PageProps) {
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
 
-      {/* Scroll + deep-link redirect */}
       <Suspense fallback={null}>
         <ScrollToHash />
         <HadithHashRedirect hadithToChapter={hadithToChapter} />
       </Suspense>
 
-      {/* Study footstep — saves last hadith page, pill resets to /hadith */}
-      <StudyFootstep
+      <ReadingProgress
         section="hadith"
         url={`/hadith/${bookSlug}`}
         label={collection.displayName}
-        homeUrl="/hadith"
+        breadcrumb={['Hadith', collection.displayName]}
       />
 
-      {/* Breadcrumb */}
-      <nav style={{ marginBottom: '28px' }}>
-        <Link href="/" style={{ fontFamily: 'var(--font-lora)', fontSize: '0.85rem', color: 'var(--ink-muted)', textDecoration: 'none' }}>
-          Collections
+      {/* Breadcrumb — FIX #6: "Hadith Collections" not "Collections" */}
+      <nav style={{ marginBottom: '20px' }}>
+        <Link href="/hadith" style={{ fontFamily: 'var(--font-lora)', fontSize: '0.82rem', color: 'var(--ink-muted)', textDecoration: 'none' }}>
+          Hadith Collections
         </Link>
-        <span style={{ color: 'var(--ink-muted)', margin: '0 8px', fontSize: '0.85rem' }}>›</span>
-        <span style={{ fontFamily: 'var(--font-lora)', fontSize: '0.85rem', color: 'var(--ink-secondary)' }}>
+        <span style={{ color: 'var(--ink-muted)', margin: '0 8px', fontSize: '0.82rem' }}>›</span>
+        <span style={{ fontFamily: 'var(--font-lora)', fontSize: '0.82rem', color: 'var(--ink-secondary)' }}>
           {collection.displayName}
         </span>
       </nav>
 
       {/* Book header */}
-      <header className="mb-10">
+      <header className="mb-8">
         <div dir="rtl" lang="ar" className="arabic-text" style={{ fontSize: '2rem', marginBottom: '8px', display: 'block' }}>
           {collection.arabicName}
         </div>
@@ -143,7 +132,6 @@ export default async function BookPage({ params, searchParams }: PageProps) {
             Search this collection
           </Link>
         </div>
-
         {book.metadata.english.introduction && (
           <div style={{ marginTop: '20px', padding: '16px 20px', borderLeft: '3px solid var(--gold)', background: 'var(--bg-card)', borderRadius: '0 8px 8px 0', fontFamily: 'var(--font-lora)', fontStyle: 'italic', fontSize: '0.9rem', color: 'var(--ink-secondary)', lineHeight: 1.7 }}>
             {book.metadata.english.introduction}
@@ -151,12 +139,61 @@ export default async function BookPage({ params, searchParams }: PageProps) {
         )}
       </header>
 
-      {/* Layout */}
-      <div className={`flex gap-8 ${!isSingleChapter ? 'items-start' : ''}`}>
+      {/* FIX #4: Mobile chapter selector — replaces sidebar on small screens */}
+      {!isSingleChapter && (
+        <div className="block sm:hidden" style={{ marginBottom: '16px' }}>
+          <label style={{ fontFamily: 'var(--font-lora)', fontSize: '0.75rem', color: 'var(--ink-muted)', textTransform: 'uppercase', letterSpacing: '0.06em', display: 'block', marginBottom: '6px' }}>
+            Chapter
+          </label>
+          <div style={{ position: 'relative' }}>
+            <select
+              defaultValue={selectedChapterId ?? ''}
+              onChange={(e) => {
+                if (typeof window !== 'undefined') {
+                  window.location.href = `/hadith/${bookSlug}?chapter=${e.target.value}`;
+                }
+              }}
+              style={{
+                width: '100%',
+                fontFamily: 'var(--font-lora)',
+                fontSize: '0.88rem',
+                color: 'var(--ink)',
+                background: 'var(--bg-card)',
+                border: '1px solid var(--gold-border)',
+                borderRadius: '10px',
+                padding: '10px 36px 10px 14px',
+                cursor: 'pointer',
+                appearance: 'none',
+                WebkitAppearance: 'none',
+                outline: 'none',
+              }}
+            >
+              <option value="" disabled>Select a chapter…</option>
+              {book.chapters.map((ch) => {
+                const count = book.hadiths.filter((h) => h.chapterId === ch.id).length;
+                return (
+                  <option key={ch.id} value={ch.id}>
+                    {ch.english || `Chapter ${ch.id}`} ({count})
+                  </option>
+                );
+              })}
+            </select>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="var(--gold)" strokeWidth="2" style={{ position: 'absolute', right: '12px', top: '50%', transform: 'translateY(-50%)', pointerEvents: 'none' }}>
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </div>
+        </div>
+      )}
 
-        {/* Chapter sidebar */}
+      {/* Layout — desktop: sidebar + content. Mobile: full-width content only */}
+      <div className="flex gap-8 items-start">
+
+        {/* Chapter sidebar — desktop only (hidden sm:block) */}
         {!isSingleChapter && (
-          <aside style={{ width: '240px', flexShrink: 0, position: 'sticky', top: 'calc(var(--nav-height) + 16px)', maxHeight: 'calc(100vh - var(--nav-height) - 32px)', overflowY: 'auto' }}>
+          <aside
+            className="hidden sm:block"
+            style={{ width: '220px', flexShrink: 0, position: 'sticky', top: 'calc(var(--nav-height) + 16px)', maxHeight: 'calc(100vh - var(--nav-height) - 32px)', overflowY: 'auto' }}
+          >
             <h2 style={{ fontFamily: 'var(--font-cormorant)', fontSize: '0.75rem', fontWeight: 600, color: 'var(--ink-secondary)', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: '12px' }}>
               Chapters
             </h2>
@@ -175,33 +212,23 @@ export default async function BookPage({ params, searchParams }: PageProps) {
           </aside>
         )}
 
-        {/* Main content */}
+        {/* Main content — full width on mobile */}
         <div className="flex-1 min-w-0">
-
-          {/* Chapter heading */}
           {currentChapter && !isSingleChapter && (
             <div className="mb-6">
-              <h2 className="page-heading" style={{ fontSize: '1.3rem', marginBottom: '4px' }}>
-                {currentChapter.english}
-              </h2>
+              <h2 className="page-heading" style={{ fontSize: '1.3rem', marginBottom: '4px' }}>{currentChapter.english}</h2>
               {currentChapter.arabic && (
-                <div dir="rtl" lang="ar" className="arabic-text" style={{ fontSize: '1.1rem' }}>
-                  {currentChapter.arabic}
-                </div>
+                <div dir="rtl" lang="ar" className="arabic-text" style={{ fontSize: '1.1rem' }}>{currentChapter.arabic}</div>
               )}
             </div>
           )}
-
-          {/* Select chapter prompt */}
           {!isSingleChapter && selectedChapterId === null && (
-            <div style={{ padding: '40px', textAlign: 'center', background: 'var(--bg-card)', borderRadius: '12px', border: '1px solid var(--gold-border)' }}>
+            <div className="hidden sm:block" style={{ padding: '40px', textAlign: 'center', background: 'var(--bg-card)', borderRadius: '12px', border: '1px solid var(--gold-border)' }}>
               <p style={{ fontFamily: 'var(--font-lora)', color: 'var(--ink-secondary)', fontSize: '1rem' }}>
                 Select a chapter from the sidebar to begin reading.
               </p>
             </div>
           )}
-
-          {/* Hadiths */}
           {(isSingleChapter || selectedChapterId !== null) && (
             <>
               <div style={{ fontFamily: 'var(--font-lora)', fontSize: '0.82rem', color: 'var(--ink-muted)', marginBottom: '16px' }}>
@@ -209,7 +236,6 @@ export default async function BookPage({ params, searchParams }: PageProps) {
                   ? `Showing ${rangeStart}–${rangeEnd} of ${totalHadiths.toLocaleString()} hadiths`
                   : `${totalHadiths} hadith${totalHadiths !== 1 ? 's' : ''}`}
               </div>
-
               <div className="flex flex-col gap-5">
                 {pagedHadiths.map((hadith) => {
                   const chapter = book.chapters.find((c) => c.id === hadith.chapterId);
@@ -226,19 +252,13 @@ export default async function BookPage({ params, searchParams }: PageProps) {
                   );
                 })}
               </div>
-
-              {/* Pagination */}
               {totalPages > 1 && (
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginTop: '40px' }}>
-                  {currentPage > 1 && (
-                    <PageLink href={buildPageUrl(bookSlug, selectedChapterId, currentPage - 1)} label="← Previous" />
-                  )}
+                  {currentPage > 1 && <PageLink href={buildPageUrl(bookSlug, selectedChapterId, currentPage - 1)} label="← Previous" />}
                   <span style={{ fontFamily: 'var(--font-lora)', fontSize: '0.85rem', color: 'var(--ink-secondary)', padding: '8px 16px' }}>
                     Page {currentPage} of {totalPages}
                   </span>
-                  {currentPage < totalPages && (
-                    <PageLink href={buildPageUrl(bookSlug, selectedChapterId, currentPage + 1)} label="Next →" />
-                  )}
+                  {currentPage < totalPages && <PageLink href={buildPageUrl(bookSlug, selectedChapterId, currentPage + 1)} label="Next →" />}
                 </div>
               )}
             </>
@@ -246,7 +266,6 @@ export default async function BookPage({ params, searchParams }: PageProps) {
         </div>
       </div>
 
-      {/* Font size controls */}
       {(isSingleChapter || selectedChapterId !== null) && totalHadiths > 0 && (
         <ReaderControls
           bookSlug={bookSlug}

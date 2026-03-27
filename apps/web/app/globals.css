@@ -178,3 +178,9 @@ body {
 
 .tafseer-surah-card-link > div { transition: border-color 0.15s, background 0.15s; }
 .tafseer-surah-card-link:hover > div { border-color: var(--gold) !important; background: var(--bg-hover) !important; }
+
+@media (max-width: 639px) {
+  main {
+    padding-bottom: calc(60px + env(safe-area-inset-bottom));
+  }
+}

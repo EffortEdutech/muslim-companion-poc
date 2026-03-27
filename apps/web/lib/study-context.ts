@@ -21,7 +21,7 @@ export interface StoredPosition {
 
 export interface BreadcrumbPart {
   label: string;
-  href:  string | null;  // null = current page (not a link)
+  href:  string | null; // null = current page (not a link)
 }
 
 export interface BreadcrumbState {
@@ -34,21 +34,34 @@ function get<T>(key: string): T | null {
     const raw = localStorage.getItem(key);
     if (!raw) return null;
     return JSON.parse(raw) as T;
-  } catch { return null; }
+  } catch {
+    return null;
+  }
 }
 
 function safeSet(key: string, value: unknown): void {
-  try { localStorage.setItem(key, JSON.stringify(value)); } catch {}
+  try {
+    localStorage.setItem(key, JSON.stringify(value));
+  } catch {}
+}
+
+function getCurrentUrl(): string {
+  if (typeof window === 'undefined') return '/';
+  return `${window.location.pathname}${window.location.search}${window.location.hash}`;
 }
 
 /**
  * Save last visited URL for a section.
- * Reads window.location directly so ?chapter= and other query params are included.
- * NOT the prop — the prop is server-rendered and never has the current query string.
+ * - Default: reads the live browser URL, including query string + hash.
+ * - explicitUrl: lets client trackers save a deeper anchor without changing the URL bar.
  */
-export function saveLastUrl(section: SectionKey, label: string): void {
+export function saveLastUrl(
+  section: SectionKey,
+  label: string,
+  explicitUrl?: string,
+): void {
   if (typeof window === 'undefined') return;
-  const url = window.location.pathname + window.location.search;
+  const url = explicitUrl ?? getCurrentUrl();
   safeSet(KEYS[section], { url, label, savedAt: Date.now() } satisfies StoredPosition);
 }
 
@@ -56,10 +69,14 @@ export function saveLastUrl(section: SectionKey, label: string): void {
 export function loadLastUrl(section: SectionKey): StoredPosition | null {
   const data = get<StoredPosition>(KEYS[section]);
   if (!data) return null;
+
   if (Date.now() - data.savedAt > MAX_AGE_MS) {
-    try { localStorage.removeItem(KEYS[section]); } catch {}
+    try {
+      localStorage.removeItem(KEYS[section]);
+    } catch {}
     return null;
   }
+
   return data;
 }
 

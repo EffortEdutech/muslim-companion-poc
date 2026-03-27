@@ -8,10 +8,11 @@ import HadithCard from '@/components/HadithCard';
 import ReaderControls from '@/components/ReaderControls';
 import ScrollToHash from '@/components/ScrollToHash';
 import HadithHashRedirect from '@/components/HadithHashRedirect';
-import ReadingProgress        from '@/components/ReadingProgress';
-import StudyFootstep          from '@/components/StudyFootstep';
-import ScrollRestore          from '@/components/ScrollRestore';
-import MobileChapterSelect    from '@/components/MobileChapterSelect';
+import ReadingProgress from '@/components/ReadingProgress';
+import StudyFootstep from '@/components/StudyFootstep';
+import ScrollRestore from '@/components/ScrollRestore';
+import MobileChapterSelect from '@/components/MobileChapterSelect';
+import VisibleAnchorTracker from '@/components/VisibleAnchorTracker';
 import { Suspense } from 'react';
 
 interface PageProps {
@@ -87,7 +88,6 @@ export default async function BookPage({ params, searchParams }: PageProps) {
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
-
       <Suspense fallback={null}>
         <ScrollToHash />
         <HadithHashRedirect hadithToChapter={hadithToChapter} />
@@ -103,9 +103,14 @@ export default async function BookPage({ params, searchParams }: PageProps) {
       />
 
       <ScrollRestore />
+      <VisibleAnchorTracker
+        section="hadith"
+        label={collection.displayName}
+        selector="[id^='hadith-']"
+      />
       <StudyFootstep section="hadith" homeUrl="/hadith" />
 
-      {/* Breadcrumb — FIX #6: "Hadith Collections" not "Collections" */}
+      {/* Breadcrumb */}
       <nav style={{ marginBottom: '20px' }}>
         <Link href="/hadith" style={{ fontFamily: 'var(--font-lora)', fontSize: '0.82rem', color: 'var(--ink-muted)', textDecoration: 'none' }}>
           Hadith Collections
@@ -147,7 +152,7 @@ export default async function BookPage({ params, searchParams }: PageProps) {
         )}
       </header>
 
-      {/* Mobile chapter selector — client component (handles onChange) */}
+      {/* Mobile chapter selector — client component */}
       {!isSingleChapter && (
         <MobileChapterSelect
           bookSlug={bookSlug}
@@ -161,8 +166,6 @@ export default async function BookPage({ params, searchParams }: PageProps) {
 
       {/* Layout — desktop: sidebar + content. Mobile: full-width content only */}
       <div className="flex gap-8 items-start">
-
-        {/* Chapter sidebar — desktop only (hidden sm:block) */}
         {!isSingleChapter && (
           <aside
             className="hidden sm:block"
@@ -186,7 +189,6 @@ export default async function BookPage({ params, searchParams }: PageProps) {
           </aside>
         )}
 
-        {/* Main content — full width on mobile */}
         <div className="flex-1 min-w-0">
           {currentChapter && !isSingleChapter && (
             <div className="mb-6">
@@ -196,6 +198,7 @@ export default async function BookPage({ params, searchParams }: PageProps) {
               )}
             </div>
           )}
+
           {!isSingleChapter && selectedChapterId === null && (
             <div className="hidden sm:block" style={{ padding: '40px', textAlign: 'center', background: 'var(--bg-card)', borderRadius: '12px', border: '1px solid var(--gold-border)' }}>
               <p style={{ fontFamily: 'var(--font-lora)', color: 'var(--ink-secondary)', fontSize: '1rem' }}>
@@ -203,6 +206,7 @@ export default async function BookPage({ params, searchParams }: PageProps) {
               </p>
             </div>
           )}
+
           {(isSingleChapter || selectedChapterId !== null) && (
             <>
               <div style={{ fontFamily: 'var(--font-lora)', fontSize: '0.82rem', color: 'var(--ink-muted)', marginBottom: '16px' }}>
@@ -210,6 +214,7 @@ export default async function BookPage({ params, searchParams }: PageProps) {
                   ? `Showing ${rangeStart}–${rangeEnd} of ${totalHadiths.toLocaleString()} hadiths`
                   : `${totalHadiths} hadith${totalHadiths !== 1 ? 's' : ''}`}
               </div>
+
               <div className="flex flex-col gap-5">
                 {pagedHadiths.map((hadith) => {
                   const chapter = book.chapters.find((c) => c.id === hadith.chapterId);
@@ -226,6 +231,7 @@ export default async function BookPage({ params, searchParams }: PageProps) {
                   );
                 })}
               </div>
+
               {totalPages > 1 && (
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', marginTop: '40px' }}>
                   {currentPage > 1 && <PageLink href={buildPageUrl(bookSlug, selectedChapterId, currentPage - 1)} label="← Previous" />}

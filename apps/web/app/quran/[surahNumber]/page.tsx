@@ -1,20 +1,20 @@
 // apps/web/app/quran/[surahNumber]/page.tsx
 // UPDATED: reads ?tafseer=slug from URL, loads the requested edition.
-// TafseerEditionSwitcher in SurahReader updates the URL when user switches.
 
 import type { Metadata } from 'next';
 import { notFound }      from 'next/navigation';
 import Link              from 'next/link';
 import { loadSurah, getSurahNavigation } from '@/lib/quran';
 import { loadTafseer, isTafseerAvailable } from '@/lib/tafseer';
-import SurahReader     from '@/components/SurahReader';
-import TafseerLink     from '@/components/TafseerLink';
-import ReaderControls  from '@/components/ReaderControls';
-import StickyBottomNav from '@/components/StickyBottomNav';
-import ScrollToHash    from '@/components/ScrollToHash';
-import ReadingProgress  from '@/components/ReadingProgress';
-import StudyFootstep    from '@/components/StudyFootstep';
-import ScrollRestore    from '@/components/ScrollRestore';
+import SurahReader          from '@/components/SurahReader';
+import TafseerLink          from '@/components/TafseerLink';
+import ReaderControls       from '@/components/ReaderControls';
+import StickyBottomNav      from '@/components/StickyBottomNav';
+import ScrollToHash         from '@/components/ScrollToHash';
+import ReadingProgress      from '@/components/ReadingProgress';
+import StudyFootstep        from '@/components/StudyFootstep';
+import ScrollRestore        from '@/components/ScrollRestore';
+import VisibleAnchorTracker from '@/components/VisibleAnchorTracker';
 
 const DEFAULT_TAFSEER = 'en-tafisr-ibn-kathir';
 
@@ -74,7 +74,6 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10" style={{ paddingBottom: '80px' }}>
-
       <ScrollToHash />
 
       <ReadingProgress
@@ -87,9 +86,12 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
       />
 
       <ScrollRestore />
+      <VisibleAnchorTracker
+        section="quran"
+        label={surah.metadata.nameEnglish}
+        selector="[id^='ayah-']"
+      />
       <StudyFootstep section="quran" homeUrl="/quran" />
-
-      
 
       {/* Surah header */}
       <header className="mb-8 text-center">
@@ -181,6 +183,7 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
             <div>Surah {nav.prev}</div>
           </Link>
         ) : <div />}
+
         {nav.next && (
           <Link href={`/quran/${nav.next}`} style={{
             fontFamily: 'var(--font-lora)', fontSize: '0.85rem', color: 'var(--gold)',

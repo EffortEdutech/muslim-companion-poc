@@ -7,11 +7,12 @@ import Link               from 'next/link';
 import { loadTafseer, isTafseerAvailable } from '@/lib/tafseer';
 import { loadSurah }                       from '@/lib/quran';
 import { getTafseerById }                  from '@/lib/tafseer-types';
-import TafseerReader      from '@/components/TafseerReader';
-import StickyBottomNav    from '@/components/StickyBottomNav';
-import ReadingProgress  from '@/components/ReadingProgress';
-import StudyFootstep    from '@/components/StudyFootstep';
-import ScrollRestore    from '@/components/ScrollRestore';
+import TafseerReader        from '@/components/TafseerReader';
+import StickyBottomNav      from '@/components/StickyBottomNav';
+import ReadingProgress      from '@/components/ReadingProgress';
+import StudyFootstep        from '@/components/StudyFootstep';
+import ScrollRestore        from '@/components/ScrollRestore';
+import VisibleAnchorTracker from '@/components/VisibleAnchorTracker';
 
 interface PageProps {
   params:       Promise<{ bookSlug: string; surahNumber: string }>;
@@ -53,8 +54,6 @@ export default async function TafseerSurahPage({ params, searchParams }: PagePro
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10" style={{ paddingBottom: '100px' }}>
-
-      {/* Silently save reading position + breadcrumb for nav restoration */}
       <ReadingProgress
         section="tafseer"
         label={surahName}
@@ -66,6 +65,11 @@ export default async function TafseerSurahPage({ params, searchParams }: PagePro
       />
 
       <ScrollRestore />
+      <VisibleAnchorTracker
+        section="tafseer"
+        label={surahName}
+        selector="[data-tafseer-entry]"
+      />
       <StudyFootstep section="tafseer" homeUrl="/tafseer" />
 
       {/* ── Surah header ─────────────────────────────────────────────────── */}

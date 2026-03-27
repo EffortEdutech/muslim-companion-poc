@@ -5,6 +5,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { TAFSEER_COLLECTIONS, TafseerCollectionMeta } from '@/lib/tafseer-types';
 import { scanContentAvailability } from '@/lib/content-availability';
+import ReadingProgress from '@/components/ReadingProgress';
 
 export const dynamic = 'force-dynamic'; // always re-scan content on each request
 
@@ -18,6 +19,13 @@ export default function TafseerIndexPage() {
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12">
+      <ReadingProgress
+        section="tafseer"
+        label="Tafseer"
+        breadcrumb={[
+          { label: 'Tafseer', href: null },
+        ]}
+      />
 
       {/* Header */}
       <header style={{ marginBottom: '40px' }}>

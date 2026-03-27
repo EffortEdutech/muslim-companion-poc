@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { loadSurahIndex, isQuranCompiled } from '@/lib/quran';
 import SurahListView from '@/components/SurahListView';
+import ReadingProgress from '@/components/ReadingProgress';
 
 export const metadata: Metadata = {
   title: 'Quran | IQRA Digital',
@@ -14,6 +15,13 @@ export default async function QuranPage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <ReadingProgress
+        section="quran"
+        label="Quran"
+        breadcrumb={[
+          { label: 'Quran', href: null },
+        ]}
+      />
 
       {/* Hero */}
       <header className="text-center mb-10">

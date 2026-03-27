@@ -4,6 +4,7 @@ import { COLLECTIONS, GROUP_LABELS, GROUP_DESCRIPTIONS, GROUP_ORDER, getCollecti
 import { loadBook } from '@/lib/hadith';
 import CollectionCard from '@/components/CollectionCard';
 import type { CollectionGroup } from '@/lib/types';
+import ReadingProgress from '@/components/ReadingProgress';
 
 export const metadata: Metadata = {
   title: 'Hadith Collections | IQRA Digital',
@@ -26,6 +27,13 @@ export default async function HadithPage() {
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+      <ReadingProgress
+        section="hadith"
+        label="Hadith"
+        breadcrumb={[
+          { label: 'Hadith', href: null },
+        ]}
+      />
 
       {/* Header */}
       <header className="text-center mb-14">

@@ -1,3 +1,4 @@
+// apps/web/components/search/SearchResults.tsx
 'use client';
 
 // apps/web/components/search/SearchResults.tsx
@@ -25,8 +26,10 @@ export interface QuranResult {
 export interface TafseerResult {
   surah:     number;
   ayah:      number;
+  ayahTo:    number;   // toAyah — same as ayah for single entries
   surahName: string;
   text:      string;
+  edition:   string;   // 'jalalayn' | 'ibn_kathir'
   score:     number;
 }
 
@@ -405,16 +408,23 @@ function TafseerItem({
 }) {
   const highlighted = applyHighlight(result.text, query, 'rgba(186,117,23,0.2)');
 
+  // Show range if entry covers multiple ayahs (e.g. Ibn Kathir blocks)
+  const ayahRef = (result.ayahTo && result.ayahTo > result.ayah)
+    ? `${result.surah}:${result.ayah}–${result.ayahTo}`
+    : `${result.surah}:${result.ayah}`;
+
+  const editionLabel = result.edition === 'ibn_kathir' ? 'Ibn Kathir' : 'Al-Jalalayn';
+
   const header = (
     <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap' }}>
       <span style={{ fontFamily: 'var(--font-lora)', fontSize: '0.8rem', fontWeight: 600, color: 'var(--gold)' }}>
-        {result.surahName} · {result.surah}:{result.ayah}
+        {result.surahName} · {ayahRef}
       </span>
       <span style={{
         fontFamily: 'var(--font-lora)', fontSize: '0.68rem', color: 'var(--ink-muted)',
         border: '1px solid var(--gold-border)', borderRadius: '10px', padding: '1px 7px',
       }}>
-        Al-Jalalayn
+        {editionLabel}
       </span>
       <RelevanceDots score={result.score} color="#BA7517" />
     </div>

@@ -1,6 +1,4 @@
 // apps/web/app/tafseer/search/search-logic.ts
-// Server-side Tafseer search — mirrors the Quran search pattern exactly.
-// Reads from the pre-built index at content/tafsir/db/metadata/index-eng.json
 
 import path from 'path';
 import fs   from 'fs';
@@ -17,7 +15,6 @@ const INDEX_PATH = path.join(
 
 const LIMIT = 20;
 
-// ── Cached index — loaded once per server process ─────────────────────────────
 let _cache: TafseerIndexEntry[] | null = null;
 
 function loadIndex(): TafseerIndexEntry[] {
@@ -31,8 +28,6 @@ function loadIndex(): TafseerIndexEntry[] {
   }
 }
 
-// ── Scoring ───────────────────────────────────────────────────────────────────
-
 function scoreText(text: string, query: string, terms: string[]): number {
   if (!text) return 0;
   const lower = text.toLowerCase();
@@ -43,81 +38,81 @@ function scoreText(text: string, query: string, terms: string[]): number {
   return 0;
 }
 
-// Detect reference patterns: "2:255", "2|255", "surah 2 ayah 255"
 function parseReference(query: string): { surah: number; ayah: number | null } | null {
   const q = query.trim();
-
   const colonMatch = q.match(/^(\d{1,3})[:|](\d{1,3})$/);
-  if (colonMatch) {
-    return { surah: parseInt(colonMatch[1], 10), ayah: parseInt(colonMatch[2], 10) };
-  }
-
+  if (colonMatch) return { surah: parseInt(colonMatch[1], 10), ayah: parseInt(colonMatch[2], 10) };
   const surahMatch = q.match(/surah\s+(\d{1,3})(?:\s+(?:ayah|verse|aya)\s+(\d{1,3}))?/i);
-  if (surahMatch) {
-    return {
-      surah: parseInt(surahMatch[1], 10),
-      ayah:  surahMatch[2] ? parseInt(surahMatch[2], 10) : null,
-    };
-  }
-
+  if (surahMatch) return {
+    surah: parseInt(surahMatch[1], 10),
+    ayah:  surahMatch[2] ? parseInt(surahMatch[2], 10) : null,
+  };
   return null;
 }
-
-// ── Main ──────────────────────────────────────────────────────────────────────
 
 export default function searchTafseer(
   rawQuery: string,
   page:     number
 ): TafseerSearchResponse {
   const query = rawQuery.trim();
-
-  if (query.length < 2) {
-    return { results: [], total: 0, query, page, limit: LIMIT };
-  }
+  if (query.length < 2) return { results: [], total: 0, query, page, limit: LIMIT };
 
   const index = loadIndex();
-  if (index.length === 0) {
-    return { results: [], total: 0, query, page, limit: LIMIT };
-  }
+  if (index.length === 0) return { results: [], total: 0, query, page, limit: LIMIT };
 
   const terms = query.toLowerCase().split(/\s+/).filter(t => t.length > 1);
   const ref   = parseReference(query);
   const scored: TafseerSearchResult[] = [];
 
+  // Deduplicate: one result per surah:ayah (prefer ibn_kathir over jalalayn)
+  const seen = new Map<string, number>(); // key → index in scored
+
   for (const entry of index) {
     let maxScore = 0;
 
-    // Reference lookup — highest priority
     if (ref) {
       if (ref.surah === entry.s) {
-        if (ref.ayah === null || ref.ayah === entry.a) {
-          maxScore = 4;
-        }
+        // Match if ayah falls within the entry's range
+        const ayahMatch = ref.ayah === null ||
+          (ref.ayah >= entry.a && ref.ayah <= (entry.az ?? entry.a));
+        if (ayahMatch) maxScore = 4;
       }
     }
 
     if (maxScore < 4) {
-      // Search the tafseer text snippet
       const txScore = scoreText(entry.tx, query, terms);
       if (txScore > maxScore) maxScore = txScore;
-
-      // Surah name match (lower weight)
       const snScore = scoreText(entry.sn, query, terms) * 0.4;
       if (snScore > maxScore) maxScore = snScore;
     }
 
     if (maxScore > 0) {
-      scored.push({
+      const key = `${entry.s}:${entry.a}`;
+      const existing = seen.get(key);
+      const result: TafseerSearchResult = {
         surah:     entry.s,
         ayah:      entry.a,
+        ayahTo:    entry.az ?? entry.a,
         surahName: entry.sn,
         text:      entry.tx,
+        edition:   entry.ed ?? 'jalalayn',
         score:     maxScore,
-      });
+      };
+
+      if (existing !== undefined) {
+        // Replace if higher score, or if same score but ibn_kathir wins
+        const prev = scored[existing];
+        if (maxScore > prev.score ||
+            (maxScore === prev.score && result.edition === 'ibn_kathir')) {
+          scored[existing] = result;
+        }
+      } else {
+        seen.set(key, scored.length);
+        scored.push(result);
+      }
     }
   }
 
-  // Sort: score desc, then surah asc, then ayah asc
   scored.sort((a, b) =>
     b.score - a.score ||
     a.surah - b.surah ||

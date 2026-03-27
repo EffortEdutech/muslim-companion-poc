@@ -12,6 +12,7 @@ import TafseerLink     from '@/components/TafseerLink';
 import ReaderControls  from '@/components/ReaderControls';
 import StickyBottomNav from '@/components/StickyBottomNav';
 import ScrollToHash    from '@/components/ScrollToHash';
+import StudyFootstep   from '@/components/StudyFootstep';
 
 const DEFAULT_TAFSEER = 'en-tafisr-ibn-kathir';
 
@@ -64,8 +65,6 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
     );
   }
 
-  // Resolve which tafseer edition to show inline
-  // URL param wins → default to en-tafisr-ibn-kathir
   const tafseerSlug     = tafseerParam ?? DEFAULT_TAFSEER;
   const tafseerAvail    = isTafseerAvailable(tafseerSlug);
   const tafseer         = tafseerAvail ? loadTafseer(n, tafseerSlug) : null;
@@ -75,6 +74,15 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
     <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10" style={{ paddingBottom: '80px' }}>
 
       <ScrollToHash />
+
+      <StudyFootstep
+        type="quran"
+        surah={n}
+        surahName={surah.metadata.nameEnglish}
+        surahNameAr={surah.metadata.nameArabic}
+        tafseerBookSlug={tafseerSlug}
+        url={`/quran/${n}`}
+      />
 
       {/* Breadcrumb */}
       <nav style={{ marginBottom: '24px', display: 'flex', alignItems: 'center', gap: '6px', flexWrap: 'wrap' }}>
@@ -111,7 +119,6 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
           {surah.metadata.meaning}
         </p>
 
-        {/* Meta badges */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px', flexWrap: 'wrap' }}>
           <span className="badge-group">{surah.metadata.revelation}</span>
           <TafseerLink
@@ -134,7 +141,6 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
           )}
         </div>
 
-        {/* Themes */}
         {surah.metadata.themes.length > 0 && (
           <div style={{ marginTop: '10px', display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px', flexWrap: 'wrap' }}>
             {surah.metadata.themes.map((t) => (
@@ -155,14 +161,12 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
         )}
       </header>
 
-      {/* Reader — passes current tafseer slug for the inline switcher */}
       <SurahReader
         surah={surah}
         tafseerEntries={tafseerEntries}
         currentTafseerSlug={tafseerSlug}
       />
 
-      {/* Prev / Next surah nav */}
       <div style={{
         display:      'flex',
         justifyContent:'space-between',
@@ -194,7 +198,6 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
         )}
       </div>
 
-      {/* Reading controls */}
       <ReaderControls
         bookSlug={`quran-${n}`}
         chapterId={null}
@@ -205,7 +208,6 @@ export default async function SurahPage({ params, searchParams }: PageProps) {
         bottomOffset={80}
       />
 
-      {/* Sticky bottom nav */}
       <StickyBottomNav
         surahNumber={n}
         surahName={surah.metadata.nameEnglish}

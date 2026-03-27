@@ -9,6 +9,7 @@ import { loadSurah, loadSurahIndex }                         from '@/lib/quran';
 import { getTafseerById }                                    from '@/lib/tafseer-types';
 import TafseerReader      from '@/components/TafseerReader';
 import StickyBottomNav    from '@/components/StickyBottomNav';
+import StudyFootstep      from '@/components/StudyFootstep';
 
 interface PageProps {
   params:       Promise<{ bookSlug: string; surahNumber: string }>;
@@ -71,6 +72,16 @@ export default async function TafseerSurahPage({ params, searchParams }: PagePro
           {surah ? `${n}. ${surah.metadata.nameEnglish}` : `Surah ${n}`}
         </span>
       </nav>
+
+      {/* ── Study footstep ───────────────────────────────────────────────── */}
+      <StudyFootstep
+        type="tafseer"
+        surah={n}
+        surahName={surah?.metadata.nameEnglish}
+        surahNameAr={surah?.metadata.nameArabic}
+        tafseerBookSlug={book.id}
+        url={`/tafseer/${book.id}/${n}`}
+      />
 
       {/* ── Surah header ─────────────────────────────────────────────────── */}
       <header style={{ marginBottom: '32px' }}>

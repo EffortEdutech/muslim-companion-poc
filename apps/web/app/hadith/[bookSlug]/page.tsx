@@ -9,6 +9,7 @@ import ReaderControls from '@/components/ReaderControls';
 import ScrollToHash from '@/components/ScrollToHash';
 import HadithHashRedirect from '@/components/HadithHashRedirect';
 import { Suspense } from 'react';
+import StudyFootstep   from '@/components/StudyFootstep';
 
 interface PageProps {
   params: Promise<{ bookSlug: string }>;
@@ -98,6 +99,13 @@ export default async function BookPage({ params, searchParams }: PageProps) {
         <ScrollToHash />
         <HadithHashRedirect hadithToChapter={hadithToChapter} />
       </Suspense>
+
+      <StudyFootstep
+        type="hadith"
+        hadithBookSlug={bookSlug}
+        hadithBookTitle={collection.displayName}
+        url={`/hadith/${bookSlug}`}
+      />
 
       {/* Breadcrumb */}
       <nav style={{ marginBottom: '28px' }}>

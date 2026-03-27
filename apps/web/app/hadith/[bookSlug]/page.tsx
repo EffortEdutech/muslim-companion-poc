@@ -5,6 +5,9 @@ import { loadBook } from '@/lib/hadith';
 import { getCollectionBySlug } from '@/lib/collections';
 import HadithCard from '@/components/HadithCard';
 import ReaderControls from '@/components/ReaderControls';
+import ScrollToHash from '@/components/ScrollToHash';
+import HadithHashRedirect from '@/components/HadithHashRedirect';
+import { Suspense } from 'react';
 
 interface PageProps {
   params: Promise<{ bookSlug: string }>;
@@ -49,6 +52,14 @@ export default async function BookPage({ params, searchParams }: PageProps) {
     );
   }
 
+
+  // ── Build hadith→chapter map for deep-link redirect ─────────────────────────
+  // HadithHashRedirect uses this to find which chapter contains #hadith-N
+  // when no ?chapter= param is present (e.g. links from search results).
+  const hadithToChapter: Record<number, number> = {};
+  for (const h of book.hadiths) {
+    hadithToChapter[h.idInBook] = h.chapterId;
+  }
   const isSingleChapter = book.chapters.length <= 1;
   const currentPage = Math.max(1, parseInt(pageParam || '1', 10));
 
@@ -78,6 +89,12 @@ export default async function BookPage({ params, searchParams }: PageProps) {
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
+
+      {/* Scroll to hash anchor + deep-link chapter redirect */}
+      <Suspense fallback={null}>
+        <ScrollToHash />
+        <HadithHashRedirect hadithToChapter={hadithToChapter} />
+      </Suspense>
 
       {/* Breadcrumb */}
       <nav style={{ marginBottom: '28px' }}>

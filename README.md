@@ -1,35 +1,18 @@
-# muslim-companion-poc hotfix v4
+# muslim-companion-poc hotfix v5
 
-This hotfix addresses two remaining issues.
+This hotfix targets the remaining tafseer mismatch:
 
-## 1) Tafseer revisit mismatch
-Problem:
-- Saved pointer/highlight could remain on ayah 7
-- But the viewport visually showed ayah 8 at the top
+- side pointer / yellow highlight says ayah 6
+- but the first actually visible entry on screen is ayah 7
 
-Cause:
-- Tafseer entries are tall blocks
-- The old tracker used a generic focus-line heuristic, which could keep selecting the previous block
+## Cause
+`TafseerReader.tsx` still used an old IntersectionObserver heuristic for the active highlight.
+That logic could keep the previous tall block active even after the next tafseer heading had become the first visible one.
 
-Fix:
-- `VisibleAnchorTracker.tsx` now supports `mode="top-heading"`
-- Tafseer page uses that mode, so it saves the first actually visible tafseer heading below the sticky nav
+## Fix
+The split-mode scroll spy now selects:
+1. the first tafseer entry whose heading is actually visible below the sticky bars
+2. otherwise the entry crossing that top boundary
+3. otherwise the first entry
 
-## 2) Search page horizontal overflow
-Problem:
-- Bottom mobile nav looked inconsistent only on Search
-- Bookmark tab could disappear until the whole page was scrolled sideways
-
-Cause:
-- Search tabs used `width: fit-content` with no overflow containment
-- That could widen the page on mobile
-
-Fix:
-- `UnifiedSearchTabs.tsx` now scrolls internally instead of widening the page
-- `app/search/page.tsx` now constrains horizontal overflow and matches other pages more closely
-
-## Included files
-- apps/web/components/VisibleAnchorTracker.tsx
-- apps/web/app/tafseer/[bookSlug]/[surahNumber]/page.tsx
-- apps/web/components/UnifiedSearchTabs.tsx
-- apps/web/app/search/page.tsx
+This aligns the active highlight with what the user actually sees.

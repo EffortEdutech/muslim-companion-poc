@@ -14,8 +14,6 @@ import {
 import { flushSync } from 'react-dom';
 import { TafseerEntry } from '@/lib/tafseer-types';
 
-// ─── Types ────────────────────────────────────────────────────────────────────
-
 interface Props {
   entries:    TafseerEntry[];
   surah:      number;
@@ -24,8 +22,6 @@ interface Props {
 }
 
 type Mode = 'split' | 'accordion';
-
-// ─── Sanitise tafseer HTML (same logic as TafseerEntryCard) ──────────────────
 
 function sanitize(html: string): string {
   return html
@@ -37,38 +33,53 @@ function sanitize(html: string): string {
     .trim();
 }
 
-// ─── Main component ───────────────────────────────────────────────────────────
-
 export default function TafseerReader({ entries, surah, bookName, targetAyah }: Props) {
   const [mode,        setMode]        = useState<Mode>('split');
   const [activeAyah,  setActiveAyah]  = useState<number>(targetAyah ?? (entries[0]?.fromAyah ?? 1));
   const [drawerOpen,  setDrawerOpen]  = useState(false);
 
-  // Refs for scroll + IntersectionObserver
   const mainRef      = useRef<HTMLDivElement>(null);
   const navRef       = useRef<HTMLDivElement>(null);
   const observerRef  = useRef<IntersectionObserver | null>(null);
   const suppressRef  = useRef(false); // suppress scroll spy during programmatic scroll
 
-  // ── Scroll spy (split mode only) ─────────────────────────────────────────
+  // Split-mode scroll spy:
+  // pick the FIRST entry heading actually visible below the sticky bars,
+  // instead of the generic "closest intersecting block" heuristic.
   const setupScrollSpy = useCallback(() => {
     if (observerRef.current) observerRef.current.disconnect();
     if (mode !== 'split') return;
 
     const io = new IntersectionObserver(
-      (records) => {
+      () => {
         if (suppressRef.current) return;
-        // Pick the entry closest to top of viewport
-        const visible = records
-          .filter(r => r.isIntersecting)
-          .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top);
-        if (visible.length > 0) {
-          const id = visible[0].target.id; // entry-N
-          const n  = parseInt(id.replace('entry-', ''), 10);
-          if (!isNaN(n)) setActiveAyah(n);
-        }
+
+        const targets = Array.from(
+          document.querySelectorAll<HTMLElement>('[data-tafseer-entry]')
+        );
+        if (!targets.length) return;
+
+        const TOP_BOUNDARY = 96;
+        const VIEWPORT_LIMIT = window.innerHeight * 0.8;
+
+        const firstVisibleHeading = targets.find((el) => {
+          const rect = el.getBoundingClientRect();
+          return rect.top >= TOP_BOUNDARY && rect.top < VIEWPORT_LIMIT;
+        });
+
+        const crossingBoundary = targets.find((el) => {
+          const rect = el.getBoundingClientRect();
+          return rect.top <= TOP_BOUNDARY && rect.bottom > TOP_BOUNDARY;
+        });
+
+        const active = firstVisibleHeading ?? crossingBoundary ?? targets[0];
+        const n = parseInt(active.id.replace('entry-', ''), 10);
+        if (!isNaN(n)) setActiveAyah(n);
       },
-      { rootMargin: '-80px 0px -60% 0px', threshold: 0 },
+      {
+        rootMargin: '-96px 0px -55% 0px',
+        threshold: [0, 0.01],
+      },
     );
 
     document.querySelectorAll('[data-tafseer-entry]').forEach(el => io.observe(el));
@@ -80,35 +91,23 @@ export default function TafseerReader({ entries, surah, bookName, targetAyah }: 
     return () => observerRef.current?.disconnect();
   }, [setupScrollSpy, entries]);
 
-  // ── Jump to entry ─────────────────────────────────────────────────────────
   function jumpTo(ayah: number) {
     setDrawerOpen(false);
     suppressRef.current = true;
 
-    // ── Phase 1: collapse synchronously ────────────────────────────────────
-    // flushSync commits the collapse to DOM before we read any positions.
-    // padding transition is removed so layout settles instantly.
     flushSync(() => setActiveAyah(-1));
 
-    // ── Phase 2: measure target position AFTER collapse ─────────────────────
-    // If the previously-active entry was ABOVE the target, collapsing it
-    // shifted the target upward. We measure AFTER collapse so we get the
-    // correct post-collapse position.
     const el = document.getElementById(`entry-${ayah}`);
     if (el) {
-      // NAV_OFFSET: sticky top nav + mode toggle bar
       const NAV_OFFSET = 88;
       const rect = el.getBoundingClientRect();
-      // How far the entry header currently is from where we want it
       const delta = rect.top - NAV_OFFSET;
       window.scrollBy({ top: delta, behavior: 'instant' });
     }
 
-    // ── Phase 3: expand target — grows downward from pinned header ──────────
     setActiveAyah(ayah);
     setTimeout(() => { suppressRef.current = false; }, 100);
 
-    // Keep side nav item centred
     const navItem = document.getElementById(`nav-${ayah}`);
     if (navItem && navRef.current) {
       const navTop  = navRef.current.getBoundingClientRect().top;
@@ -118,14 +117,12 @@ export default function TafseerReader({ entries, surah, bookName, targetAyah }: 
     }
   }
 
-  // ── Deep-link on mount ────────────────────────────────────────────────────
   useEffect(() => {
     if (targetAyah) {
       setTimeout(() => jumpTo(targetAyah), 200);
     }
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
-  // ── Nav item label (shows range if entry covers multiple ayahs) ───────────
   function navLabel(e: TafseerEntry): string {
     return e.fromAyah === e.toAyah
       ? String(e.fromAyah)
@@ -136,8 +133,6 @@ export default function TafseerReader({ entries, surah, bookName, targetAyah }: 
 
   return (
     <div style={{ position: 'relative' }}>
-
-      {/* ── Mode toggle + entry count ─────────────────────────────────────── */}
       <div style={{
         display:        'flex',
         alignItems:     'center',
@@ -186,10 +181,7 @@ export default function TafseerReader({ entries, surah, bookName, targetAyah }: 
         </div>
       </div>
 
-      {/* ── Split panel layout ────────────────────────────────────────────── */}
       <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start' }}>
-
-        {/* ── Side nav (desktop only — hidden on mobile) ─────────────────── */}
         <aside
           style={{
             width:      `${NAV_WIDTH}px`,
@@ -202,7 +194,6 @@ export default function TafseerReader({ entries, surah, bookName, targetAyah }: 
           }}
           className="tafseer-sidenav"
         >
-          {/* Nav header */}
           <div style={{
             fontFamily:    'var(--font-lora)',
             fontSize:      '0.65rem',
@@ -217,7 +208,6 @@ export default function TafseerReader({ entries, surah, bookName, targetAyah }: 
             Ayahs
           </div>
 
-          {/* Nav items — scrollable */}
           <div
             ref={navRef}
             style={{
@@ -247,7 +237,6 @@ export default function TafseerReader({ entries, surah, bookName, targetAyah }: 
                     textAlign:    'left',
                   }}
                 >
-                  {/* Gold bar indicator */}
                   <div style={{
                     width:        '3px',
                     height:       '16px',
@@ -271,7 +260,6 @@ export default function TafseerReader({ entries, surah, bookName, targetAyah }: 
           </div>
         </aside>
 
-        {/* ── Main reading area ─────────────────────────────────────────────── */}
         <div
           ref={mainRef}
           style={{ flex: 1, minWidth: 0, display: 'flex', flexDirection: 'column', gap: '12px' }}
@@ -290,7 +278,6 @@ export default function TafseerReader({ entries, surah, bookName, targetAyah }: 
         </div>
       </div>
 
-      {/* ── Mobile: floating pill ─────────────────────────────────────────── */}
       <button
         onClick={() => setDrawerOpen(true)}
         className="tafseer-mobile-pill"
@@ -299,7 +286,7 @@ export default function TafseerReader({ entries, surah, bookName, targetAyah }: 
           bottom:     '80px',
           left:       '16px',
           zIndex:     50,
-          display:    'none', // shown via CSS media query below
+          display:    'none',
           alignItems: 'center',
           gap:        '7px',
           background: 'var(--bg-surface)',
@@ -323,7 +310,6 @@ export default function TafseerReader({ entries, surah, bookName, targetAyah }: 
         <span style={{ opacity: 0.5, fontSize: '0.7rem' }}>▴</span>
       </button>
 
-      {/* ── Mobile: full-screen drawer ────────────────────────────────────── */}
       {drawerOpen && (
         <div
           style={{
@@ -350,13 +336,11 @@ export default function TafseerReader({ entries, surah, bookName, targetAyah }: 
             }}
             onClick={e => e.stopPropagation()}
           >
-            {/* Drawer handle */}
             <div style={{
               width: '36px', height: '4px', borderRadius: '2px',
               background: 'var(--gold-border)', margin: '0 auto 16px',
             }} />
 
-            {/* Drawer header */}
             <div style={{
               fontFamily:    'var(--font-lora)',
               fontSize:      '0.72rem',
@@ -370,7 +354,6 @@ export default function TafseerReader({ entries, surah, bookName, targetAyah }: 
               Jump to ayah
             </div>
 
-            {/* Drawer items */}
             {entries.map(e => {
               const isActive = activeAyah >= e.fromAyah && activeAyah <= e.toAyah;
               return (
@@ -418,7 +401,6 @@ export default function TafseerReader({ entries, surah, bookName, targetAyah }: 
         </div>
       )}
 
-      {/* ── Global styles ─────────────────────────────────────────────────── */}
       <style>{`
         @media (max-width: 640px) {
           .tafseer-sidenav { display: none !important; }
@@ -431,30 +413,22 @@ export default function TafseerReader({ entries, surah, bookName, targetAyah }: 
   );
 }
 
-// ─── Individual entry block ───────────────────────────────────────────────────
-
 interface EntryBlockProps {
   entry:       TafseerEntry;
   surah:       number;
   isActive:    boolean;
   mode:        Mode;
   onActivate:  () => void;
-  onCollapse?: () => void;  // accordion: collapse active entry
+  onCollapse?: () => void;
 }
 
 const COLLAPSE_THRESHOLD = 800;
 
 function TafseerEntryBlock({ entry, surah, isActive, mode, onActivate, onCollapse }: EntryBlockProps) {
   const isLong      = entry.text.length > COLLAPSE_THRESHOLD;
-  const [expanded, setExpanded] = useState(true); // always start expanded
+  const [expanded, setExpanded] = useState(true);
 
-  // In split mode: long entries have their own expand toggle
-  // In accordion mode: entry is fully shown when active, collapsed when not
-
-  // Split: show content when expanded (starts true, toggled by Show less)
-  // Accordion: only show when active
   const showFull = mode === 'accordion' ? isActive : expanded;
-
   const isSingle = entry.fromAyah === entry.toAyah;
 
   return (
@@ -473,7 +447,6 @@ function TafseerEntryBlock({ entry, surah, isActive, mode, onActivate, onCollaps
         cursor:          mode === 'accordion' ? 'pointer' : 'default',
       }}
     >
-      {/* ── Entry header ─────────────────────────────────────────────────── */}
       <div style={{
         display:       'flex',
         alignItems:    'center',
@@ -481,7 +454,6 @@ function TafseerEntryBlock({ entry, surah, isActive, mode, onActivate, onCollaps
         marginBottom:  showFull ? '14px' : 0,
         flexWrap:      'wrap',
       }}>
-        {/* Ayah reference badge */}
         <div style={{
           background:   isActive ? 'var(--gold)' : 'rgba(200,168,75,0.10)',
           border:       `1px solid ${isActive ? 'var(--gold)' : 'var(--gold-border-strong)'}`,
@@ -498,7 +470,6 @@ function TafseerEntryBlock({ entry, surah, isActive, mode, onActivate, onCollaps
           {!isSingle && `–${entry.toAyah}`}
         </div>
 
-        {/* Ayah label */}
         <span style={{
           fontFamily: 'var(--font-lora)',
           fontSize:   '0.75rem',
@@ -508,7 +479,6 @@ function TafseerEntryBlock({ entry, surah, isActive, mode, onActivate, onCollaps
           {isSingle ? `Ayah ${entry.fromAyah}` : `Ayahs ${entry.fromAyah}–${entry.toAyah}`}
         </span>
 
-        {/* Accordion: show preview text when collapsed */}
         {mode === 'accordion' && !isActive && entry.text && (
           <span style={{
             fontFamily:   'var(--font-lora)',
@@ -523,7 +493,6 @@ function TafseerEntryBlock({ entry, surah, isActive, mode, onActivate, onCollaps
           </span>
         )}
 
-        {/* Accordion expand arrow */}
         {mode === 'accordion' && (
           <span style={{
             marginLeft:  'auto',
@@ -538,7 +507,6 @@ function TafseerEntryBlock({ entry, surah, isActive, mode, onActivate, onCollaps
         )}
       </div>
 
-      {/* ── Entry text ───────────────────────────────────────────────────── */}
       {showFull && (
         <>
           <div style={{
@@ -556,11 +524,8 @@ function TafseerEntryBlock({ entry, surah, isActive, mode, onActivate, onCollaps
                 color:      'var(--ink)',
               }}
             />
-
-            {/* No collapse fade in split mode */}
           </div>
 
-          {/* Split mode: expand/collapse toggle for long entries */}
           {mode === 'split' && isLong && (
             <button
               onClick={() => setExpanded(p => !p)}

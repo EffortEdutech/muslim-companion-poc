@@ -72,6 +72,8 @@ export default async function TafseerSurahPage({ params, searchParams }: PagePro
         section="tafseer"
         label={surahName}
         selector="[data-tafseer-entry]"
+        mode="top-heading"
+        topBoundary={96}
       />
       <StudyFootstep section="tafseer" homeUrl="/tafseer" />
 

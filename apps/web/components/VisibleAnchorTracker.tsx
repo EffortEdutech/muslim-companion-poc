@@ -5,12 +5,20 @@ import { useEffect } from 'react';
 import { saveLastUrl, SectionKey } from '@/lib/study-context';
 
 interface Props {
-  section:  SectionKey;
-  label:    string;
-  selector: string;
+  section:     SectionKey;
+  label:       string;
+  selector:    string;
+  mode?:       'focus-line' | 'top-heading';
+  topBoundary?: number;
 }
 
-export default function VisibleAnchorTracker({ section, label, selector }: Props) {
+export default function VisibleAnchorTracker({
+  section,
+  label,
+  selector,
+  mode = 'focus-line',
+  topBoundary = 96,
+}: Props) {
   useEffect(() => {
     if (typeof window === 'undefined') return;
 
@@ -35,20 +43,27 @@ export default function VisibleAnchorTracker({ section, label, selector }: Props
       return true;
     };
 
-    const saveActiveTarget = () => {
-      rafId = 0;
+    const pickByTopHeading = (targets: HTMLElement[]): HTMLElement | null => {
+      const viewportLimit = window.innerHeight * 0.8;
 
-      const targets = getTargets();
-      if (!targets.length) return;
+      // Prefer the first entry whose HEADER/top is actually visible below the sticky nav.
+      const firstVisibleHeading = targets.find((el) => {
+        const rect = el.getBoundingClientRect();
+        return rect.top >= topBoundary && rect.top < viewportLimit;
+      });
+      if (firstVisibleHeading) return firstVisibleHeading;
 
-      // IMPORTANT:
-      // If we arrived via hash and the user has not scrolled yet,
-      // preserve that exact hash target instead of re-sampling.
-      const currentHashId = window.location.hash.replace(/^#/, '');
-      if (!userHasScrolled && currentHashId) {
-        if (saveById(currentHashId)) return;
-      }
+      // Fallback: entry currently crossing the boundary.
+      const crossingBoundary = targets.find((el) => {
+        const rect = el.getBoundingClientRect();
+        return rect.top <= topBoundary && rect.bottom > topBoundary;
+      });
+      if (crossingBoundary) return crossingBoundary;
 
+      return targets[0] ?? null;
+    };
+
+    const pickByFocusLine = (targets: HTMLElement[]): HTMLElement | null => {
       const focusLine = 120;
 
       let best: HTMLElement | null = null;
@@ -70,9 +85,29 @@ export default function VisibleAnchorTracker({ section, label, selector }: Props
         }
       }
 
-      const active = best ?? targets[0];
-      if (!active?.id) return;
+      return best ?? targets[0] ?? null;
+    };
 
+    const saveActiveTarget = () => {
+      rafId = 0;
+
+      const targets = getTargets();
+      if (!targets.length) return;
+
+      // Only preserve hash as-is for focus-line mode.
+      // For top-heading mode (used by tafseer), we intentionally recompute based
+      // on what the user actually sees at the top of the screen.
+      const currentHashId = window.location.hash.replace(/^#/, '');
+      if (mode === 'focus-line' && !userHasScrolled && currentHashId) {
+        if (saveById(currentHashId)) return;
+      }
+
+      const active =
+        mode === 'top-heading'
+          ? pickByTopHeading(targets)
+          : pickByFocusLine(targets);
+
+      if (!active?.id) return;
       saveById(active.id);
     };
 
@@ -87,11 +122,6 @@ export default function VisibleAnchorTracker({ section, label, selector }: Props
     };
 
     const timerId = window.setTimeout(() => {
-      const currentHashId = window.location.hash.replace(/^#/, '');
-      if (currentHashId) {
-        saveById(currentHashId);
-        return;
-      }
       scheduleSave();
     }, 700);
 
@@ -104,7 +134,7 @@ export default function VisibleAnchorTracker({ section, label, selector }: Props
       window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', scheduleSave);
     };
-  }, [section, label, selector]);
+  }, [section, label, selector, mode, topBoundary]);
 
   return null;
 }

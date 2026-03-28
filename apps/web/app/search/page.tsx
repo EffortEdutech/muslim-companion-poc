@@ -16,9 +16,7 @@ import SearchBar                                 from '@/components/SearchBar';
 import UnifiedSearchTabs                         from '@/components/UnifiedSearchTabs';
 import SearchDiscoveryBar                        from '@/components/SearchDiscoveryBar';
 import SearchResults, { CrossRefHadith }         from '@/components/search/SearchResults';
-import SearchPersist, { NewSearchButton } from '@/components/SearchPersist';
-
-// ─── Types ────────────────────────────────────────────────────────────────────
+import SearchPersist, { NewSearchButton }        from '@/components/SearchPersist';
 
 interface PageProps {
   searchParams: Promise<{
@@ -28,8 +26,6 @@ interface PageProps {
 
 type Source   = 'all' | 'hadith' | 'quran' | 'tafseer';
 type RawCrossRef = Record<string, Array<{ bs: string; ib: number; bsh: string }>>;
-
-// ─── Cross-ref + hadith text loader ──────────────────────────────────────────
 
 let _crossRefCache: RawCrossRef | null = null;
 
@@ -45,7 +41,6 @@ function loadRawCrossRef(): RawCrossRef {
   return _crossRefCache || {};
 }
 
-// Load the flat hadith index for text lookup (used to populate cross-ref detail)
 let _hadithIndexCache: Array<{_id:number;ib:number;bs:string;bsh:string;ct:string;ar:string;en:string;na:string}> | null = null;
 
 function loadHadithIndex() {
@@ -63,14 +58,12 @@ function loadHadithIndex() {
   return [];
 }
 
-// Build enriched cross-ref: look up actual text for each referenced hadith
 function buildEnrichedCrossRef(
   rawCrossRef: RawCrossRef,
   relevantAyahs: string[]
 ): Record<string, CrossRefHadith[]> {
   const hadithIndex = loadHadithIndex();
 
-  // Build lookup: "bookSlug:idInBook" → hadith entry
   const lookup = new Map<string, {en:string;na:string;ar:string}>();
   for (const h of hadithIndex) {
     lookup.set(`${h.bs}:${h.ib}`, { en: h.en, na: h.na, ar: h.ar });
@@ -98,8 +91,6 @@ function buildEnrichedCrossRef(
   return result;
 }
 
-// ─── Metadata ─────────────────────────────────────────────────────────────────
-
 export async function generateMetadata({ searchParams }: PageProps): Promise<Metadata> {
   const { q } = await searchParams;
   return {
@@ -107,8 +98,6 @@ export async function generateMetadata({ searchParams }: PageProps): Promise<Met
     description: 'Search across Quran, Tafseer, and Hadith. Discover connections between sacred texts.',
   };
 }
-
-// ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default async function SearchPage({ searchParams }: PageProps) {
   const { q = '', src = 'all', book = '', page: pageStr = '1' } = await searchParams;
@@ -147,16 +136,16 @@ export default async function SearchPage({ searchParams }: PageProps) {
   const quranPages   = quranResponse   ? Math.ceil(quranTotal   / quranResponse.limit)   : 0;
   const tafseerPages = tafseerResponse ? Math.ceil(tafseerTotal / tafseerResponse.limit) : 0;
 
-  // Build enriched cross-ref only for ayahs in current Quran results
   const rawCrossRef  = loadRawCrossRef();
   const ayahKeys     = (quranResponse?.results || []).map(r => `${r.surah}:${r.ayah}`);
   const enrichedCrossRef = buildEnrichedCrossRef(rawCrossRef, ayahKeys);
   const crossRefCount    = ayahKeys.filter(k => (enrichedCrossRef[k] || []).length > 0).length;
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10">
-
-      {/* ── Header ─────────────────────────────────────────────────── */}
+    <div
+      className="max-w-5xl mx-auto px-4 sm:px-6 py-10"
+      style={{ overflowX: 'hidden' }}
+    >
       <header className="mb-6">
         <h1 className="page-heading" style={{ fontSize: 'clamp(1.6rem, 4vw, 2.6rem)', marginBottom: '4px' }}>
           Search
@@ -176,7 +165,7 @@ export default async function SearchPage({ searchParams }: PageProps) {
             shouldRestore={!query}
           />
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
-            <div style={{ flex: 1 }}>
+            <div style={{ flex: 1, minWidth: 0 }}>
               <SearchBar
                 defaultQuery={query}
                 defaultBook={source === 'hadith' ? book : ''}
@@ -187,9 +176,8 @@ export default async function SearchPage({ searchParams }: PageProps) {
           </div>
         </Suspense>
 
-        {/* Tabs — show source counts, no duplication */}
         {query.length >= 2 && (
-          <div style={{ marginTop: '16px' }}>
+          <div style={{ marginTop: '16px', maxWidth: '100%' }}>
             <Suspense fallback={null}>
               <UnifiedSearchTabs
                 query={query} source={source} book={book}
@@ -200,17 +188,14 @@ export default async function SearchPage({ searchParams }: PageProps) {
         )}
       </header>
 
-      {/* ── Discovery bar — cross-ref counter only ─────────────────── */}
       {query.length >= 2 && crossRefCount > 0 && (
         <Suspense fallback={null}>
           <SearchDiscoveryBar crossRefCount={crossRefCount} />
         </Suspense>
       )}
 
-      {/* ── Empty state ─────────────────────────────────────────────── */}
       {!query && <EmptyState />}
 
-      {/* ── No results ──────────────────────────────────────────────── */}
       {query.length >= 2 && combinedTotal === 0 && (
         <div style={{ marginTop: '40px', textAlign: 'center', padding: '36px 20px' }}>
           <p style={{ fontFamily: 'var(--font-lora)', color: 'var(--ink-muted)', fontSize: '0.95rem' }}>
@@ -222,7 +207,6 @@ export default async function SearchPage({ searchParams }: PageProps) {
         </div>
       )}
 
-      {/* ── Results — two-level accordion ───────────────────────────── */}
       {query.length >= 2 && combinedTotal > 0 && (
         <SearchResults
           query={query}
@@ -244,8 +228,6 @@ export default async function SearchPage({ searchParams }: PageProps) {
     </div>
   );
 }
-
-// ─── Empty state ──────────────────────────────────────────────────────────────
 
 function EmptyState() {
   const QUICK = ['mercy', 'patience', 'prayer', 'knowledge', '2:255', 'الإخلاص', 'tawbah'];

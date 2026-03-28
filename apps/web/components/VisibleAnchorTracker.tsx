@@ -1,9 +1,6 @@
 // apps/web/components/VisibleAnchorTracker.tsx
 'use client';
 
-// Saves the most relevant visible anchor on reader pages so top-tab switching
-// can restore the user to the last ayah / tafseer entry / hadith card.
-
 import { useEffect } from 'react';
 import { saveLastUrl, SectionKey } from '@/lib/study-context';
 
@@ -19,9 +16,24 @@ export default function VisibleAnchorTracker({ section, label, selector }: Props
 
     let rafId = 0;
     let lastSavedId = '';
+    let userHasScrolled = false;
 
     const getTargets = (): HTMLElement[] =>
       Array.from(document.querySelectorAll<HTMLElement>(selector)).filter((el) => !!el.id);
+
+    const saveById = (id: string) => {
+      if (!id) return false;
+
+      const el = document.getElementById(id);
+      if (!el) return false;
+
+      if (id === lastSavedId) return true;
+      lastSavedId = id;
+
+      const explicitUrl = `${window.location.pathname}${window.location.search}#${id}`;
+      saveLastUrl(section, label, explicitUrl);
+      return true;
+    };
 
     const saveActiveTarget = () => {
       rafId = 0;
@@ -29,7 +41,14 @@ export default function VisibleAnchorTracker({ section, label, selector }: Props
       const targets = getTargets();
       if (!targets.length) return;
 
-      // Approximate "reading focus" just below the sticky top bar.
+      // IMPORTANT:
+      // If we arrived via hash and the user has not scrolled yet,
+      // preserve that exact hash target instead of re-sampling.
+      const currentHashId = window.location.hash.replace(/^#/, '');
+      if (!userHasScrolled && currentHashId) {
+        if (saveById(currentHashId)) return;
+      }
+
       const focusLine = 120;
 
       let best: HTMLElement | null = null;
@@ -38,15 +57,12 @@ export default function VisibleAnchorTracker({ section, label, selector }: Props
       for (const el of targets) {
         const rect = el.getBoundingClientRect();
 
-        // If the card is already above the focus line but still on screen,
-        // it is usually the one the user is reading.
         if (rect.top <= focusLine && rect.bottom > focusLine) {
           best = el;
           bestDistance = 0;
           break;
         }
 
-        // Otherwise prefer the closest card to the focus line.
         const distance = Math.abs(rect.top - focusLine);
         if (distance < bestDistance) {
           best = el;
@@ -55,11 +71,9 @@ export default function VisibleAnchorTracker({ section, label, selector }: Props
       }
 
       const active = best ?? targets[0];
-      if (!active?.id || active.id === lastSavedId) return;
+      if (!active?.id) return;
 
-      lastSavedId = active.id;
-      const explicitUrl = `${window.location.pathname}${window.location.search}#${active.id}`;
-      saveLastUrl(section, label, explicitUrl);
+      saveById(active.id);
     };
 
     const scheduleSave = () => {
@@ -67,16 +81,27 @@ export default function VisibleAnchorTracker({ section, label, selector }: Props
       rafId = window.requestAnimationFrame(saveActiveTarget);
     };
 
-    // Delay the first save so hash-based restoration and sticky layout can settle first.
-    const timerId = window.setTimeout(scheduleSave, 700);
+    const onScroll = () => {
+      userHasScrolled = true;
+      scheduleSave();
+    };
 
-    window.addEventListener('scroll', scheduleSave, { passive: true });
+    const timerId = window.setTimeout(() => {
+      const currentHashId = window.location.hash.replace(/^#/, '');
+      if (currentHashId) {
+        saveById(currentHashId);
+        return;
+      }
+      scheduleSave();
+    }, 700);
+
+    window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', scheduleSave);
 
     return () => {
       window.clearTimeout(timerId);
       if (rafId) window.cancelAnimationFrame(rafId);
-      window.removeEventListener('scroll', scheduleSave);
+      window.removeEventListener('scroll', onScroll);
       window.removeEventListener('resize', scheduleSave);
     };
   }, [section, label, selector]);

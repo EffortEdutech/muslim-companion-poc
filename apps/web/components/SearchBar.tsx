@@ -99,7 +99,7 @@ export default function SearchBar({ defaultQuery = '', defaultBook = '', autoFoc
           className="search-select"
           style={{
             fontFamily:   'var(--font-lora)',
-            fontSize:     '0.88rem',
+            fontSize:     '1rem',
             background:   'var(--bg-card)',
             border:       '1px solid var(--gold-border)',
             borderRadius: '10px',

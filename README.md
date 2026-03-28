@@ -1,18 +1,20 @@
-# muslim-companion-poc hotfix v5
+# muslim-companion-poc hotfix v6
 
-This hotfix targets the remaining tafseer mismatch:
+This hotfix gives Search page the same revisit behavior idea:
+- restore the last search query as before
+- also restore which branch/section was left expanded
+- also restore which result card(s) were left expanded
+- also restore scroll position for the exact search URL in the current session
 
-- side pointer / yellow highlight says ayah 6
-- but the first actually visible entry on screen is ayah 7
+## Included files
+- apps/web/components/search/SearchResults.tsx
+- apps/web/app/search/page.tsx
 
-## Cause
-`TafseerReader.tsx` still used an old IntersectionObserver heuristic for the active highlight.
-That logic could keep the previous tall block active even after the next tafseer heading had become the first visible one.
+## Notes
+UI state is keyed by:
+- query
+- source tab
+- book filter
+- page number
 
-## Fix
-The split-mode scroll spy now selects:
-1. the first tafseer entry whose heading is actually visible below the sticky bars
-2. otherwise the entry crossing that top boundary
-3. otherwise the first entry
-
-This aligns the active highlight with what the user actually sees.
+So each search result page can remember its own expanded summary state independently.

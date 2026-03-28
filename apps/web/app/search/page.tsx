@@ -11,12 +11,12 @@ import Link from 'next/link';
 import { SearchResponse }                        from '@/lib/types';
 import { QuranSearchResponse }                   from '@/lib/quran-search-types';
 import { TafseerSearchResponse }                 from '@/lib/tafseer-search-types';
-import { getCollectionBySlug }                   from '@/lib/collections';
 import SearchBar                                 from '@/components/SearchBar';
 import UnifiedSearchTabs                         from '@/components/UnifiedSearchTabs';
 import SearchDiscoveryBar                        from '@/components/SearchDiscoveryBar';
 import SearchResults, { CrossRefHadith }         from '@/components/search/SearchResults';
 import SearchPersist, { NewSearchButton }        from '@/components/SearchPersist';
+import ScrollRestore                             from '@/components/ScrollRestore';
 
 interface PageProps {
   searchParams: Promise<{
@@ -94,7 +94,7 @@ function buildEnrichedCrossRef(
 export async function generateMetadata({ searchParams }: PageProps): Promise<Metadata> {
   const { q } = await searchParams;
   return {
-    title:       q ? `"${q}" – Search | IQRA Digital` : 'Search | IQRA Digital',
+    title:       q ? `\"${q}\" – Search | IQRA Digital` : 'Search | IQRA Digital',
     description: 'Search across Quran, Tafseer, and Hadith. Discover connections between sacred texts.',
   };
 }
@@ -142,10 +142,9 @@ export default async function SearchPage({ searchParams }: PageProps) {
   const crossRefCount    = ayahKeys.filter(k => (enrichedCrossRef[k] || []).length > 0).length;
 
   return (
-    <div
-      className="max-w-5xl mx-auto px-4 sm:px-6 py-10"
-      style={{ overflowX: 'hidden' }}
-    >
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10" style={{ overflowX: 'hidden' }}>
+      <ScrollRestore />
+
       <header className="mb-6">
         <h1 className="page-heading" style={{ fontSize: 'clamp(1.6rem, 4vw, 2.6rem)', marginBottom: '4px' }}>
           Search

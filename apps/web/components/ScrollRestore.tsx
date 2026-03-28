@@ -5,10 +5,11 @@
 // Restores it when returning to the same URL.
 // Keyed by full URL (pathname + search) so each page has its own position.
 //
-// Uses sessionStorage (not localStorage) — positions reset on new session,
-// which matches natural browser behaviour. No stale positions across days.
-//
-// Add to any reader page: <ScrollRestore />
+// IMPORTANT:
+// If the current URL contains a hash (#ayah-8, #entry-12, #hadith-963),
+// we SKIP numeric scroll restoration and let hash-based restoration win.
+// Otherwise ScrollRestore can override the anchor jump and snap the user
+// back to an older Y position.
 
 import { useEffect, useRef } from 'react';
 import { usePathname, useSearchParams } from 'next/navigation';
@@ -27,13 +28,21 @@ export default function ScrollRestore() {
     savedRef.current = true;
 
     try {
+      // When a hash exists, anchor restoration should take priority.
+      if (typeof window !== 'undefined' && window.location.hash) return;
+
       const saved = sessionStorage.getItem(key);
       if (!saved) return;
+
       const y = parseInt(saved, 10);
       if (isNaN(y) || y < 1) return;
 
       // Wait for layout — fonts + images settle before we scroll
-      const restore = () => window.scrollTo({ top: y, behavior: 'instant' });
+      const restore = () => {
+        // Double-check again in case the hash appeared after hydration
+        if (typeof window !== 'undefined' && window.location.hash) return;
+        window.scrollTo({ top: y, behavior: 'instant' });
+      };
 
       // Try immediately
       setTimeout(restore, 100);
@@ -49,6 +58,7 @@ export default function ScrollRestore() {
     function onScroll() {
       if (ticking) return;
       ticking = true;
+
       setTimeout(() => {
         try {
           sessionStorage.setItem(key, String(Math.round(window.scrollY)));

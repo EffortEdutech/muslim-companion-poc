@@ -12,6 +12,7 @@ import StickyBottomNav      from '@/components/StickyBottomNav';
 import ReadingProgress      from '@/components/ReadingProgress';
 import StudyFootstep        from '@/components/StudyFootstep';
 import ScrollRestore        from '@/components/ScrollRestore';
+import ScrollToHash         from '@/components/ScrollToHash';
 import VisibleAnchorTracker from '@/components/VisibleAnchorTracker';
 
 interface PageProps {
@@ -54,6 +55,8 @@ export default async function TafseerSurahPage({ params, searchParams }: PagePro
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10" style={{ paddingBottom: '100px' }}>
+      <ScrollToHash />
+
       <ReadingProgress
         section="tafseer"
         label={surahName}

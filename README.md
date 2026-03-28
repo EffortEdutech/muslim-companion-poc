@@ -1,17 +1,11 @@
-# muslim-companion-poc patch pack
+# muslim-companion-poc hotfix v2
 
-Included files:
-- apps/web/lib/study-context.ts
-- apps/web/components/ReadingProgress.tsx
-- apps/web/components/StudyFootstep.tsx
-- apps/web/components/VisibleAnchorTracker.tsx
-- apps/web/app/quran/page.tsx
-- apps/web/app/tafseer/page.tsx
-- apps/web/app/hadith/page.tsx
-- apps/web/app/quran/[surahNumber]/page.tsx
+This hotfix addresses the remaining tab-restore issue for Quran and Tafseer.
+
+## Root cause
+1. `ScrollRestore` restored old Y-scroll even when the URL had a hash like `#ayah-8` or `#entry-8`.
+2. Tafseer detail page did not mount `ScrollToHash`, so saved `#entry-*` anchors had nothing to execute the jump.
+
+## Included files
+- apps/web/components/ScrollRestore.tsx
 - apps/web/app/tafseer/[bookSlug]/[surahNumber]/page.tsx
-- apps/web/app/hadith/[bookSlug]/page.tsx
-
-Purpose:
-1. Fix stale breadcrumb after returning to section home.
-2. Persist last exact reading anchor for Quran, Tafseer, and Hadith.

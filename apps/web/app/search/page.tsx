@@ -1,7 +1,4 @@
 // apps/web/app/search/page.tsx
-// Server component — fetches all data, enriches cross-refs with hadith text,
-// passes everything to the SearchResults client accordion component.
-
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
 import path from 'path';
@@ -161,6 +158,7 @@ export default async function SearchPage({ searchParams }: PageProps) {
             query={query}
             source={source}
             book={book}
+            page={String(currentPage)}
             shouldRestore={!query}
           />
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
@@ -232,16 +230,10 @@ function EmptyState() {
   const QUICK = ['mercy', 'patience', 'prayer', 'knowledge', '2:255', 'الإخلاص', 'tawbah'];
   return (
     <div style={{ marginTop: '48px', textAlign: 'center', padding: '48px 20px' }}>
-      <div dir="rtl" lang="ar" style={{
-        fontFamily: 'var(--font-amiri)', fontSize: '2.2rem',
-        color: 'var(--gold)', opacity: 0.4, lineHeight: 2, marginBottom: '16px',
-      }}>
+      <div dir="rtl" lang="ar" style={{ fontFamily: 'var(--font-amiri)', fontSize: '2.2rem', color: 'var(--gold)', opacity: 0.4, lineHeight: 2, marginBottom: '16px' }}>
         ابحث في القرآن والتفسير والأحاديث
       </div>
-      <p style={{
-        fontFamily: 'var(--font-lora)', color: 'var(--ink-muted)',
-        fontSize: '0.92rem', maxWidth: '440px', margin: '0 auto 24px', lineHeight: 1.7,
-      }}>
+      <p style={{ fontFamily: 'var(--font-lora)', color: 'var(--ink-muted)', fontSize: '0.92rem', maxWidth: '440px', margin: '0 auto 24px', lineHeight: 1.7 }}>
         Search Quran, Tafseer, and Hadith in Arabic or English.{' '}
         Use <span style={{ color: 'var(--gold)', fontFamily: 'monospace' }}>2:255</span> to jump
         to a specific ayah, or{' '}
@@ -250,11 +242,7 @@ function EmptyState() {
       <div style={{ display: 'flex', flexWrap: 'wrap', gap: '8px', justifyContent: 'center' }}>
         {QUICK.map(term => (
           <Link key={term} href={`/search?q=${encodeURIComponent(term)}`} style={{ textDecoration: 'none' }}>
-            <span style={{
-              fontFamily: 'var(--font-lora)', fontSize: '0.82rem', color: 'var(--gold)',
-              border: '1px solid var(--gold-border)', borderRadius: '20px',
-              padding: '5px 14px', background: 'var(--bg-card)', display: 'inline-block',
-            }}>
+            <span style={{ fontFamily: 'var(--font-lora)', fontSize: '0.82rem', color: 'var(--gold)', border: '1px solid var(--gold-border)', borderRadius: '20px', padding: '5px 14px', background: 'var(--bg-card)', display: 'inline-block' }}>
               {term}
             </span>
           </Link>

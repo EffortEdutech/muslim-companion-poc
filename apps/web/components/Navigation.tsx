@@ -1,10 +1,6 @@
 // apps/web/components/Navigation.tsx
 'use client';
 
-// FIX 1: Listens to localStorage 'storage' event so breadcrumb updates
-//         the instant ReadingProgress writes — no race condition.
-// FIX 3: Breadcrumb parts now render as <Link> when href is provided.
-
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
 import { useState, useRef, useEffect, FormEvent } from 'react';
@@ -19,33 +15,24 @@ export default function Navigation() {
   const [crumb,      setCrumb]      = useState<BreadcrumbState | null>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // ── FIX 1: Read breadcrumb on mount + on every localStorage write ──────────
-  // ReadingProgress writes AFTER Navigation's pathname effect fires.
-  // Listening to 'storage' event catches the write and updates the crumb.
   useEffect(() => {
-    // Read immediately (covers initial load and same-tab navigation)
     setCrumb(loadBreadcrumb());
 
-    // Also react when localStorage is written from the same tab
     function onStorage(e: StorageEvent) {
       if (e.key === 'iqra:breadcrumb') {
         setCrumb(loadBreadcrumb());
       }
     }
-    // storageEvent fires for cross-tab; for same-tab we use a custom event
+
     window.addEventListener('storage', onStorage);
     return () => window.removeEventListener('storage', onStorage);
-  }, []); // once on mount
+  }, []);
 
-  // Re-read on route change (catches navigations where ReadingProgress has
-  // already written on a previous visit to this exact URL)
   useEffect(() => {
-    // Small delay: let ReadingProgress useEffect run first
     const t = setTimeout(() => setCrumb(loadBreadcrumb()), 50);
     return () => clearTimeout(t);
   }, [pathname]);
 
-  // Custom event for same-tab storage updates (storage event doesn't fire in same tab)
   useEffect(() => {
     function onBreadcrumbUpdate() {
       setCrumb(loadBreadcrumb());
@@ -92,7 +79,6 @@ export default function Navigation() {
 
   return (
     <>
-      {/* ── Top bar ─────────────────────────────────────────────────────── */}
       <nav
         style={{
           height:     'var(--nav-height)',
@@ -104,8 +90,6 @@ export default function Navigation() {
         className="fixed top-0 left-0 right-0 z-50"
       >
         <div className="max-w-6xl mx-auto h-full px-4 sm:px-6 flex items-center gap-4">
-
-          {/* Logo */}
           <Link href="/" style={{ display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none', flexShrink: 0 }}>
             <span style={{ fontFamily: 'var(--font-amiri)', fontSize: '1.35rem', color: 'var(--gold)', lineHeight: 1 }} dir="rtl" lang="ar">إقرأ</span>
             <span style={{ fontFamily: 'var(--font-cormorant)', fontSize: '1.15rem', fontWeight: 700, color: 'var(--ink)', letterSpacing: '-0.02em' }}>
@@ -113,16 +97,14 @@ export default function Navigation() {
             </span>
           </Link>
 
-          {/* Desktop nav links — hidden on mobile */}
           <div className="hidden sm:flex items-center gap-1 flex-shrink-0">
             <button onClick={() => goToSection('quran',   '/quran')}   className={`nav-link ${isActive('/quran')   ? 'active' : ''}`}>Quran</button>
             <button onClick={() => goToSection('tafseer', '/tafseer')} className={`nav-link ${isActive('/tafseer') ? 'active' : ''}`}>Tafseer</button>
             <button onClick={() => goToSection('hadith',  '/hadith')}  className={`nav-link ${isActive('/hadith')  ? 'active' : ''}`}>Hadith</button>
-            <Link   href="/search"    className={`nav-link ${isActive('/search')    ? 'active' : ''}`}>Search</Link>
+            <button onClick={() => goToSection('search',  '/search')}  className={`nav-link ${isActive('/search')  ? 'active' : ''}`}>Search</button>
             <Link   href="/bookmarks" className={`nav-link ${isActive('/bookmarks') ? 'active' : ''}`}>Bookmarks</Link>
           </div>
 
-          {/* ── FIX 3: Breadcrumb — parts with href render as links ────────── */}
           {showCrumb && crumb ? (
             <div style={{
               flex: 1, display: 'flex', alignItems: 'center', gap: '4px',
@@ -134,7 +116,6 @@ export default function Navigation() {
                 return (
                   <span key={i} style={{ display: 'flex', alignItems: 'center', gap: '4px', minWidth: 0 }}>
                     {i > 0 && <span style={{ color: 'var(--ink-muted)', opacity: 0.4, flexShrink: 0 }}>›</span>}
-                    {/* FIX: render as Link if href provided, else plain span */}
                     {part.href && !isLast ? (
                       <Link
                         href={part.href}
@@ -166,7 +147,6 @@ export default function Navigation() {
             <div style={{ flex: 1 }} />
           )}
 
-          {/* Search trigger */}
           <button
             onClick={() => setSearchOpen(true)}
             style={{
@@ -185,7 +165,6 @@ export default function Navigation() {
         </div>
       </nav>
 
-      {/* ── Mobile bottom tab bar — className controls visibility, NOT inline style ── */}
       <div
         className="flex sm:hidden"
         style={{
@@ -200,11 +179,10 @@ export default function Navigation() {
         <MobileTab label="Quran"     active={isActive('/quran')}     onClick={() => goToSection('quran',   '/quran')}   icon={<IconBook />} />
         <MobileTab label="Tafseer"   active={isActive('/tafseer')}   onClick={() => goToSection('tafseer', '/tafseer')} icon={<IconScroll />} />
         <MobileTab label="Hadith"    active={isActive('/hadith')}    onClick={() => goToSection('hadith',  '/hadith')}  icon={<IconHadith />} />
-        <MobileTab label="Search"    active={isActive('/search')}    href="/search"    icon={<IconSearch />} />
+        <MobileTab label="Search"    active={isActive('/search')}    onClick={() => goToSection('search',  '/search')}  icon={<IconSearch />} />
         <MobileTab label="Bookmarks" active={isActive('/bookmarks')} href="/bookmarks" icon={<IconBookmark />} />
       </div>
 
-      {/* ── Search modal ─────────────────────────────────────────────────── */}
       {searchOpen && (
         <div
           className="fixed inset-0 z-[100] flex items-start justify-center pt-[15vh] px-4"

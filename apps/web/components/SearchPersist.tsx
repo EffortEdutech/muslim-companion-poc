@@ -1,49 +1,56 @@
 'use client';
 
 // apps/web/components/SearchPersist.tsx
-// Saves the current search query+source to localStorage.
-// On return to /search with no query, restores the last search automatically.
-// Also renders a "New Search" button to clear and start fresh.
+// Saves the current search state to localStorage.
+// On return to /search with no query, restores the exact last search URL.
+// Also updates Navigation's Search tab memory with the exact URL.
 
 import { useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
+import { saveLastUrl } from '@/lib/study-context';
 
 const STORAGE_KEY = 'iqra:last-search';
 
 interface SavedSearch {
-  q:    string;
-  src:  string;
-  book: string;
+  q:       string;
+  src:     string;
+  book:    string;
+  page:    string;
+  url:     string;
   savedAt: number;
 }
 
 interface Props {
-  // Current search state from server (empty strings = no active search)
-  query:  string;
+  query: string;
   source: string;
-  book:   string;
-  // If true, no query in URL — attempt restore
+  book: string;
   shouldRestore: boolean;
+  page?: string;
 }
 
-export default function SearchPersist({ query, source, book, shouldRestore }: Props) {
+export default function SearchPersist({ query, source, book, shouldRestore, page = '1' }: Props) {
   const router  = useRouter();
   const hasRun  = useRef(false);
 
-  // Save whenever we have an active search
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+
     if (query.trim().length >= 2) {
+      const exactUrl = `${window.location.pathname}${window.location.search}${window.location.hash}`;
       const saved: SavedSearch = {
         q:       query.trim(),
         src:     source || 'all',
         book:    book   || '',
+        page:    page   || '1',
+        url:     exactUrl,
         savedAt: Date.now(),
       };
-      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(saved)); } catch {}
-    }
-  }, [query, source, book]);
 
-  // Restore once on mount if no query in URL
+      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(saved)); } catch {}
+      saveLastUrl('search', `Search: ${query.trim()}`, exactUrl);
+    }
+  }, [query, source, book, page]);
+
   useEffect(() => {
     if (!shouldRestore || hasRun.current) return;
     hasRun.current = true;
@@ -51,23 +58,27 @@ export default function SearchPersist({ query, source, book, shouldRestore }: Pr
     try {
       const raw = localStorage.getItem(STORAGE_KEY);
       if (!raw) return;
+
       const saved: SavedSearch = JSON.parse(raw);
       if (!saved.q || saved.q.trim().length < 2) return;
 
-      // Build restore URL
+      if (saved.url) {
+        router.replace(saved.url);
+        return;
+      }
+
       const params = new URLSearchParams();
       params.set('q', saved.q);
       if (saved.src && saved.src !== 'all') params.set('src', saved.src);
       if (saved.book) params.set('book', saved.book);
+      if (saved.page && saved.page !== '1') params.set('page', saved.page);
 
       router.replace(`/search?${params.toString()}`);
     } catch {}
   }, [shouldRestore, router]);
 
-  return null; // renders nothing — side-effect only
+  return null;
 }
-
-// ── New Search button — shown when there is an active search ─────────────────
 
 interface NewSearchButtonProps {
   visible: boolean;
@@ -104,7 +115,6 @@ export function NewSearchButton({ visible }: NewSearchButtonProps) {
         flexShrink:   0,
       }}
     >
-      {/* X icon */}
       <svg width="11" height="11" viewBox="0 0 24 24" fill="none"
         stroke="currentColor" strokeWidth="2.5" strokeLinecap="round">
         <line x1="18" y1="6" x2="6" y2="18"/>

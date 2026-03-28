@@ -6,12 +6,13 @@ const KEYS = {
   quran:      'iqra:last-quran',
   tafseer:    'iqra:last-tafseer',
   hadith:     'iqra:last-hadith',
+  search:     'iqra:last-search-url',
   breadcrumb: 'iqra:breadcrumb',
 } as const;
 
 const MAX_AGE_MS = 30 * 24 * 60 * 60 * 1000; // 30 days
 
-export type SectionKey = 'quran' | 'tafseer' | 'hadith';
+export type SectionKey = 'quran' | 'tafseer' | 'hadith' | 'search';
 
 export interface StoredPosition {
   url:     string;
@@ -25,7 +26,7 @@ export interface BreadcrumbPart {
 }
 
 export interface BreadcrumbState {
-  section: SectionKey;
+  section: Exclude<SectionKey, 'search'>;
   parts:   BreadcrumbPart[];
 }
 
@@ -53,7 +54,7 @@ function getCurrentUrl(): string {
 /**
  * Save last visited URL for a section.
  * - Default: reads the live browser URL, including query string + hash.
- * - explicitUrl: lets client trackers save a deeper anchor without changing the URL bar.
+ * - explicitUrl: lets callers save a deeper anchor without changing the URL bar.
  */
 export function saveLastUrl(
   section: SectionKey,

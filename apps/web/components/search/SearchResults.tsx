@@ -1,75 +1,74 @@
-// apps/web/components/search/SearchResults.tsx
 'use client';
 
 import { useState, useEffect, useMemo, useRef } from 'react';
 import Link from 'next/link';
 
 export interface QuranResult {
-  surah:     number;
-  ayah:      number;
+  surah: number;
+  ayah: number;
   surahName: string;
-  arabic:    string;
-  en_sahih:  string;
-  score:     number;
-  juz?:      number;
+  arabic: string;
+  en_sahih: string;
+  score: number;
+  juz?: number;
 }
 
 export interface TafseerResult {
-  surah:     number;
-  ayah:      number;
-  ayahTo:    number;
+  surah: number;
+  ayah: number;
+  ayahTo: number;
   surahName: string;
-  text:      string;
-  edition:   string;
-  score:     number;
+  text: string;
+  edition: string;
+  score: number;
 }
 
 export interface HadithResult {
   hadith: {
-    id:        number;
-    idInBook:  number;
+    id: number;
+    idInBook: number;
     chapterId: number;
-    bookId:    number;
-    arabic:    string;
-    english:   { narrator: string; text: string };
+    bookId: number;
+    arabic: string;
+    english: { narrator: string; text: string };
   };
-  bookSlug:        string;
-  bookTitle:       string;
+  bookSlug: string;
+  bookTitle: string;
   bookArabicTitle: string;
-  chapterTitle:    string;
-  score:           number;
+  chapterTitle: string;
+  score: number;
 }
 
 export interface CrossRefHadith {
-  bs:  string;
-  ib:  number;
+  bs: string;
+  ib: number;
   bsh: string;
-  text?:     string;
+  text?: string;
   narrator?: string;
-  arabic?:   string;
+  arabic?: string;
 }
 
 interface Props {
-  query:          string;
-  quranResults:   QuranResult[];
+  query: string;
+  quranResults: QuranResult[];
   tafseerResults: TafseerResult[];
-  hadithResults:  HadithResult[];
-  crossRef:       Record<string, CrossRefHadith[]>;
-  quranTotal:     number;
-  tafseerTotal:   number;
-  hadithTotal:    number;
-  currentPage:    number;
-  quranPages:     number;
-  tafseerPages:   number;
-  hadithPages:    number;
-  source:         'all' | 'quran' | 'tafseer' | 'hadith';
-  book:           string;
+  hadithResults: HadithResult[];
+  crossRef: Record<string, CrossRefHadith[]>;
+  quranTotal: number;
+  tafseerTotal: number;
+  hadithTotal: number;
+  currentPage: number;
+  quranPages: number;
+  tafseerPages: number;
+  hadithPages: number;
+  source: 'all' | 'quran' | 'tafseer' | 'hadith';
+  book: string;
 }
 
 interface SavedSearchUiState {
   openSections: string[];
-  openItems:    string[];
-  savedAt:      number;
+  openItems: string[];
+  savedAt: number;
 }
 
 function makeStorageKey(query: string, source: string, book: string, page: number): string {
@@ -126,8 +125,8 @@ export default function SearchResults({
       }
     } catch {}
 
-    openSectionsRef.current = restoredSections
-    openItemsRef.current = restoredItems
+    openSectionsRef.current = restoredSections;
+    openItemsRef.current = restoredItems;
 
     setOpenSections(restoredSections);
     setOpenItems(restoredItems);
@@ -147,16 +146,13 @@ export default function SearchResults({
 
   useEffect(() => {
     if (!isReady) return;
-
     const flush = () => persistNow(openSectionsRef.current, openItemsRef.current);
-
     const onVisibility = () => {
       if (document.visibilityState === 'hidden') flush();
     };
 
     window.addEventListener('pagehide', flush);
     document.addEventListener('visibilitychange', onVisibility);
-
     return () => {
       window.removeEventListener('pagehide', flush);
       document.removeEventListener('visibilitychange', onVisibility);
@@ -165,10 +161,7 @@ export default function SearchResults({
 
   function toggleSection(key: string) {
     const current = openSectionsRef.current;
-    const next = current.includes(key)
-      ? current.filter((k) => k !== key)
-      : [...current, key];
-
+    const next = current.includes(key) ? current.filter((k) => k !== key) : [...current, key];
     openSectionsRef.current = next;
     setOpenSections(next);
     persistNow(next, openItemsRef.current);
@@ -176,10 +169,7 @@ export default function SearchResults({
 
   function toggleItem(itemId: string) {
     const current = openItemsRef.current;
-    const next = current.includes(itemId)
-      ? current.filter((id) => id !== itemId)
-      : [...current, itemId];
-
+    const next = current.includes(itemId) ? current.filter((id) => id !== itemId) : [...current, itemId];
     openItemsRef.current = next;
     setOpenItems(next);
     persistNow(openSectionsRef.current, next);
@@ -196,138 +186,65 @@ export default function SearchResults({
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', maxWidth: '100%', overflowX: 'hidden' }}>
       {quranResults.length > 0 && (source === 'all' || source === 'quran') && (
-        <Section
-          label="Quran"
-          count={quranTotal}
-          color="#1D9E75"
-          bg="#E1F5EE"
-          border="#9FE1CB"
-          isOpen={openSections.includes('quran')}
-          onToggle={() => toggleSection('quran')}
-        >
+        <Section sectionId="search-section-quran" label="Quran" count={quranTotal} color="#1D9E75" bg="#E1F5EE" border="#9FE1CB" isOpen={openSections.includes('quran')} onToggle={() => toggleSection('quran')}>
           {quranResults.map((r) => {
-            const itemId = `q-${r.surah}-${r.ayah}`;
-            return (
-              <QuranItem
-                key={itemId}
-                isOpen={openItems.includes(itemId)}
-                onToggle={() => toggleItem(itemId)}
-                result={r}
-                query={query}
-                related={crossRef[`${r.surah}:${r.ayah}`] || []}
-              />
-            );
+            const itemId = `search-item-q-${r.surah}-${r.ayah}`;
+            return <QuranItem key={itemId} itemId={itemId} isOpen={openItems.includes(itemId)} onToggle={() => toggleItem(itemId)} result={r} query={query} related={crossRef[`${r.surah}:${r.ayah}`] || []} />;
           })}
-          {source === 'quran' && quranPages > 1 && (
-            <PaginationBar page={currentPage} total={quranPages} query={query} src="quran" />
-          )}
+          {source === 'quran' && quranPages > 1 && <PaginationBar page={currentPage} total={quranPages} query={query} src="quran" />}
         </Section>
       )}
 
       {tafseerResults.length > 0 && (source === 'all' || source === 'tafseer') && (
-        <Section
-          label="Tafseer"
-          count={tafseerTotal}
-          color="#854F0B"
-          bg="#FAEEDA"
-          border="#FAC775"
-          isOpen={openSections.includes('tafseer')}
-          onToggle={() => toggleSection('tafseer')}
-        >
+        <Section sectionId="search-section-tafseer" label="Tafseer" count={tafseerTotal} color="#854F0B" bg="#FAEEDA" border="#FAC775" isOpen={openSections.includes('tafseer')} onToggle={() => toggleSection('tafseer')}>
           {tafseerResults.map((r) => {
-            const itemId = `t-${r.surah}-${r.ayah}-${r.ayahTo}`;
-            return (
-              <TafseerItem
-                key={itemId}
-                isOpen={openItems.includes(itemId)}
-                onToggle={() => toggleItem(itemId)}
-                result={r}
-                query={query}
-              />
-            );
+            const itemId = `search-item-t-${r.surah}-${r.ayah}-${r.ayahTo}`;
+            return <TafseerItem key={itemId} itemId={itemId} isOpen={openItems.includes(itemId)} onToggle={() => toggleItem(itemId)} result={r} query={query} />;
           })}
-          {source === 'tafseer' && tafseerPages > 1 && (
-            <PaginationBar page={currentPage} total={tafseerPages} query={query} src="tafseer" />
-          )}
+          {source === 'tafseer' && tafseerPages > 1 && <PaginationBar page={currentPage} total={tafseerPages} query={query} src="tafseer" />}
         </Section>
       )}
 
       {hadithResults.length > 0 && (source === 'all' || source === 'hadith') && (
-        <Section
-          label="Hadith"
-          count={hadithTotal}
-          color="#993C1D"
-          bg="#FAECE7"
-          border="#F5C4B3"
-          isOpen={openSections.includes('hadith')}
-          onToggle={() => toggleSection('hadith')}
-        >
+        <Section sectionId="search-section-hadith" label="Hadith" count={hadithTotal} color="#993C1D" bg="#FAECE7" border="#F5C4B3" isOpen={openSections.includes('hadith')} onToggle={() => toggleSection('hadith')}>
           {hadithResults.map((r) => {
-            const itemId = `h-${r.bookSlug}-${r.hadith.idInBook}`;
-            return (
-              <HadithItem
-                key={itemId}
-                isOpen={openItems.includes(itemId)}
-                onToggle={() => toggleItem(itemId)}
-                result={r}
-                query={query}
-              />
-            );
+            const itemId = `search-item-h-${r.bookSlug}-${r.hadith.idInBook}`;
+            return <HadithItem key={itemId} itemId={itemId} isOpen={openItems.includes(itemId)} onToggle={() => toggleItem(itemId)} result={r} query={query} />;
           })}
-          {source === 'hadith' && hadithPages > 1 && (
-            <PaginationBar page={currentPage} total={hadithPages} query={query} src="hadith" book={book} />
-          )}
+          {source === 'hadith' && hadithPages > 1 && <PaginationBar page={currentPage} total={hadithPages} query={query} src="hadith" book={book} />}
         </Section>
       )}
     </div>
   );
 }
 
-function Section({ label, count, color, bg, border, isOpen, onToggle, children }: { label: string; count: number; color: string; bg: string; border: string; isOpen: boolean; onToggle: () => void; children: React.ReactNode; }) {
-  return (
-    <div style={{ border: `1px solid ${border}`, borderRadius: '12px', overflow: 'hidden', background: 'var(--bg-card)', maxWidth: '100%' }}>
-      <button onClick={onToggle} style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '10px', padding: '12px 16px', background: isOpen ? color : 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', borderBottom: isOpen ? `1px solid ${border}` : 'none', transition: 'background 0.2s', maxWidth: '100%' }}>
-        <div style={{ width: '3px', height: '18px', background: color, borderRadius: '2px', flexShrink: 0 }} />
-        <span style={{ fontFamily: 'var(--font-lora)', fontSize: '0.95rem', fontWeight: 600, color: isOpen ? '#ffffff' : 'var(--ink-primary)', flex: 1, minWidth: 0 }}>{label}</span>
-        <span style={{ fontFamily: 'var(--font-lora)', fontSize: '0.72rem', fontWeight: 600, color: color, background: isOpen ? 'rgba(255,255,255,0.9)' : bg, border: `1px solid ${isOpen ? 'rgba(255,255,255,0.6)' : border}`, borderRadius: '20px', padding: '2px 10px', minWidth: '28px', textAlign: 'center', flexShrink: 0 }}>{count.toLocaleString()}</span>
-        <ChevronIcon open={isOpen} color={isOpen ? '#ffffff' : undefined} />
-      </button>
-      {isOpen && <div style={{ padding: '8px 10px', display: 'flex', flexDirection: 'column', gap: '4px', maxWidth: '100%', overflowX: 'hidden' }}>{children}</div>}
-    </div>
-  );
+function Section({ sectionId, label, count, color, bg, border, isOpen, onToggle, children }: { sectionId: string; label: string; count: number; color: string; bg: string; border: string; isOpen: boolean; onToggle: () => void; children: React.ReactNode; }) {
+  return <div id={sectionId} data-search-anchor="true" style={{ border: `1px solid ${border}`, borderRadius: '12px', overflow: 'hidden', background: 'var(--bg-card)', maxWidth: '100%' }}><button onClick={onToggle} style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '10px', padding: '12px 16px', background: isOpen ? color : 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', borderBottom: isOpen ? `1px solid ${border}` : 'none', transition: 'background 0.2s', maxWidth: '100%' }}><div style={{ width: '3px', height: '18px', background: color, borderRadius: '2px', flexShrink: 0 }} /><span style={{ fontFamily: 'var(--font-lora)', fontSize: '0.95rem', fontWeight: 600, color: isOpen ? '#ffffff' : 'var(--ink-primary)', flex: 1, minWidth: 0 }}>{label}</span><span style={{ fontFamily: 'var(--font-lora)', fontSize: '0.72rem', fontWeight: 600, color: color, background: isOpen ? 'rgba(255,255,255,0.9)' : bg, border: `1px solid ${isOpen ? 'rgba(255,255,255,0.6)' : border}`, borderRadius: '20px', padding: '2px 10px', minWidth: '28px', textAlign: 'center', flexShrink: 0 }}>{count.toLocaleString()}</span><ChevronIcon open={isOpen} color={isOpen ? '#ffffff' : undefined} /></button>{isOpen && <div style={{ padding: '8px 10px', display: 'flex', flexDirection: 'column', gap: '4px', maxWidth: '100%', overflowX: 'hidden' }}>{children}</div>}</div>;
 }
 
-function ResultItem({ header, children, isOpen, onToggle }: { header: React.ReactNode; children: React.ReactNode; isOpen: boolean; onToggle: () => void; }) {
-  return (
-    <div style={{ border: '1px solid var(--gold-border)', borderRadius: '9px', overflow: 'hidden', background: 'var(--bg-surface, var(--bg-card))', maxWidth: '100%' }}>
-      <button onClick={onToggle} style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '10px', padding: '10px 14px', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', borderBottom: isOpen ? '1px solid var(--gold-border)' : 'none', maxWidth: '100%' }}>
-        <div style={{ flex: 1, minWidth: 0 }}>{header}</div>
-        <ChevronIcon open={isOpen} size={14} />
-      </button>
-      {isOpen && <div style={{ padding: '14px 16px', maxWidth: '100%', overflowX: 'hidden' }}>{children}</div>}
-    </div>
-  );
+function ResultItem({ itemId, header, children, isOpen, onToggle }: { itemId: string; header: React.ReactNode; children: React.ReactNode; isOpen: boolean; onToggle: () => void; }) {
+  return <div id={itemId} data-search-anchor="true" style={{ border: '1px solid var(--gold-border)', borderRadius: '9px', overflow: 'hidden', background: 'var(--bg-surface, var(--bg-card))', maxWidth: '100%' }}><button onClick={onToggle} style={{ width: '100%', display: 'flex', alignItems: 'center', gap: '10px', padding: '10px 14px', background: 'transparent', border: 'none', cursor: 'pointer', textAlign: 'left', borderBottom: isOpen ? '1px solid var(--gold-border)' : 'none', maxWidth: '100%' }}><div style={{ flex: 1, minWidth: 0 }}>{header}</div><ChevronIcon open={isOpen} size={14} /></button>{isOpen && <div style={{ padding: '14px 16px', maxWidth: '100%', overflowX: 'hidden' }}>{children}</div>}</div>;
 }
 
-function QuranItem({ result, query, related, isOpen, onToggle }: { result: QuranResult; query: string; related: CrossRefHadith[]; isOpen: boolean; onToggle: () => void; }) {
+function QuranItem({ itemId, result, query, related, isOpen, onToggle }: { itemId: string; result: QuranResult; query: string; related: CrossRefHadith[]; isOpen: boolean; onToggle: () => void; }) {
   const highlightedEn = applyHighlight(result.en_sahih, query, 'rgba(200,168,75,0.25)');
   const header = <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', minWidth: 0 }}><span style={{ fontFamily: 'var(--font-lora)', fontSize: '0.8rem', fontWeight: 600, color: 'var(--gold)' }}>{result.surahName} · {result.surah}:{result.ayah}</span>{result.juz && <span style={{ fontFamily: 'var(--font-lora)', fontSize: '0.68rem', color: 'var(--ink-muted)', border: '1px solid var(--gold-border)', borderRadius: '10px', padding: '1px 7px' }}>Juz {result.juz}</span>}<RelevanceDots score={result.score} color="#1D9E75" />{related.length > 0 && <span style={{ fontFamily: 'var(--font-lora)', fontSize: '0.68rem', color: '#0F6E56', background: '#E1F5EE', border: '1px solid #9FE1CB', borderRadius: '10px', padding: '1px 7px', display: 'flex', alignItems: 'center', gap: '3px' }}><LinkIconSmall />{related.length} hadith</span>}</div>;
-  return <ResultItem header={header} isOpen={isOpen} onToggle={onToggle}><p dir="rtl" lang="ar" style={{ fontFamily: 'var(--font-amiri)', fontSize: '1.5rem', color: 'var(--ink-primary)', lineHeight: 2.1, textAlign: 'right', marginBottom: '10px' }}>{result.arabic}</p><div style={{ height: '1px', background: 'var(--gold-border)', opacity: 0.5, marginBottom: '10px' }} /><p style={{ fontFamily: 'var(--font-lora)', fontSize: '0.92rem', color: 'var(--ink-secondary)', lineHeight: 1.75, marginBottom: '14px' }} dangerouslySetInnerHTML={{ __html: highlightedEn }} /><Link href={`/quran/${result.surah}#ayah-${result.ayah}`} style={{ fontFamily: 'var(--font-lora)', fontSize: '0.78rem', color: 'var(--gold)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>Read in Quran reader →</Link>{related.length > 0 && <CrossRefSection related={related} surah={result.surah} ayah={result.ayah} query={query} />}</ResultItem>;
+  return <ResultItem itemId={itemId} header={header} isOpen={isOpen} onToggle={onToggle}><p dir="rtl" lang="ar" style={{ fontFamily: 'var(--font-amiri)', fontSize: '1.5rem', color: 'var(--ink-primary)', lineHeight: 2.1, textAlign: 'right', marginBottom: '10px' }}>{result.arabic}</p><div style={{ height: '1px', background: 'var(--gold-border)', opacity: 0.5, marginBottom: '10px' }} /><p style={{ fontFamily: 'var(--font-lora)', fontSize: '0.92rem', color: 'var(--ink-secondary)', lineHeight: 1.75, marginBottom: '14px' }} dangerouslySetInnerHTML={{ __html: highlightedEn }} /><Link href={`/quran/${result.surah}#ayah-${result.ayah}`} style={{ fontFamily: 'var(--font-lora)', fontSize: '0.78rem', color: 'var(--gold)', textDecoration: 'none', display: 'inline-flex', alignItems: 'center', gap: '4px' }}>Read in Quran reader →</Link>{related.length > 0 && <CrossRefSection related={related} surah={result.surah} ayah={result.ayah} query={query} />}</ResultItem>;
 }
 
-function TafseerItem({ result, query, isOpen, onToggle }: { result: TafseerResult; query: string; isOpen: boolean; onToggle: () => void; }) {
+function TafseerItem({ itemId, result, query, isOpen, onToggle }: { itemId: string; result: TafseerResult; query: string; isOpen: boolean; onToggle: () => void; }) {
   const highlighted = applyHighlight(result.text, query, 'rgba(186,117,23,0.2)');
   const ayahRef = (result.ayahTo && result.ayahTo > result.ayah) ? `${result.surah}:${result.ayah}–${result.ayahTo}` : `${result.surah}:${result.ayah}`;
   const editionLabel = result.edition === 'ibn_kathir' ? 'Ibn Kathir' : 'Al-Jalalayn';
   const header = <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', minWidth: 0 }}><span style={{ fontFamily: 'var(--font-lora)', fontSize: '0.8rem', fontWeight: 600, color: 'var(--gold)' }}>{result.surahName} · {ayahRef}</span><span style={{ fontFamily: 'var(--font-lora)', fontSize: '0.68rem', color: 'var(--ink-muted)', border: '1px solid var(--gold-border)', borderRadius: '10px', padding: '1px 7px' }}>{editionLabel}</span><RelevanceDots score={result.score} color="#BA7517" /></div>;
-  return <ResultItem header={header} isOpen={isOpen} onToggle={onToggle}><p style={{ fontFamily: 'var(--font-lora)', fontSize: '0.91rem', color: 'var(--ink-secondary)', lineHeight: 1.8, fontStyle: 'italic', marginBottom: '12px' }} dangerouslySetInnerHTML={{ __html: highlighted }} /><Link href={`/tafseer/en-tafisr-ibn-kathir/${result.surah}?ayah=${result.ayah}`} style={{ fontFamily: 'var(--font-lora)', fontSize: '0.78rem', color: 'var(--gold)', textDecoration: 'none' }}>Read full Tafseer →</Link></ResultItem>;
+  return <ResultItem itemId={itemId} header={header} isOpen={isOpen} onToggle={onToggle}><p style={{ fontFamily: 'var(--font-lora)', fontSize: '0.91rem', color: 'var(--ink-secondary)', lineHeight: 1.8, fontStyle: 'italic', marginBottom: '12px' }} dangerouslySetInnerHTML={{ __html: highlighted }} /><Link href={`/tafseer/en-tafisr-ibn-kathir/${result.surah}?ayah=${result.ayah}`} style={{ fontFamily: 'var(--font-lora)', fontSize: '0.78rem', color: 'var(--gold)', textDecoration: 'none' }}>Read full Tafseer →</Link></ResultItem>;
 }
 
-function HadithItem({ result, query, isOpen, onToggle }: { result: HadithResult; query: string; isOpen: boolean; onToggle: () => void; }) {
+function HadithItem({ itemId, result, query, isOpen, onToggle }: { itemId: string; result: HadithResult; query: string; isOpen: boolean; onToggle: () => void; }) {
   const { hadith, bookSlug, bookTitle, chapterTitle, score } = result;
   const highlighted = applyHighlight(hadith.english?.text || '', query, 'rgba(216,90,48,0.18)');
   const header = <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexWrap: 'wrap', minWidth: 0 }}><span style={{ fontFamily: 'var(--font-lora)', fontSize: '0.8rem', fontWeight: 600, color: 'var(--gold)' }}>{bookTitle} #{hadith.idInBook}</span>{chapterTitle && <span style={{ fontFamily: 'var(--font-lora)', fontSize: '0.68rem', color: 'var(--ink-muted)', border: '1px solid var(--gold-border)', borderRadius: '10px', padding: '1px 7px', maxWidth: '200px', overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{chapterTitle}</span>}<RelevanceDots score={score} color="#D85A30" /></div>;
-  return <ResultItem header={header} isOpen={isOpen} onToggle={onToggle}>{hadith.arabic && <><p dir="rtl" lang="ar" style={{ fontFamily: 'var(--font-amiri)', fontSize: '1.35rem', color: 'var(--ink-primary)', lineHeight: 2, textAlign: 'right', marginBottom: '8px' }}>{hadith.arabic}</p><div style={{ height: '1px', background: 'var(--gold-border)', opacity: 0.4, marginBottom: '8px' }} /></>}{hadith.english?.narrator?.trim() && <p style={{ fontFamily: 'var(--font-lora)', fontSize: '0.8rem', color: 'var(--ink-muted)', fontStyle: 'italic', marginBottom: '6px', lineHeight: 1.5 }}>{hadith.english.narrator}</p>}<p style={{ fontFamily: 'var(--font-lora)', fontSize: '0.91rem', color: 'var(--ink-secondary)', lineHeight: 1.75, marginBottom: '12px' }} dangerouslySetInnerHTML={{ __html: highlighted }} /><Link href={`/hadith/${bookSlug}?page=${Math.ceil(hadith.idInBook/50)}#hadith-${hadith.idInBook}`} style={{ fontFamily: 'var(--font-lora)', fontSize: '0.78rem', color: 'var(--gold)', textDecoration: 'none' }}>Browse {bookTitle} →</Link></ResultItem>;
+  return <ResultItem itemId={itemId} header={header} isOpen={isOpen} onToggle={onToggle}>{hadith.arabic && <><p dir="rtl" lang="ar" style={{ fontFamily: 'var(--font-amiri)', fontSize: '1.35rem', color: 'var(--ink-primary)', lineHeight: 2, textAlign: 'right', marginBottom: '8px' }}>{hadith.arabic}</p><div style={{ height: '1px', background: 'var(--gold-border)', opacity: 0.4, marginBottom: '8px' }} /></>}{hadith.english?.narrator?.trim() && <p style={{ fontFamily: 'var(--font-lora)', fontSize: '0.8rem', color: 'var(--ink-muted)', fontStyle: 'italic', marginBottom: '6px', lineHeight: 1.5 }}>{hadith.english.narrator}</p>}<p style={{ fontFamily: 'var(--font-lora)', fontSize: '0.91rem', color: 'var(--ink-secondary)', lineHeight: 1.75, marginBottom: '12px' }} dangerouslySetInnerHTML={{ __html: highlighted }} /><Link href={`/hadith/${bookSlug}?page=${Math.ceil(hadith.idInBook/50)}#hadith-${hadith.idInBook}`} style={{ fontFamily: 'var(--font-lora)', fontSize: '0.78rem', color: 'var(--gold)', textDecoration: 'none' }}>Browse {bookTitle} →</Link></ResultItem>;
 }
 
 function CrossRefSection({ related, surah, ayah, query }: { related: CrossRefHadith[]; surah: number; ayah: number; query: string; }) {

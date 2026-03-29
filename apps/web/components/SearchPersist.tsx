@@ -3,7 +3,9 @@
 // apps/web/components/SearchPersist.tsx
 // Saves the current search state to localStorage.
 // On return to /search with no query, restores the exact last search URL.
-// Also updates Navigation's Search tab memory with the exact URL.
+// IMPORTANT:
+// - do NOT overwrite a previously saved anchored URL with a plain no-hash URL
+// - preserve the most specific last-viewed Search URL for this exact search identity
 
 import { useEffect, useRef } from 'react';
 import { useRouter } from 'next/navigation';
@@ -28,27 +30,49 @@ interface Props {
   page?: string;
 }
 
+function sameIdentity(a: SavedSearch | null, q: string, src: string, book: string, page: string): boolean {
+  if (!a) return false;
+  return a.q === q && a.src === src && a.book === book && a.page === page;
+}
+
 export default function SearchPersist({ query, source, book, shouldRestore, page = '1' }: Props) {
   const router  = useRouter();
   const hasRun  = useRef(false);
 
   useEffect(() => {
     if (typeof window === 'undefined') return;
+    if (query.trim().length < 2) return;
 
-    if (query.trim().length >= 2) {
-      const exactUrl = `${window.location.pathname}${window.location.search}${window.location.hash}`;
-      const saved: SavedSearch = {
-        q:       query.trim(),
-        src:     source || 'all',
-        book:    book   || '',
-        page:    page   || '1',
-        url:     exactUrl,
-        savedAt: Date.now(),
-      };
+    const cleanQuery = query.trim();
+    const currentUrl = `${window.location.pathname}${window.location.search}${window.location.hash}`;
 
-      try { localStorage.setItem(STORAGE_KEY, JSON.stringify(saved)); } catch {}
-      saveLastUrl('search', `Search: ${query.trim()}`, exactUrl);
-    }
+    let previous: SavedSearch | null = null;
+    try {
+      const raw = localStorage.getItem(STORAGE_KEY);
+      if (raw) previous = JSON.parse(raw) as SavedSearch;
+    } catch {}
+
+    // If current URL has no hash, preserve the previous anchored URL
+    // for the same exact search identity.
+    const currentHasHash = currentUrl.includes('#');
+    const previousHasHash = !!previous?.url?.includes('#');
+
+    const finalUrl =
+      (!currentHasHash && previousHasHash && sameIdentity(previous, cleanQuery, source || 'all', book || '', page || '1'))
+        ? previous!.url
+        : currentUrl;
+
+    const saved: SavedSearch = {
+      q:       cleanQuery,
+      src:     source || 'all',
+      book:    book   || '',
+      page:    page   || '1',
+      url:     finalUrl,
+      savedAt: Date.now(),
+    };
+
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(saved)); } catch {}
+    saveLastUrl('search', `Search: ${cleanQuery}`, finalUrl);
   }, [query, source, book, page]);
 
   useEffect(() => {

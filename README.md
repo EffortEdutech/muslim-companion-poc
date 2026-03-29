@@ -1,23 +1,15 @@
-# muslim-companion hotfix v12
+# muslim-companion hotfix v13
 
-This targets the inconsistent Search last-viewed restore.
+This patch does two things:
 
-## Likely root cause
-After returning to Search, `SearchPersist` could overwrite the previously
-saved anchored URL with a plain no-hash search URL.
-That would make:
-- first revisit sometimes correct
-- second revisit often wrong
-- behavior feel inconsistent
+1. Fixes the Vercel build error:
+- `ReadingProgress.tsx` now only accepts reader sections:
+  `quran | tafseer | hadith`
 
-## What v12 changes
-- SearchPersist preserves the previously saved anchored URL for the same
-  exact search identity instead of overwriting it with a plain URL
-- SearchVisibleAnchorTracker now flushes the current visible anchor on
-  pagehide / visibilitychange for more reliable saving before leaving
+2. Replaces inconsistent Search hash-anchor restore with a simpler,
+   more reliable exact-scroll restore:
+- SearchPersist saves the exact Search URL without hash
+- SearchScrollRestore restores the last saved scrollY after Search UI is restored
+- Search page no longer uses SearchVisibleAnchorTracker
 
-## Included files
-- apps/web/components/SearchPersist.tsx
-- apps/web/components/SearchVisibleAnchorTracker.tsx
-
-Apply on top of your working Search fixes.
+This is intended to be more stable than the previous hash-based Search last-viewed logic.

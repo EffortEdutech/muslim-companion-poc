@@ -1,3 +1,4 @@
+// apps/web/app/search/page.tsx
 import type { Metadata } from 'next';
 import { Suspense } from 'react';
 import path from 'path';
@@ -13,7 +14,6 @@ import SearchDiscoveryBar                        from '@/components/SearchDiscov
 import SearchResults, { CrossRefHadith }         from '@/components/search/SearchResults';
 import SearchPersist, { NewSearchButton }        from '@/components/SearchPersist';
 import SearchScrollRestore                       from '@/components/SearchScrollRestore';
-import SearchVisibleAnchorTracker                from '@/components/SearchVisibleAnchorTracker';
 
 interface PageProps {
   searchParams: Promise<{
@@ -60,13 +60,18 @@ function buildEnrichedCrossRef(
   relevantAyahs: string[]
 ): Record<string, CrossRefHadith[]> {
   const hadithIndex = loadHadithIndex();
+
   const lookup = new Map<string, {en:string;na:string;ar:string}>();
-  for (const h of hadithIndex) lookup.set(`${h.bs}:${h.ib}`, { en: h.en, na: h.na, ar: h.ar });
+  for (const h of hadithIndex) {
+    lookup.set(`${h.bs}:${h.ib}`, { en: h.en, na: h.na, ar: h.ar });
+  }
 
   const result: Record<string, CrossRefHadith[]> = {};
+
   for (const ayah of relevantAyahs) {
     const refs = rawCrossRef[ayah];
     if (!refs || refs.length === 0) continue;
+
     result[ayah] = refs.map(ref => {
       const detail = lookup.get(`${ref.bs}:${ref.ib}`);
       return {
@@ -79,26 +84,27 @@ function buildEnrichedCrossRef(
       };
     });
   }
+
   return result;
 }
 
 export async function generateMetadata({ searchParams }: PageProps): Promise<Metadata> {
   const { q } = await searchParams;
   return {
-    title:       q ? `"${q}" – Search | IQRA Digital` : 'Search | IQRA Digital',
+    title:       q ? `\"${q}\" – Search | IQRA Digital` : 'Search | IQRA Digital',
     description: 'Search across Quran, Tafseer, and Hadith. Discover connections between sacred texts.',
   };
 }
 
 export default async function SearchPage({ searchParams }: PageProps) {
   const { q = '', src = 'all', book = '', page: pageStr = '1' } = await searchParams;
-  const query = q.trim();
+  const query       = q.trim();
   const source: Source = (['hadith', 'quran', 'tafseer'] as const).includes(src as 'hadith' | 'quran' | 'tafseer')
     ? src as 'hadith' | 'quran' | 'tafseer' : 'all';
   const currentPage = Math.max(1, parseInt(pageStr, 10));
 
-  let hadithResponse: SearchResponse | null = null;
-  let quranResponse: QuranSearchResponse | null = null;
+  let hadithResponse:  SearchResponse        | null = null;
+  let quranResponse:   QuranSearchResponse   | null = null;
   let tafseerResponse: TafseerSearchResponse | null = null;
 
   if (query.length >= 2) {
@@ -113,41 +119,52 @@ export default async function SearchPage({ searchParams }: PageProps) {
         ? import('@/app/tafseer/search/search-logic').then(m => m.default(query, currentPage))
         : Promise.resolve(null),
     ]);
-    hadithResponse = h;
-    quranResponse = qr;
+    hadithResponse  = h;
+    quranResponse   = qr;
     tafseerResponse = tr;
   }
 
-  const hadithTotal = hadithResponse?.total ?? 0;
-  const quranTotal = quranResponse?.total ?? 0;
+  const hadithTotal  = hadithResponse?.total  ?? 0;
+  const quranTotal   = quranResponse?.total   ?? 0;
   const tafseerTotal = tafseerResponse?.total ?? 0;
   const combinedTotal = hadithTotal + quranTotal + tafseerTotal;
 
-  const hadithPages = hadithResponse ? Math.ceil(hadithTotal / hadithResponse.limit) : 0;
-  const quranPages = quranResponse ? Math.ceil(quranTotal / quranResponse.limit) : 0;
+  const hadithPages  = hadithResponse  ? Math.ceil(hadithTotal  / hadithResponse.limit)  : 0;
+  const quranPages   = quranResponse   ? Math.ceil(quranTotal   / quranResponse.limit)   : 0;
   const tafseerPages = tafseerResponse ? Math.ceil(tafseerTotal / tafseerResponse.limit) : 0;
 
-  const rawCrossRef = loadRawCrossRef();
-  const ayahKeys = (quranResponse?.results || []).map(r => `${r.surah}:${r.ayah}`);
+  const rawCrossRef  = loadRawCrossRef();
+  const ayahKeys     = (quranResponse?.results || []).map(r => `${r.surah}:${r.ayah}`);
   const enrichedCrossRef = buildEnrichedCrossRef(rawCrossRef, ayahKeys);
-  const crossRefCount = ayahKeys.filter(k => (enrichedCrossRef[k] || []).length > 0).length;
+  const crossRefCount    = ayahKeys.filter(k => (enrichedCrossRef[k] || []).length > 0).length;
 
   return (
     <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10" style={{ overflowX: 'hidden' }}>
       <SearchScrollRestore />
-      {query.length >= 2 && <SearchVisibleAnchorTracker query={query} source={source} book={book} page={String(currentPage)} />}
 
       <header className="mb-6">
-        <h1 className="page-heading" style={{ fontSize: 'clamp(1.6rem, 4vw, 2.6rem)', marginBottom: '4px' }}>Search</h1>
+        <h1 className="page-heading" style={{ fontSize: 'clamp(1.6rem, 4vw, 2.6rem)', marginBottom: '4px' }}>
+          Search
+        </h1>
         <p style={{ fontFamily: 'var(--font-lora)', fontStyle: 'italic', fontSize: '0.85rem', color: 'var(--ink-muted)', marginBottom: '20px' }}>
           Quran · Tafseer · Hadith · Arabic · English · Malay · Urdu
         </p>
 
         <Suspense fallback={null}>
-          <SearchPersist query={query} source={source} book={book} page={String(currentPage)} shouldRestore={!query} />
+          <SearchPersist
+            query={query}
+            source={source}
+            book={book}
+            page={String(currentPage)}
+            shouldRestore={!query}
+          />
           <div style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
             <div style={{ flex: 1, minWidth: 0 }}>
-              <SearchBar defaultQuery={query} defaultBook={source === 'hadith' ? book : ''} autoFocus={!query} />
+              <SearchBar
+                defaultQuery={query}
+                defaultBook={source === 'hadith' ? book : ''}
+                autoFocus={!query}
+              />
             </div>
             <NewSearchButton visible={query.length >= 2} />
           </div>
@@ -156,7 +173,10 @@ export default async function SearchPage({ searchParams }: PageProps) {
         {query.length >= 2 && (
           <div style={{ marginTop: '16px', maxWidth: '100%' }}>
             <Suspense fallback={null}>
-              <UnifiedSearchTabs query={query} source={source} book={book} hadithTotal={hadithTotal} quranTotal={quranTotal} tafseerTotal={tafseerTotal} />
+              <UnifiedSearchTabs
+                query={query} source={source} book={book}
+                hadithTotal={hadithTotal} quranTotal={quranTotal} tafseerTotal={tafseerTotal}
+              />
             </Suspense>
           </div>
         )}
@@ -184,9 +204,9 @@ export default async function SearchPage({ searchParams }: PageProps) {
       {query.length >= 2 && combinedTotal > 0 && (
         <SearchResults
           query={query}
-          quranResults={quranResponse?.results || []}
+          quranResults={quranResponse?.results   || []}
           tafseerResults={tafseerResponse?.results || []}
-          hadithResults={hadithResponse?.results || []}
+          hadithResults={hadithResponse?.results  || []}
           crossRef={enrichedCrossRef}
           quranTotal={quranTotal}
           tafseerTotal={tafseerTotal}

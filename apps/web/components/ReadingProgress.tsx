@@ -7,12 +7,13 @@ import { useEffect, useMemo } from 'react';
 import {
   saveLastUrl,
   saveBreadcrumb,
-  SectionKey,
   BreadcrumbPart,
 } from '@/lib/study-context';
 
+type ReaderSectionKey = 'quran' | 'tafseer' | 'hadith';
+
 interface Props {
-  section:    SectionKey;
+  section:    ReaderSectionKey;
   label:      string;
   breadcrumb: BreadcrumbPart[];
 }
@@ -24,8 +25,6 @@ export default function ReadingProgress({ section, label, breadcrumb }: Props) {
     saveLastUrl(section, label);
     saveBreadcrumb({ section, parts: breadcrumb });
 
-    // Same-tab updates need a custom event because the browser's `storage`
-    // event only fires in other tabs.
     window.dispatchEvent(new Event('iqra:breadcrumb-updated'));
   }, [section, label, breadcrumbKey, breadcrumb]);
 

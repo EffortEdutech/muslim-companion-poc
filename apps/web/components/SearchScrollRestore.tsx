@@ -18,36 +18,23 @@ export default function SearchScrollRestore() {
       restored = true;
 
       try {
-        const hashId = window.location.hash.replace(/^#/, '');
-
-        if (hashId) {
-          const runHashRestore = () => {
-            const el = document.getElementById(hashId);
-            if (!el) return;
-            const TOP_OFFSET = 92;
-            const rect = el.getBoundingClientRect();
-            const delta = rect.top - TOP_OFFSET;
-            window.scrollBy({ top: delta, behavior: 'instant' as ScrollBehavior });
-          };
-
-          setTimeout(runHashRestore, 40);
-          setTimeout(runHashRestore, 220);
-          return;
-        }
-
         const saved = sessionStorage.getItem(key);
         if (!saved) return;
+
         const y = parseInt(saved, 10);
         if (isNaN(y) || y < 1) return;
 
         const doRestore = () => window.scrollTo({ top: y, behavior: 'instant' as ScrollBehavior });
-        setTimeout(doRestore, 40);
-        setTimeout(doRestore, 180);
+
+        setTimeout(doRestore, 50);
+        setTimeout(doRestore, 220);
+        setTimeout(doRestore, 500);
       } catch {}
     };
 
     const onReady = () => restore();
     window.addEventListener('iqra:search-ui-restored', onReady);
+
     const timerId = window.setTimeout(restore, 900);
 
     return () => {
@@ -58,19 +45,36 @@ export default function SearchScrollRestore() {
 
   useEffect(() => {
     let ticking = false;
+
+    const flush = () => {
+      try {
+        sessionStorage.setItem(key, String(Math.round(window.scrollY)));
+      } catch {}
+    };
+
     function onScroll() {
       if (ticking) return;
       ticking = true;
+
       setTimeout(() => {
-        try {
-          sessionStorage.setItem(key, String(Math.round(window.scrollY)));
-        } catch {}
+        flush();
         ticking = false;
-      }, 300);
+      }, 200);
+    }
+
+    function onVisibility() {
+      if (document.visibilityState === 'hidden') flush();
     }
 
     window.addEventListener('scroll', onScroll, { passive: true });
-    return () => window.removeEventListener('scroll', onScroll);
+    window.addEventListener('pagehide', flush);
+    document.addEventListener('visibilitychange', onVisibility);
+
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('pagehide', flush);
+      document.removeEventListener('visibilitychange', onVisibility);
+    };
   }, [key]);
 
   return null;

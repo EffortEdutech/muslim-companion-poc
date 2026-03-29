@@ -1,30 +1,19 @@
-# muslim-companion hotfix v7
+# muslim-companion hotfix v8
 
-This hotfix makes Search revisit behave more like the main content tabs.
+This fixes the reason v7 still behaved like a fresh search.
 
-## Root cause of the previous failure
-The app was only restoring:
-- query
-- source
-- book
+## Root cause
+The search UI state was being restored and persisted in the same mount cycle.
+That allowed the default state to overwrite the saved state before restoration finished.
 
-But not the exact last search URL and not the Navigation Search-tab memory.
-That meant:
-- page could reset
-- section/result expansion key could change
-- scroll restore key could change
-- Search tab itself still opened bare `/search`
-
-## What v7 changes
-- Navigation Search tab now uses saved last Search URL, like Quran/Tafseer/Hadith
-- SearchPersist now saves and restores the exact last search URL
-- SearchPersist also updates Search tab memory via study-context
-- SearchResults keeps section/result expansion state per exact search identity
-- Search page includes ScrollRestore for the exact search URL
+## What v8 changes
+- SearchResults now restores with `useLayoutEffect` before paint
+- SearchResults only persists AFTER restoration is complete
+- Search tab / exact search URL memory from v7 remains
+- ScrollRestore remains on the exact search URL
 
 ## Included files
-- apps/web/lib/study-context.ts
-- apps/web/components/Navigation.tsx
-- apps/web/components/SearchPersist.tsx
 - apps/web/components/search/SearchResults.tsx
-- apps/web/app/search/page.tsx
+
+Optional but recommended if you had not already applied v7:
+- keep v7's Navigation/SearchPersist/study-context/search page changes too
